@@ -1,0 +1,149 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Habits — SolveMap</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+        <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { height:100%; }
+    body { font-family:'Inter',-apple-system,sans-serif; background:#f8fafc; color:#0f172a; overflow:hidden; display:flex; flex-direction:column; }
+    .header { display:flex; justify-content:space-between; align-items:center; padding:18px 32px 14px 32px; border-bottom:2px solid #e2e8f0; background:#ffffff; flex-shrink:0; flex-wrap:wrap; gap:12px; }
+    .logo { font-size:26px; font-weight:800; display:flex; align-items:center; gap:8px; cursor:pointer; }
+    .logo span { color:#1e293b; background:#eef2ff; padding:2px 12px; border-radius:40px; font-size:16px; }
+    .header-categories { display:flex; flex-wrap:wrap; gap:8px 16px; }
+    .header-categories a { color:#475569; text-decoration:none; font-weight:600; font-size:14px; padding:6px 14px; border-radius:40px; transition:background 0.15s, color 0.15s; background:transparent; }
+    .header-categories a:hover { background:#f1f4f9; color:#0f172a; }
+    .header-categories a.active { background:#1e293b; color:#ffffff; }
+    .app { display:flex; flex:1; overflow:hidden; }
+    .sidebar { width:320px; background:#ffffff; border-right:2px solid #e2e8f0; padding:28px 20px; overflow-y:auto; flex-shrink:0; height:100%; }
+    .sidebar-title { font-size:18px; font-weight:700; margin-bottom:18px; color:#0f172a; display:flex; align-items:center; gap:8px; padding-bottom:12px; border-bottom:2px solid #eef2ff; }
+    .sidebar .back-link { display:inline-block; font-size:13px; color:#1e293b; text-decoration:none; font-weight:600; margin-bottom:12px; cursor:pointer; background:#eef2ff; padding:6px 14px; border-radius:40px; transition:background 0.15s; }
+    .sidebar .back-link:hover { background:#dbe2ed; }
+    .sidebar ul { list-style:none; padding:0; margin:0; }
+    .sidebar li { padding:12px 16px; border-radius:12px; cursor:pointer; transition:background 0.15s, color 0.15s; font-size:15px; font-weight:600; color:#1e293b; margin-bottom:4px; background:transparent; border:1px solid transparent; }
+    .sidebar li:hover { background:#f1f4f9; border-color:#e2e8f0; }
+    .sidebar li.active { background:#1e293b; color:#ffffff; border-color:#1e293b; }
+    .sidebar .file-item { font-weight:500; font-size:14px; padding-left:20px; color:#475569; cursor:pointer; border:1px solid transparent; }
+    .sidebar .file-item:hover { background:#f8fafc; color:#0f172a; border-color:#e2e8f0; }
+    .sidebar .file-item.active { background:#eef2ff; color:#1e293b; border-color:#1e293b; font-weight:600; }
+    .main-content { flex:1; padding:40px 48px 40px 40px; overflow-y:auto; background:#f8fafc; }
+    .main-content h1 { font-size:48px; font-weight:800; letter-spacing:-0.02em; line-height:1.1; margin-bottom:8px; }
+    .main-content .subtitle { font-size:20px; color:#475569; margin-bottom:20px; }
+    .main-content .tags { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:32px; }
+    .main-content .tags span { background:#eef2ff; color:#1e3a8a; padding:6px 18px; border-radius:40px; font-size:14px; font-weight:600; }
+    .main-content .content-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; max-width:100%; }
+    .main-content .trends { background:white; padding:28px 32px; border-radius:20px; border:1px solid #e2e8f0; }
+    .main-content .trends h3 { font-size:20px; font-weight:700; margin-bottom:16px; color:#0f172a; }
+    .main-content .trends ul { list-style:none; padding:0; margin:0; }
+    .main-content .trends li { padding:12px 0; border-bottom:1px solid #f1f4f9; font-size:16px; color:#1e293b; display:flex; align-items:center; gap:14px; font-weight:500; }
+    .main-content .trends li:last-child { border-bottom:none; }
+    .main-content .why-section { background:white; padding:28px 32px; border-radius:20px; border:1px solid #e2e8f0; }
+    .main-content .why-section h3 { font-size:20px; font-weight:700; margin-bottom:16px; color:#0f172a; }
+    .main-content .why-section ul { list-style:none; padding:0; margin:0; }
+    .main-content .why-section li { padding:10px 0; border-bottom:1px solid #f1f4f9; font-size:15px; color:#1e293b; display:flex; align-items:center; gap:12px; font-weight:500; }
+    .main-content .why-section li:last-child { border-bottom:none; }
+    .main-content .file-grid { grid-column:1 / -1; display:grid; grid-template-columns:repeat(auto-fill, minmax(200px,1fr)); gap:16px; margin-top:8px; }
+    .file-card { background:white; padding:20px 20px 24px; border-radius:16px; border:1px solid #e2e8f0; text-decoration:none; color:#0f172a; transition:all 0.15s; display:block; }
+    .file-card:hover { background:#f8fafc; border-color:#1e293b; transform:translateY(-2px); box-shadow:0 8px 20px -8px rgba(30,58,138,0.1); }
+    .file-card .icon { font-size:24px; margin-bottom:8px; }
+    .file-card .name { font-weight:700; font-size:16px; margin-bottom:4px; }
+    .file-card .desc { font-size:13px; color:#64748b; line-height:1.4; }
+    .file-card .badge { display:inline-block; margin-top:10px; font-size:11px; font-weight:600; color:#1e293b; background:#eef2ff; padding:2px 12px; border-radius:40px; }
+    .main-content .tip-box { grid-column:1 / -1; background:#fefce8; border-left:4px solid #eab308; padding:20px 24px; border-radius:16px; font-size:16px; color:#1e293b; font-weight:500; margin-top:20px; }
+    .main-content .tip-box strong { color:#0f172a; }
+    .footer { border-top:2px solid #e2e8f0; padding:16px 32px; background:#ffffff; display:flex; justify-content:space-between; align-items:center; font-size:13px; color:#94a3b8; flex-shrink:0; flex-wrap:wrap; gap:12px; }
+    .footer .socials { display:flex; gap:18px; align-items:center; }
+    .footer .socials a { color:#1e293b; text-decoration:none; transition:color 0.2s, transform 0.2s; display:flex; align-items:center; justify-content:center; }
+    .footer .socials a:hover { color:#1e293b; transform:scale(1.1); }
+    .footer .socials svg { width:20px; height:20px; fill:currentColor; }
+    @media (max-width:1024px) { .sidebar { width:280px; padding:20px 16px; } .main-content { padding:32px 28px; } .main-content h1 { font-size:36px; } .main-content .content-grid { grid-template-columns:1fr; } .main-content .file-grid { grid-template-columns:repeat(auto-fill, minmax(160px,1fr)); } }
+    @media (max-width:768px) { .header { flex-direction:column; align-items:stretch; padding:16px; } .header-categories { gap:6px 12px; justify-content:center; } .app { flex-direction:column; overflow:visible; height:auto; } .sidebar { width:100%; border-right:none; border-bottom:2px solid #e2e8f0; height:auto; max-height:300px; overflow-y:auto; } .main-content { padding:24px 20px; overflow:visible; } .main-content h1 { font-size:32px; } .footer { flex-direction:column; align-items:flex-start; padding:16px; } }
+    @media (max-width:480px) { .main-content h1 { font-size:28px; } .main-content .file-grid { grid-template-columns:1fr; } }
+    .fade-in { animation:fadeIn 0.25s ease forwards; }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+    </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo" onclick="window.location.href='../../index.html'">SolveMap <span>solutions</span></div>
+            <nav class="header-categories"><a href="../fitness/index.html" class="">Fitness</a><a href="../finance/index.html" class="">Finance</a><a href="../health/index.html" class="">Health</a><a href="../nutrition/index.html" class="">Nutrition</a><a href="../career/index.html" class="">Career</a><a href="../study/index.html" class="">Study</a><a href="../technology/index.html" class="">Technology</a><a href="../travel/index.html" class="">Travel</a><a href="../relationships/index.html" class="">Relationships</a><a href="../productivity/index.html" class="active">Productivity</a></nav>
+        </header>
+        <div class="app">
+            <nav class="sidebar">
+    <div class="sidebar-title">📁 Habits</div>
+    <div class="back-link" onclick="window.location.href='../index.html'">← Back to Productivity</div>
+    <ul>
+    <li class="file-item" onclick="window.location.href='./how-to-build-a-morning-routine-for-peak-productivity.html'">how-to-build-a-morning-routine-for-peak-productivity</li><li class="file-item" onclick="window.location.href='./how-to-build-habits-that-stick.html'">how-to-build-habits-that-stick</li><li class="file-item" onclick="window.location.href='./how-to-create-an-evening-shutdown-routine.html'">how-to-create-an-evening-shutdown-routine</li><li class="file-item" onclick="window.location.href='./how-to-plan-your-week-effectively.html'">how-to-plan-your-week-effectively</li><li class="file-item" onclick="window.location.href='./how-to-stop-procrastinating-science-backed-strategies.html'">how-to-stop-procrastinating-science-backed-strategies</li><li class="file-item" onclick="window.location.href='./the-30-day-habit-challenge.html'">the-30-day-habit-challenge</li></ul></nav>
+            <main class="main-content" id="main-content">
+                <div id="content-inner" class="fade-in">
+    <h1>Habits</h1>
+    <p class="subtitle">Build habits that stick and transform your daily routine.</p>
+    <div class="tags"><span>#habits</span><span>#routine</span><span>#consistency</span><span>#growth</span></div>
+    <div class="content-grid">
+        <div class="trends">
+            <h3>🔥 What's trending</h3>
+            <ul><li>🔥 The 30‑day habit challenge builds lasting change</li><li>🧠 Science‑backed strategies beat willpower</li><li>🌅 Morning routines set the tone for the day</li><li>🌙 Evening shutdown routines improve sleep and recovery</li></ul>
+        </div>
+        <div class="why-section">
+            <h3>💡 Why Habits at SolveMap</h3>
+            <ul><li>🔥 Start with one small habit and build from there</li><li>🧠 Design your environment for success</li><li>🌅 Create a morning routine that energises you</li><li>🌙 End your day with intention and reflection</li></ul>
+        </div>
+        <div class="file-grid">
+            
+        <a href="./how-to-build-a-morning-routine-for-peak-productivity.html" class="file-card">
+            <div class="icon">📄</div>
+            <div class="name">How to Build a Morning Routine for Peak Productivity</div>
+            <div class="desc">Start your day with intention and set yourself up for success.</div>
+            <span class="badge">🌅 Morning</span>
+        </a>
+    
+        <a href="./how-to-build-habits-that-stick.html" class="file-card">
+            <div class="icon">📄</div>
+            <div class="name">How to Build Habits That Stick</div>
+            <div class="desc">Design habits that become automatic and transform your daily routine.</div>
+            <span class="badge">🧠 Habits</span>
+        </a>
+    
+        <a href="./how-to-create-an-evening-shutdown-routine.html" class="file-card">
+            <div class="icon">📄</div>
+            <div class="name">How to Create an Evening Shutdown Routine</div>
+            <div class="desc">End your day with intention and prepare for a restful night.</div>
+            <span class="badge">🌙 Evening</span>
+        </a>
+    
+        <a href="./how-to-plan-your-week-effectively.html" class="file-card">
+            <div class="icon">📄</div>
+            <div class="name">How to Plan Your Week Effectively</div>
+            <div class="desc">Create a weekly plan that sets you up for success and reduces decision fatigue.</div>
+            <span class="badge">📅 Planning</span>
+        </a>
+    
+        <a href="./how-to-stop-procrastinating-science-backed-strategies.html" class="file-card">
+            <div class="icon">📄</div>
+            <div class="name">How to Stop Procrastinating — Science‑Backed Strategies</div>
+            <div class="desc">Overcome procrastination with strategies backed by research.</div>
+            <span class="badge">🧠 Science</span>
+        </a>
+    
+        <a href="./the-30-day-habit-challenge.html" class="file-card">
+            <div class="icon">📄</div>
+            <div class="name">The 30‑Day Habit Challenge</div>
+            <div class="desc">Build lasting habits with a 30‑day challenge that actually works.</div>
+            <span class="badge">🔥 Challenge</span>
+        </a>
+    
+        </div>
+        <div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Habits are not about perfection — they're about progress, one day at a time.</div>
+    </div>
+    </div>
+            </main>
+        </div>
+        <footer class="footer"><span>SolveMap — a library of solutions</span><div class="socials"><span class="label">Follow us:</span><a href="https://pinterest.com/solvemap/" title="Pinterest"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.23 2.66 7.86 6.45 9.21-.09-.78-.17-1.98.03-2.83.18-.76 1.15-4.88 1.15-4.88s-.29-.58-.29-1.44c0-1.35.78-2.36 1.76-2.36.83 0 1.23.62 1.23 1.37 0 .84-.53 2.09-.81 3.25-.23.97.49 1.76 1.44 1.76 1.73 0 3.06-1.82 3.06-4.45 0-2.33-1.67-3.95-4.06-3.95-2.77 0-4.39 2.08-4.39 4.23 0 .84.32 1.74.72 2.23.08.1.09.18.06.28-.07.29-.23.91-.26 1.04-.04.18-.14.22-.33.13-1.24-.58-2.02-2.38-2.02-3.83 0-3.12 2.27-5.99 6.54-5.99 3.43 0 6.1 2.45 6.1 5.72 0 3.41-2.15 6.16-5.14 6.16-1 0-1.94-.52-2.26-1.13 0 0-.49 1.88-.61 2.34-.22.85-.82 1.92-1.22 2.57.92.28 1.9.44 2.92.44 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a><a href="https://www.tiktok.com/@solvemap" title="Tiktok"><svg viewBox="0 0 24 24"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.44 1.18-2.6 2.6-2.6.26 0 .51.04.75.12v-3.1a5.7 5.7 0 0 0-5.16 5.63c0 3.11 2.5 5.63 5.6 5.63 3.1 0 5.6-2.52 5.6-5.63V8.3c1.13.77 2.48 1.2 3.9 1.2V6.24c-.68 0-1.35-.24-1.9-.67z"/></svg></a><a href="https://www.youtube.com/@solvemap_top" title="Youtube"><svg viewBox="0 0 24 24"><path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15.5v-7l6 3.5-6 3.5z"/></svg></a><a href="https://t.me/solvemap" title="Telegram"><svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a></div></footer>
+    </body>
+    </html>
+    
