@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolveMap — solutions library</title>
+    <meta name="description" content="SolveMap — a library of practical solutions. Download free PDF guides on fitness, finance, health, study, and more. Solve your problem today." />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --accent: #f59e0b;
+        }
+        /* Стили для блока Services в hero */
+        .hero-services-card {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            border-radius: 20px;
+            padding: 28px 28px 32px;
+            box-shadow: 0 8px 24px rgba(30,58,138,0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 260px;
+            flex-shrink: 0;
+        }
+        .hero-services-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px rgba(30,58,138,0.2);
+        }
+        .hero-services-card .services-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+        .hero-services-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: white;
+        }
+        .hero-services-card p {
+            font-size: 14px;
+            opacity: 0.9;
+            line-height: 1.4;
+            margin-bottom: 16px;
+            color: white;
+        }
+        .hero-services-card .services-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            opacity: 0.85;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 12px;
+        }
+        .hero-services-card .arrow {
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .hero-services-card:hover .arrow {
+            transform: translateX(4px);
+        }
+        @media (max-width: 768px) {
+            .hero-services-card {
+                min-width: auto;
+                width: 100%;
+                padding: 20px 20px 24px;
+            }
+            .hero-services-card h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styles/index.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FS6Q6N9PCJ');
+    </script>
+</head>
+<body>
+    <div class="floating-emojis">
+        <div class="emoji e1">🏋️</div>
+        <div class="emoji e2">📊</div>
+        <div class="emoji e3">🧠</div>
+        <div class="emoji e4">🚀</div>
+        <div class="emoji e5">🔥</div>
+    </div>
+    
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" onclick="closeMobileMenu()">✕</button>
+        <div class="menu-title">📂 Navigation</div>
+        <a href="./services/index.html">🛠️ Services</a><a href="./fitness/index.html"><span class="icon">🏋️</span>Fitness</a><a href="./finance/index.html"><span class="icon">💰</span>Finance</a><a href="./health/index.html"><span class="icon">🩺</span>Health</a><a href="./nutrition/index.html"><span class="icon">🥗</span>Nutrition</a><a href="./career/index.html"><span class="icon">💼</span>Career</a><a href="./study/index.html"><span class="icon">📚</span>Study</a><a href="./technology/index.html"><span class="icon">💻</span>Technology</a><a href="./travel/index.html"><span class="icon">✈️</span>Travel</a><a href="./relationships/index.html"><span class="icon">💕</span>Relationships</a><a href="./productivity/index.html"><span class="icon">⏰</span>Productivity</a>
+    </div>
+    
+    <div class="container">
+        <header class="header">
+            <div class="logo" onclick="window.location.href='./index.html'">SolveMap <span>solutions</span></div>
+            
+            <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="Search for a problem..." autocomplete="off" />
+                <button onclick="performSearch()">Find</button>
+                <div id="search-results"></div>
+            </div>
+        </header>
+        <section class="hero" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px;">
+            <div style="flex: 1 1 300px;">
+                <h1>Find the answer<br />to <span class="highlight">any problem</span></h1>
+                <p>A curated library of practical guides, templates, and checklists — categorized so you can find what you need in seconds.</p>
+            </div>
+            <a href="./services/index.html" class="hero-services-card">
+                <span class="services-icon">🛠️</span>
+                <h3>Services</h3>
+                <p>Free calculators, generators &amp; checklists to get things done</p>
+                <div class="services-meta">
+                    <span>5 tools</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        </section>
+        <div class="grid">
+            
+            <a href="./fitness/index.html" class="card">
+                <span class="card-icon">🏋️</span>
+                <h3>Fitness</h3>
+                <p>Workouts, nutrition, recovery &amp; supplements</p>
+                <div class="meta">
+                    <span>41 solutions</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        
+            <a href="./finance/index.html" class="card">
+                <span class="card-icon">💰</span>
+                <h3>Finance</h3>
+                <p>Budgeting, investing, debt &amp; side hustles</p>
+                <div class="meta">
+                    <span>31 solutions</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        
+            <a href="./health/index.html" class="card">
+                <span class="card-icon">🩺</span>
+                <h3>Health</h3>
+                <p>Sleep, stress, posture &amp; immunity</p>
+                <div class="meta">
+                    <span>29 solutions</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        
+            <a href="./nutrition/index.html" class="card">
+                <span class="card-icon">🥗</span>
+                <h3>Nutrition</h3>
+                <p>Diets, meal prep, gut health &amp; supplements</p>
+                <div class="meta">
+                    <span>32 solutions</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        
+            <a href="./career/index.html" class="card">
+                <span class="card-icon">💼</span>
+                <h3>Career</h3>
+                <p>Job search, growth, freelancing &amp; branding</p>
+                <div class="meta">
+                    <span>32 solutions</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        
+            <a href="./study/index.html" class="card">
+                <span class="card-icon">📚</span>
+                <h3>Study</h3>
+                <p>Techniques, focus, exams &amp; AI for learning</p>
+                <div class="meta">
+                    <span>26 solutions</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        
+            <a href="./technology/index.html" class="card">
+                <span class="card-icon">💻</span>
+                <h3>Technology</h3>
+                <p>AI, cybersecurity, digital wellbeing &amp; skills</p>
+                <div class="meta">
+                    <span>30 solutions</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        
+            <a href="./travel/index.html" class="card">
+                <span class="card-icon">✈️</span>
+                <h3>Travel</h3>
+                <p>Planning, solo travel, nomad life &amp; hacks</p>
+                <div class="meta">
+                    <span>29 solutions</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        
+            <a href="./relationships/index.html" class="card">
+                <span class="card-icon">💕</span>
+                <h3>Relationships</h3>
+                <p>Communication, dating, self‑love &amp; resilience</p>
+                <div class="meta">
+                    <span>30 solutions</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        
+            <a href="./productivity/index.html" class="card">
+                <span class="card-icon">⏰</span>
+                <h3>Productivity</h3>
+                <p>Deep work, habits, energy &amp; systems</p>
+                <div class="meta">
+                    <span>31 solutions</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        
+        </div>
+        <footer class="footer"><span>SolveMap — a library of solutions</span><div class="socials"><span class="label">Follow us:</span><a href="https://pinterest.com/solvemap/" title="Pinterest"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.23 2.66 7.86 6.45 9.21-.09-.78-.17-1.98.03-2.83.18-.76 1.15-4.88 1.15-4.88s-.29-.58-.29-1.44c0-1.35.78-2.36 1.76-2.36.83 0 1.23.62 1.23 1.37 0 .84-.53 2.09-.81 3.25-.23.97.49 1.76 1.44 1.76 1.73 0 3.06-1.82 3.06-4.45 0-2.33-1.67-3.95-4.06-3.95-2.77 0-4.39 2.08-4.39 4.23 0 .84.32 1.74.72 2.23.08.1.09.18.06.28-.07.29-.23.91-.26 1.04-.04.18-.14.22-.33.13-1.24-.58-2.02-2.38-2.02-3.83 0-3.12 2.27-5.99 6.54-5.99 3.43 0 6.1 2.45 6.1 5.72 0 3.41-2.15 6.16-5.14 6.16-1 0-1.94-.52-2.26-1.13 0 0-.49 1.88-.61 2.34-.22.85-.82 1.92-1.22 2.57.92.28 1.9.44 2.92.44 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a><a href="https://www.tiktok.com/@solvemap" title="Tiktok"><svg viewBox="0 0 24 24"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.44 1.18-2.6 2.6-2.6.26 0 .51.04.75.12v-3.1a5.7 5.7 0 0 0-5.16 5.63c0 3.11 2.5 5.63 5.6 5.63 3.1 0 5.6-2.52 5.6-5.63V8.3c1.13.77 2.48 1.2 3.9 1.2V6.24c-.68 0-1.35-.24-1.9-.67z"/></svg></a><a href="https://www.youtube.com/@solvemap_top" title="Youtube"><svg viewBox="0 0 24 24"><path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15.5v-7l6 3.5-6 3.5z"/></svg></a><a href="https://t.me/solvemap" title="Telegram"><svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a></div></footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('mobileOverlay');
+            const hamburger = document.getElementById('hamburgerBtn');
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+        }
+        function closeMobileMenu() {
+            document.getElementById('mobileMenu').classList.remove('active');
+            document.getElementById('mobileOverlay').classList.remove('active');
+            document.getElementById('hamburgerBtn').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.getElementById('mobileOverlay').addEventListener('click', closeMobileMenu);
+        document.querySelectorAll('.mobile-menu a').forEach(link => link.addEventListener('click', closeMobileMenu));
+        
+        // ПОИСК
+        let fuse = null;
+        let searchIndex = [];
+        fetch('./search-index.json')
+            .then(response => response.json())
+            .then(data => {
+                searchIndex = data;
+                const options = { keys: ['title', 'description'], threshold: 0.3, includeScore: true, minMatchCharLength: 2 };
+                fuse = new Fuse(searchIndex, options);
+            }).catch(err => console.error('Search index load error:', err));
+
+        const searchInput = document.getElementById('search-input');
+        const resultsContainer = document.getElementById('search-results');
+
+        function performSearch() {
+            const query = searchInput.value.trim();
+            if (query.length < 2) { resultsContainer.style.display = 'none'; return; }
+            if (!fuse) {
+                resultsContainer.innerHTML = '<div style="padding:12px;color:#94a3b8;">Loading search index...</div>';
+                resultsContainer.style.display = 'block';
+                return;
+            }
+            const results = fuse.search(query);
+            if (results.length === 0) {
+                resultsContainer.innerHTML = '<div style="padding:12px;color:#94a3b8;">No results found</div>';
+                resultsContainer.style.display = 'block';
+                return;
+            }
+            let html = '';
+            results.slice(0, 10).forEach(result => {
+                const item = result.item;
+                const badge = item.badge ? `<span style="font-size:11px;background:#eef2ff;color:#1e3a8a;padding:2px 10px;border-radius:40px;margin-left:8px;">${item.badge}</span>` : '';
+                html += `<a href="${item.url}"><div class="result-title">${item.title} ${badge}</div><div class="result-desc">${item.description || 'Solution'}</div><div class="result-meta">${item.category || ''}</div></a>`;
+            });
+            resultsContainer.innerHTML = html;
+            resultsContainer.style.display = 'block';
+            resultsContainer.querySelectorAll('a').forEach(link => link.addEventListener('click', () => resultsContainer.style.display = 'none'));
+        }
+
+        searchInput.addEventListener('input', performSearch);
+        searchInput.addEventListener('keydown', function(e) { if (e.key === 'Enter') { e.preventDefault(); performSearch(); } });
+        document.addEventListener('click', function(e) { if (!e.target.closest('.search-wrapper')) resultsContainer.style.display = 'none'; });
+        document.querySelector('.search-wrapper button').addEventListener('click', performSearch);
+    </script>
+</body>
+</html>
