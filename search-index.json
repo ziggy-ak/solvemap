@@ -2571,5 +2571,46 @@
     "url": "./productivity/time-management/time-blocking-vs-time-boxing-explained.html",
     "category": "file",
     "badge": "📅 Planning"
+  },
+  {
+    "title": "Services — SolveMap",
+    "description": "Free and premium tools to solve your problems",
+    "url": "/services/",
+    "category": "services"
+  },
+  {
+    "title": "Calorie Calculator",
+    "description": "Calculate BMR, TDEE, macros and ideal weight",
+    "url": "/services/calorie-calculator/",
+    "category": "service",
+    "badge": "Free"
+  },
+  {
+    "title": "BMI Calculator",
+    "description": "Check your body mass index and get recommendations",
+    "url": "/services/bmi-calculator/",
+    "category": "service",
+    "badge": "Free"
+  },
+  {
+    "title": "Checklist Generator",
+    "description": "Create a checklist for any task in 1 minute",
+    "url": "/services/checklist-generator/",
+    "category": "service",
+    "badge": "Free"
+  },
+  {
+    "title": "Loan Calculator",
+    "description": "Calculate overpayment and monthly payments",
+    "url": "/services/loan-calculator/",
+    "category": "service",
+    "badge": "Free"
+  },
+  {
+    "title": "Workout Generator",
+    "description": "Get a personalized training program",
+    "url": "/services/workout-generator/",
+    "category": "service",
+    "badge": "Premium"
   }
 ]
