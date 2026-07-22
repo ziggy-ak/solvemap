@@ -1,0 +1,2616 @@
+[
+  {
+    "title": "SolveMap",
+    "description": "Library of practical solutions",
+    "url": "./",
+    "category": "home"
+  },
+  {
+    "title": "Services",
+    "description": "Free tools – calculators, generators, checklists",
+    "url": "./services/",
+    "category": "services"
+  },
+  {
+    "title": "Fitness",
+    "description": "Workouts, nutrition, recovery &amp; supplements",
+    "url": "./fitness/",
+    "category": "category"
+  },
+  {
+    "title": "Cardio",
+    "description": "Solutions in cardio",
+    "url": "./fitness/cardio/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Cardio vs Strength Training",
+    "description": "Understand the differences and benefits of each to decide your balance.",
+    "url": "./fitness/cardio/cardio-vs-strength-training/",
+    "category": "file",
+    "badge": "⚖️ Balance"
+  },
+  {
+    "title": "Couch to 5K Program",
+    "description": "Start running with the proven Couch to 5K program for beginners.",
+    "url": "./fitness/cardio/couch-to-5k-program/",
+    "category": "file",
+    "badge": "🏃 Running"
+  },
+  {
+    "title": "HIIT Workouts at Home",
+    "description": "Burn calories and improve fitness with high‑intensity interval training at home.",
+    "url": "./fitness/cardio/hiit-workouts-at-home/",
+    "category": "file",
+    "badge": "🔥 HIIT"
+  },
+  {
+    "title": "How to Start Running — 8‑Week Plan",
+    "description": "Another structured plan to transition from walking to running.",
+    "url": "./fitness/cardio/how-to-start-running-8-week-plan/",
+    "category": "file",
+    "badge": "👟 Running"
+  },
+  {
+    "title": "Low‑Impact Cardio Options",
+    "description": "Protect your joints while improving cardiovascular fitness.",
+    "url": "./fitness/cardio/low-impact-cardio-options/",
+    "category": "file",
+    "badge": "🚶 Low Impact"
+  },
+  {
+    "title": "Walking for Weight Loss",
+    "description": "Use walking as an effective, sustainable weight‑loss tool.",
+    "url": "./fitness/cardio/walking-for-weight-loss/",
+    "category": "file",
+    "badge": "🚶 Walking"
+  },
+  {
+    "title": "Guides",
+    "description": "Solutions in guides",
+    "url": "./fitness/guides/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Fitness Myths Debunked",
+    "description": "Separate fact from fiction with this guide to common fitness misconceptions.",
+    "url": "./fitness/guides/fitness-myths-debunked/",
+    "category": "file",
+    "badge": "🚫 Myths"
+  },
+  {
+    "title": "Home Workout Guide",
+    "description": "Create an effective home workout routine with minimal equipment.",
+    "url": "./fitness/guides/home-workout-guide/",
+    "category": "file",
+    "badge": "🏠 Home"
+  },
+  {
+    "title": "How to Build a Fitness Routine",
+    "description": "Design a sustainable fitness routine that fits your lifestyle.",
+    "url": "./fitness/guides/how-to-build-a-fitness-routine/",
+    "category": "file",
+    "badge": "📋 Routine"
+  },
+  {
+    "title": "No‑Equipment Workout Guide",
+    "description": "Get a great workout without any equipment, anywhere.",
+    "url": "./fitness/guides/no-equipment-workout-guide/",
+    "category": "file",
+    "badge": "🏠 No Gear"
+  },
+  {
+    "title": "Nutrition for Fitness",
+    "description": "Comprehensive nutrition guide for active individuals.",
+    "url": "./fitness/guides/nutrition-for-fitness/",
+    "category": "file",
+    "badge": "📚 Nutrition"
+  },
+  {
+    "title": "Tracking Progress Guide",
+    "description": "Monitor your fitness journey effectively to stay motivated and adjust your plan.",
+    "url": "./fitness/guides/tracking-progress-guide/",
+    "category": "file",
+    "badge": "📊 Progress"
+  },
+  {
+    "title": "Nutrition",
+    "description": "Solutions in nutrition",
+    "url": "./fitness/nutrition/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Fueling Your Hybrid Workouts",
+    "description": "Eat right for workouts that combine strength and cardio.",
+    "url": "./fitness/nutrition/fueling-your-hybrid-workouts/",
+    "category": "file",
+    "badge": "🔥 Hybrid"
+  },
+  {
+    "title": "Healthy Snacks for Fitness Lovers",
+    "description": "Fuel your body with nutritious snacks that support your fitness goals.",
+    "url": "./fitness/nutrition/healthy-snacks-for-fitness-lovers/",
+    "category": "file",
+    "badge": "🍎 Snacks"
+  },
+  {
+    "title": "High‑Protein Meal Plan",
+    "description": "A sample meal plan to help you meet your daily protein goals.",
+    "url": "./fitness/nutrition/high-protein-meal-plan/",
+    "category": "file",
+    "badge": "🍗 Protein"
+  },
+  {
+    "title": "Nutrition for Longevity",
+    "description": "Eat for a long, healthy life with evidence‑based nutritional strategies.",
+    "url": "./fitness/nutrition/nutrition-for-longevity/",
+    "category": "file",
+    "badge": "🌿 Longevity"
+  },
+  {
+    "title": "What to Eat Before and After a Workout",
+    "description": "Optimise your pre‑ and post‑workout nutrition for better performance and recovery.",
+    "url": "./fitness/nutrition/what-to-eat-before-and-after-a-workout/",
+    "category": "file",
+    "badge": "⏰ Timing"
+  },
+  {
+    "title": "Recovery",
+    "description": "Solutions in recovery",
+    "url": "./fitness/recovery/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Active Recovery",
+    "description": "Incorporate light activity on rest days to speed up recovery.",
+    "url": "./fitness/recovery/active-recovery/",
+    "category": "file",
+    "badge": "🏃 Active"
+  },
+  {
+    "title": "Foam Rolling Guide",
+    "description": "Use foam rolling to release tension and improve mobility.",
+    "url": "./fitness/recovery/foam-rolling-guide/",
+    "category": "file",
+    "badge": "🧘 Roll"
+  },
+  {
+    "title": "Injury Prevention",
+    "description": "Prevent common workout injuries with proper technique and preparation.",
+    "url": "./fitness/recovery/injury-prevention/",
+    "category": "file",
+    "badge": "🛡️ Prevention"
+  },
+  {
+    "title": "Post‑Workout Stretching Routine",
+    "description": "Cool down and stretch effectively after your workouts.",
+    "url": "./fitness/recovery/post-workout-stretching-routine/",
+    "category": "file",
+    "badge": "🧘 Stretch"
+  },
+  {
+    "title": "The Science of Recovery",
+    "description": "Understand the physiological processes behind recovery and how to optimise them.",
+    "url": "./fitness/recovery/science-of-recovery/",
+    "category": "file",
+    "badge": "🔬 Science"
+  },
+  {
+    "title": "Sleep Guide for Better Recovery",
+    "description": "Optimise your sleep to enhance workout recovery and performance.",
+    "url": "./fitness/recovery/sleep-guide-for-better-recovery/",
+    "category": "file",
+    "badge": "😴 Sleep"
+  },
+  {
+    "title": "Strength",
+    "description": "Solutions in strength",
+    "url": "./fitness/strength/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Beginner Strength Training — 4‑Week Plan",
+    "description": "A structured 4‑week strength training program for absolute beginners.",
+    "url": "./fitness/strength/beginner-strength-training-4-week-plan/",
+    "category": "file",
+    "badge": "📅 Plan"
+  },
+  {
+    "title": "Bodyweight Exercises for Muscle Building",
+    "description": "Build muscle using just your body weight with advanced techniques.",
+    "url": "./fitness/strength/bodyweight-exercises-for-muscle-building/",
+    "category": "file",
+    "badge": "💪 Bodyweight"
+  },
+  {
+    "title": "Compound vs Isolation Exercises",
+    "description": "Learn the differences and when to use each type of exercise.",
+    "url": "./fitness/strength/compound-vs-isolation-exercises/",
+    "category": "file",
+    "badge": "🏋️ Exercises"
+  },
+  {
+    "title": "Form and Technique Guide",
+    "description": "Master proper form for key strength exercises to prevent injury and maximise results.",
+    "url": "./fitness/strength/form-and-technique-guide/",
+    "category": "file",
+    "badge": "📐 Form"
+  },
+  {
+    "title": "Motivation and Consistency",
+    "description": "Stay motivated and build consistency in your strength training.",
+    "url": "./fitness/strength/motivation-and-consistency/",
+    "category": "file",
+    "badge": "🔥 Motivation"
+  },
+  {
+    "title": "Progressive Overload Guide",
+    "description": "Apply the principle of progressive overload to continually improve strength.",
+    "url": "./fitness/strength/progressive-overload-guide/",
+    "category": "file",
+    "badge": "📈 Progress"
+  },
+  {
+    "title": "Recovery and Rest Days",
+    "description": "Understand why rest days are essential for strength gains and overall health.",
+    "url": "./fitness/strength/recovery-and-rest-days/",
+    "category": "file",
+    "badge": "🛌 Rest"
+  },
+  {
+    "title": "Strength Training for Women",
+    "description": "Debunk myths and provide a strength training guide specifically for women.",
+    "url": "./fitness/strength/strength-training-for-women/",
+    "category": "file",
+    "badge": "👩 Women"
+  },
+  {
+    "title": "Supplements",
+    "description": "Solutions in supplements",
+    "url": "./fitness/supplements/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Creatine Explained",
+    "description": "Learn the science, benefits, and usage of creatine supplementation.",
+    "url": "./fitness/supplements/creatine-explained/",
+    "category": "file",
+    "badge": "🧪 Creatine"
+  },
+  {
+    "title": "Pre‑Workout Supplements",
+    "description": "Understand pre‑workout ingredients and choose the right product.",
+    "url": "./fitness/supplements/pre-workout-supplements/",
+    "category": "file",
+    "badge": "⚡ Performance"
+  },
+  {
+    "title": "Supplements 101",
+    "description": "A beginner's overview of fitness supplements and what you really need.",
+    "url": "./fitness/supplements/supplements-101/",
+    "category": "file",
+    "badge": "📚 Basics"
+  },
+  {
+    "title": "Vitamins & Minerals for Active People",
+    "description": "Essential micronutrients to support your active lifestyle.",
+    "url": "./fitness/supplements/vitamins-minerals-for-active-people/",
+    "category": "file",
+    "badge": "💊 Micronutrients"
+  },
+  {
+    "title": "Workouts",
+    "description": "Solutions in workouts",
+    "url": "./fitness/workouts/",
+    "category": "subcategory"
+  },
+  {
+    "title": "30‑Day Home Workout Plan",
+    "description": "A complete 30‑day workout plan to do at home with no equipment.",
+    "url": "./fitness/workouts/30-day-home-workout-plan/",
+    "category": "file",
+    "badge": "📅 30 Days"
+  },
+  {
+    "title": "Beginner Strength Training",
+    "description": "A beginner‑friendly strength training overview.",
+    "url": "./fitness/workouts/beginner-strength-training/",
+    "category": "file",
+    "badge": "🏋️ Beginner"
+  },
+  {
+    "title": "Functional Strength Training",
+    "description": "Build strength that translates to real‑life movements.",
+    "url": "./fitness/workouts/functional-strength-training/",
+    "category": "file",
+    "badge": "🏋️ Functional"
+  },
+  {
+    "title": "Home Gym Essentials",
+    "description": "Equip your home gym with the essentials for effective workouts.",
+    "url": "./fitness/workouts/home-gym-essentials/",
+    "category": "file",
+    "badge": "🏠 Setup"
+  },
+  {
+    "title": "How to Start Running",
+    "description": "A comprehensive guide to beginning your running journey.",
+    "url": "./fitness/workouts/how-to-start-running/",
+    "category": "file",
+    "badge": "👟 Running"
+  },
+  {
+    "title": "Walking Workouts",
+    "description": "Turn walking into a structured workout for fitness and health.",
+    "url": "./fitness/workouts/walking-workouts/",
+    "category": "file",
+    "badge": "🚶 Workout"
+  },
+  {
+    "title": "Finance",
+    "description": "Budgeting, investing, debt &amp; side hustles",
+    "url": "./finance/",
+    "category": "category"
+  },
+  {
+    "title": "Budgeting",
+    "description": "Solutions in budgeting",
+    "url": "./finance/budgeting/",
+    "category": "subcategory"
+  },
+  {
+    "title": "50‑30‑20 Budget Rule",
+    "description": "Apply the popular 50‑30‑20 rule to simplify your budgeting.",
+    "url": "./finance/budgeting/50-30-20-budget-rule/",
+    "category": "file",
+    "badge": "📊 Rule"
+  },
+  {
+    "title": "7‑Day No‑Spend Challenge",
+    "description": "Reset your spending habits with a week of no unnecessary purchases.",
+    "url": "./finance/budgeting/7-day-no-spend-challenge/",
+    "category": "file",
+    "badge": "🚫 Challenge"
+  },
+  {
+    "title": "How to Build an Emergency Fund",
+    "description": "Create a financial safety net for unexpected expenses.",
+    "url": "./finance/budgeting/how-to-build-an-emergency-fund/",
+    "category": "file",
+    "badge": "🛡️ Safety Net"
+  },
+  {
+    "title": "How to Track Your Spending",
+    "description": "Gain visibility into your spending habits and take control of your money.",
+    "url": "./finance/budgeting/how-to-track-your-spending/",
+    "category": "file",
+    "badge": "📊 Tracking"
+  },
+  {
+    "title": "Zero‑Based Budgeting Guide",
+    "description": "Give every dollar a job with zero‑based budgeting.",
+    "url": "./finance/budgeting/zero-based-budgeting-guide/",
+    "category": "file",
+    "badge": "📋 Budgeting"
+  },
+  {
+    "title": "Debt",
+    "description": "Solutions in debt",
+    "url": "./finance/debt/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Credit Score Factors Explained",
+    "description": "Learn what affects your credit score and how to improve it.",
+    "url": "./finance/debt/credit-score-factors-explained/",
+    "category": "file",
+    "badge": "📈 Score"
+  },
+  {
+    "title": "How to Build a Good Credit Score",
+    "description": "Establish a strong credit history from scratch or rebuild after setbacks.",
+    "url": "./finance/debt/how-to-build-good-credit-score/",
+    "category": "file",
+    "badge": "📈 Build"
+  },
+  {
+    "title": "How to Pay Off Debt Fast",
+    "description": "Accelerate your debt repayment with proven strategies.",
+    "url": "./finance/debt/how-to-pay-off-debt-fast/",
+    "category": "file",
+    "badge": "💰 Debt"
+  },
+  {
+    "title": "How to Read Your Credit Report",
+    "description": "Understand your credit report and check for errors that could hurt your score.",
+    "url": "./finance/debt/how-to-read-your-credit-report/",
+    "category": "file",
+    "badge": "📊 Credit"
+  },
+  {
+    "title": "Should You Invest or Pay Off Debt First?",
+    "description": "Make the right decision by comparing interest rates and risk.",
+    "url": "./finance/debt/should-you-invest-or-pay-off-debt-first/",
+    "category": "file",
+    "badge": "⚖️ Decision"
+  },
+  {
+    "title": "Investing",
+    "description": "Solutions in investing",
+    "url": "./finance/investing/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Calculate ROI",
+    "description": "Learn to measure the return on your investments with confidence.",
+    "url": "./finance/investing/how-to-calculate-roi/",
+    "category": "file",
+    "badge": "📊 ROI"
+  },
+  {
+    "title": "How to Start Investing with $100",
+    "description": "Begin your investment journey with a small amount of money.",
+    "url": "./finance/investing/how-to-start-investing-with-100/",
+    "category": "file",
+    "badge": "💵 Start Small"
+  },
+  {
+    "title": "Index Funds vs ETFs — What's the Difference?",
+    "description": "Understand the similarities and differences between index funds and ETFs.",
+    "url": "./finance/investing/index-funds-vs-etfs-what-s-the-difference/",
+    "category": "file",
+    "badge": "📊 Investing"
+  },
+  {
+    "title": "Investing for Beginners",
+    "description": "The ultimate beginner's guide to investing in the stock market.",
+    "url": "./finance/investing/investing-for-beginners/",
+    "category": "file",
+    "badge": "📚 Beginner"
+  },
+  {
+    "title": "Warren Buffett's Advice for Beginners",
+    "description": "Learn timeless investing wisdom from the Oracle of Omaha.",
+    "url": "./finance/investing/warren-buffett-s-advice-for-beginners/",
+    "category": "file",
+    "badge": "📈 Wisdom"
+  },
+  {
+    "title": "What Is Passive Investing?",
+    "description": "Understand the philosophy and benefits of passive investing.",
+    "url": "./finance/investing/what-is-passive-investing/",
+    "category": "file",
+    "badge": "📊 Passive"
+  },
+  {
+    "title": "Literacy",
+    "description": "Solutions in literacy",
+    "url": "./finance/literacy/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Common Financial Mistakes to Avoid",
+    "description": "Learn from others' financial errors to protect your own money.",
+    "url": "./finance/literacy/common-financial-mistakes-to-avoid/",
+    "category": "file",
+    "badge": "🚫 Mistakes"
+  },
+  {
+    "title": "Compound Interest Explained",
+    "description": "Understand the power of compound interest and how it can grow your wealth.",
+    "url": "./finance/literacy/compound-interest-explained/",
+    "category": "file",
+    "badge": "📈 Compound"
+  },
+  {
+    "title": "Financial Jargon Dictionary",
+    "description": "Decode the complex language of finance and investing.",
+    "url": "./finance/literacy/financial-jargon-dictionary/",
+    "category": "file",
+    "badge": "📚 Dictionary"
+  },
+  {
+    "title": "How to Read a Bank Statement",
+    "description": "Understand your bank statement and spot errors or fees.",
+    "url": "./finance/literacy/how-to-read-a-bank-statement/",
+    "category": "file",
+    "badge": "🏦 Banking"
+  },
+  {
+    "title": "Inflation and Your Money",
+    "description": "Learn how inflation erodes your purchasing power and how to protect your savings.",
+    "url": "./finance/literacy/inflation-and-your-money/",
+    "category": "file",
+    "badge": "📈 Inflation"
+  },
+  {
+    "title": "Planning",
+    "description": "Solutions in planning",
+    "url": "./finance/planning/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Emergency Fund vs Investing",
+    "description": "Decide how to balance saving for emergencies and investing for growth.",
+    "url": "./finance/planning/emergency-fund-vs-investing/",
+    "category": "file",
+    "badge": "⚖️ Balance"
+  },
+  {
+    "title": "Financial Planning for Gen Z",
+    "description": "Address the unique financial challenges and opportunities facing Gen Z.",
+    "url": "./finance/planning/financial-planning-for-gen-z/",
+    "category": "file",
+    "badge": "📊 Gen Z"
+  },
+  {
+    "title": "How to Build Wealth in Your 20s",
+    "description": "Lay the foundation for lifelong wealth with smart habits in your 20s.",
+    "url": "./finance/planning/how-to-build-wealth-in-your-20s/",
+    "category": "file",
+    "badge": "📈 Wealth"
+  },
+  {
+    "title": "How to Recover from Overspending",
+    "description": "Get back on track after a spending binge with practical steps.",
+    "url": "./finance/planning/how-to-recover-from-overspending/",
+    "category": "file",
+    "badge": "💸 Recovery"
+  },
+  {
+    "title": "How to Set Financial Goals",
+    "description": "Define and achieve your financial goals with a clear plan.",
+    "url": "./finance/planning/how-to-set-financial-goals/",
+    "category": "file",
+    "badge": "🎯 Goals"
+  },
+  {
+    "title": "Side-hustles",
+    "description": "Solutions in side-hustles",
+    "url": "./finance/side-hustles/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Affiliate Marketing for Beginners",
+    "description": "Start earning commissions by promoting products you love.",
+    "url": "./finance/side-hustles/affiliate-marketing-for-beginners/",
+    "category": "file",
+    "badge": "🤝 Affiliate"
+  },
+  {
+    "title": "Digital Product Stacking",
+    "description": "Create and sell multiple digital products to build a sustainable online business.",
+    "url": "./finance/side-hustles/digital-product-stacking/",
+    "category": "file",
+    "badge": "📦 Digital"
+  },
+  {
+    "title": "How to Start Freelancing",
+    "description": "Launch your freelancing career and earn income on your own terms.",
+    "url": "./finance/side-hustles/how-to-start-freelancing/",
+    "category": "file",
+    "badge": "💼 Freelancing"
+  },
+  {
+    "title": "Micro‑Investing Apps Guide",
+    "description": "Start investing with spare change using micro‑investing apps.",
+    "url": "./finance/side-hustles/micro-investing-apps-guide/",
+    "category": "file",
+    "badge": "📱 Apps"
+  },
+  {
+    "title": "Passive Income Ideas 2026",
+    "description": "Explore the best passive income ideas for the coming year.",
+    "url": "./finance/side-hustles/passive-income-ideas-2026/",
+    "category": "file",
+    "badge": "🌐 Passive"
+  },
+  {
+    "title": "Health",
+    "description": "Sleep, stress, posture &amp; immunity",
+    "url": "./health/",
+    "category": "category"
+  },
+  {
+    "title": "First-aid",
+    "description": "Solutions in first-aid",
+    "url": "./health/first-aid/",
+    "category": "subcategory"
+  },
+  {
+    "title": "CPR & Choking First Aid",
+    "description": "Essential CPR and choking rescue techniques for adults, children, and infants.",
+    "url": "./health/first-aid/cpr-choking-first-aid/",
+    "category": "file",
+    "badge": "🫀 CPR"
+  },
+  {
+    "title": "Home First‑Aid Kit Checklist",
+    "description": "Build a complete home first‑aid kit for any emergency.",
+    "url": "./health/first-aid/home-first-aid-kit-checklist/",
+    "category": "file",
+    "badge": "📋 Checklist"
+  },
+  {
+    "title": "How to Recognize Stroke Symptoms",
+    "description": "Learn the FAST method to identify a stroke and act quickly.",
+    "url": "./health/first-aid/how-to-recognize-stroke-symptoms/",
+    "category": "file",
+    "badge": "🚨 Emergency"
+  },
+  {
+    "title": "How to Treat Minor Wounds",
+    "description": "Proper wound care to prevent infection and promote healing.",
+    "url": "./health/first-aid/how-to-treat-minor-wounds/",
+    "category": "file",
+    "badge": "🩹 Wound Care"
+  },
+  {
+    "title": "Natural Remedies for Common Ailments",
+    "description": "Safe and effective natural remedies for everyday health issues.",
+    "url": "./health/first-aid/natural-remedies-for-common-ailments/",
+    "category": "file",
+    "badge": "🌿 Natural"
+  },
+  {
+    "title": "Immunity",
+    "description": "Solutions in immunity",
+    "url": "./health/immunity/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Anti‑Inflammatory Lifestyle Guide",
+    "description": "Reduce chronic inflammation with diet, exercise, and stress management.",
+    "url": "./health/immunity/anti-inflammatory-lifestyle-guide/",
+    "category": "file",
+    "badge": "🔥 Inflammation"
+  },
+  {
+    "title": "Essential Vitamins for Immunity",
+    "description": "Discover the key vitamins and minerals that support a healthy immune system.",
+    "url": "./health/immunity/essential-vitamins-for-immunity/",
+    "category": "file",
+    "badge": "💊 Immunity"
+  },
+  {
+    "title": "Gut Health Basics",
+    "description": "Learn why gut health is the foundation of overall wellness and how to improve it.",
+    "url": "./health/immunity/gut-health-basics/",
+    "category": "file",
+    "badge": "🦠 Gut Health"
+  },
+  {
+    "title": "How to Strengthen Your Immune System",
+    "description": "Practical strategies to build a resilient immune system naturally.",
+    "url": "./health/immunity/how-to-strengthen-your-immune-system/",
+    "category": "file",
+    "badge": "🛡️ Immunity"
+  },
+  {
+    "title": "Immunity‑Boosting Foods",
+    "description": "Discover the top foods that support your immune system and how to incorporate them into your diet.",
+    "url": "./health/immunity/immunity-boosting-foods/",
+    "category": "file",
+    "badge": "🥗 Nutrition"
+  },
+  {
+    "title": "Intermittent Fasting for Health",
+    "description": "Understand how intermittent fasting can benefit your health beyond weight management.",
+    "url": "./health/immunity/intermittent-fasting-for-health/",
+    "category": "file",
+    "badge": "⏰ Fasting"
+  },
+  {
+    "title": "Posture",
+    "description": "Solutions in posture",
+    "url": "./health/posture/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Daily Posture Check Routine",
+    "description": "Develop a daily habit of checking and correcting your posture throughout the day.",
+    "url": "./health/posture/daily-posture-check-routine/",
+    "category": "file",
+    "badge": "🧘 Posture"
+  },
+  {
+    "title": "Desk Ergonomics Guide",
+    "description": "Set up your workstation to prevent pain and boost productivity.",
+    "url": "./health/posture/desk-ergonomics-guide/",
+    "category": "file",
+    "badge": "🖥️ Ergonomics"
+  },
+  {
+    "title": "Exercises for Lower Back Pain",
+    "description": "Strengthen and stretch your lower back to reduce pain and prevent injury.",
+    "url": "./health/posture/exercises-for-lower-back-pain/",
+    "category": "file",
+    "badge": "💪 Back Health"
+  },
+  {
+    "title": "How to Sit Properly",
+    "description": "Master the art of sitting to prevent back pain and improve posture.",
+    "url": "./health/posture/how-to-sit-properly/",
+    "category": "file",
+    "badge": "🪑 Ergonomics"
+  },
+  {
+    "title": "Morning Mobility Flow",
+    "description": "Start your day with a gentle mobility routine to improve flexibility and reduce stiffness.",
+    "url": "./health/posture/morning-mobility-flow/",
+    "category": "file",
+    "badge": "🧘 Mobility"
+  },
+  {
+    "title": "Neck & Shoulder Tension Relief",
+    "description": "Simple exercises and stretches to release tension in your neck and shoulders.",
+    "url": "./health/posture/neck-shoulder-tension-relief/",
+    "category": "file",
+    "badge": "💆 Relief"
+  },
+  {
+    "title": "Sleep",
+    "description": "Solutions in sleep",
+    "url": "./health/sleep/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Circadian Rhythm Guide",
+    "description": "Understand and align your daily routine with your body's natural clock.",
+    "url": "./health/sleep/circadian-rhythm-guide/",
+    "category": "file",
+    "badge": "🌙 Rhythm"
+  },
+  {
+    "title": "How to Fix Your Sleep Schedule",
+    "description": "Reset your sleep schedule with proven techniques for better sleep hygiene.",
+    "url": "./health/sleep/how-to-fix-your-sleep-schedule/",
+    "category": "file",
+    "badge": "⏰ Schedule"
+  },
+  {
+    "title": "Optimal Sleep Temperature & Environment",
+    "description": "Create the perfect sleep environment for deeper, more restorative sleep.",
+    "url": "./health/sleep/optimal-sleep-temperature-environment/",
+    "category": "file",
+    "badge": "🛏️ Environment"
+  },
+  {
+    "title": "Power Napping for Energy",
+    "description": "Master the art of the power nap to boost alertness and performance.",
+    "url": "./health/sleep/power-napping-for-energy/",
+    "category": "file",
+    "badge": "💤 Napping"
+  },
+  {
+    "title": "Sleep Hygiene Checklist",
+    "description": "A comprehensive checklist for optimal sleep hygiene.",
+    "url": "./health/sleep/sleep-hygiene-checklist/",
+    "category": "file",
+    "badge": "📋 Checklist"
+  },
+  {
+    "title": "Sleep Tracking Methods Without Gadgets",
+    "description": "Improve your sleep by tracking it manually, without technology.",
+    "url": "./health/sleep/sleep-tracking-methods-without-gadgets/",
+    "category": "file",
+    "badge": "📓 Tracking"
+  },
+  {
+    "title": "Stress",
+    "description": "Solutions in stress",
+    "url": "./health/stress/",
+    "category": "subcategory"
+  },
+  {
+    "title": "5‑Minute Stress Relief Techniques",
+    "description": "Quick stress‑relief techniques you can do anywhere, anytime.",
+    "url": "./health/stress/5-minute-stress-relief-techniques/",
+    "category": "file",
+    "badge": "⏱️ Quick Relief"
+  },
+  {
+    "title": "Breathwork Methods — 4‑7‑8 & Box Breathing",
+    "description": "Use powerful breathing techniques to calm your nervous system instantly.",
+    "url": "./health/stress/breathwork-methods-4-7-8-box-breathing/",
+    "category": "file",
+    "badge": "🌬️ Breathwork"
+  },
+  {
+    "title": "Cognitive Reframing Guide",
+    "description": "Change negative thought patterns by reframing your perspective.",
+    "url": "./health/stress/cognitive-reframing-guide/",
+    "category": "file",
+    "badge": "🧠 Reframing"
+  },
+  {
+    "title": "How to Reduce Overthinking",
+    "description": "Break the cycle of overthinking and rumination with proven strategies.",
+    "url": "./health/stress/how-to-reduce-overthinking/",
+    "category": "file",
+    "badge": "🧠 Overthinking"
+  },
+  {
+    "title": "Mindfulness for Beginners",
+    "description": "Start your mindfulness journey with simple, practical techniques.",
+    "url": "./health/stress/mindfulness-for-beginners/",
+    "category": "file",
+    "badge": "🧘 Mindfulness"
+  },
+  {
+    "title": "Morning Routine for Mental Clarity",
+    "description": "Design a morning routine that sets you up for a focused and calm day.",
+    "url": "./health/stress/morning-routine-for-mental-clarity/",
+    "category": "file",
+    "badge": "☀️ Morning"
+  },
+  {
+    "title": "Nutrition",
+    "description": "Diets, meal prep, gut health &amp; supplements",
+    "url": "./nutrition/",
+    "category": "category"
+  },
+  {
+    "title": "Basics",
+    "description": "Solutions in basics",
+    "url": "./nutrition/basics/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Fibermaxxing — The 2026 Trend",
+    "description": "Understand the fibermaxxing trend and why fibre is essential for health.",
+    "url": "./nutrition/basics/fibermaxxing-the-2026-trend/",
+    "category": "file",
+    "badge": "🌾 Fiber"
+  },
+  {
+    "title": "High‑Protein Diet Guide",
+    "description": "Understand the benefits of a high‑protein diet and how to follow it.",
+    "url": "./nutrition/basics/high-protein-diet-guide/",
+    "category": "file",
+    "badge": "💪 Protein"
+  },
+  {
+    "title": "Intermittent Fasting Protocols",
+    "description": "Choose the right intermittent fasting protocol for your lifestyle.",
+    "url": "./nutrition/basics/intermittent-fasting-protocols/",
+    "category": "file",
+    "badge": "⏰ Fasting"
+  },
+  {
+    "title": "Macronutrients Explained",
+    "description": "Understand protein, carbohydrates, and fats — the building blocks of nutrition.",
+    "url": "./nutrition/basics/macronutrients-explained/",
+    "category": "file",
+    "badge": "🥗 Macros"
+  },
+  {
+    "title": "Mediterranean Diet Guide",
+    "description": "Follow the Mediterranean diet for better health and longevity.",
+    "url": "./nutrition/basics/mediterranean-diet-guide/",
+    "category": "file",
+    "badge": "🌿 Mediterranean"
+  },
+  {
+    "title": "Micronutrients Guide",
+    "description": "Understand the essential vitamins and minerals your body needs.",
+    "url": "./nutrition/basics/micronutrients-guide/",
+    "category": "file",
+    "badge": "🧪 Micronutrients"
+  },
+  {
+    "title": "Plant‑Based Diet for Beginners",
+    "description": "Transition to a plant‑based diet with confidence and ease.",
+    "url": "./nutrition/basics/plant-based-diet-for-beginners/",
+    "category": "file",
+    "badge": "🌱 Plant‑Based"
+  },
+  {
+    "title": "Gut-health",
+    "description": "Solutions in gut-health",
+    "url": "./nutrition/gut-health/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Fermented Foods Guide",
+    "description": "Discover the benefits of fermented foods and how to incorporate them into your diet.",
+    "url": "./nutrition/gut-health/fermented-foods-guide/",
+    "category": "file",
+    "badge": "🥫 Fermented"
+  },
+  {
+    "title": "Foods for a Healthy Microbiome",
+    "description": "Eat for your microbiome — foods that support a healthy gut ecosystem.",
+    "url": "./nutrition/gut-health/foods-for-a-healthy-microbiome/",
+    "category": "file",
+    "badge": "🥗 Microbiome"
+  },
+  {
+    "title": "Gut Health 101",
+    "description": "The beginner's guide to gut health and the microbiome.",
+    "url": "./nutrition/gut-health/gut-health-101/",
+    "category": "file",
+    "badge": "🦠 Microbiome"
+  },
+  {
+    "title": "How to Improve Digestion Naturally",
+    "description": "Support your digestive health with simple, natural strategies.",
+    "url": "./nutrition/gut-health/how-to-improve-digestion-naturally/",
+    "category": "file",
+    "badge": "🌿 Digestion"
+  },
+  {
+    "title": "Intermittent Fasting and Gut Health",
+    "description": "Understand how intermittent fasting affects your gut microbiome.",
+    "url": "./nutrition/gut-health/intermittent-fasting-and-gut-health/",
+    "category": "file",
+    "badge": "⏰ Fasting"
+  },
+  {
+    "title": "Prebiotics vs Probiotics",
+    "description": "Understand the difference and how they work together for gut health.",
+    "url": "./nutrition/gut-health/prebiotics-vs-probiotics/",
+    "category": "file",
+    "badge": "🧫 Microbiome"
+  },
+  {
+    "title": "Meal-planning",
+    "description": "Solutions in meal-planning",
+    "url": "./nutrition/meal-planning/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Batch Cooking Basics",
+    "description": "Save time and eat healthier with batch cooking.",
+    "url": "./nutrition/meal-planning/batch-cooking-basics/",
+    "category": "file",
+    "badge": "🍳 Batch Cooking"
+  },
+  {
+    "title": "Grocery Shopping on a Budget",
+    "description": "Shop smart and save money on groceries without sacrificing nutrition.",
+    "url": "./nutrition/meal-planning/grocery-shopping-on-a-budget/",
+    "category": "file",
+    "badge": "🛒 Budget"
+  },
+  {
+    "title": "Healthy Eating on a Busy Schedule",
+    "description": "Eat well even when you're short on time.",
+    "url": "./nutrition/meal-planning/healthy-eating-on-a-busy-schedule/",
+    "category": "file",
+    "badge": "⏰ Busy"
+  },
+  {
+    "title": "How to Read Food Labels",
+    "description": "Make informed food choices by understanding what's on the label.",
+    "url": "./nutrition/meal-planning/how-to-read-food-labels/",
+    "category": "file",
+    "badge": "📊 Labels"
+  },
+  {
+    "title": "Meal Prep 101",
+    "description": "Master the basics of meal prep for healthier, stress‑free eating.",
+    "url": "./nutrition/meal-planning/meal-prep-101/",
+    "category": "file",
+    "badge": "🍳 Meal Prep"
+  },
+  {
+    "title": "Weekly Meal Planning Guide",
+    "description": "Plan your meals for the week and make healthy eating effortless.",
+    "url": "./nutrition/meal-planning/weekly-meal-planning-guide/",
+    "category": "file",
+    "badge": "📅 Planning"
+  },
+  {
+    "title": "Specific-goals",
+    "description": "Solutions in specific-goals",
+    "url": "./nutrition/specific-goals/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Nutrition for Men",
+    "description": "Eat for optimal health and performance — nutrition tailored for men.",
+    "url": "./nutrition/specific-goals/nutrition-for-men/",
+    "category": "file",
+    "badge": "💪 Men"
+  },
+  {
+    "title": "Nutrition for Mental Health",
+    "description": "Eat for your brain — nutrition that supports mental health and well‑being.",
+    "url": "./nutrition/specific-goals/nutrition-for-mental-health/",
+    "category": "file",
+    "badge": "🧠 Mental Health"
+  },
+  {
+    "title": "Nutrition for Muscle Gain",
+    "description": "Eat to build muscle and support your fitness goals.",
+    "url": "./nutrition/specific-goals/nutrition-for-muscle-gain/",
+    "category": "file",
+    "badge": "💪 Muscle"
+  },
+  {
+    "title": "Nutrition for Seniors",
+    "description": "Eat well and stay healthy as you age — nutrition for seniors.",
+    "url": "./nutrition/specific-goals/nutrition-for-seniors/",
+    "category": "file",
+    "badge": "👴 Seniors"
+  },
+  {
+    "title": "Nutrition for Weight Loss",
+    "description": "Eat for sustainable weight loss without deprivation.",
+    "url": "./nutrition/specific-goals/nutrition-for-weight-loss/",
+    "category": "file",
+    "badge": "🥗 Weight Loss"
+  },
+  {
+    "title": "Nutrition for Women",
+    "description": "Eat for optimal health and performance — nutrition tailored for women.",
+    "url": "./nutrition/specific-goals/nutrition-for-women/",
+    "category": "file",
+    "badge": "💃 Women"
+  },
+  {
+    "title": "Supplements",
+    "description": "Solutions in supplements",
+    "url": "./nutrition/supplements/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Creatine Explained",
+    "description": "Understand the science and benefits of creatine supplementation.",
+    "url": "./nutrition/supplements/creatine-explained/",
+    "category": "file",
+    "badge": "💪 Creatine"
+  },
+  {
+    "title": "Functional Foods 2026",
+    "description": "Discover the functional foods that are shaping the future of nutrition.",
+    "url": "./nutrition/supplements/functional-foods-2026/",
+    "category": "file",
+    "badge": "🥗 Functional"
+  },
+  {
+    "title": "Omega‑3 Guide",
+    "description": "Understand the benefits of omega‑3 fatty acids and how to get them.",
+    "url": "./nutrition/supplements/omega-3-guide/",
+    "category": "file",
+    "badge": "🐟 Omega‑3"
+  },
+  {
+    "title": "Probiotic Supplements Guide",
+    "description": "Understand probiotics and how to choose the right supplement.",
+    "url": "./nutrition/supplements/probiotic-supplements-guide/",
+    "category": "file",
+    "badge": "🦠 Probiotics"
+  },
+  {
+    "title": "Protein Powders Guide",
+    "description": "Choose the right protein powder for your goals and dietary preferences.",
+    "url": "./nutrition/supplements/protein-powders-guide/",
+    "category": "file",
+    "badge": "💪 Protein"
+  },
+  {
+    "title": "Supplements 101",
+    "description": "A beginner's guide to supplements — what you need, what you don't, and how to choose.",
+    "url": "./nutrition/supplements/supplements-101/",
+    "category": "file",
+    "badge": "📚 Beginner"
+  },
+  {
+    "title": "Vitamin D Guide",
+    "description": "Understand the importance of vitamin D and how to get enough.",
+    "url": "./nutrition/supplements/vitamin-d-guide/",
+    "category": "file",
+    "badge": "☀️ Vitamin D"
+  },
+  {
+    "title": "Career",
+    "description": "Job search, growth, freelancing &amp; branding",
+    "url": "./career/",
+    "category": "category"
+  },
+  {
+    "title": "Branding",
+    "description": "Solutions in branding",
+    "url": "./career/branding/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Build a Personal Brand on LinkedIn",
+    "description": "Use LinkedIn to establish your professional identity and network.",
+    "url": "./career/branding/how-to-build-a-personal-brand-on-linkedin/",
+    "category": "file",
+    "badge": "📱 LinkedIn"
+  },
+  {
+    "title": "How to Get Noticed by Recruiters",
+    "description": "Optimise your online presence and profile to attract recruiter attention.",
+    "url": "./career/branding/how-to-get-noticed-by-recruiters/",
+    "category": "file",
+    "badge": "📢 Visibility"
+  },
+  {
+    "title": "How to Share Your Work Online",
+    "description": "Build credibility by showcasing your projects and achievements.",
+    "url": "./career/branding/how-to-share-your-work-online/",
+    "category": "file",
+    "badge": "🖥️ Portfolio"
+  },
+  {
+    "title": "How to Start a Professional Blog",
+    "description": "Start a blog to demonstrate expertise and advance your career.",
+    "url": "./career/branding/how-to-start-a-professional-blog/",
+    "category": "file",
+    "badge": "✍️ Blogging"
+  },
+  {
+    "title": "Public Speaking Tips for Beginners",
+    "description": "Overcome fear and deliver effective presentations.",
+    "url": "./career/branding/public-speaking-tips-for-beginners/",
+    "category": "file",
+    "badge": "🎤 Speaking"
+  },
+  {
+    "title": "Change",
+    "description": "Solutions in change",
+    "url": "./career/change/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Change Careers at 30",
+    "description": "Navigate a career change in your 30s with confidence and a plan.",
+    "url": "./career/change/how-to-change-careers-at-30/",
+    "category": "file",
+    "badge": "📅 30s"
+  },
+  {
+    "title": "How to Identify Your Transferable Skills",
+    "description": "Recognise your skills that apply across roles and industries.",
+    "url": "./career/change/how-to-identify-your-transferable-skills/",
+    "category": "file",
+    "badge": "📊 Skills"
+  },
+  {
+    "title": "How to Leave Your Job Gracefully",
+    "description": "Resign professionally and maintain positive relationships.",
+    "url": "./career/change/how-to-leave-your-job-gracefully/",
+    "category": "file",
+    "badge": "🚪 Resignation"
+  },
+  {
+    "title": "How to Start a Business on the Side",
+    "description": "Test your business idea while keeping your day job.",
+    "url": "./career/change/how-to-start-a-business-on-the-side/",
+    "category": "file",
+    "badge": "🚀 Business"
+  },
+  {
+    "title": "How to Transition to a New Industry",
+    "description": "Make a successful switch to a different industry or field.",
+    "url": "./career/change/how-to-transition-to-a-new-industry/",
+    "category": "file",
+    "badge": "🔄 Transition"
+  },
+  {
+    "title": "Growth",
+    "description": "Solutions in growth",
+    "url": "./career/growth/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Ask for a Promotion",
+    "description": "Position yourself for a promotion and make the ask confidently.",
+    "url": "./career/growth/how-to-ask-for-a-promotion/",
+    "category": "file",
+    "badge": "📈 Promotion"
+  },
+  {
+    "title": "How to Develop Leadership Skills",
+    "description": "Build leadership capabilities that will advance your career.",
+    "url": "./career/growth/how-to-develop-leadership-skills/",
+    "category": "file",
+    "badge": "🗣️ Leadership"
+  },
+  {
+    "title": "How to Find a Mentor",
+    "description": "Find and cultivate a mentorship relationship that accelerates your career.",
+    "url": "./career/growth/how-to-find-a-mentor/",
+    "category": "file",
+    "badge": "🤝 Mentor"
+  },
+  {
+    "title": "Networking Guide for Introverts",
+    "description": "Network effectively and comfortably, even if you're introverted.",
+    "url": "./career/growth/networking-guide-for-introverts/",
+    "category": "file",
+    "badge": "🌐 Networking"
+  },
+  {
+    "title": "Personal Branding Guide",
+    "description": "Comprehensive guide to building a powerful personal brand.",
+    "url": "./career/growth/personal-branding-guide/",
+    "category": "file",
+    "badge": "📢 Brand"
+  },
+  {
+    "title": "Salary Negotiation Tactics",
+    "description": "Negotiate your salary effectively to get what you deserve.",
+    "url": "./career/growth/salary-negotiation-tactics/",
+    "category": "file",
+    "badge": "💰 Negotiation"
+  },
+  {
+    "title": "Job-search",
+    "description": "Solutions in job-search",
+    "url": "./career/job-search/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Cover Letter Templates",
+    "description": "Use proven templates to write cover letters that get noticed.",
+    "url": "./career/job-search/cover-letter-templates/",
+    "category": "file",
+    "badge": "📄 Cover Letter"
+  },
+  {
+    "title": "How to Answer \"Tell Me About Yourself\"",
+    "description": "Craft a compelling response to the most common interview question.",
+    "url": "./career/job-search/how-to-answer-tell-me-about-yourself/",
+    "category": "file",
+    "badge": "🗣️ Interview"
+  },
+  {
+    "title": "How to Follow Up After an Interview",
+    "description": "Master the art of the post‑interview follow‑up.",
+    "url": "./career/job-search/how-to-follow-up-after-an-interview/",
+    "category": "file",
+    "badge": "📧 Follow‑up"
+  },
+  {
+    "title": "How to Write a CV That Gets Noticed",
+    "description": "Create a CV that grabs recruiters' attention and lands you interviews.",
+    "url": "./career/job-search/how-to-write-a-cv-that-gets-noticed/",
+    "category": "file",
+    "badge": "📄 CV"
+  },
+  {
+    "title": "Job Interview Preparation Guide",
+    "description": "Prepare thoroughly for any job interview with this comprehensive guide.",
+    "url": "./career/job-search/job-interview-preparation-guide/",
+    "category": "file",
+    "badge": "📝 Preparation"
+  },
+  {
+    "title": "Job Search Strategies 2026",
+    "description": "Modern job search tactics to stand out in today's market.",
+    "url": "./career/job-search/job-search-strategies-2026/",
+    "category": "file",
+    "badge": "📊 Search"
+  },
+  {
+    "title": "Money",
+    "description": "Solutions in money",
+    "url": "./career/money/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Ask for a Pay Rise",
+    "description": "Prepare and present your case for a salary increase with confidence.",
+    "url": "./career/money/how-to-ask-for-a-pay-rise/",
+    "category": "file",
+    "badge": "📈 Salary"
+  },
+  {
+    "title": "How to Build Wealth on a Salary",
+    "description": "Build wealth through disciplined saving and investing, even on a fixed income.",
+    "url": "./career/money/how-to-build-wealth-on-a-salary/",
+    "category": "file",
+    "badge": "💵 Wealth"
+  },
+  {
+    "title": "How to Manage a Side Hustle and Full‑Time Job",
+    "description": "Balance your day job and side business without burning out.",
+    "url": "./career/money/how-to-manage-a-side-hustle-and-full-time-job/",
+    "category": "file",
+    "badge": "⚖️ Balance"
+  },
+  {
+    "title": "How to Start Investing as a Professional",
+    "description": "Invest your professional income wisely for long‑term growth.",
+    "url": "./career/money/how-to-start-investing-as-a-professional/",
+    "category": "file",
+    "badge": "📈 Investing"
+  },
+  {
+    "title": "Remote-work",
+    "description": "Solutions in remote-work",
+    "url": "./career/remote-work/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Freelance Pricing Guide",
+    "description": "Price your freelance services to be competitive and profitable.",
+    "url": "./career/remote-work/freelance-pricing-guide/",
+    "category": "file",
+    "badge": "💰 Pricing"
+  },
+  {
+    "title": "How to Get Your First Freelance Client",
+    "description": "Land your first freelance project with these proven steps.",
+    "url": "./career/remote-work/how-to-get-your-first-freelance-client/",
+    "category": "file",
+    "badge": "🤝 Client"
+  },
+  {
+    "title": "How to Stay Productive at Home",
+    "description": "Maintain focus and productivity while working remotely.",
+    "url": "./career/remote-work/how-to-stay-productive-at-home/",
+    "category": "file",
+    "badge": "🏠 Productivity"
+  },
+  {
+    "title": "How to Transition to Freelancing",
+    "description": "Make the move from employee to freelancer with a solid plan.",
+    "url": "./career/remote-work/how-to-transition-to-freelancing/",
+    "category": "file",
+    "badge": "💼 Freelance"
+  },
+  {
+    "title": "Remote Work Setup Guide",
+    "description": "Set up your home office for comfort, productivity, and health.",
+    "url": "./career/remote-work/remote-work-setup-guide/",
+    "category": "file",
+    "badge": "🖥️ Setup"
+  },
+  {
+    "title": "Time Management for Freelancers",
+    "description": "Stay productive and balanced as a freelancer with effective time management.",
+    "url": "./career/remote-work/time-management-for-freelancers/",
+    "category": "file",
+    "badge": "⏰ Time"
+  },
+  {
+    "title": "Study",
+    "description": "Techniques, focus, exams &amp; AI for learning",
+    "url": "./study/",
+    "category": "category"
+  },
+  {
+    "title": "Ai",
+    "description": "Solutions in ai",
+    "url": "./study/ai/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Best Study Apps 2026",
+    "description": "Discover the top study apps to boost your productivity and learning.",
+    "url": "./study/ai/best-study-apps-2026/",
+    "category": "file",
+    "badge": "📱 Apps"
+  },
+  {
+    "title": "Digital Note‑Taking Guide",
+    "description": "Transform your notes with digital tools that organise and enhance your learning.",
+    "url": "./study/ai/digital-note-taking-guide/",
+    "category": "file",
+    "badge": "📝 Digital"
+  },
+  {
+    "title": "How to Avoid AI Over‑Reliance",
+    "description": "Use AI responsibly — as a tool to support your learning, not to replace it.",
+    "url": "./study/ai/how-to-avoid-ai-over-reliance/",
+    "category": "file",
+    "badge": "⚠️ Balance"
+  },
+  {
+    "title": "How to Use AI to Study Smarter",
+    "description": "Practical strategies for integrating AI into your daily study routine.",
+    "url": "./study/ai/how-to-use-ai-to-study-smarter/",
+    "category": "file",
+    "badge": "🧠 AI Study"
+  },
+  {
+    "title": "Using AI for Exam Prep",
+    "description": "Leverage AI tools to create personalised study materials and practice tests.",
+    "url": "./study/ai/using-ai-for-exam-prep/",
+    "category": "file",
+    "badge": "🤖 AI Prep"
+  },
+  {
+    "title": "Exam-prep",
+    "description": "Solutions in exam-prep",
+    "url": "./study/exam-prep/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Active Recall for Exam Prep",
+    "description": "Master the most effective revision technique: active recall.",
+    "url": "./study/exam-prep/active-recall-for-exam-prep/",
+    "category": "file",
+    "badge": "🧠 Active Recall"
+  },
+  {
+    "title": "How to Avoid Cramming",
+    "description": "Replace last‑minute cramming with effective, spaced study habits.",
+    "url": "./study/exam-prep/how-to-avoid-cramming/",
+    "category": "file",
+    "badge": "🚫 No Cram"
+  },
+  {
+    "title": "How to Create an Exam Revision Plan",
+    "description": "Design a structured revision plan that ensures you cover everything before the exam.",
+    "url": "./study/exam-prep/how-to-create-an-exam-revision-plan/",
+    "category": "file",
+    "badge": "📅 Plan"
+  },
+  {
+    "title": "How to Stay Calm During Exams",
+    "description": "Manage exam anxiety and perform at your best with proven calming techniques.",
+    "url": "./study/exam-prep/how-to-stay-calm-during-exams/",
+    "category": "file",
+    "badge": "🧘 Calm"
+  },
+  {
+    "title": "Post-Exam Reflection Guide",
+    "description": "Turn every exam into a learning opportunity with structured reflection.",
+    "url": "./study/exam-prep/post-exam-reflection-guide/",
+    "category": "file",
+    "badge": "📝 Reflection"
+  },
+  {
+    "title": "Focus",
+    "description": "Solutions in focus",
+    "url": "./study/focus/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Avoid Burnout",
+    "description": "Recognise the signs of study burnout and take action before it affects your health.",
+    "url": "./study/focus/how-to-avoid-burnout/",
+    "category": "file",
+    "badge": "🛡️ Burnout"
+  },
+  {
+    "title": "How to Improve Concentration",
+    "description": "Train your ability to focus with proven techniques and environmental changes.",
+    "url": "./study/focus/how-to-improve-concentration/",
+    "category": "file",
+    "badge": "🎯 Concentration"
+  },
+  {
+    "title": "How to Manage Exam Stress",
+    "description": "Practical strategies to cope with exam pressure and maintain mental well‑being.",
+    "url": "./study/focus/how-to-manage-exam-stress/",
+    "category": "file",
+    "badge": "😰 Stress"
+  },
+  {
+    "title": "Mindfulness for Students",
+    "description": "Use mindfulness techniques to improve focus, reduce stress, and enhance learning.",
+    "url": "./study/focus/mindfulness-for-students/",
+    "category": "file",
+    "badge": "🧘 Mindfulness"
+  },
+  {
+    "title": "Study Break Ideas",
+    "description": "Refresh your mind and body with effective study breaks.",
+    "url": "./study/focus/study-break-ideas/",
+    "category": "file",
+    "badge": "⏸️ Breaks"
+  },
+  {
+    "title": "Techniques",
+    "description": "Solutions in techniques",
+    "url": "./study/techniques/",
+    "category": "subcategory"
+  },
+  {
+    "title": "The Active Recall Method",
+    "description": "Boost your memory by actively retrieving information.",
+    "url": "./study/techniques/active-recall-method/",
+    "category": "file",
+    "badge": "🧠 Active"
+  },
+  {
+    "title": "The Feynman Technique",
+    "description": "Learn deeply by teaching a concept in simple terms.",
+    "url": "./study/techniques/feynman-technique/",
+    "category": "file",
+    "badge": "🎓 Feynman"
+  },
+  {
+    "title": "Mind Mapping for Students",
+    "description": "Visualise complex information with mind maps to enhance understanding and memory.",
+    "url": "./study/techniques/mind-mapping-for-students/",
+    "category": "file",
+    "badge": "🧠 Mind Map"
+  },
+  {
+    "title": "The Pomodoro Technique Guide",
+    "description": "Use the Pomodoro technique to boost productivity and maintain focus.",
+    "url": "./study/techniques/pomodoro-technique-guide/",
+    "category": "file",
+    "badge": "⏰ Pomodoro"
+  },
+  {
+    "title": "Spaced Repetition System",
+    "description": "Retain information long‑term with a spaced repetition schedule.",
+    "url": "./study/techniques/spaced-repetition-system/",
+    "category": "file",
+    "badge": "🔄 Spaced"
+  },
+  {
+    "title": "SQ3R Reading Method",
+    "description": "Master the SQ3R technique for efficient and effective reading.",
+    "url": "./study/techniques/sq3r-reading-method/",
+    "category": "file",
+    "badge": "📖 SQ3R"
+  },
+  {
+    "title": "Time-management",
+    "description": "Solutions in time-management",
+    "url": "./study/time-management/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Digital Detox for Students",
+    "description": "Reduce digital distractions and reclaim your focus during study sessions.",
+    "url": "./study/time-management/digital-detox-for-students/",
+    "category": "file",
+    "badge": "📱 Detox"
+  },
+  {
+    "title": "How to Organise Your Notes",
+    "description": "Create a note‑taking system that makes revision easy and effective.",
+    "url": "./study/time-management/how-to-organise-your-notes/",
+    "category": "file",
+    "badge": "📓 Notes"
+  },
+  {
+    "title": "How to Stop Procrastinating",
+    "description": "Break the cycle of procrastination and start studying with confidence.",
+    "url": "./study/time-management/how-to-stop-procrastinating/",
+    "category": "file",
+    "badge": "🚫 Procrastination"
+  },
+  {
+    "title": "Time‑Blocking for Exams",
+    "description": "Use time‑blocking to structure your exam revision and avoid overwhelm.",
+    "url": "./study/time-management/time-blocking-for-exams/",
+    "category": "file",
+    "badge": "📅 Time‑Block"
+  },
+  {
+    "title": "Weekly Study Schedule Template",
+    "description": "Plan your study week effectively with a ready‑to‑use template.",
+    "url": "./study/time-management/weekly-study-schedule-template/",
+    "category": "file",
+    "badge": "📋 Schedule"
+  },
+  {
+    "title": "Technology",
+    "description": "AI, cybersecurity, digital wellbeing &amp; skills",
+    "url": "./technology/",
+    "category": "category"
+  },
+  {
+    "title": "Ai",
+    "description": "Solutions in ai",
+    "url": "./technology/ai/",
+    "category": "subcategory"
+  },
+  {
+    "title": "AI and Job Security",
+    "description": "Understand how AI is changing the job market and how to stay relevant.",
+    "url": "./technology/ai/ai-and-job-security/",
+    "category": "file",
+    "badge": "💼 Future"
+  },
+  {
+    "title": "AI for Content Creation",
+    "description": "Use AI to generate ideas, write content, and create faster.",
+    "url": "./technology/ai/ai-for-content-creation/",
+    "category": "file",
+    "badge": "✍️ Content"
+  },
+  {
+    "title": "AI Tools for Everyday Life",
+    "description": "Discover the best AI tools for everyday tasks and productivity.",
+    "url": "./technology/ai/ai-tools-for-everyday-life/",
+    "category": "file",
+    "badge": "📱 AI Tools"
+  },
+  {
+    "title": "Ethical AI Use",
+    "description": "Use AI responsibly — understand the ethics and implications of AI tools.",
+    "url": "./technology/ai/ethical-ai-use/",
+    "category": "file",
+    "badge": "⚖️ Ethics"
+  },
+  {
+    "title": "How to Automate Repetitive Tasks",
+    "description": "Save time and reduce busywork by automating routine tasks with AI.",
+    "url": "./technology/ai/how-to-automate-repetitive-tasks/",
+    "category": "file",
+    "badge": "🤖 Automation"
+  },
+  {
+    "title": "How to Use ChatGPT Effectively",
+    "description": "Master prompt engineering and get the most out of ChatGPT.",
+    "url": "./technology/ai/how-to-use-chatgpt-effectively/",
+    "category": "file",
+    "badge": "🤖 ChatGPT"
+  },
+  {
+    "title": "Cybersecurity",
+    "description": "Solutions in cybersecurity",
+    "url": "./technology/cybersecurity/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Create a Strong Password",
+    "description": "Create passwords that are strong, unique, and easy to remember.",
+    "url": "./technology/cybersecurity/how-to-create-a-strong-password/",
+    "category": "file",
+    "badge": "🔐 Password"
+  },
+  {
+    "title": "How to Protect Your Data Online",
+    "description": "Essential strategies for protecting your personal data online.",
+    "url": "./technology/cybersecurity/how-to-protect-your-data-online/",
+    "category": "file",
+    "badge": "🛡️ Protection"
+  },
+  {
+    "title": "How to Spot Phishing Emails",
+    "description": "Learn to identify and avoid phishing scams before they compromise your security.",
+    "url": "./technology/cybersecurity/how-to-spot-phishing-emails/",
+    "category": "file",
+    "badge": "⚠️ Phishing"
+  },
+  {
+    "title": "Privacy Settings on Social Media",
+    "description": "Take control of your privacy on social media platforms.",
+    "url": "./technology/cybersecurity/privacy-settings-on-social-media/",
+    "category": "file",
+    "badge": "🔒 Privacy"
+  },
+  {
+    "title": "Two‑Factor Authentication Guide",
+    "description": "Add an extra layer of security to your accounts with two‑factor authentication.",
+    "url": "./technology/cybersecurity/two-factor-authentication-guide/",
+    "category": "file",
+    "badge": "🔐 2FA"
+  },
+  {
+    "title": "VPN Guide for Beginners",
+    "description": "Protect your privacy online with a VPN — a beginner's guide.",
+    "url": "./technology/cybersecurity/vpn-guide-for-beginners/",
+    "category": "file",
+    "badge": "🔒 Privacy"
+  },
+  {
+    "title": "Data",
+    "description": "Solutions in data",
+    "url": "./technology/data/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Cloud Storage Guide",
+    "description": "Choose and use cloud storage effectively for accessibility and backup.",
+    "url": "./technology/data/cloud-storage-guide/",
+    "category": "file",
+    "badge": "☁️ Cloud"
+  },
+  {
+    "title": "Digital Declutter Guide",
+    "description": "Reduce digital clutter and organise your digital life.",
+    "url": "./technology/data/digital-declutter-guide/",
+    "category": "file",
+    "badge": "🗂️ Declutter"
+  },
+  {
+    "title": "How to Back Up Your Data",
+    "description": "Protect your digital life with a reliable backup strategy.",
+    "url": "./technology/data/how-to-back-up-your-data/",
+    "category": "file",
+    "badge": "💾 Backup"
+  },
+  {
+    "title": "How to Manage Your Email Inbox",
+    "description": "Take control of your inbox and reduce email overwhelm.",
+    "url": "./technology/data/how-to-manage-your-email-inbox/",
+    "category": "file",
+    "badge": "📧 Email"
+  },
+  {
+    "title": "How to Organise Your Digital Files",
+    "description": "Create a file organisation system that makes finding documents easy.",
+    "url": "./technology/data/how-to-organise-your-digital-files/",
+    "category": "file",
+    "badge": "📁 Organisation"
+  },
+  {
+    "title": "Password Management Guide",
+    "description": "Create and manage strong passwords to protect your online accounts.",
+    "url": "./technology/data/password-management-guide/",
+    "category": "file",
+    "badge": "🔐 Security"
+  },
+  {
+    "title": "Skills",
+    "description": "Solutions in skills",
+    "url": "./technology/skills/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Best Platforms to Learn Tech Skills",
+    "description": "Discover the best platforms for learning tech skills in 2026.",
+    "url": "./technology/skills/best-platforms-to-learn-tech-skills/",
+    "category": "file",
+    "badge": "📚 Learning"
+  },
+  {
+    "title": "How to Build a Personal Website",
+    "description": "Create a personal website to showcase your work and build your brand.",
+    "url": "./technology/skills/how-to-build-a-personal-website/",
+    "category": "file",
+    "badge": "🌐 Website"
+  },
+  {
+    "title": "How to Start Learning to Code",
+    "description": "Begin your coding journey — no prior experience required.",
+    "url": "./technology/skills/how-to-start-learning-to-code/",
+    "category": "file",
+    "badge": "💻 Coding"
+  },
+  {
+    "title": "How to Stay Updated with Tech Trends",
+    "description": "Keep up with the fast‑paced world of technology without getting overwhelmed.",
+    "url": "./technology/skills/how-to-stay-updated-with-tech-trends/",
+    "category": "file",
+    "badge": "📱 Trends"
+  },
+  {
+    "title": "How to Use AI for Learning",
+    "description": "Supercharge your learning with AI tools and techniques.",
+    "url": "./technology/skills/how-to-use-ai-for-learning/",
+    "category": "file",
+    "badge": "📚 Learning"
+  },
+  {
+    "title": "Tech Skills for Non‑Techies",
+    "description": "Essential tech skills every non‑technical professional should develop.",
+    "url": "./technology/skills/tech-skills-for-non-techies/",
+    "category": "file",
+    "badge": "💻 Skills"
+  },
+  {
+    "title": "Wellbeing",
+    "description": "Solutions in wellbeing",
+    "url": "./technology/wellbeing/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Best Productivity Apps 2026",
+    "description": "Discover the best apps to boost your productivity in 2026.",
+    "url": "./technology/wellbeing/best-productivity-apps-2026/",
+    "category": "file",
+    "badge": "📱 Apps"
+  },
+  {
+    "title": "Digital Detox Plan",
+    "description": "Reset your relationship with technology with a structured digital detox.",
+    "url": "./technology/wellbeing/digital-detox-plan/",
+    "category": "file",
+    "badge": "🌿 Detox"
+  },
+  {
+    "title": "How to Manage Digital Distractions",
+    "description": "Take control of your digital environment and protect your focus.",
+    "url": "./technology/wellbeing/how-to-manage-digital-distractions/",
+    "category": "file",
+    "badge": "📱 Focus"
+  },
+  {
+    "title": "How to Reduce Screen Time",
+    "description": "Practical strategies to reduce your screen time and reclaim your life.",
+    "url": "./technology/wellbeing/how-to-reduce-screen-time/",
+    "category": "file",
+    "badge": "📱 Screen Time"
+  },
+  {
+    "title": "How to Set Boundaries with Technology",
+    "description": "Create healthy boundaries with technology to protect your time and attention.",
+    "url": "./technology/wellbeing/how-to-set-boundaries-with-technology/",
+    "category": "file",
+    "badge": "🛡️ Boundaries"
+  },
+  {
+    "title": "Mindful Tech Use",
+    "description": "Use technology with intention and awareness, not out of habit.",
+    "url": "./technology/wellbeing/mindful-tech-use/",
+    "category": "file",
+    "badge": "🧘 Mindfulness"
+  },
+  {
+    "title": "Travel",
+    "description": "Planning, solo travel, nomad life &amp; hacks",
+    "url": "./travel/",
+    "category": "category"
+  },
+  {
+    "title": "Hacks",
+    "description": "Solutions in hacks",
+    "url": "./travel/hacks/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Airport & Flight Hacks",
+    "description": "Navigate airports and flights like a pro with these hacks.",
+    "url": "./travel/hacks/airport-flight-hacks/",
+    "category": "file",
+    "badge": "✈️ Hacks"
+  },
+  {
+    "title": "Essential Travel Apps 2026",
+    "description": "The best travel apps for planning, navigating, and enjoying your trip.",
+    "url": "./travel/hacks/essential-travel-apps-2026/",
+    "category": "file",
+    "badge": "📱 Apps"
+  },
+  {
+    "title": "How to Avoid Overtourism",
+    "description": "Travel responsibly and avoid overcrowded destinations.",
+    "url": "./travel/hacks/how-to-avoid-overtourism/",
+    "category": "file",
+    "badge": "🌍 Responsible Travel"
+  },
+  {
+    "title": "How to Pack Light",
+    "description": "Pack light and travel with ease — less stuff, more freedom.",
+    "url": "./travel/hacks/how-to-pack-light/",
+    "category": "file",
+    "badge": "🧳 Packing"
+  },
+  {
+    "title": "How to Stay Healthy While Travelling",
+    "description": "Stay healthy and energised during your travels.",
+    "url": "./travel/hacks/how-to-stay-healthy-while-travelling/",
+    "category": "file",
+    "badge": "🩺 Health"
+  },
+  {
+    "title": "Travel Photography Tips",
+    "description": "Capture stunning travel photos with these simple tips.",
+    "url": "./travel/hacks/travel-photography-tips/",
+    "category": "file",
+    "badge": "📸 Photography"
+  },
+  {
+    "title": "Nomad",
+    "description": "Solutions in nomad",
+    "url": "./travel/nomad/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Best Countries for Digital Nomads 2026",
+    "description": "Discover the best countries for digital nomads in 2026.",
+    "url": "./travel/nomad/best-countries-for-digital-nomads-2026/",
+    "category": "file",
+    "badge": "🌍 Nomad"
+  },
+  {
+    "title": "Coworking Spaces Guide",
+    "description": "Find and use coworking spaces for productivity and community.",
+    "url": "./travel/nomad/coworking-spaces-guide/",
+    "category": "file",
+    "badge": "💻 Coworking"
+  },
+  {
+    "title": "How to Become a Digital Nomad",
+    "description": "Your step‑by‑step guide to becoming a digital nomad.",
+    "url": "./travel/nomad/how-to-become-a-digital-nomad/",
+    "category": "file",
+    "badge": "🌍 Nomad"
+  },
+  {
+    "title": "How to Handle Time Zones While Travelling",
+    "description": "Manage time zone changes and stay productive on the road.",
+    "url": "./travel/nomad/how-to-handle-time-zones-while-travelling/",
+    "category": "file",
+    "badge": "🕐 Time Zones"
+  },
+  {
+    "title": "Remote Work Travel Setup",
+    "description": "Set up your remote work gear for productive travel.",
+    "url": "./travel/nomad/remote-work-travel-setup/",
+    "category": "file",
+    "badge": "💻 Setup"
+  },
+  {
+    "title": "Visa & Legal Tips for Digital Nomads",
+    "description": "Navigate visas and legal requirements for living and working abroad.",
+    "url": "./travel/nomad/visa-legal-tips-for-digital-nomads/",
+    "category": "file",
+    "badge": "📜 Visas"
+  },
+  {
+    "title": "Planning",
+    "description": "Solutions in planning",
+    "url": "./travel/planning/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Cheapest Travel Destinations 2026",
+    "description": "Discover the most affordable travel destinations for 2026.",
+    "url": "./travel/planning/cheapest-travel-destinations-2026/",
+    "category": "file",
+    "badge": "💰 Budget"
+  },
+  {
+    "title": "How to Book Affordable Accommodation",
+    "description": "Find affordable places to stay without sacrificing comfort.",
+    "url": "./travel/planning/how-to-book-affordable-accommodation/",
+    "category": "file",
+    "badge": "🏨 Accommodation"
+  },
+  {
+    "title": "How to Find Cheap Flights",
+    "description": "Save money on flights with these proven strategies.",
+    "url": "./travel/planning/how-to-find-cheap-flights/",
+    "category": "file",
+    "badge": "✈️ Flights"
+  },
+  {
+    "title": "How to Plan a Trip on a Budget",
+    "description": "Plan an amazing trip without breaking the bank.",
+    "url": "./travel/planning/how-to-plan-a-trip-on-a-budget/",
+    "category": "file",
+    "badge": "💰 Budget"
+  },
+  {
+    "title": "Packing Checklist for Any Trip",
+    "description": "Never forget anything with this comprehensive packing checklist.",
+    "url": "./travel/planning/packing-checklist-for-any-trip/",
+    "category": "file",
+    "badge": "🧳 Packing"
+  },
+  {
+    "title": "Travel Insurance Guide",
+    "description": "Protect yourself with the right travel insurance.",
+    "url": "./travel/planning/travel-insurance-guide/",
+    "category": "file",
+    "badge": "🛡️ Insurance"
+  },
+  {
+    "title": "Solo",
+    "description": "Solutions in solo",
+    "url": "./travel/solo/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Best Destinations for Solo Travelers",
+    "description": "Discover the best destinations for solo travel in 2026.",
+    "url": "./travel/solo/best-destinations-for-solo-travelers/",
+    "category": "file",
+    "badge": "🌍 Solo"
+  },
+  {
+    "title": "Group Travel Planning Guide",
+    "description": "Plan a successful group trip that everyone will enjoy.",
+    "url": "./travel/solo/group-travel-planning-guide/",
+    "category": "file",
+    "badge": "👥 Group"
+  },
+  {
+    "title": "How to Meet People While Travelling",
+    "description": "Make friends and connections while travelling solo.",
+    "url": "./travel/solo/how-to-meet-people-while-travelling/",
+    "category": "file",
+    "badge": "🤝 Connections"
+  },
+  {
+    "title": "How to Travel with Friends Without Fighting",
+    "description": "Maintain friendships and enjoy travel together — without conflict.",
+    "url": "./travel/solo/how-to-travel-with-friends-without-fighting/",
+    "category": "file",
+    "badge": "🤝 Friendship"
+  },
+  {
+    "title": "Solo Travel Safety Tips",
+    "description": "Stay safe and confident while travelling alone.",
+    "url": "./travel/solo/solo-travel-safety-tips/",
+    "category": "file",
+    "badge": "🛡️ Safety"
+  },
+  {
+    "title": "Types",
+    "description": "Solutions in types",
+    "url": "./travel/types/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Adventure Travel Ideas",
+    "description": "Push your limits with these adventure travel ideas.",
+    "url": "./travel/types/adventure-travel-ideas/",
+    "category": "file",
+    "badge": "🏔️ Adventure"
+  },
+  {
+    "title": "Backpacking Guide for Beginners",
+    "description": "Start your backpacking journey with confidence and the right gear.",
+    "url": "./travel/types/backpacking-guide-for-beginners/",
+    "category": "file",
+    "badge": "🎒 Backpacking"
+  },
+  {
+    "title": "Cruise Travel for Beginners",
+    "description": "Everything you need to know about your first cruise vacation.",
+    "url": "./travel/types/cruise-travel-for-beginners/",
+    "category": "file",
+    "badge": "🚢 Cruise"
+  },
+  {
+    "title": "Family Travel Guide",
+    "description": "Travel with your family — stress‑free and memorable.",
+    "url": "./travel/types/family-travel-guide/",
+    "category": "file",
+    "badge": "👨‍👩‍👧‍👦 Family"
+  },
+  {
+    "title": "Luxury Travel on a Budget",
+    "description": "Experience luxury travel without breaking the bank.",
+    "url": "./travel/types/luxury-travel-on-a-budget/",
+    "category": "file",
+    "badge": "✨ Luxury"
+  },
+  {
+    "title": "Road Trip Planning Guide",
+    "description": "Plan the perfect road trip — route, stops, and memories.",
+    "url": "./travel/types/road-trip-planning-guide/",
+    "category": "file",
+    "badge": "🚗 Road Trip"
+  },
+  {
+    "title": "Relationships",
+    "description": "Communication, dating, self‑love &amp; resilience",
+    "url": "./relationships/",
+    "category": "category"
+  },
+  {
+    "title": "Building",
+    "description": "Solutions in building",
+    "url": "./relationships/building/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Balance Independence and Togetherness",
+    "description": "Find the sweet spot between alone time and quality time with your partner.",
+    "url": "./relationships/building/how-to-balance-independence-and-togetherness/",
+    "category": "file",
+    "badge": "⚖️ Balance"
+  },
+  {
+    "title": "How to Build Trust in a Relationship",
+    "description": "Establish and rebuild trust with honesty, reliability, and openness.",
+    "url": "./relationships/building/how-to-build-trust-in-a-relationship/",
+    "category": "file",
+    "badge": "🤝 Trust"
+  },
+  {
+    "title": "How to Keep the Spark Alive",
+    "description": "Maintain passion and excitement in a long‑term relationship.",
+    "url": "./relationships/building/how-to-keep-the-spark-alive/",
+    "category": "file",
+    "badge": "🔥 Spark"
+  },
+  {
+    "title": "How to Maintain Emotional Connection",
+    "description": "Deepen your bond with your partner through intentional emotional intimacy.",
+    "url": "./relationships/building/how-to-maintain-emotional-connection/",
+    "category": "file",
+    "badge": "❤️ Connection"
+  },
+  {
+    "title": "How to Support Your Partner Without Losing Yourself",
+    "description": "Maintain your identity while being a supportive partner.",
+    "url": "./relationships/building/how-to-support-your-partner-without-losing-yourself/",
+    "category": "file",
+    "badge": "⚖️ Balance"
+  },
+  {
+    "title": "The 5 A's of Mindful Loving",
+    "description": "Apply the 5 A's — Attention, Acceptance, Appreciation, Affection, and Allowing — to your relationship.",
+    "url": "./relationships/building/the-5-a-s-of-mindful-loving/",
+    "category": "file",
+    "badge": "🧘 Mindful Love"
+  },
+  {
+    "title": "Communication",
+    "description": "Solutions in communication",
+    "url": "./relationships/communication/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Apologize and Repair After a Fight",
+    "description": "Make amends and rebuild connection after conflict.",
+    "url": "./relationships/communication/how-to-apologize-and-repair-after-a-fight/",
+    "category": "file",
+    "badge": "🤝 Repair"
+  },
+  {
+    "title": "How to Communicate Effectively in Relationships",
+    "description": "Master the skills of clear, honest, and compassionate communication.",
+    "url": "./relationships/communication/how-to-communicate-effectively-in-relationships/",
+    "category": "file",
+    "badge": "🗣️ Communication"
+  },
+  {
+    "title": "How to Have Difficult Conversations",
+    "description": "Navigate tough talks with courage, empathy, and clarity.",
+    "url": "./relationships/communication/how-to-have-difficult-conversations/",
+    "category": "file",
+    "badge": "🗣️ Conversations"
+  },
+  {
+    "title": "How to Stop Arguments from Escalating",
+    "description": "De‑escalate conflicts and maintain calm during heated moments.",
+    "url": "./relationships/communication/how-to-stop-arguments-from-escalating/",
+    "category": "file",
+    "badge": "⚡ De‑escalation"
+  },
+  {
+    "title": "Setting Boundaries in Relationships",
+    "description": "Communicate your limits clearly and assertively to build healthier relationships.",
+    "url": "./relationships/communication/setting-boundaries-in-relationships/",
+    "category": "file",
+    "badge": "🛡️ Boundaries"
+  },
+  {
+    "title": "The Art of Active Listening",
+    "description": "Listen to understand, not to reply, and transform your communication.",
+    "url": "./relationships/communication/the-art-of-active-listening/",
+    "category": "file",
+    "badge": "👂 Listening"
+  },
+  {
+    "title": "Dating",
+    "description": "Solutions in dating",
+    "url": "./relationships/dating/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Dating in 2026 — What's Changed",
+    "description": "Understand the latest trends and shifts in modern dating culture.",
+    "url": "./relationships/dating/dating-in-2026-what-s-changed/",
+    "category": "file",
+    "badge": "📅 Trends"
+  },
+  {
+    "title": "How to Deal with Dating Burnout",
+    "description": "Recognise and recover from dating fatigue and regain your enthusiasm.",
+    "url": "./relationships/dating/how-to-deal-with-dating-burnout/",
+    "category": "file",
+    "badge": "🔥 Burnout"
+  },
+  {
+    "title": "How to Know When to Leave a Relationship",
+    "description": "Recognise the signs that it's time to walk away for your own well‑being.",
+    "url": "./relationships/dating/how-to-know-when-to-leave-a-relationship/",
+    "category": "file",
+    "badge": "🚪 Leaving"
+  },
+  {
+    "title": "How to Navigate Online Dating",
+    "description": "Use online dating effectively and avoid common pitfalls.",
+    "url": "./relationships/dating/how-to-navigate-online-dating/",
+    "category": "file",
+    "badge": "📱 Online Dating"
+  },
+  {
+    "title": "How to Spot a Healthy Relationship",
+    "description": "Identify the key characteristics of a healthy, balanced relationship.",
+    "url": "./relationships/dating/how-to-spot-a-healthy-relationship/",
+    "category": "file",
+    "badge": "✅ Healthy"
+  },
+  {
+    "title": "How to Stop Overthinking in Relationships",
+    "description": "Quiet your mind and reduce anxiety about your relationship.",
+    "url": "./relationships/dating/how-to-stop-overthinking-in-relationships/",
+    "category": "file",
+    "badge": "🧠 Overthinking"
+  },
+  {
+    "title": "Emotional-health",
+    "description": "Solutions in emotional-health",
+    "url": "./relationships/emotional-health/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Cultivate Resilience",
+    "description": "Build the mental and emotional strength to navigate relationship challenges.",
+    "url": "./relationships/emotional-health/how-to-cultivate-resilience/",
+    "category": "file",
+    "badge": "🛡️ Resilience"
+  },
+  {
+    "title": "How to Heal from a Breakup",
+    "description": "Navigate the emotional journey of a breakup and emerge stronger.",
+    "url": "./relationships/emotional-health/how-to-heal-from-a-breakup/",
+    "category": "file",
+    "badge": "💔 Healing"
+  },
+  {
+    "title": "How to Manage Relationship Anxiety",
+    "description": "Calm your fears and insecurities in relationships with practical strategies.",
+    "url": "./relationships/emotional-health/how-to-manage-relationship-anxiety/",
+    "category": "file",
+    "badge": "🧠 Anxiety"
+  },
+  {
+    "title": "How to Practice Mindfulness in Relationships",
+    "description": "Bring presence and awareness into your interactions for deeper connection.",
+    "url": "./relationships/emotional-health/how-to-practice-mindfulness-in-relationships/",
+    "category": "file",
+    "badge": "🧘 Mindfulness"
+  },
+  {
+    "title": "How to Set Emotional Boundaries",
+    "description": "Protect your emotional well‑being by setting and maintaining healthy boundaries.",
+    "url": "./relationships/emotional-health/how-to-set-emotional-boundaries/",
+    "category": "file",
+    "badge": "🛡️ Boundaries"
+  },
+  {
+    "title": "How to Stop People‑Pleasing",
+    "description": "Break free from the need to please everyone and reclaim your own needs.",
+    "url": "./relationships/emotional-health/how-to-stop-people-pleasing/",
+    "category": "file",
+    "badge": "💪 Assertiveness"
+  },
+  {
+    "title": "Self-love",
+    "description": "Solutions in self-love",
+    "url": "./relationships/self-love/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Build Self‑Esteem",
+    "description": "Increase your self‑worth and confidence with evidence‑based strategies.",
+    "url": "./relationships/self-love/how-to-build-self-esteem/",
+    "category": "file",
+    "badge": "💪 Self‑Esteem"
+  },
+  {
+    "title": "How to Create a Personal Development Plan",
+    "description": "Design a roadmap for your personal growth and self‑improvement.",
+    "url": "./relationships/self-love/how-to-create-a-personal-development-plan/",
+    "category": "file",
+    "badge": "📈 Growth"
+  },
+  {
+    "title": "How to Develop Emotional Intelligence",
+    "description": "Enhance your ability to recognise, understand, and manage emotions.",
+    "url": "./relationships/self-love/how-to-develop-emotional-intelligence/",
+    "category": "file",
+    "badge": "🧠 EQ"
+  },
+  {
+    "title": "How to Overcome Fear of Vulnerability",
+    "description": "Embrace vulnerability as a strength and deepen your connections.",
+    "url": "./relationships/self-love/how-to-overcome-fear-of-vulnerability/",
+    "category": "file",
+    "badge": "🛡️ Vulnerability"
+  },
+  {
+    "title": "How to Practice Self‑Compassion",
+    "description": "Treat yourself with the same kindness you'd offer a friend.",
+    "url": "./relationships/self-love/how-to-practice-self-compassion/",
+    "category": "file",
+    "badge": "💖 Self‑Compassion"
+  },
+  {
+    "title": "How to Set Personal Goals for 2026",
+    "description": "Create meaningful, achievable goals for the year ahead.",
+    "url": "./relationships/self-love/how-to-set-personal-goals-for-2026/",
+    "category": "file",
+    "badge": "🎯 Goals"
+  },
+  {
+    "title": "Productivity",
+    "description": "Deep work, habits, energy &amp; systems",
+    "url": "./productivity/",
+    "category": "category"
+  },
+  {
+    "title": "Deep-work",
+    "description": "Solutions in deep-work",
+    "url": "./productivity/deep-work/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Achieve Deep Work",
+    "description": "Master the principles of deep work and unlock your full potential.",
+    "url": "./productivity/deep-work/how-to-achieve-deep-work/",
+    "category": "file",
+    "badge": "🎯 Mastery"
+  },
+  {
+    "title": "How to Create a Deep Work Routine",
+    "description": "Build a routine that supports deep focus and meaningful work.",
+    "url": "./productivity/deep-work/how-to-create-a-deep-work-routine/",
+    "category": "file",
+    "badge": "🎯 Deep Work"
+  },
+  {
+    "title": "How to Manage Digital Distractions",
+    "description": "Take control of your digital environment and protect your focus.",
+    "url": "./productivity/deep-work/how-to-manage-digital-distractions/",
+    "category": "file",
+    "badge": "📱 Focus"
+  },
+  {
+    "title": "How to Stop Multitasking and Start Single‑Tasking",
+    "description": "Focus on one thing at a time for better results and less stress.",
+    "url": "./productivity/deep-work/how-to-stop-multitasking-and-start-single-tasking/",
+    "category": "file",
+    "badge": "🎯 Single‑Tasking"
+  },
+  {
+    "title": "The 90‑Minute Deep Work Block",
+    "description": "Use the 90‑minute block for optimal focus and cognitive performance.",
+    "url": "./productivity/deep-work/the-90-minute-deep-work-block/",
+    "category": "file",
+    "badge": "⏰ Focus"
+  },
+  {
+    "title": "Time Batching — Group Similar Tasks Together",
+    "description": "Boost productivity by grouping similar tasks and working in focused blocks.",
+    "url": "./productivity/deep-work/time-batching-group-similar-tasks-together/",
+    "category": "file",
+    "badge": "📊 Batching"
+  },
+  {
+    "title": "Energy",
+    "description": "Solutions in energy",
+    "url": "./productivity/energy/",
+    "category": "subcategory"
+  },
+  {
+    "title": "From Time Management to Attention Management",
+    "description": "Shift your focus from managing time to managing attention for better results.",
+    "url": "./productivity/energy/from-time-management-to-attention-management/",
+    "category": "file",
+    "badge": "🎯 Attention"
+  },
+  {
+    "title": "How to Avoid Burnout and Overwork",
+    "description": "Recognise the signs of burnout and take action before it's too late.",
+    "url": "./productivity/energy/how-to-avoid-burnout-and-overwork/",
+    "category": "file",
+    "badge": "🛡️ Prevention"
+  },
+  {
+    "title": "How to Identify Your Energy Peaks and Troughs",
+    "description": "Understand your natural energy rhythms and work with them, not against them.",
+    "url": "./productivity/energy/how-to-identify-your-energy-peaks-and-troughs/",
+    "category": "file",
+    "badge": "📊 Energy"
+  },
+  {
+    "title": "How to Manage Meeting Overload",
+    "description": "Take control of your calendar and reduce meeting fatigue.",
+    "url": "./productivity/energy/how-to-manage-meeting-overload/",
+    "category": "file",
+    "badge": "📅 Meetings"
+  },
+  {
+    "title": "How to Recharge During the Workday",
+    "description": "Simple strategies to restore energy and maintain focus throughout the day.",
+    "url": "./productivity/energy/how-to-recharge-during-the-workday/",
+    "category": "file",
+    "badge": "⚡ Recharge"
+  },
+  {
+    "title": "The Power of Saying No",
+    "description": "Protect your time and energy by setting boundaries and saying no.",
+    "url": "./productivity/energy/the-power-of-saying-no/",
+    "category": "file",
+    "badge": "🚫 Boundaries"
+  },
+  {
+    "title": "Habits",
+    "description": "Solutions in habits",
+    "url": "./productivity/habits/",
+    "category": "subcategory"
+  },
+  {
+    "title": "How to Build a Morning Routine for Peak Productivity",
+    "description": "Start your day with intention and set yourself up for success.",
+    "url": "./productivity/habits/how-to-build-a-morning-routine-for-peak-productivity/",
+    "category": "file",
+    "badge": "🌅 Morning"
+  },
+  {
+    "title": "How to Build Habits That Stick",
+    "description": "Design habits that become automatic and transform your daily routine.",
+    "url": "./productivity/habits/how-to-build-habits-that-stick/",
+    "category": "file",
+    "badge": "🧠 Habits"
+  },
+  {
+    "title": "How to Create an Evening Shutdown Routine",
+    "description": "End your day with intention and prepare for a restful night.",
+    "url": "./productivity/habits/how-to-create-an-evening-shutdown-routine/",
+    "category": "file",
+    "badge": "🌙 Evening"
+  },
+  {
+    "title": "How to Plan Your Week Effectively",
+    "description": "Create a weekly plan that sets you up for success and reduces decision fatigue.",
+    "url": "./productivity/habits/how-to-plan-your-week-effectively/",
+    "category": "file",
+    "badge": "📅 Planning"
+  },
+  {
+    "title": "How to Stop Procrastinating — Science‑Backed Strategies",
+    "description": "Overcome procrastination with strategies backed by research.",
+    "url": "./productivity/habits/how-to-stop-procrastinating-science-backed-strategies/",
+    "category": "file",
+    "badge": "🧠 Science"
+  },
+  {
+    "title": "The 30‑Day Habit Challenge",
+    "description": "Build lasting habits with a 30‑day challenge that actually works.",
+    "url": "./productivity/habits/the-30-day-habit-challenge/",
+    "category": "file",
+    "badge": "🔥 Challenge"
+  },
+  {
+    "title": "Systems",
+    "description": "Solutions in systems",
+    "url": "./productivity/systems/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Best Productivity Apps 2026",
+    "description": "Discover the best apps to boost your productivity in 2026.",
+    "url": "./productivity/systems/best-productivity-apps-2026/",
+    "category": "file",
+    "badge": "📱 Apps"
+  },
+  {
+    "title": "Digital Minimalism Guide",
+    "description": "Simplify your digital life and focus on what truly matters.",
+    "url": "./productivity/systems/digital-minimalism-guide/",
+    "category": "file",
+    "badge": "📱 Minimalism"
+  },
+  {
+    "title": "How AI Is Changing Personal Productivity in 2026",
+    "description": "Understand the AI revolution in productivity and how to leverage it.",
+    "url": "./productivity/systems/how-ai-is-changing-personal-productivity-in-2026/",
+    "category": "file",
+    "badge": "🤖 AI"
+  },
+  {
+    "title": "How to Track Your Time and Why",
+    "description": "Understand where your time goes and use that data to work smarter.",
+    "url": "./productivity/systems/how-to-track-your-time-and-why/",
+    "category": "file",
+    "badge": "⏰ Tracking"
+  },
+  {
+    "title": "How to Use AI to Automate Repetitive Tasks",
+    "description": "Save time and reduce busywork by automating routine tasks with AI.",
+    "url": "./productivity/systems/how-to-use-ai-to-automate-repetitive-tasks/",
+    "category": "file",
+    "badge": "🤖 Automation"
+  },
+  {
+    "title": "How to Use Notion for Productivity",
+    "description": "Build a custom productivity system with Notion — the all‑in‑one workspace.",
+    "url": "./productivity/systems/how-to-use-notion-for-productivity/",
+    "category": "file",
+    "badge": "📱 Notion"
+  },
+  {
+    "title": "The PARA Method — Organise Your Digital Life",
+    "description": "Organise your digital life with Projects, Areas, Resources, and Archives.",
+    "url": "./productivity/systems/the-para-method-organise-your-digital-life/",
+    "category": "file",
+    "badge": "📊 Organisation"
+  },
+  {
+    "title": "Time-management",
+    "description": "Solutions in time-management",
+    "url": "./productivity/time-management/",
+    "category": "subcategory"
+  },
+  {
+    "title": "Eat That Frog — Start Your Day with the Hardest Task",
+    "description": "Tackle your most important and challenging task first thing in the morning.",
+    "url": "./productivity/time-management/eat-that-frog-start-your-day-with-the-hardest-task/",
+    "category": "file",
+    "badge": "🐸 Frog"
+  },
+  {
+    "title": "The Eisenhower Matrix — How to Prioritise Like a Pro",
+    "description": "Prioritise tasks by urgency and importance using the Eisenhower Matrix.",
+    "url": "./productivity/time-management/eisenhower-matrix-how-to-prioritize-like-a-pro/",
+    "category": "file",
+    "badge": "📊 Prioritisation"
+  },
+  {
+    "title": "Getting Things Done — The 5‑Step Workflow",
+    "description": "Capture, clarify, organise, reflect, and engage — the GTD system for stress‑free productivity.",
+    "url": "./productivity/time-management/getting-things-done-the-5-step-workflow/",
+    "category": "file",
+    "badge": "📊 GTD"
+  },
+  {
+    "title": "The 80/20 Rule in Daily Work",
+    "description": "Focus on the 20% of efforts that produce 80% of your results.",
+    "url": "./productivity/time-management/the-80-20-rule-in-daily-work/",
+    "category": "file",
+    "badge": "📊 Pareto"
+  },
+  {
+    "title": "The Pomodoro Technique Guide",
+    "description": "Work in focused intervals with short breaks for sustained productivity.",
+    "url": "./productivity/time-management/the-pomodoro-technique-guide/",
+    "category": "file",
+    "badge": "⏰ Pomodoro"
+  },
+  {
+    "title": "Time Blocking vs Time Boxing Explained",
+    "description": "Understand the difference and choose the right approach for your workflow.",
+    "url": "./productivity/time-management/time-blocking-vs-time-boxing-explained/",
+    "category": "file",
+    "badge": "📅 Planning"
+  },
+  {
+    "title": "Services — SolveMap",
+    "description": "Free and premium tools to solve your problems",
+    "url": "/services/",
+    "category": "services"
+  },
+  {
+    "title": "Calorie Calculator",
+    "description": "Calculate BMR, TDEE, macros and ideal weight",
+    "url": "/services/calorie-calculator/",
+    "category": "service",
+    "badge": "Free"
+  },
+  {
+    "title": "BMI Calculator",
+    "description": "Check your body mass index and get recommendations",
+    "url": "/services/bmi-calculator/",
+    "category": "service",
+    "badge": "Free"
+  },
+  {
+    "title": "Checklist Generator",
+    "description": "Create a checklist for any task in 1 minute",
+    "url": "/services/checklist-generator/",
+    "category": "service",
+    "badge": "Free"
+  },
+  {
+    "title": "Loan Calculator",
+    "description": "Calculate overpayment and monthly payments",
+    "url": "/services/loan-calculator/",
+    "category": "service",
+    "badge": "Free"
+  },
+  {
+    "title": "Workout Generator",
+    "description": "Get a personalized training program",
+    "url": "/services/workout-generator/",
+    "category": "service",
+    "badge": "Premium"
+  }
+]
