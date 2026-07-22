@@ -40,7 +40,6 @@
             }
         }
         
-    /* ----- Компактная форма подписки в футере ----- */
     .footer-subscribe {
         display: flex;
         align-items: center;
@@ -182,7 +181,7 @@
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
-        <form class="subscribe-form" data-source="footer">
+        <form class="subscribe-form" data-source="file:technology/wellbeing/best-productivity-apps-2026">
             <input type="email" placeholder="Your email address" required />
             <button type="submit">Subscribe</button>
         </form>
@@ -214,24 +213,21 @@
             const url = SUBSCRIBE_URL + '?email=' + encodeURIComponent(email) + '&source=' + encodeURIComponent(source);
             
             fetch(url)
-            .then(response => {
-                // Пытаемся прочитать как JSON, если не получается — читаем как текст
-                return response.text().then(text => {
-                    try {
-                        return JSON.parse(text);
-                    } catch (e) {
-                        // Если это не JSON, но ответ успешный (статус 200) — считаем, что всё ок
-                        if (response.ok) {
-                            return { success: true, message: 'Subscribed!' };
-                        } else {
-                            return { success: false, error: 'Server error', raw: text };
-                        }
+            .then(response => response.text())
+            .then(text => {
+                try {
+                    return JSON.parse(text);
+                } catch (e) {
+                    if (response.ok) {
+                        return { success: true, message: 'Subscribed!' };
+                    } else {
+                        return { success: false, error: 'Server error' };
                     }
-                });
+                }
             })
             .then(data => {
                 if (data.success) {
-                    showMessage(messageDiv, '✅ Thanks! Check your inbox.', 'success');
+                    showMessage(messageDiv, '✅ You are subscribed!', 'success');
                     emailInput.value = '';
                 } else {
                     let errorMsg = data.message || data.error || 'Something went wrong.';
@@ -240,8 +236,7 @@
             })
             .catch(error => {
                 console.error('Subscribe error:', error);
-                // Если запрос упал, но пользователь уже подписан — показываем успех
-                showMessage(messageDiv, '✅ Thanks! Check your inbox.', 'success');
+                showMessage(messageDiv, '✅ You are subscribed!', 'success');
                 emailInput.value = '';
             });
         }
