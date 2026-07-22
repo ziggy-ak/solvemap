@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Technology</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Digital Wellbeing</div><a href="./best-productivity-apps-2026/">Best Productivity Apps 2026</a><a href="./digital-detox-plan/">Digital Detox Plan</a><a href="./how-to-manage-digital-distractions/">How to Manage Digital Distractions</a><a href="./how-to-reduce-screen-time/">How to Reduce Screen Time</a><a href="./how-to-set-boundaries-with-technology/">How to Set Boundaries with Technology</a><a href="./mindful-tech-use/">Mindful Tech Use</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="active">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Digital Wellbeing</div><div class="back-link" onclick="window.location.href='../'">← Back to Technology</div><ul><li class="file-item" onclick="window.location.href='./best-productivity-apps-2026/'">best-productivity-apps-2026</li><li class="file-item" onclick="window.location.href='./digital-detox-plan/'">digital-detox-plan</li><li class="file-item" onclick="window.location.href='./how-to-manage-digital-distractions/'">how-to-manage-digital-distractions</li><li class="file-item" onclick="window.location.href='./how-to-reduce-screen-time/'">how-to-reduce-screen-time</li><li class="file-item" onclick="window.location.href='./how-to-set-boundaries-with-technology/'">how-to-set-boundaries-with-technology</li><li class="file-item" onclick="window.location.href='./mindful-tech-use/'">mindful-tech-use</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Technology</a> <span class="sep">→</span> <span class="current">Wellbeing</span></nav><h1>Digital Wellbeing</h1><p class="subtitle">Build a healthy relationship with technology and protect your mental health.</p><div class="tags"><span>#digitalwellbeing</span><span>#mentalhealth</span><span>#balance</span><span>#technology</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>📱 Mindful tech use reduces stress and improves focus</li><li>🔔 Manage notifications to reduce distractions</li><li>🌿 Digital detox plans help reset your relationship with technology</li><li>⏰ Reducing screen time improves sleep and well‑being</li></ul></div><div class="why-section"><h3>💡 Why Digital Wellbeing at SolveMap</h3><ul><li>📱 Use technology intentionally, not habitually</li><li>🔔 Turn off unnecessary notifications</li><li>🌿 Schedule regular digital detox periods</li><li>⏰ Set limits on social media and screen time</li></ul></div><div class="file-grid"><a href="./best-productivity-apps-2026/" class="file-card"><div class="icon">📄</div><div class="name">Best Productivity Apps 2026</div><div class="desc">Discover the best apps to boost your productivity in 2026.</div><span class="badge">📱 Apps</span></a><a href="./digital-detox-plan/" class="file-card"><div class="icon">📄</div><div class="name">Digital Detox Plan</div><div class="desc">Reset your relationship with technology with a structured digital detox.</div><span class="badge">🌿 Detox</span></a><a href="./how-to-manage-digital-distractions/" class="file-card"><div class="icon">📄</div><div class="name">How to Manage Digital Distractions</div><div class="desc">Take control of your digital environment and protect your focus.</div><span class="badge">📱 Focus</span></a><a href="./how-to-reduce-screen-time/" class="file-card"><div class="icon">📄</div><div class="name">How to Reduce Screen Time</div><div class="desc">Practical strategies to reduce your screen time and reclaim your life.</div><span class="badge">📱 Screen Time</span></a><a href="./how-to-set-boundaries-with-technology/" class="file-card"><div class="icon">📄</div><div class="name">How to Set Boundaries with Technology</div><div class="desc">Create healthy boundaries with technology to protect your time and attention.</div><span class="badge">🛡️ Boundaries</span></a><a href="./mindful-tech-use/" class="file-card"><div class="icon">📄</div><div class="name">Mindful Tech Use</div><div class="desc">Use technology with intention and awareness, not out of habit.</div><span class="badge">🧘 Mindfulness</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Technology should serve you, not consume you — take control of your digital life.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Digital Wellbeing</div><div class="back-link" onclick="window.location.href='../'">← Back to Technology</div><ul><li class="file-item" onclick="window.location.href='./best-productivity-apps-2026/'">best-productivity-apps-2026</li><li class="file-item" onclick="window.location.href='./digital-detox-plan/'">digital-detox-plan</li><li class="file-item" onclick="window.location.href='./how-to-manage-digital-distractions/'">how-to-manage-digital-distractions</li><li class="file-item" onclick="window.location.href='./how-to-reduce-screen-time/'">how-to-reduce-screen-time</li><li class="file-item" onclick="window.location.href='./how-to-set-boundaries-with-technology/'">how-to-set-boundaries-with-technology</li><li class="file-item" onclick="window.location.href='./mindful-tech-use/'">mindful-tech-use</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Technology</a> <span class="sep">→</span> <span class="current">Wellbeing</span></nav><h1>Digital Wellbeing</h1><p class="subtitle">Build a healthy relationship with technology and protect your mental health.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#digitalwellbeing" data-type="tag">#digitalwellbeing</button><button class="filter-btn" data-filter="#mentalhealth" data-type="tag">#mentalhealth</button><button class="filter-btn" data-filter="#balance" data-type="tag">#balance</button><button class="filter-btn" data-filter="#technology" data-type="tag">#technology</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="🌿 Detox" data-type="type">🌿 Detox</button><button class="filter-btn type" data-filter="📱 Apps" data-type="type">📱 Apps</button><button class="filter-btn type" data-filter="📱 Focus" data-type="type">📱 Focus</button><button class="filter-btn type" data-filter="📱 Screen Time" data-type="type">📱 Screen Time</button><button class="filter-btn type" data-filter="🛡️ Boundaries" data-type="type">🛡️ Boundaries</button><button class="filter-btn type" data-filter="🧘 Mindfulness" data-type="type">🧘 Mindfulness</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./best-productivity-apps-2026/" class="file-card" data-tags="#digitalwellbeing #mentalhealth #balance #technology" data-type="📱 Apps">
+                <div class="icon">📄</div>
+                <div class="name">Best Productivity Apps 2026</div>
+                <div class="desc">Discover the best apps to boost your productivity in 2026.</div>
+                <span class="badge">📱 Apps</span>
+            </a>
+        
+            <a href="./digital-detox-plan/" class="file-card" data-tags="#digitalwellbeing #mentalhealth #balance #technology" data-type="🌿 Detox">
+                <div class="icon">📄</div>
+                <div class="name">Digital Detox Plan</div>
+                <div class="desc">Reset your relationship with technology with a structured digital detox.</div>
+                <span class="badge">🌿 Detox</span>
+            </a>
+        
+            <a href="./how-to-manage-digital-distractions/" class="file-card" data-tags="#digitalwellbeing #mentalhealth #balance #technology" data-type="📱 Focus">
+                <div class="icon">📄</div>
+                <div class="name">How to Manage Digital Distractions</div>
+                <div class="desc">Take control of your digital environment and protect your focus.</div>
+                <span class="badge">📱 Focus</span>
+            </a>
+        
+            <a href="./how-to-reduce-screen-time/" class="file-card" data-tags="#digitalwellbeing #mentalhealth #balance #technology" data-type="📱 Screen Time">
+                <div class="icon">📄</div>
+                <div class="name">How to Reduce Screen Time</div>
+                <div class="desc">Practical strategies to reduce your screen time and reclaim your life.</div>
+                <span class="badge">📱 Screen Time</span>
+            </a>
+        
+            <a href="./how-to-set-boundaries-with-technology/" class="file-card" data-tags="#digitalwellbeing #mentalhealth #balance #technology" data-type="🛡️ Boundaries">
+                <div class="icon">📄</div>
+                <div class="name">How to Set Boundaries with Technology</div>
+                <div class="desc">Create healthy boundaries with technology to protect your time and attention.</div>
+                <span class="badge">🛡️ Boundaries</span>
+            </a>
+        
+            <a href="./mindful-tech-use/" class="file-card" data-tags="#digitalwellbeing #mentalhealth #balance #technology" data-type="🧘 Mindfulness">
+                <div class="icon">📄</div>
+                <div class="name">Mindful Tech Use</div>
+                <div class="desc">Use technology with intention and awareness, not out of habit.</div>
+                <span class="badge">🧘 Mindfulness</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 Technology should serve you, not consume you — take control of your digital life.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

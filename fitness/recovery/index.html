@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Fitness</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Recovery</div><a href="./active-recovery/">Active Recovery</a><a href="./foam-rolling-guide/">Foam Rolling Guide</a><a href="./injury-prevention/">Injury Prevention</a><a href="./post-workout-stretching-routine/">Post‑Workout Stretching Routine</a><a href="./science-of-recovery/">The Science of Recovery</a><a href="./sleep-guide-for-better-recovery/">Sleep Guide for Better Recovery</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="active">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Recovery</div><div class="back-link" onclick="window.location.href='../'">← Back to Fitness</div><ul><li class="file-item" onclick="window.location.href='./active-recovery/'">active-recovery</li><li class="file-item" onclick="window.location.href='./foam-rolling-guide/'">foam-rolling-guide</li><li class="file-item" onclick="window.location.href='./injury-prevention/'">injury-prevention</li><li class="file-item" onclick="window.location.href='./post-workout-stretching-routine/'">post-workout-stretching-routine</li><li class="file-item" onclick="window.location.href='./science-of-recovery/'">science-of-recovery</li><li class="file-item" onclick="window.location.href='./sleep-guide-for-better-recovery/'">sleep-guide-for-better-recovery</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Fitness</a> <span class="sep">→</span> <span class="current">Recovery</span></nav><h1>Recovery</h1><p class="subtitle">Optimise your recovery to perform better and prevent injuries.</p><div class="tags"><span>#recovery</span><span>#fitness</span><span>#injuryprevention</span><span>#sleep</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>🛡️ Injury prevention starts with proper form and warm‑up</li><li>🧬 Science‑backed recovery methods accelerate healing</li><li>🏃 Active recovery keeps you moving without strain</li><li>🧘 Foam rolling and stretching reduce soreness</li></ul></div><div class="why-section"><h3>💡 Why Recovery at SolveMap</h3><ul><li>🛡️ Warm up before workouts and cool down after</li><li>🧬 Prioritise sleep and nutrition for recovery</li><li>🏃 Include light activity on rest days</li><li>🧘 Use foam rolling to release muscle tension</li></ul></div><div class="file-grid"><a href="./active-recovery/" class="file-card"><div class="icon">📄</div><div class="name">Active Recovery</div><div class="desc">Incorporate light activity on rest days to speed up recovery.</div><span class="badge">🏃 Active</span></a><a href="./foam-rolling-guide/" class="file-card"><div class="icon">📄</div><div class="name">Foam Rolling Guide</div><div class="desc">Use foam rolling to release tension and improve mobility.</div><span class="badge">🧘 Roll</span></a><a href="./injury-prevention/" class="file-card"><div class="icon">📄</div><div class="name">Injury Prevention</div><div class="desc">Prevent common workout injuries with proper technique and preparation.</div><span class="badge">🛡️ Prevention</span></a><a href="./post-workout-stretching-routine/" class="file-card"><div class="icon">📄</div><div class="name">Post‑Workout Stretching Routine</div><div class="desc">Cool down and stretch effectively after your workouts.</div><span class="badge">🧘 Stretch</span></a><a href="./science-of-recovery/" class="file-card"><div class="icon">📄</div><div class="name">The Science of Recovery</div><div class="desc">Understand the physiological processes behind recovery and how to optimise them.</div><span class="badge">🔬 Science</span></a><a href="./sleep-guide-for-better-recovery/" class="file-card"><div class="icon">📄</div><div class="name">Sleep Guide for Better Recovery</div><div class="desc">Optimise your sleep to enhance workout recovery and performance.</div><span class="badge">😴 Sleep</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Recovery is where the magic happens — respect your rest days as much as your workout days.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Recovery</div><div class="back-link" onclick="window.location.href='../'">← Back to Fitness</div><ul><li class="file-item" onclick="window.location.href='./active-recovery/'">active-recovery</li><li class="file-item" onclick="window.location.href='./foam-rolling-guide/'">foam-rolling-guide</li><li class="file-item" onclick="window.location.href='./injury-prevention/'">injury-prevention</li><li class="file-item" onclick="window.location.href='./post-workout-stretching-routine/'">post-workout-stretching-routine</li><li class="file-item" onclick="window.location.href='./science-of-recovery/'">science-of-recovery</li><li class="file-item" onclick="window.location.href='./sleep-guide-for-better-recovery/'">sleep-guide-for-better-recovery</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Fitness</a> <span class="sep">→</span> <span class="current">Recovery</span></nav><h1>Recovery</h1><p class="subtitle">Optimise your recovery to perform better and prevent injuries.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#recovery" data-type="tag">#recovery</button><button class="filter-btn" data-filter="#fitness" data-type="tag">#fitness</button><button class="filter-btn" data-filter="#injuryprevention" data-type="tag">#injuryprevention</button><button class="filter-btn" data-filter="#sleep" data-type="tag">#sleep</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="🏃 Active" data-type="type">🏃 Active</button><button class="filter-btn type" data-filter="🔬 Science" data-type="type">🔬 Science</button><button class="filter-btn type" data-filter="😴 Sleep" data-type="type">😴 Sleep</button><button class="filter-btn type" data-filter="🛡️ Prevention" data-type="type">🛡️ Prevention</button><button class="filter-btn type" data-filter="🧘 Roll" data-type="type">🧘 Roll</button><button class="filter-btn type" data-filter="🧘 Stretch" data-type="type">🧘 Stretch</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./active-recovery/" class="file-card" data-tags="#recovery #fitness #injuryprevention #sleep" data-type="🏃 Active">
+                <div class="icon">📄</div>
+                <div class="name">Active Recovery</div>
+                <div class="desc">Incorporate light activity on rest days to speed up recovery.</div>
+                <span class="badge">🏃 Active</span>
+            </a>
+        
+            <a href="./foam-rolling-guide/" class="file-card" data-tags="#recovery #fitness #injuryprevention #sleep" data-type="🧘 Roll">
+                <div class="icon">📄</div>
+                <div class="name">Foam Rolling Guide</div>
+                <div class="desc">Use foam rolling to release tension and improve mobility.</div>
+                <span class="badge">🧘 Roll</span>
+            </a>
+        
+            <a href="./injury-prevention/" class="file-card" data-tags="#recovery #fitness #injuryprevention #sleep" data-type="🛡️ Prevention">
+                <div class="icon">📄</div>
+                <div class="name">Injury Prevention</div>
+                <div class="desc">Prevent common workout injuries with proper technique and preparation.</div>
+                <span class="badge">🛡️ Prevention</span>
+            </a>
+        
+            <a href="./post-workout-stretching-routine/" class="file-card" data-tags="#recovery #fitness #injuryprevention #sleep" data-type="🧘 Stretch">
+                <div class="icon">📄</div>
+                <div class="name">Post‑Workout Stretching Routine</div>
+                <div class="desc">Cool down and stretch effectively after your workouts.</div>
+                <span class="badge">🧘 Stretch</span>
+            </a>
+        
+            <a href="./science-of-recovery/" class="file-card" data-tags="#recovery #fitness #injuryprevention #sleep" data-type="🔬 Science">
+                <div class="icon">📄</div>
+                <div class="name">The Science of Recovery</div>
+                <div class="desc">Understand the physiological processes behind recovery and how to optimise them.</div>
+                <span class="badge">🔬 Science</span>
+            </a>
+        
+            <a href="./sleep-guide-for-better-recovery/" class="file-card" data-tags="#recovery #fitness #injuryprevention #sleep" data-type="😴 Sleep">
+                <div class="icon">📄</div>
+                <div class="name">Sleep Guide for Better Recovery</div>
+                <div class="desc">Optimise your sleep to enhance workout recovery and performance.</div>
+                <span class="badge">😴 Sleep</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 Recovery is where the magic happens — respect your rest days as much as your workout days.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Travel</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Types of Travel</div><a href="./adventure-travel-ideas/">Adventure Travel Ideas</a><a href="./backpacking-guide-for-beginners/">Backpacking Guide for Beginners</a><a href="./cruise-travel-for-beginners/">Cruise Travel for Beginners</a><a href="./family-travel-guide/">Family Travel Guide</a><a href="./luxury-travel-on-a-budget/">Luxury Travel on a Budget</a><a href="./road-trip-planning-guide/">Road Trip Planning Guide</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="active">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Types of Travel</div><div class="back-link" onclick="window.location.href='../'">← Back to Travel</div><ul><li class="file-item" onclick="window.location.href='./adventure-travel-ideas/'">adventure-travel-ideas</li><li class="file-item" onclick="window.location.href='./backpacking-guide-for-beginners/'">backpacking-guide-for-beginners</li><li class="file-item" onclick="window.location.href='./cruise-travel-for-beginners/'">cruise-travel-for-beginners</li><li class="file-item" onclick="window.location.href='./family-travel-guide/'">family-travel-guide</li><li class="file-item" onclick="window.location.href='./luxury-travel-on-a-budget/'">luxury-travel-on-a-budget</li><li class="file-item" onclick="window.location.href='./road-trip-planning-guide/'">road-trip-planning-guide</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Travel</a> <span class="sep">→</span> <span class="current">Types</span></nav><h1>Types of Travel</h1><p class="subtitle">Explore different ways to travel — from backpacking to luxury to adventure.</p><div class="tags"><span>#travel</span><span>#adventure</span><span>#backpacking</span><span>#luxury</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>🎒 Backpacking is the most affordable way to explore</li><li>🚗 Road trips offer freedom and flexibility</li><li>👨‍👩‍👧‍👦 Family travel creates lasting memories</li><li>🏔️ Adventure travel pushes your limits</li></ul></div><div class="why-section"><h3>💡 Why Types of Travel at SolveMap</h3><ul><li>🎒 Pack light and go far</li><li>🚗 Plan your route but leave room for spontaneity</li><li>👨‍👩‍👧‍👦 Choose family‑friendly destinations</li><li>🏔️ Step out of your comfort zone</li></ul></div><div class="file-grid"><a href="./adventure-travel-ideas/" class="file-card"><div class="icon">📄</div><div class="name">Adventure Travel Ideas</div><div class="desc">Push your limits with these adventure travel ideas.</div><span class="badge">🏔️ Adventure</span></a><a href="./backpacking-guide-for-beginners/" class="file-card"><div class="icon">📄</div><div class="name">Backpacking Guide for Beginners</div><div class="desc">Start your backpacking journey with confidence and the right gear.</div><span class="badge">🎒 Backpacking</span></a><a href="./cruise-travel-for-beginners/" class="file-card"><div class="icon">📄</div><div class="name">Cruise Travel for Beginners</div><div class="desc">Everything you need to know about your first cruise vacation.</div><span class="badge">🚢 Cruise</span></a><a href="./family-travel-guide/" class="file-card"><div class="icon">📄</div><div class="name">Family Travel Guide</div><div class="desc">Travel with your family — stress‑free and memorable.</div><span class="badge">👨‍👩‍👧‍👦 Family</span></a><a href="./luxury-travel-on-a-budget/" class="file-card"><div class="icon">📄</div><div class="name">Luxury Travel on a Budget</div><div class="desc">Experience luxury travel without breaking the bank.</div><span class="badge">✨ Luxury</span></a><a href="./road-trip-planning-guide/" class="file-card"><div class="icon">📄</div><div class="name">Road Trip Planning Guide</div><div class="desc">Plan the perfect road trip — route, stops, and memories.</div><span class="badge">🚗 Road Trip</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 There's no right way to travel — only the way that's right for you.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Types of Travel</div><div class="back-link" onclick="window.location.href='../'">← Back to Travel</div><ul><li class="file-item" onclick="window.location.href='./adventure-travel-ideas/'">adventure-travel-ideas</li><li class="file-item" onclick="window.location.href='./backpacking-guide-for-beginners/'">backpacking-guide-for-beginners</li><li class="file-item" onclick="window.location.href='./cruise-travel-for-beginners/'">cruise-travel-for-beginners</li><li class="file-item" onclick="window.location.href='./family-travel-guide/'">family-travel-guide</li><li class="file-item" onclick="window.location.href='./luxury-travel-on-a-budget/'">luxury-travel-on-a-budget</li><li class="file-item" onclick="window.location.href='./road-trip-planning-guide/'">road-trip-planning-guide</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Travel</a> <span class="sep">→</span> <span class="current">Types</span></nav><h1>Types of Travel</h1><p class="subtitle">Explore different ways to travel — from backpacking to luxury to adventure.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#travel" data-type="tag">#travel</button><button class="filter-btn" data-filter="#adventure" data-type="tag">#adventure</button><button class="filter-btn" data-filter="#backpacking" data-type="tag">#backpacking</button><button class="filter-btn" data-filter="#luxury" data-type="tag">#luxury</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="✨ Luxury" data-type="type">✨ Luxury</button><button class="filter-btn type" data-filter="🎒 Backpacking" data-type="type">🎒 Backpacking</button><button class="filter-btn type" data-filter="🏔️ Adventure" data-type="type">🏔️ Adventure</button><button class="filter-btn type" data-filter="👨‍👩‍👧‍👦 Family" data-type="type">👨‍👩‍👧‍👦 Family</button><button class="filter-btn type" data-filter="🚗 Road Trip" data-type="type">🚗 Road Trip</button><button class="filter-btn type" data-filter="🚢 Cruise" data-type="type">🚢 Cruise</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./adventure-travel-ideas/" class="file-card" data-tags="#travel #adventure #backpacking #luxury" data-type="🏔️ Adventure">
+                <div class="icon">📄</div>
+                <div class="name">Adventure Travel Ideas</div>
+                <div class="desc">Push your limits with these adventure travel ideas.</div>
+                <span class="badge">🏔️ Adventure</span>
+            </a>
+        
+            <a href="./backpacking-guide-for-beginners/" class="file-card" data-tags="#travel #adventure #backpacking #luxury" data-type="🎒 Backpacking">
+                <div class="icon">📄</div>
+                <div class="name">Backpacking Guide for Beginners</div>
+                <div class="desc">Start your backpacking journey with confidence and the right gear.</div>
+                <span class="badge">🎒 Backpacking</span>
+            </a>
+        
+            <a href="./cruise-travel-for-beginners/" class="file-card" data-tags="#travel #adventure #backpacking #luxury" data-type="🚢 Cruise">
+                <div class="icon">📄</div>
+                <div class="name">Cruise Travel for Beginners</div>
+                <div class="desc">Everything you need to know about your first cruise vacation.</div>
+                <span class="badge">🚢 Cruise</span>
+            </a>
+        
+            <a href="./family-travel-guide/" class="file-card" data-tags="#travel #adventure #backpacking #luxury" data-type="👨‍👩‍👧‍👦 Family">
+                <div class="icon">📄</div>
+                <div class="name">Family Travel Guide</div>
+                <div class="desc">Travel with your family — stress‑free and memorable.</div>
+                <span class="badge">👨‍👩‍👧‍👦 Family</span>
+            </a>
+        
+            <a href="./luxury-travel-on-a-budget/" class="file-card" data-tags="#travel #adventure #backpacking #luxury" data-type="✨ Luxury">
+                <div class="icon">📄</div>
+                <div class="name">Luxury Travel on a Budget</div>
+                <div class="desc">Experience luxury travel without breaking the bank.</div>
+                <span class="badge">✨ Luxury</span>
+            </a>
+        
+            <a href="./road-trip-planning-guide/" class="file-card" data-tags="#travel #adventure #backpacking #luxury" data-type="🚗 Road Trip">
+                <div class="icon">📄</div>
+                <div class="name">Road Trip Planning Guide</div>
+                <div class="desc">Plan the perfect road trip — route, stops, and memories.</div>
+                <span class="badge">🚗 Road Trip</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 There's no right way to travel — only the way that's right for you.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

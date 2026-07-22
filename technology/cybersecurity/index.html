@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Technology</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Cybersecurity</div><a href="./how-to-create-a-strong-password/">How to Create a Strong Password</a><a href="./how-to-protect-your-data-online/">How to Protect Your Data Online</a><a href="./how-to-spot-phishing-emails/">How to Spot Phishing Emails</a><a href="./privacy-settings-on-social-media/">Privacy Settings on Social Media</a><a href="./two-factor-authentication-guide/">Two‑Factor Authentication Guide</a><a href="./vpn-guide-for-beginners/">VPN Guide for Beginners</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="active">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Cybersecurity</div><div class="back-link" onclick="window.location.href='../'">← Back to Technology</div><ul><li class="file-item" onclick="window.location.href='./how-to-create-a-strong-password/'">how-to-create-a-strong-password</li><li class="file-item" onclick="window.location.href='./how-to-protect-your-data-online/'">how-to-protect-your-data-online</li><li class="file-item" onclick="window.location.href='./how-to-spot-phishing-emails/'">how-to-spot-phishing-emails</li><li class="file-item" onclick="window.location.href='./privacy-settings-on-social-media/'">privacy-settings-on-social-media</li><li class="file-item" onclick="window.location.href='./two-factor-authentication-guide/'">two-factor-authentication-guide</li><li class="file-item" onclick="window.location.href='./vpn-guide-for-beginners/'">vpn-guide-for-beginners</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Technology</a> <span class="sep">→</span> <span class="current">Cybersecurity</span></nav><h1>Cybersecurity</h1><p class="subtitle">Protect your digital life with essential security practices.</p><div class="tags"><span>#cybersecurity</span><span>#privacy</span><span>#security</span><span>#online</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>🛡️ Strong passwords and two‑factor authentication are essential</li><li>🔒 VPNs protect your privacy online</li><li>📱 Privacy settings on social media control your data</li><li>⚠️ Phishing emails are a common security threat</li></ul></div><div class="why-section"><h3>💡 Why Cybersecurity at SolveMap</h3><ul><li>🛡️ Use strong, unique passwords for every account</li><li>🔒 Use a VPN on public Wi‑Fi</li><li>📱 Review privacy settings on all your social media accounts</li><li>⚠️ Learn to spot phishing emails before you click</li></ul></div><div class="file-grid"><a href="./how-to-create-a-strong-password/" class="file-card"><div class="icon">📄</div><div class="name">How to Create a Strong Password</div><div class="desc">Create passwords that are strong, unique, and easy to remember.</div><span class="badge">🔐 Password</span></a><a href="./how-to-protect-your-data-online/" class="file-card"><div class="icon">📄</div><div class="name">How to Protect Your Data Online</div><div class="desc">Essential strategies for protecting your personal data online.</div><span class="badge">🛡️ Protection</span></a><a href="./how-to-spot-phishing-emails/" class="file-card"><div class="icon">📄</div><div class="name">How to Spot Phishing Emails</div><div class="desc">Learn to identify and avoid phishing scams before they compromise your security.</div><span class="badge">⚠️ Phishing</span></a><a href="./privacy-settings-on-social-media/" class="file-card"><div class="icon">📄</div><div class="name">Privacy Settings on Social Media</div><div class="desc">Take control of your privacy on social media platforms.</div><span class="badge">🔒 Privacy</span></a><a href="./two-factor-authentication-guide/" class="file-card"><div class="icon">📄</div><div class="name">Two‑Factor Authentication Guide</div><div class="desc">Add an extra layer of security to your accounts with two‑factor authentication.</div><span class="badge">🔐 2FA</span></a><a href="./vpn-guide-for-beginners/" class="file-card"><div class="icon">📄</div><div class="name">VPN Guide for Beginners</div><div class="desc">Protect your privacy online with a VPN — a beginner's guide.</div><span class="badge">🔒 Privacy</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Cybersecurity is not optional — it's essential for protecting your digital life.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Cybersecurity</div><div class="back-link" onclick="window.location.href='../'">← Back to Technology</div><ul><li class="file-item" onclick="window.location.href='./how-to-create-a-strong-password/'">how-to-create-a-strong-password</li><li class="file-item" onclick="window.location.href='./how-to-protect-your-data-online/'">how-to-protect-your-data-online</li><li class="file-item" onclick="window.location.href='./how-to-spot-phishing-emails/'">how-to-spot-phishing-emails</li><li class="file-item" onclick="window.location.href='./privacy-settings-on-social-media/'">privacy-settings-on-social-media</li><li class="file-item" onclick="window.location.href='./two-factor-authentication-guide/'">two-factor-authentication-guide</li><li class="file-item" onclick="window.location.href='./vpn-guide-for-beginners/'">vpn-guide-for-beginners</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Technology</a> <span class="sep">→</span> <span class="current">Cybersecurity</span></nav><h1>Cybersecurity</h1><p class="subtitle">Protect your digital life with essential security practices.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#cybersecurity" data-type="tag">#cybersecurity</button><button class="filter-btn" data-filter="#privacy" data-type="tag">#privacy</button><button class="filter-btn" data-filter="#security" data-type="tag">#security</button><button class="filter-btn" data-filter="#online" data-type="tag">#online</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="⚠️ Phishing" data-type="type">⚠️ Phishing</button><button class="filter-btn type" data-filter="🔐 2FA" data-type="type">🔐 2FA</button><button class="filter-btn type" data-filter="🔐 Password" data-type="type">🔐 Password</button><button class="filter-btn type" data-filter="🔒 Privacy" data-type="type">🔒 Privacy</button><button class="filter-btn type" data-filter="🛡️ Protection" data-type="type">🛡️ Protection</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./how-to-create-a-strong-password/" class="file-card" data-tags="#cybersecurity #privacy #security #online" data-type="🔐 Password">
+                <div class="icon">📄</div>
+                <div class="name">How to Create a Strong Password</div>
+                <div class="desc">Create passwords that are strong, unique, and easy to remember.</div>
+                <span class="badge">🔐 Password</span>
+            </a>
+        
+            <a href="./how-to-protect-your-data-online/" class="file-card" data-tags="#cybersecurity #privacy #security #online" data-type="🛡️ Protection">
+                <div class="icon">📄</div>
+                <div class="name">How to Protect Your Data Online</div>
+                <div class="desc">Essential strategies for protecting your personal data online.</div>
+                <span class="badge">🛡️ Protection</span>
+            </a>
+        
+            <a href="./how-to-spot-phishing-emails/" class="file-card" data-tags="#cybersecurity #privacy #security #online" data-type="⚠️ Phishing">
+                <div class="icon">📄</div>
+                <div class="name">How to Spot Phishing Emails</div>
+                <div class="desc">Learn to identify and avoid phishing scams before they compromise your security.</div>
+                <span class="badge">⚠️ Phishing</span>
+            </a>
+        
+            <a href="./privacy-settings-on-social-media/" class="file-card" data-tags="#cybersecurity #privacy #security #online" data-type="🔒 Privacy">
+                <div class="icon">📄</div>
+                <div class="name">Privacy Settings on Social Media</div>
+                <div class="desc">Take control of your privacy on social media platforms.</div>
+                <span class="badge">🔒 Privacy</span>
+            </a>
+        
+            <a href="./two-factor-authentication-guide/" class="file-card" data-tags="#cybersecurity #privacy #security #online" data-type="🔐 2FA">
+                <div class="icon">📄</div>
+                <div class="name">Two‑Factor Authentication Guide</div>
+                <div class="desc">Add an extra layer of security to your accounts with two‑factor authentication.</div>
+                <span class="badge">🔐 2FA</span>
+            </a>
+        
+            <a href="./vpn-guide-for-beginners/" class="file-card" data-tags="#cybersecurity #privacy #security #online" data-type="🔒 Privacy">
+                <div class="icon">📄</div>
+                <div class="name">VPN Guide for Beginners</div>
+                <div class="desc">Protect your privacy online with a VPN — a beginner's guide.</div>
+                <span class="badge">🔒 Privacy</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 Cybersecurity is not optional — it's essential for protecting your digital life.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../../styles/file.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,73 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Wellbeing</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Wellbeing</div><a href="./best-productivity-apps-2026/" class="">best-productivity-apps-2026</a><a href="./digital-detox-plan/" class="">digital-detox-plan</a><a href="./how-to-manage-digital-distractions/" class="">how-to-manage-digital-distractions</a><a href="./how-to-reduce-screen-time/" class="active">How to Reduce Screen Time</a><a href="./how-to-set-boundaries-with-technology/" class="">how-to-set-boundaries-with-technology</a><a href="./mindful-tech-use/" class="">mindful-tech-use</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="active">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Wellbeing</div><div class="back-link" onclick="window.location.href='../'">← Back to Wellbeing</div><ul><li class="file-item " onclick="window.location.href='./best-productivity-apps-2026/'; return false;">best-productivity-apps-2026</li><li class="file-item " onclick="window.location.href='./digital-detox-plan/'; return false;">digital-detox-plan</li><li class="file-item " onclick="window.location.href='./how-to-manage-digital-distractions/'; return false;">how-to-manage-digital-distractions</li><li class="file-item active" onclick="window.location.href='./how-to-reduce-screen-time/'; return false;">how-to-reduce-screen-time</li><li class="file-item " onclick="window.location.href='./how-to-set-boundaries-with-technology/'; return false;">how-to-set-boundaries-with-technology</li><li class="file-item " onclick="window.location.href='./mindful-tech-use/'; return false;">mindful-tech-use</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Technology</a> <span class="sep">→</span> <a href="../">Wellbeing</a> <span class="sep">→</span> <span class="current">How to Reduce Screen Time</span></nav><h1 class="file-title">How to Reduce Screen Time 📄</h1><p class="file-sub">Practical strategies to reduce your screen time and reclaim your life.</p><div class="file-description"><p><strong>Your problem:</strong> You spend too much time on screens and want to reduce your screen time for better health and well‑being.</p><p><strong>This solution:</strong> A guide to reducing screen time — practical strategies, habit changes, and tools to help you spend less time on devices.</p></div><div class="download-section"><a href="https://frge.top/how-to-reduce-screen-ec5pva" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Reducing screen time is not about deprivation — it's about reclaiming time for what matters.</div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Wellbeing</div><div class="back-link" onclick="window.location.href='../'">← Back to Wellbeing</div><ul><li class="file-item " onclick="window.location.href='./best-productivity-apps-2026/'; return false;">best-productivity-apps-2026</li><li class="file-item " onclick="window.location.href='./digital-detox-plan/'; return false;">digital-detox-plan</li><li class="file-item " onclick="window.location.href='./how-to-manage-digital-distractions/'; return false;">how-to-manage-digital-distractions</li><li class="file-item active" onclick="window.location.href='./how-to-reduce-screen-time/'; return false;">how-to-reduce-screen-time</li><li class="file-item " onclick="window.location.href='./how-to-set-boundaries-with-technology/'; return false;">how-to-set-boundaries-with-technology</li><li class="file-item " onclick="window.location.href='./mindful-tech-use/'; return false;">mindful-tech-use</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Technology</a> <span class="sep">→</span> <a href="../">Wellbeing</a> <span class="sep">→</span> <span class="current">How to Reduce Screen Time</span></nav><h1 class="file-title">How to Reduce Screen Time 📄</h1><p class="file-sub">Practical strategies to reduce your screen time and reclaim your life.</p><div class="file-description"><p><strong>Your problem:</strong> You spend too much time on screens and want to reduce your screen time for better health and well‑being.</p><p><strong>This solution:</strong> A guide to reducing screen time — practical strategies, habit changes, and tools to help you spend less time on devices.</p></div><div class="download-section"><a href="https://frge.top/how-to-reduce-screen-ec5pva" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Reducing screen time is not about deprivation — it's about reclaiming time for what matters.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
+                <a href="../../career/branding/how-to-build-a-personal-brand-on-linkedin/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Build a Personal Brand on LinkedIn</span>
+                            <span class="related-meta">Technology / Branding</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">📱 LinkedIn</span>
+                </a>
+            
+                <a href="../../career/branding/how-to-get-noticed-by-recruiters/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Get Noticed by Recruiters</span>
+                            <span class="related-meta">Technology / Branding</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">📢 Visibility</span>
+                </a>
+            
+                <a href="../../career/branding/how-to-share-your-work-online/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Share Your Work Online</span>
+                            <span class="related-meta">Technology / Branding</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">🖥️ Portfolio</span>
+                </a>
+            
+                <a href="../../career/branding/how-to-start-a-professional-blog/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Start a Professional Blog</span>
+                            <span class="related-meta">Technology / Branding</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">✍️ Blogging</span>
+                </a>
+            
+                <a href="../../career/branding/public-speaking-tips-for-beginners/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">Public Speaking Tips for Beginners</span>
+                            <span class="related-meta">Technology / Branding</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">🎤 Speaking</span>
+                </a>
+            
+                <a href="../../career/change/how-to-change-careers-at-30/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Change Careers at 30</span>
+                            <span class="related-meta">Technology / Change</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">📅 30s</span>
+                </a>
+            </div></div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +447,22 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+
+        // Сохраняем в историю просмотров
+        (function() {
+            const fileData = {
+                title: "How to Reduce Screen Time",
+                url: "./",
+                category: "technology",
+                subcategory: "wellbeing",
+                badge: "📱 Screen Time"
+            };
+            let history = JSON.parse(localStorage.getItem('solvemap_history')) || [];
+            history = history.filter(item => item.url !== fileData.url);
+            history.unshift(fileData);
+            if (history.length > 10) history = history.slice(0, 10);
+            localStorage.setItem('solvemap_history', JSON.stringify(history));
+        })();
     </script>
     
     <script>

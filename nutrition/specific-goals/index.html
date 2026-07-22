@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Nutrition</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Nutrition for Specific Goals</div><a href="./nutrition-for-men/">Nutrition for Men</a><a href="./nutrition-for-mental-health/">Nutrition for Mental Health</a><a href="./nutrition-for-muscle-gain/">Nutrition for Muscle Gain</a><a href="./nutrition-for-seniors/">Nutrition for Seniors</a><a href="./nutrition-for-weight-loss/">Nutrition for Weight Loss</a><a href="./nutrition-for-women/">Nutrition for Women</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="active">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Nutrition for Specific Goals</div><div class="back-link" onclick="window.location.href='../'">← Back to Nutrition</div><ul><li class="file-item" onclick="window.location.href='./nutrition-for-men/'">nutrition-for-men</li><li class="file-item" onclick="window.location.href='./nutrition-for-mental-health/'">nutrition-for-mental-health</li><li class="file-item" onclick="window.location.href='./nutrition-for-muscle-gain/'">nutrition-for-muscle-gain</li><li class="file-item" onclick="window.location.href='./nutrition-for-seniors/'">nutrition-for-seniors</li><li class="file-item" onclick="window.location.href='./nutrition-for-weight-loss/'">nutrition-for-weight-loss</li><li class="file-item" onclick="window.location.href='./nutrition-for-women/'">nutrition-for-women</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Nutrition</a> <span class="sep">→</span> <span class="current">Specific-goals</span></nav><h1>Nutrition for Specific Goals</h1><p class="subtitle">Eat for your goals — whether it's muscle gain, weight loss, or mental health.</p><div class="tags"><span>#nutrition</span><span>#goals</span><span>#health</span><span>#fitness</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>💪 Nutrition for muscle gain requires adequate protein and calories</li><li>🥗 Weight loss nutrition focuses on calorie deficit and nutrient density</li><li>🧠 Mental health nutrition supports mood and cognitive function</li><li>👴 Nutrition needs change with age</li></ul></div><div class="why-section"><h3>💡 Why Nutrition for Specific Goals at SolveMap</h3><ul><li>💪 Aim for 1.6–2.2g protein per kg of body weight for muscle gain</li><li>🥗 Create a sustainable calorie deficit for weight loss</li><li>🧠 Eat foods rich in omega‑3s and B vitamins for brain health</li><li>👴 Adjust your diet as your body changes</li></ul></div><div class="file-grid"><a href="./nutrition-for-men/" class="file-card"><div class="icon">📄</div><div class="name">Nutrition for Men</div><div class="desc">Eat for optimal health and performance — nutrition tailored for men.</div><span class="badge">💪 Men</span></a><a href="./nutrition-for-mental-health/" class="file-card"><div class="icon">📄</div><div class="name">Nutrition for Mental Health</div><div class="desc">Eat for your brain — nutrition that supports mental health and well‑being.</div><span class="badge">🧠 Mental Health</span></a><a href="./nutrition-for-muscle-gain/" class="file-card"><div class="icon">📄</div><div class="name">Nutrition for Muscle Gain</div><div class="desc">Eat to build muscle and support your fitness goals.</div><span class="badge">💪 Muscle</span></a><a href="./nutrition-for-seniors/" class="file-card"><div class="icon">📄</div><div class="name">Nutrition for Seniors</div><div class="desc">Eat well and stay healthy as you age — nutrition for seniors.</div><span class="badge">👴 Seniors</span></a><a href="./nutrition-for-weight-loss/" class="file-card"><div class="icon">📄</div><div class="name">Nutrition for Weight Loss</div><div class="desc">Eat for sustainable weight loss without deprivation.</div><span class="badge">🥗 Weight Loss</span></a><a href="./nutrition-for-women/" class="file-card"><div class="icon">📄</div><div class="name">Nutrition for Women</div><div class="desc">Eat for optimal health and performance — nutrition tailored for women.</div><span class="badge">💃 Women</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Your nutrition should support your goals — eat for the body you want, not the one you have.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Nutrition for Specific Goals</div><div class="back-link" onclick="window.location.href='../'">← Back to Nutrition</div><ul><li class="file-item" onclick="window.location.href='./nutrition-for-men/'">nutrition-for-men</li><li class="file-item" onclick="window.location.href='./nutrition-for-mental-health/'">nutrition-for-mental-health</li><li class="file-item" onclick="window.location.href='./nutrition-for-muscle-gain/'">nutrition-for-muscle-gain</li><li class="file-item" onclick="window.location.href='./nutrition-for-seniors/'">nutrition-for-seniors</li><li class="file-item" onclick="window.location.href='./nutrition-for-weight-loss/'">nutrition-for-weight-loss</li><li class="file-item" onclick="window.location.href='./nutrition-for-women/'">nutrition-for-women</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Nutrition</a> <span class="sep">→</span> <span class="current">Specific-goals</span></nav><h1>Nutrition for Specific Goals</h1><p class="subtitle">Eat for your goals — whether it's muscle gain, weight loss, or mental health.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#nutrition" data-type="tag">#nutrition</button><button class="filter-btn" data-filter="#goals" data-type="tag">#goals</button><button class="filter-btn" data-filter="#health" data-type="tag">#health</button><button class="filter-btn" data-filter="#fitness" data-type="tag">#fitness</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="👴 Seniors" data-type="type">👴 Seniors</button><button class="filter-btn type" data-filter="💃 Women" data-type="type">💃 Women</button><button class="filter-btn type" data-filter="💪 Men" data-type="type">💪 Men</button><button class="filter-btn type" data-filter="💪 Muscle" data-type="type">💪 Muscle</button><button class="filter-btn type" data-filter="🥗 Weight Loss" data-type="type">🥗 Weight Loss</button><button class="filter-btn type" data-filter="🧠 Mental Health" data-type="type">🧠 Mental Health</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./nutrition-for-men/" class="file-card" data-tags="#nutrition #goals #health #fitness" data-type="💪 Men">
+                <div class="icon">📄</div>
+                <div class="name">Nutrition for Men</div>
+                <div class="desc">Eat for optimal health and performance — nutrition tailored for men.</div>
+                <span class="badge">💪 Men</span>
+            </a>
+        
+            <a href="./nutrition-for-mental-health/" class="file-card" data-tags="#nutrition #goals #health #fitness" data-type="🧠 Mental Health">
+                <div class="icon">📄</div>
+                <div class="name">Nutrition for Mental Health</div>
+                <div class="desc">Eat for your brain — nutrition that supports mental health and well‑being.</div>
+                <span class="badge">🧠 Mental Health</span>
+            </a>
+        
+            <a href="./nutrition-for-muscle-gain/" class="file-card" data-tags="#nutrition #goals #health #fitness" data-type="💪 Muscle">
+                <div class="icon">📄</div>
+                <div class="name">Nutrition for Muscle Gain</div>
+                <div class="desc">Eat to build muscle and support your fitness goals.</div>
+                <span class="badge">💪 Muscle</span>
+            </a>
+        
+            <a href="./nutrition-for-seniors/" class="file-card" data-tags="#nutrition #goals #health #fitness" data-type="👴 Seniors">
+                <div class="icon">📄</div>
+                <div class="name">Nutrition for Seniors</div>
+                <div class="desc">Eat well and stay healthy as you age — nutrition for seniors.</div>
+                <span class="badge">👴 Seniors</span>
+            </a>
+        
+            <a href="./nutrition-for-weight-loss/" class="file-card" data-tags="#nutrition #goals #health #fitness" data-type="🥗 Weight Loss">
+                <div class="icon">📄</div>
+                <div class="name">Nutrition for Weight Loss</div>
+                <div class="desc">Eat for sustainable weight loss without deprivation.</div>
+                <span class="badge">🥗 Weight Loss</span>
+            </a>
+        
+            <a href="./nutrition-for-women/" class="file-card" data-tags="#nutrition #goals #health #fitness" data-type="💃 Women">
+                <div class="icon">📄</div>
+                <div class="name">Nutrition for Women</div>
+                <div class="desc">Eat for optimal health and performance — nutrition tailored for women.</div>
+                <span class="badge">💃 Women</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 Your nutrition should support your goals — eat for the body you want, not the one you have.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

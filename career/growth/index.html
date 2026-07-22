@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Career</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Career Growth</div><a href="./how-to-ask-for-a-promotion/">How to Ask for a Promotion</a><a href="./how-to-develop-leadership-skills/">How to Develop Leadership Skills</a><a href="./how-to-find-a-mentor/">How to Find a Mentor</a><a href="./networking-guide-for-introverts/">Networking Guide for Introverts</a><a href="./personal-branding-guide/">Personal Branding Guide</a><a href="./salary-negotiation-tactics/">Salary Negotiation Tactics</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="active">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Career Growth</div><div class="back-link" onclick="window.location.href='../'">← Back to Career</div><ul><li class="file-item" onclick="window.location.href='./how-to-ask-for-a-promotion/'">how-to-ask-for-a-promotion</li><li class="file-item" onclick="window.location.href='./how-to-develop-leadership-skills/'">how-to-develop-leadership-skills</li><li class="file-item" onclick="window.location.href='./how-to-find-a-mentor/'">how-to-find-a-mentor</li><li class="file-item" onclick="window.location.href='./networking-guide-for-introverts/'">networking-guide-for-introverts</li><li class="file-item" onclick="window.location.href='./personal-branding-guide/'">personal-branding-guide</li><li class="file-item" onclick="window.location.href='./salary-negotiation-tactics/'">salary-negotiation-tactics</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Career</a> <span class="sep">→</span> <span class="current">Growth</span></nav><h1>Career Growth</h1><p class="subtitle">Take charge of your professional development and advance your career.</p><div class="tags"><span>#careergrowth</span><span>#mentorship</span><span>#networking</span><span>#leadership</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>📈 Personal branding opens doors to new opportunities</li><li>🤝 Finding a mentor accelerates growth</li><li>🌐 Networking is essential for introverts too</li><li>🗣️ Leadership skills can be developed</li></ul></div><div class="why-section"><h3>💡 Why Career Growth at SolveMap</h3><ul><li>📈 Invest in continuous learning and skill development</li><li>🤝 Seek mentors who challenge and inspire you</li><li>🌐 Attend virtual and in‑person networking events</li><li>🗣️ Practice active listening and emotional intelligence</li></ul></div><div class="file-grid"><a href="./how-to-ask-for-a-promotion/" class="file-card"><div class="icon">📄</div><div class="name">How to Ask for a Promotion</div><div class="desc">Position yourself for a promotion and make the ask confidently.</div><span class="badge">📈 Promotion</span></a><a href="./how-to-develop-leadership-skills/" class="file-card"><div class="icon">📄</div><div class="name">How to Develop Leadership Skills</div><div class="desc">Build leadership capabilities that will advance your career.</div><span class="badge">🗣️ Leadership</span></a><a href="./how-to-find-a-mentor/" class="file-card"><div class="icon">📄</div><div class="name">How to Find a Mentor</div><div class="desc">Find and cultivate a mentorship relationship that accelerates your career.</div><span class="badge">🤝 Mentor</span></a><a href="./networking-guide-for-introverts/" class="file-card"><div class="icon">📄</div><div class="name">Networking Guide for Introverts</div><div class="desc">Network effectively and comfortably, even if you're introverted.</div><span class="badge">🌐 Networking</span></a><a href="./personal-branding-guide/" class="file-card"><div class="icon">📄</div><div class="name">Personal Branding Guide</div><div class="desc">Comprehensive guide to building a powerful personal brand.</div><span class="badge">📢 Brand</span></a><a href="./salary-negotiation-tactics/" class="file-card"><div class="icon">📄</div><div class="name">Salary Negotiation Tactics</div><div class="desc">Negotiate your salary effectively to get what you deserve.</div><span class="badge">💰 Negotiation</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Career growth is not a ladder — it's a lattice. Explore sideways moves and diverse experiences.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Career Growth</div><div class="back-link" onclick="window.location.href='../'">← Back to Career</div><ul><li class="file-item" onclick="window.location.href='./how-to-ask-for-a-promotion/'">how-to-ask-for-a-promotion</li><li class="file-item" onclick="window.location.href='./how-to-develop-leadership-skills/'">how-to-develop-leadership-skills</li><li class="file-item" onclick="window.location.href='./how-to-find-a-mentor/'">how-to-find-a-mentor</li><li class="file-item" onclick="window.location.href='./networking-guide-for-introverts/'">networking-guide-for-introverts</li><li class="file-item" onclick="window.location.href='./personal-branding-guide/'">personal-branding-guide</li><li class="file-item" onclick="window.location.href='./salary-negotiation-tactics/'">salary-negotiation-tactics</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Career</a> <span class="sep">→</span> <span class="current">Growth</span></nav><h1>Career Growth</h1><p class="subtitle">Take charge of your professional development and advance your career.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#careergrowth" data-type="tag">#careergrowth</button><button class="filter-btn" data-filter="#mentorship" data-type="tag">#mentorship</button><button class="filter-btn" data-filter="#networking" data-type="tag">#networking</button><button class="filter-btn" data-filter="#leadership" data-type="tag">#leadership</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="🌐 Networking" data-type="type">🌐 Networking</button><button class="filter-btn type" data-filter="💰 Negotiation" data-type="type">💰 Negotiation</button><button class="filter-btn type" data-filter="📈 Promotion" data-type="type">📈 Promotion</button><button class="filter-btn type" data-filter="📢 Brand" data-type="type">📢 Brand</button><button class="filter-btn type" data-filter="🗣️ Leadership" data-type="type">🗣️ Leadership</button><button class="filter-btn type" data-filter="🤝 Mentor" data-type="type">🤝 Mentor</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./how-to-ask-for-a-promotion/" class="file-card" data-tags="#careergrowth #mentorship #networking #leadership" data-type="📈 Promotion">
+                <div class="icon">📄</div>
+                <div class="name">How to Ask for a Promotion</div>
+                <div class="desc">Position yourself for a promotion and make the ask confidently.</div>
+                <span class="badge">📈 Promotion</span>
+            </a>
+        
+            <a href="./how-to-develop-leadership-skills/" class="file-card" data-tags="#careergrowth #mentorship #networking #leadership" data-type="🗣️ Leadership">
+                <div class="icon">📄</div>
+                <div class="name">How to Develop Leadership Skills</div>
+                <div class="desc">Build leadership capabilities that will advance your career.</div>
+                <span class="badge">🗣️ Leadership</span>
+            </a>
+        
+            <a href="./how-to-find-a-mentor/" class="file-card" data-tags="#careergrowth #mentorship #networking #leadership" data-type="🤝 Mentor">
+                <div class="icon">📄</div>
+                <div class="name">How to Find a Mentor</div>
+                <div class="desc">Find and cultivate a mentorship relationship that accelerates your career.</div>
+                <span class="badge">🤝 Mentor</span>
+            </a>
+        
+            <a href="./networking-guide-for-introverts/" class="file-card" data-tags="#careergrowth #mentorship #networking #leadership" data-type="🌐 Networking">
+                <div class="icon">📄</div>
+                <div class="name">Networking Guide for Introverts</div>
+                <div class="desc">Network effectively and comfortably, even if you're introverted.</div>
+                <span class="badge">🌐 Networking</span>
+            </a>
+        
+            <a href="./personal-branding-guide/" class="file-card" data-tags="#careergrowth #mentorship #networking #leadership" data-type="📢 Brand">
+                <div class="icon">📄</div>
+                <div class="name">Personal Branding Guide</div>
+                <div class="desc">Comprehensive guide to building a powerful personal brand.</div>
+                <span class="badge">📢 Brand</span>
+            </a>
+        
+            <a href="./salary-negotiation-tactics/" class="file-card" data-tags="#careergrowth #mentorship #networking #leadership" data-type="💰 Negotiation">
+                <div class="icon">📄</div>
+                <div class="name">Salary Negotiation Tactics</div>
+                <div class="desc">Negotiate your salary effectively to get what you deserve.</div>
+                <span class="badge">💰 Negotiation</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 Career growth is not a ladder — it's a lattice. Explore sideways moves and diverse experiences.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

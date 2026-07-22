@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Productivity</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Deep Work</div><a href="./how-to-achieve-deep-work/">How to Achieve Deep Work</a><a href="./how-to-create-a-deep-work-routine/">How to Create a Deep Work Routine</a><a href="./how-to-manage-digital-distractions/">How to Manage Digital Distractions</a><a href="./how-to-stop-multitasking-and-start-single-tasking/">How to Stop Multitasking and Start Single‑Tasking</a><a href="./the-90-minute-deep-work-block/">The 90‑Minute Deep Work Block</a><a href="./time-batching-group-similar-tasks-together/">Time Batching — Group Similar Tasks Together</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="active">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Deep Work</div><div class="back-link" onclick="window.location.href='../'">← Back to Productivity</div><ul><li class="file-item" onclick="window.location.href='./how-to-achieve-deep-work/'">how-to-achieve-deep-work</li><li class="file-item" onclick="window.location.href='./how-to-create-a-deep-work-routine/'">how-to-create-a-deep-work-routine</li><li class="file-item" onclick="window.location.href='./how-to-manage-digital-distractions/'">how-to-manage-digital-distractions</li><li class="file-item" onclick="window.location.href='./how-to-stop-multitasking-and-start-single-tasking/'">how-to-stop-multitasking-and-start-single-tasking</li><li class="file-item" onclick="window.location.href='./the-90-minute-deep-work-block/'">the-90-minute-deep-work-block</li><li class="file-item" onclick="window.location.href='./time-batching-group-similar-tasks-together/'">time-batching-group-similar-tasks-together</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Productivity</a> <span class="sep">→</span> <span class="current">Deep-work</span></nav><h1>Deep Work</h1><p class="subtitle">Protect your attention and do meaningful work that moves the needle.</p><div class="tags"><span>#deepwork</span><span>#focus</span><span>#productivity</span><span>#attention</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>🎯 Deep work blocks of 90‑120 minutes are optimal for focus</li><li>📉 Task switching drains 40% of productivity</li><li>⏰ 90‑minute deep work sessions align with natural ultradian rhythms</li><li>🧠 Single‑tasking beats multitasking every time</li></ul></div><div class="why-section"><h3>💡 Why Deep Work at SolveMap</h3><ul><li>🎯 Schedule one 90‑minute deep work block daily</li><li>📉 Eliminate digital distractions before they arise</li><li>⏰ Use the 90‑minute rule for maximum cognitive performance</li><li>🧠 Batch similar tasks together to protect focus</li></ul></div><div class="file-grid"><a href="./how-to-achieve-deep-work/" class="file-card"><div class="icon">📄</div><div class="name">How to Achieve Deep Work</div><div class="desc">Master the principles of deep work and unlock your full potential.</div><span class="badge">🎯 Mastery</span></a><a href="./how-to-create-a-deep-work-routine/" class="file-card"><div class="icon">📄</div><div class="name">How to Create a Deep Work Routine</div><div class="desc">Build a routine that supports deep focus and meaningful work.</div><span class="badge">🎯 Deep Work</span></a><a href="./how-to-manage-digital-distractions/" class="file-card"><div class="icon">📄</div><div class="name">How to Manage Digital Distractions</div><div class="desc">Take control of your digital environment and protect your focus.</div><span class="badge">📱 Focus</span></a><a href="./how-to-stop-multitasking-and-start-single-tasking/" class="file-card"><div class="icon">📄</div><div class="name">How to Stop Multitasking and Start Single‑Tasking</div><div class="desc">Focus on one thing at a time for better results and less stress.</div><span class="badge">🎯 Single‑Tasking</span></a><a href="./the-90-minute-deep-work-block/" class="file-card"><div class="icon">📄</div><div class="name">The 90‑Minute Deep Work Block</div><div class="desc">Use the 90‑minute block for optimal focus and cognitive performance.</div><span class="badge">⏰ Focus</span></a><a href="./time-batching-group-similar-tasks-together/" class="file-card"><div class="icon">📄</div><div class="name">Time Batching — Group Similar Tasks Together</div><div class="desc">Boost productivity by grouping similar tasks and working in focused blocks.</div><span class="badge">📊 Batching</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Deep work is not about working harder — it's about working with full attention on what matters most.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Deep Work</div><div class="back-link" onclick="window.location.href='../'">← Back to Productivity</div><ul><li class="file-item" onclick="window.location.href='./how-to-achieve-deep-work/'">how-to-achieve-deep-work</li><li class="file-item" onclick="window.location.href='./how-to-create-a-deep-work-routine/'">how-to-create-a-deep-work-routine</li><li class="file-item" onclick="window.location.href='./how-to-manage-digital-distractions/'">how-to-manage-digital-distractions</li><li class="file-item" onclick="window.location.href='./how-to-stop-multitasking-and-start-single-tasking/'">how-to-stop-multitasking-and-start-single-tasking</li><li class="file-item" onclick="window.location.href='./the-90-minute-deep-work-block/'">the-90-minute-deep-work-block</li><li class="file-item" onclick="window.location.href='./time-batching-group-similar-tasks-together/'">time-batching-group-similar-tasks-together</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Productivity</a> <span class="sep">→</span> <span class="current">Deep-work</span></nav><h1>Deep Work</h1><p class="subtitle">Protect your attention and do meaningful work that moves the needle.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#deepwork" data-type="tag">#deepwork</button><button class="filter-btn" data-filter="#focus" data-type="tag">#focus</button><button class="filter-btn" data-filter="#productivity" data-type="tag">#productivity</button><button class="filter-btn" data-filter="#attention" data-type="tag">#attention</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="⏰ Focus" data-type="type">⏰ Focus</button><button class="filter-btn type" data-filter="🎯 Deep Work" data-type="type">🎯 Deep Work</button><button class="filter-btn type" data-filter="🎯 Mastery" data-type="type">🎯 Mastery</button><button class="filter-btn type" data-filter="🎯 Single‑Tasking" data-type="type">🎯 Single‑Tasking</button><button class="filter-btn type" data-filter="📊 Batching" data-type="type">📊 Batching</button><button class="filter-btn type" data-filter="📱 Focus" data-type="type">📱 Focus</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./how-to-achieve-deep-work/" class="file-card" data-tags="#deepwork #focus #productivity #attention" data-type="🎯 Mastery">
+                <div class="icon">📄</div>
+                <div class="name">How to Achieve Deep Work</div>
+                <div class="desc">Master the principles of deep work and unlock your full potential.</div>
+                <span class="badge">🎯 Mastery</span>
+            </a>
+        
+            <a href="./how-to-create-a-deep-work-routine/" class="file-card" data-tags="#deepwork #focus #productivity #attention" data-type="🎯 Deep Work">
+                <div class="icon">📄</div>
+                <div class="name">How to Create a Deep Work Routine</div>
+                <div class="desc">Build a routine that supports deep focus and meaningful work.</div>
+                <span class="badge">🎯 Deep Work</span>
+            </a>
+        
+            <a href="./how-to-manage-digital-distractions/" class="file-card" data-tags="#deepwork #focus #productivity #attention" data-type="📱 Focus">
+                <div class="icon">📄</div>
+                <div class="name">How to Manage Digital Distractions</div>
+                <div class="desc">Take control of your digital environment and protect your focus.</div>
+                <span class="badge">📱 Focus</span>
+            </a>
+        
+            <a href="./how-to-stop-multitasking-and-start-single-tasking/" class="file-card" data-tags="#deepwork #focus #productivity #attention" data-type="🎯 Single‑Tasking">
+                <div class="icon">📄</div>
+                <div class="name">How to Stop Multitasking and Start Single‑Tasking</div>
+                <div class="desc">Focus on one thing at a time for better results and less stress.</div>
+                <span class="badge">🎯 Single‑Tasking</span>
+            </a>
+        
+            <a href="./the-90-minute-deep-work-block/" class="file-card" data-tags="#deepwork #focus #productivity #attention" data-type="⏰ Focus">
+                <div class="icon">📄</div>
+                <div class="name">The 90‑Minute Deep Work Block</div>
+                <div class="desc">Use the 90‑minute block for optimal focus and cognitive performance.</div>
+                <span class="badge">⏰ Focus</span>
+            </a>
+        
+            <a href="./time-batching-group-similar-tasks-together/" class="file-card" data-tags="#deepwork #focus #productivity #attention" data-type="📊 Batching">
+                <div class="icon">📄</div>
+                <div class="name">Time Batching — Group Similar Tasks Together</div>
+                <div class="desc">Boost productivity by grouping similar tasks and working in focused blocks.</div>
+                <span class="badge">📊 Batching</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 Deep work is not about working harder — it's about working with full attention on what matters most.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

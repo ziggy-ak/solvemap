@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Health</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Sleep & Recovery</div><a href="./circadian-rhythm-guide/">Circadian Rhythm Guide</a><a href="./how-to-fix-your-sleep-schedule/">How to Fix Your Sleep Schedule</a><a href="./optimal-sleep-temperature-environment/">Optimal Sleep Temperature & Environment</a><a href="./power-napping-for-energy/">Power Napping for Energy</a><a href="./sleep-hygiene-checklist/">Sleep Hygiene Checklist</a><a href="./sleep-tracking-methods-without-gadgets/">Sleep Tracking Methods Without Gadgets</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="active">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Sleep & Recovery</div><div class="back-link" onclick="window.location.href='../'">← Back to Health</div><ul><li class="file-item" onclick="window.location.href='./circadian-rhythm-guide/'">circadian-rhythm-guide</li><li class="file-item" onclick="window.location.href='./how-to-fix-your-sleep-schedule/'">how-to-fix-your-sleep-schedule</li><li class="file-item" onclick="window.location.href='./optimal-sleep-temperature-environment/'">optimal-sleep-temperature-environment</li><li class="file-item" onclick="window.location.href='./power-napping-for-energy/'">power-napping-for-energy</li><li class="file-item" onclick="window.location.href='./sleep-hygiene-checklist/'">sleep-hygiene-checklist</li><li class="file-item" onclick="window.location.href='./sleep-tracking-methods-without-gadgets/'">sleep-tracking-methods-without-gadgets</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Health</a> <span class="sep">→</span> <span class="current">Sleep</span></nav><h1>Sleep & Recovery</h1><p class="subtitle">Optimise your sleep for better health, energy, and cognitive performance.</p><div class="tags"><span>#sleep</span><span>#recovery</span><span>#wellness</span><span>#health</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>🌙 Circadian rhythm alignment improves sleep quality</li><li>🛏️ Optimal sleep temperature and environment matter</li><li>💤 Power napping boosts daytime energy</li><li>📊 Sleep tracking helps identify patterns</li></ul></div><div class="why-section"><h3>💡 Why Sleep & Recovery at SolveMap</h3><ul><li>🌙 Go to bed and wake up at the same time daily</li><li>🛏️ Keep your bedroom cool, dark, and quiet</li><li>💤 Limit naps to 20‑30 minutes for best results</li><li>📊 Use sleep tracking to find what works for you</li></ul></div><div class="file-grid"><a href="./circadian-rhythm-guide/" class="file-card"><div class="icon">📄</div><div class="name">Circadian Rhythm Guide</div><div class="desc">Understand and align your daily routine with your body's natural clock.</div><span class="badge">🌙 Rhythm</span></a><a href="./how-to-fix-your-sleep-schedule/" class="file-card"><div class="icon">📄</div><div class="name">How to Fix Your Sleep Schedule</div><div class="desc">Reset your sleep schedule with proven techniques for better sleep hygiene.</div><span class="badge">⏰ Schedule</span></a><a href="./optimal-sleep-temperature-environment/" class="file-card"><div class="icon">📄</div><div class="name">Optimal Sleep Temperature & Environment</div><div class="desc">Create the perfect sleep environment for deeper, more restorative sleep.</div><span class="badge">🛏️ Environment</span></a><a href="./power-napping-for-energy/" class="file-card"><div class="icon">📄</div><div class="name">Power Napping for Energy</div><div class="desc">Master the art of the power nap to boost alertness and performance.</div><span class="badge">💤 Napping</span></a><a href="./sleep-hygiene-checklist/" class="file-card"><div class="icon">📄</div><div class="name">Sleep Hygiene Checklist</div><div class="desc">A comprehensive checklist for optimal sleep hygiene.</div><span class="badge">📋 Checklist</span></a><a href="./sleep-tracking-methods-without-gadgets/" class="file-card"><div class="icon">📄</div><div class="name">Sleep Tracking Methods Without Gadgets</div><div class="desc">Improve your sleep by tracking it manually, without technology.</div><span class="badge">📓 Tracking</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Sleep is not a luxury — it's a biological necessity for health and performance.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Sleep & Recovery</div><div class="back-link" onclick="window.location.href='../'">← Back to Health</div><ul><li class="file-item" onclick="window.location.href='./circadian-rhythm-guide/'">circadian-rhythm-guide</li><li class="file-item" onclick="window.location.href='./how-to-fix-your-sleep-schedule/'">how-to-fix-your-sleep-schedule</li><li class="file-item" onclick="window.location.href='./optimal-sleep-temperature-environment/'">optimal-sleep-temperature-environment</li><li class="file-item" onclick="window.location.href='./power-napping-for-energy/'">power-napping-for-energy</li><li class="file-item" onclick="window.location.href='./sleep-hygiene-checklist/'">sleep-hygiene-checklist</li><li class="file-item" onclick="window.location.href='./sleep-tracking-methods-without-gadgets/'">sleep-tracking-methods-without-gadgets</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Health</a> <span class="sep">→</span> <span class="current">Sleep</span></nav><h1>Sleep & Recovery</h1><p class="subtitle">Optimise your sleep for better health, energy, and cognitive performance.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#sleep" data-type="tag">#sleep</button><button class="filter-btn" data-filter="#recovery" data-type="tag">#recovery</button><button class="filter-btn" data-filter="#wellness" data-type="tag">#wellness</button><button class="filter-btn" data-filter="#health" data-type="tag">#health</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="⏰ Schedule" data-type="type">⏰ Schedule</button><button class="filter-btn type" data-filter="🌙 Rhythm" data-type="type">🌙 Rhythm</button><button class="filter-btn type" data-filter="💤 Napping" data-type="type">💤 Napping</button><button class="filter-btn type" data-filter="📋 Checklist" data-type="type">📋 Checklist</button><button class="filter-btn type" data-filter="📓 Tracking" data-type="type">📓 Tracking</button><button class="filter-btn type" data-filter="🛏️ Environment" data-type="type">🛏️ Environment</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./circadian-rhythm-guide/" class="file-card" data-tags="#sleep #recovery #wellness #health" data-type="🌙 Rhythm">
+                <div class="icon">📄</div>
+                <div class="name">Circadian Rhythm Guide</div>
+                <div class="desc">Understand and align your daily routine with your body's natural clock.</div>
+                <span class="badge">🌙 Rhythm</span>
+            </a>
+        
+            <a href="./how-to-fix-your-sleep-schedule/" class="file-card" data-tags="#sleep #recovery #wellness #health" data-type="⏰ Schedule">
+                <div class="icon">📄</div>
+                <div class="name">How to Fix Your Sleep Schedule</div>
+                <div class="desc">Reset your sleep schedule with proven techniques for better sleep hygiene.</div>
+                <span class="badge">⏰ Schedule</span>
+            </a>
+        
+            <a href="./optimal-sleep-temperature-environment/" class="file-card" data-tags="#sleep #recovery #wellness #health" data-type="🛏️ Environment">
+                <div class="icon">📄</div>
+                <div class="name">Optimal Sleep Temperature & Environment</div>
+                <div class="desc">Create the perfect sleep environment for deeper, more restorative sleep.</div>
+                <span class="badge">🛏️ Environment</span>
+            </a>
+        
+            <a href="./power-napping-for-energy/" class="file-card" data-tags="#sleep #recovery #wellness #health" data-type="💤 Napping">
+                <div class="icon">📄</div>
+                <div class="name">Power Napping for Energy</div>
+                <div class="desc">Master the art of the power nap to boost alertness and performance.</div>
+                <span class="badge">💤 Napping</span>
+            </a>
+        
+            <a href="./sleep-hygiene-checklist/" class="file-card" data-tags="#sleep #recovery #wellness #health" data-type="📋 Checklist">
+                <div class="icon">📄</div>
+                <div class="name">Sleep Hygiene Checklist</div>
+                <div class="desc">A comprehensive checklist for optimal sleep hygiene.</div>
+                <span class="badge">📋 Checklist</span>
+            </a>
+        
+            <a href="./sleep-tracking-methods-without-gadgets/" class="file-card" data-tags="#sleep #recovery #wellness #health" data-type="📓 Tracking">
+                <div class="icon">📄</div>
+                <div class="name">Sleep Tracking Methods Without Gadgets</div>
+                <div class="desc">Improve your sleep by tracking it manually, without technology.</div>
+                <span class="badge">📓 Tracking</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 Sleep is not a luxury — it's a biological necessity for health and performance.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

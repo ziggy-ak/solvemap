@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Technology</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">AI for Everyday Life</div><a href="./ai-and-job-security/">AI and Job Security</a><a href="./ai-for-content-creation/">AI for Content Creation</a><a href="./ai-tools-for-everyday-life/">AI Tools for Everyday Life</a><a href="./ethical-ai-use/">Ethical AI Use</a><a href="./how-to-automate-repetitive-tasks/">How to Automate Repetitive Tasks</a><a href="./how-to-use-chatgpt-effectively/">How to Use ChatGPT Effectively</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="active">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 AI for Everyday Life</div><div class="back-link" onclick="window.location.href='../'">← Back to Technology</div><ul><li class="file-item" onclick="window.location.href='./ai-and-job-security/'">ai-and-job-security</li><li class="file-item" onclick="window.location.href='./ai-for-content-creation/'">ai-for-content-creation</li><li class="file-item" onclick="window.location.href='./ai-tools-for-everyday-life/'">ai-tools-for-everyday-life</li><li class="file-item" onclick="window.location.href='./ethical-ai-use/'">ethical-ai-use</li><li class="file-item" onclick="window.location.href='./how-to-automate-repetitive-tasks/'">how-to-automate-repetitive-tasks</li><li class="file-item" onclick="window.location.href='./how-to-use-chatgpt-effectively/'">how-to-use-chatgpt-effectively</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Technology</a> <span class="sep">→</span> <span class="current">Ai</span></nav><h1>AI for Everyday Life</h1><p class="subtitle">Use AI to simplify your life, automate tasks, and work smarter.</p><div class="tags"><span>#ai</span><span>#automation</span><span>#productivity</span><span>#tools</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>🤖 ChatGPT has over 769 million monthly active users</li><li>⚡ Gemini Spark is a 24/7 AI assistant for digital tasks</li><li>📱 AI personal assistants handle scheduling, emails, and research</li><li>🔧 AI tools automate repetitive tasks and save time</li></ul></div><div class="why-section"><h3>💡 Why AI for Everyday Life at SolveMap</h3><ul><li>🤖 Use AI for research, writing, and creative work</li><li>⚡ Let AI handle routine digital tasks</li><li>📱 AI assistants can summarise emails and manage your calendar</li><li>🔧 Identify repetitive tasks and automate them with AI</li></ul></div><div class="file-grid"><a href="./ai-and-job-security/" class="file-card"><div class="icon">📄</div><div class="name">AI and Job Security</div><div class="desc">Understand how AI is changing the job market and how to stay relevant.</div><span class="badge">💼 Future</span></a><a href="./ai-for-content-creation/" class="file-card"><div class="icon">📄</div><div class="name">AI for Content Creation</div><div class="desc">Use AI to generate ideas, write content, and create faster.</div><span class="badge">✍️ Content</span></a><a href="./ai-tools-for-everyday-life/" class="file-card"><div class="icon">📄</div><div class="name">AI Tools for Everyday Life</div><div class="desc">Discover the best AI tools for everyday tasks and productivity.</div><span class="badge">📱 AI Tools</span></a><a href="./ethical-ai-use/" class="file-card"><div class="icon">📄</div><div class="name">Ethical AI Use</div><div class="desc">Use AI responsibly — understand the ethics and implications of AI tools.</div><span class="badge">⚖️ Ethics</span></a><a href="./how-to-automate-repetitive-tasks/" class="file-card"><div class="icon">📄</div><div class="name">How to Automate Repetitive Tasks</div><div class="desc">Save time and reduce busywork by automating routine tasks with AI.</div><span class="badge">🤖 Automation</span></a><a href="./how-to-use-chatgpt-effectively/" class="file-card"><div class="icon">📄</div><div class="name">How to Use ChatGPT Effectively</div><div class="desc">Master prompt engineering and get the most out of ChatGPT.</div><span class="badge">🤖 ChatGPT</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 AI is not magic — it's a tool. Learn to use it and it will multiply your capabilities.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 AI for Everyday Life</div><div class="back-link" onclick="window.location.href='../'">← Back to Technology</div><ul><li class="file-item" onclick="window.location.href='./ai-and-job-security/'">ai-and-job-security</li><li class="file-item" onclick="window.location.href='./ai-for-content-creation/'">ai-for-content-creation</li><li class="file-item" onclick="window.location.href='./ai-tools-for-everyday-life/'">ai-tools-for-everyday-life</li><li class="file-item" onclick="window.location.href='./ethical-ai-use/'">ethical-ai-use</li><li class="file-item" onclick="window.location.href='./how-to-automate-repetitive-tasks/'">how-to-automate-repetitive-tasks</li><li class="file-item" onclick="window.location.href='./how-to-use-chatgpt-effectively/'">how-to-use-chatgpt-effectively</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Technology</a> <span class="sep">→</span> <span class="current">Ai</span></nav><h1>AI for Everyday Life</h1><p class="subtitle">Use AI to simplify your life, automate tasks, and work smarter.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#ai" data-type="tag">#ai</button><button class="filter-btn" data-filter="#automation" data-type="tag">#automation</button><button class="filter-btn" data-filter="#productivity" data-type="tag">#productivity</button><button class="filter-btn" data-filter="#tools" data-type="tag">#tools</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="⚖️ Ethics" data-type="type">⚖️ Ethics</button><button class="filter-btn type" data-filter="✍️ Content" data-type="type">✍️ Content</button><button class="filter-btn type" data-filter="💼 Future" data-type="type">💼 Future</button><button class="filter-btn type" data-filter="📱 AI Tools" data-type="type">📱 AI Tools</button><button class="filter-btn type" data-filter="🤖 Automation" data-type="type">🤖 Automation</button><button class="filter-btn type" data-filter="🤖 ChatGPT" data-type="type">🤖 ChatGPT</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./ai-and-job-security/" class="file-card" data-tags="#ai #automation #productivity #tools" data-type="💼 Future">
+                <div class="icon">📄</div>
+                <div class="name">AI and Job Security</div>
+                <div class="desc">Understand how AI is changing the job market and how to stay relevant.</div>
+                <span class="badge">💼 Future</span>
+            </a>
+        
+            <a href="./ai-for-content-creation/" class="file-card" data-tags="#ai #automation #productivity #tools" data-type="✍️ Content">
+                <div class="icon">📄</div>
+                <div class="name">AI for Content Creation</div>
+                <div class="desc">Use AI to generate ideas, write content, and create faster.</div>
+                <span class="badge">✍️ Content</span>
+            </a>
+        
+            <a href="./ai-tools-for-everyday-life/" class="file-card" data-tags="#ai #automation #productivity #tools" data-type="📱 AI Tools">
+                <div class="icon">📄</div>
+                <div class="name">AI Tools for Everyday Life</div>
+                <div class="desc">Discover the best AI tools for everyday tasks and productivity.</div>
+                <span class="badge">📱 AI Tools</span>
+            </a>
+        
+            <a href="./ethical-ai-use/" class="file-card" data-tags="#ai #automation #productivity #tools" data-type="⚖️ Ethics">
+                <div class="icon">📄</div>
+                <div class="name">Ethical AI Use</div>
+                <div class="desc">Use AI responsibly — understand the ethics and implications of AI tools.</div>
+                <span class="badge">⚖️ Ethics</span>
+            </a>
+        
+            <a href="./how-to-automate-repetitive-tasks/" class="file-card" data-tags="#ai #automation #productivity #tools" data-type="🤖 Automation">
+                <div class="icon">📄</div>
+                <div class="name">How to Automate Repetitive Tasks</div>
+                <div class="desc">Save time and reduce busywork by automating routine tasks with AI.</div>
+                <span class="badge">🤖 Automation</span>
+            </a>
+        
+            <a href="./how-to-use-chatgpt-effectively/" class="file-card" data-tags="#ai #automation #productivity #tools" data-type="🤖 ChatGPT">
+                <div class="icon">📄</div>
+                <div class="name">How to Use ChatGPT Effectively</div>
+                <div class="desc">Master prompt engineering and get the most out of ChatGPT.</div>
+                <span class="badge">🤖 ChatGPT</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 AI is not magic — it's a tool. Learn to use it and it will multiply your capabilities.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

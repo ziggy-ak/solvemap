@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Fitness</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Guides</div><a href="./fitness-myths-debunked/">Fitness Myths Debunked</a><a href="./home-workout-guide/">Home Workout Guide</a><a href="./how-to-build-a-fitness-routine/">How to Build a Fitness Routine</a><a href="./no-equipment-workout-guide/">No‑Equipment Workout Guide</a><a href="./nutrition-for-fitness/">Nutrition for Fitness</a><a href="./tracking-progress-guide/">Tracking Progress Guide</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="active">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Guides</div><div class="back-link" onclick="window.location.href='../'">← Back to Fitness</div><ul><li class="file-item" onclick="window.location.href='./fitness-myths-debunked/'">fitness-myths-debunked</li><li class="file-item" onclick="window.location.href='./home-workout-guide/'">home-workout-guide</li><li class="file-item" onclick="window.location.href='./how-to-build-a-fitness-routine/'">how-to-build-a-fitness-routine</li><li class="file-item" onclick="window.location.href='./no-equipment-workout-guide/'">no-equipment-workout-guide</li><li class="file-item" onclick="window.location.href='./nutrition-for-fitness/'">nutrition-for-fitness</li><li class="file-item" onclick="window.location.href='./tracking-progress-guide/'">tracking-progress-guide</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Fitness</a> <span class="sep">→</span> <span class="current">Guides</span></nav><h1>Guides</h1><p class="subtitle">Practical fitness guides to help you build routines and debunk myths.</p><div class="tags"><span>#fitnessguides</span><span>#workouts</span><span>#mythbusting</span><span>#routine</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>📊 Track your progress to stay motivated and adjust your plan</li><li>📚 Understand nutrition's role in fitness</li><li>🚫 Debunk common fitness myths that hold you back</li><li>🏠 No‑equipment and home workouts are effective</li></ul></div><div class="why-section"><h3>💡 Why Guides at SolveMap</h3><ul><li>📊 Use a journal or app to log workouts and measurements</li><li>📚 Learn the basics of sports nutrition</li><li>🚫 Question everything — not all fitness advice is true</li><li>🏠 Build a workout routine you can do anywhere</li></ul></div><div class="file-grid"><a href="./fitness-myths-debunked/" class="file-card"><div class="icon">📄</div><div class="name">Fitness Myths Debunked</div><div class="desc">Separate fact from fiction with this guide to common fitness misconceptions.</div><span class="badge">🚫 Myths</span></a><a href="./home-workout-guide/" class="file-card"><div class="icon">📄</div><div class="name">Home Workout Guide</div><div class="desc">Create an effective home workout routine with minimal equipment.</div><span class="badge">🏠 Home</span></a><a href="./how-to-build-a-fitness-routine/" class="file-card"><div class="icon">📄</div><div class="name">How to Build a Fitness Routine</div><div class="desc">Design a sustainable fitness routine that fits your lifestyle.</div><span class="badge">📋 Routine</span></a><a href="./no-equipment-workout-guide/" class="file-card"><div class="icon">📄</div><div class="name">No‑Equipment Workout Guide</div><div class="desc">Get a great workout without any equipment, anywhere.</div><span class="badge">🏠 No Gear</span></a><a href="./nutrition-for-fitness/" class="file-card"><div class="icon">📄</div><div class="name">Nutrition for Fitness</div><div class="desc">Comprehensive nutrition guide for active individuals.</div><span class="badge">📚 Nutrition</span></a><a href="./tracking-progress-guide/" class="file-card"><div class="icon">📄</div><div class="name">Tracking Progress Guide</div><div class="desc">Monitor your fitness journey effectively to stay motivated and adjust your plan.</div><span class="badge">📊 Progress</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Knowledge is power — educate yourself and you'll achieve better results.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Guides</div><div class="back-link" onclick="window.location.href='../'">← Back to Fitness</div><ul><li class="file-item" onclick="window.location.href='./fitness-myths-debunked/'">fitness-myths-debunked</li><li class="file-item" onclick="window.location.href='./home-workout-guide/'">home-workout-guide</li><li class="file-item" onclick="window.location.href='./how-to-build-a-fitness-routine/'">how-to-build-a-fitness-routine</li><li class="file-item" onclick="window.location.href='./no-equipment-workout-guide/'">no-equipment-workout-guide</li><li class="file-item" onclick="window.location.href='./nutrition-for-fitness/'">nutrition-for-fitness</li><li class="file-item" onclick="window.location.href='./tracking-progress-guide/'">tracking-progress-guide</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Fitness</a> <span class="sep">→</span> <span class="current">Guides</span></nav><h1>Guides</h1><p class="subtitle">Practical fitness guides to help you build routines and debunk myths.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#fitnessguides" data-type="tag">#fitnessguides</button><button class="filter-btn" data-filter="#workouts" data-type="tag">#workouts</button><button class="filter-btn" data-filter="#mythbusting" data-type="tag">#mythbusting</button><button class="filter-btn" data-filter="#routine" data-type="tag">#routine</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="🏠 Home" data-type="type">🏠 Home</button><button class="filter-btn type" data-filter="🏠 No Gear" data-type="type">🏠 No Gear</button><button class="filter-btn type" data-filter="📊 Progress" data-type="type">📊 Progress</button><button class="filter-btn type" data-filter="📋 Routine" data-type="type">📋 Routine</button><button class="filter-btn type" data-filter="📚 Nutrition" data-type="type">📚 Nutrition</button><button class="filter-btn type" data-filter="🚫 Myths" data-type="type">🚫 Myths</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./fitness-myths-debunked/" class="file-card" data-tags="#fitnessguides #workouts #mythbusting #routine" data-type="🚫 Myths">
+                <div class="icon">📄</div>
+                <div class="name">Fitness Myths Debunked</div>
+                <div class="desc">Separate fact from fiction with this guide to common fitness misconceptions.</div>
+                <span class="badge">🚫 Myths</span>
+            </a>
+        
+            <a href="./home-workout-guide/" class="file-card" data-tags="#fitnessguides #workouts #mythbusting #routine" data-type="🏠 Home">
+                <div class="icon">📄</div>
+                <div class="name">Home Workout Guide</div>
+                <div class="desc">Create an effective home workout routine with minimal equipment.</div>
+                <span class="badge">🏠 Home</span>
+            </a>
+        
+            <a href="./how-to-build-a-fitness-routine/" class="file-card" data-tags="#fitnessguides #workouts #mythbusting #routine" data-type="📋 Routine">
+                <div class="icon">📄</div>
+                <div class="name">How to Build a Fitness Routine</div>
+                <div class="desc">Design a sustainable fitness routine that fits your lifestyle.</div>
+                <span class="badge">📋 Routine</span>
+            </a>
+        
+            <a href="./no-equipment-workout-guide/" class="file-card" data-tags="#fitnessguides #workouts #mythbusting #routine" data-type="🏠 No Gear">
+                <div class="icon">📄</div>
+                <div class="name">No‑Equipment Workout Guide</div>
+                <div class="desc">Get a great workout without any equipment, anywhere.</div>
+                <span class="badge">🏠 No Gear</span>
+            </a>
+        
+            <a href="./nutrition-for-fitness/" class="file-card" data-tags="#fitnessguides #workouts #mythbusting #routine" data-type="📚 Nutrition">
+                <div class="icon">📄</div>
+                <div class="name">Nutrition for Fitness</div>
+                <div class="desc">Comprehensive nutrition guide for active individuals.</div>
+                <span class="badge">📚 Nutrition</span>
+            </a>
+        
+            <a href="./tracking-progress-guide/" class="file-card" data-tags="#fitnessguides #workouts #mythbusting #routine" data-type="📊 Progress">
+                <div class="icon">📄</div>
+                <div class="name">Tracking Progress Guide</div>
+                <div class="desc">Monitor your fitness journey effectively to stay motivated and adjust your plan.</div>
+                <span class="badge">📊 Progress</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 Knowledge is power — educate yourself and you'll achieve better results.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

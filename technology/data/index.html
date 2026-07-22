@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Technology</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Data Management</div><a href="./cloud-storage-guide/">Cloud Storage Guide</a><a href="./digital-declutter-guide/">Digital Declutter Guide</a><a href="./how-to-back-up-your-data/">How to Back Up Your Data</a><a href="./how-to-manage-your-email-inbox/">How to Manage Your Email Inbox</a><a href="./how-to-organise-your-digital-files/">How to Organise Your Digital Files</a><a href="./password-management-guide/">Password Management Guide</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="active">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Data Management</div><div class="back-link" onclick="window.location.href='../'">← Back to Technology</div><ul><li class="file-item" onclick="window.location.href='./cloud-storage-guide/'">cloud-storage-guide</li><li class="file-item" onclick="window.location.href='./digital-declutter-guide/'">digital-declutter-guide</li><li class="file-item" onclick="window.location.href='./how-to-back-up-your-data/'">how-to-back-up-your-data</li><li class="file-item" onclick="window.location.href='./how-to-manage-your-email-inbox/'">how-to-manage-your-email-inbox</li><li class="file-item" onclick="window.location.href='./how-to-organise-your-digital-files/'">how-to-organise-your-digital-files</li><li class="file-item" onclick="window.location.href='./password-management-guide/'">password-management-guide</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Technology</a> <span class="sep">→</span> <span class="current">Data</span></nav><h1>Data Management</h1><p class="subtitle">Organise, protect, and manage your digital data effectively.</p><div class="tags"><span>#datamanagement</span><span>#security</span><span>#organisation</span><span>#digital</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>🔐 Password management is essential for security</li><li>📧 Email management reduces overwhelm and improves productivity</li><li>🗂️ Digital declutter helps you find what you need</li><li>☁️ Cloud storage provides backup and accessibility</li></ul></div><div class="why-section"><h3>💡 Why Data Management at SolveMap</h3><ul><li>🔐 Use a password manager for strong, unique passwords</li><li>📧 Keep your inbox organised with filters and folders</li><li>🗂️ Delete or archive files you no longer need</li><li>☁️ Back up your data regularly to the cloud</li></ul></div><div class="file-grid"><a href="./cloud-storage-guide/" class="file-card"><div class="icon">📄</div><div class="name">Cloud Storage Guide</div><div class="desc">Choose and use cloud storage effectively for accessibility and backup.</div><span class="badge">☁️ Cloud</span></a><a href="./digital-declutter-guide/" class="file-card"><div class="icon">📄</div><div class="name">Digital Declutter Guide</div><div class="desc">Reduce digital clutter and organise your digital life.</div><span class="badge">🗂️ Declutter</span></a><a href="./how-to-back-up-your-data/" class="file-card"><div class="icon">📄</div><div class="name">How to Back Up Your Data</div><div class="desc">Protect your digital life with a reliable backup strategy.</div><span class="badge">💾 Backup</span></a><a href="./how-to-manage-your-email-inbox/" class="file-card"><div class="icon">📄</div><div class="name">How to Manage Your Email Inbox</div><div class="desc">Take control of your inbox and reduce email overwhelm.</div><span class="badge">📧 Email</span></a><a href="./how-to-organise-your-digital-files/" class="file-card"><div class="icon">📄</div><div class="name">How to Organise Your Digital Files</div><div class="desc">Create a file organisation system that makes finding documents easy.</div><span class="badge">📁 Organisation</span></a><a href="./password-management-guide/" class="file-card"><div class="icon">📄</div><div class="name">Password Management Guide</div><div class="desc">Create and manage strong passwords to protect your online accounts.</div><span class="badge">🔐 Security</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Your digital data is your digital life — organise it, protect it, and it will serve you well.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Data Management</div><div class="back-link" onclick="window.location.href='../'">← Back to Technology</div><ul><li class="file-item" onclick="window.location.href='./cloud-storage-guide/'">cloud-storage-guide</li><li class="file-item" onclick="window.location.href='./digital-declutter-guide/'">digital-declutter-guide</li><li class="file-item" onclick="window.location.href='./how-to-back-up-your-data/'">how-to-back-up-your-data</li><li class="file-item" onclick="window.location.href='./how-to-manage-your-email-inbox/'">how-to-manage-your-email-inbox</li><li class="file-item" onclick="window.location.href='./how-to-organise-your-digital-files/'">how-to-organise-your-digital-files</li><li class="file-item" onclick="window.location.href='./password-management-guide/'">password-management-guide</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Technology</a> <span class="sep">→</span> <span class="current">Data</span></nav><h1>Data Management</h1><p class="subtitle">Organise, protect, and manage your digital data effectively.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#datamanagement" data-type="tag">#datamanagement</button><button class="filter-btn" data-filter="#security" data-type="tag">#security</button><button class="filter-btn" data-filter="#organisation" data-type="tag">#organisation</button><button class="filter-btn" data-filter="#digital" data-type="tag">#digital</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="☁️ Cloud" data-type="type">☁️ Cloud</button><button class="filter-btn type" data-filter="💾 Backup" data-type="type">💾 Backup</button><button class="filter-btn type" data-filter="📁 Organisation" data-type="type">📁 Organisation</button><button class="filter-btn type" data-filter="📧 Email" data-type="type">📧 Email</button><button class="filter-btn type" data-filter="🔐 Security" data-type="type">🔐 Security</button><button class="filter-btn type" data-filter="🗂️ Declutter" data-type="type">🗂️ Declutter</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./cloud-storage-guide/" class="file-card" data-tags="#datamanagement #security #organisation #digital" data-type="☁️ Cloud">
+                <div class="icon">📄</div>
+                <div class="name">Cloud Storage Guide</div>
+                <div class="desc">Choose and use cloud storage effectively for accessibility and backup.</div>
+                <span class="badge">☁️ Cloud</span>
+            </a>
+        
+            <a href="./digital-declutter-guide/" class="file-card" data-tags="#datamanagement #security #organisation #digital" data-type="🗂️ Declutter">
+                <div class="icon">📄</div>
+                <div class="name">Digital Declutter Guide</div>
+                <div class="desc">Reduce digital clutter and organise your digital life.</div>
+                <span class="badge">🗂️ Declutter</span>
+            </a>
+        
+            <a href="./how-to-back-up-your-data/" class="file-card" data-tags="#datamanagement #security #organisation #digital" data-type="💾 Backup">
+                <div class="icon">📄</div>
+                <div class="name">How to Back Up Your Data</div>
+                <div class="desc">Protect your digital life with a reliable backup strategy.</div>
+                <span class="badge">💾 Backup</span>
+            </a>
+        
+            <a href="./how-to-manage-your-email-inbox/" class="file-card" data-tags="#datamanagement #security #organisation #digital" data-type="📧 Email">
+                <div class="icon">📄</div>
+                <div class="name">How to Manage Your Email Inbox</div>
+                <div class="desc">Take control of your inbox and reduce email overwhelm.</div>
+                <span class="badge">📧 Email</span>
+            </a>
+        
+            <a href="./how-to-organise-your-digital-files/" class="file-card" data-tags="#datamanagement #security #organisation #digital" data-type="📁 Organisation">
+                <div class="icon">📄</div>
+                <div class="name">How to Organise Your Digital Files</div>
+                <div class="desc">Create a file organisation system that makes finding documents easy.</div>
+                <span class="badge">📁 Organisation</span>
+            </a>
+        
+            <a href="./password-management-guide/" class="file-card" data-tags="#datamanagement #security #organisation #digital" data-type="🔐 Security">
+                <div class="icon">📄</div>
+                <div class="name">Password Management Guide</div>
+                <div class="desc">Create and manage strong passwords to protect your online accounts.</div>
+                <span class="badge">🔐 Security</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 Your digital data is your digital life — organise it, protect it, and it will serve you well.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

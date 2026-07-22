@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,47 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Finance</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Financial Literacy</div><a href="./common-financial-mistakes-to-avoid/">Common Financial Mistakes to Avoid</a><a href="./compound-interest-explained/">Compound Interest Explained</a><a href="./financial-jargon-dictionary/">Financial Jargon Dictionary</a><a href="./how-to-read-a-bank-statement/">How to Read a Bank Statement</a><a href="./inflation-and-your-money/">Inflation and Your Money</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="active">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Financial Literacy</div><div class="back-link" onclick="window.location.href='../'">← Back to Finance</div><ul><li class="file-item" onclick="window.location.href='./common-financial-mistakes-to-avoid/'">common-financial-mistakes-to-avoid</li><li class="file-item" onclick="window.location.href='./compound-interest-explained/'">compound-interest-explained</li><li class="file-item" onclick="window.location.href='./financial-jargon-dictionary/'">financial-jargon-dictionary</li><li class="file-item" onclick="window.location.href='./how-to-read-a-bank-statement/'">how-to-read-a-bank-statement</li><li class="file-item" onclick="window.location.href='./inflation-and-your-money/'">inflation-and-your-money</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Finance</a> <span class="sep">→</span> <span class="current">Literacy</span></nav><h1>Financial Literacy</h1><p class="subtitle">Understand the language of money and make informed financial decisions.</p><div class="tags"><span>#financialliteracy</span><span>#money</span><span>#education</span><span>#personalfinance</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>📚 Financial jargon explained in plain English</li><li>💰 Compound interest is the eighth wonder of the world</li><li>📈 Inflation erodes purchasing power — invest to beat it</li><li>💳 Reading bank statements helps you stay on track</li></ul></div><div class="why-section"><h3>💡 Why Financial Literacy at SolveMap</h3><ul><li>📚 Learn key terms: ROI, APR, diversification, etc.</li><li>💰 Start saving early to harness compound interest</li><li>📈 Invest in assets that outpace inflation</li><li>💳 Review your bank statements monthly for errors</li></ul></div><div class="file-grid"><a href="./common-financial-mistakes-to-avoid/" class="file-card"><div class="icon">📄</div><div class="name">Common Financial Mistakes to Avoid</div><div class="desc">Learn from others' financial errors to protect your own money.</div><span class="badge">🚫 Mistakes</span></a><a href="./compound-interest-explained/" class="file-card"><div class="icon">📄</div><div class="name">Compound Interest Explained</div><div class="desc">Understand the power of compound interest and how it can grow your wealth.</div><span class="badge">📈 Compound</span></a><a href="./financial-jargon-dictionary/" class="file-card"><div class="icon">📄</div><div class="name">Financial Jargon Dictionary</div><div class="desc">Decode the complex language of finance and investing.</div><span class="badge">📚 Dictionary</span></a><a href="./how-to-read-a-bank-statement/" class="file-card"><div class="icon">📄</div><div class="name">How to Read a Bank Statement</div><div class="desc">Understand your bank statement and spot errors or fees.</div><span class="badge">🏦 Banking</span></a><a href="./inflation-and-your-money/" class="file-card"><div class="icon">📄</div><div class="name">Inflation and Your Money</div><div class="desc">Learn how inflation erodes your purchasing power and how to protect your savings.</div><span class="badge">📈 Inflation</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Financial literacy is a superpower — it empowers you to make better decisions with your money.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Financial Literacy</div><div class="back-link" onclick="window.location.href='../'">← Back to Finance</div><ul><li class="file-item" onclick="window.location.href='./common-financial-mistakes-to-avoid/'">common-financial-mistakes-to-avoid</li><li class="file-item" onclick="window.location.href='./compound-interest-explained/'">compound-interest-explained</li><li class="file-item" onclick="window.location.href='./financial-jargon-dictionary/'">financial-jargon-dictionary</li><li class="file-item" onclick="window.location.href='./how-to-read-a-bank-statement/'">how-to-read-a-bank-statement</li><li class="file-item" onclick="window.location.href='./inflation-and-your-money/'">inflation-and-your-money</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Finance</a> <span class="sep">→</span> <span class="current">Literacy</span></nav><h1>Financial Literacy</h1><p class="subtitle">Understand the language of money and make informed financial decisions.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#financialliteracy" data-type="tag">#financialliteracy</button><button class="filter-btn" data-filter="#money" data-type="tag">#money</button><button class="filter-btn" data-filter="#education" data-type="tag">#education</button><button class="filter-btn" data-filter="#personalfinance" data-type="tag">#personalfinance</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="🏦 Banking" data-type="type">🏦 Banking</button><button class="filter-btn type" data-filter="📈 Compound" data-type="type">📈 Compound</button><button class="filter-btn type" data-filter="📈 Inflation" data-type="type">📈 Inflation</button><button class="filter-btn type" data-filter="📚 Dictionary" data-type="type">📚 Dictionary</button><button class="filter-btn type" data-filter="🚫 Mistakes" data-type="type">🚫 Mistakes</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./common-financial-mistakes-to-avoid/" class="file-card" data-tags="#financialliteracy #money #education #personalfinance" data-type="🚫 Mistakes">
+                <div class="icon">📄</div>
+                <div class="name">Common Financial Mistakes to Avoid</div>
+                <div class="desc">Learn from others' financial errors to protect your own money.</div>
+                <span class="badge">🚫 Mistakes</span>
+            </a>
+        
+            <a href="./compound-interest-explained/" class="file-card" data-tags="#financialliteracy #money #education #personalfinance" data-type="📈 Compound">
+                <div class="icon">📄</div>
+                <div class="name">Compound Interest Explained</div>
+                <div class="desc">Understand the power of compound interest and how it can grow your wealth.</div>
+                <span class="badge">📈 Compound</span>
+            </a>
+        
+            <a href="./financial-jargon-dictionary/" class="file-card" data-tags="#financialliteracy #money #education #personalfinance" data-type="📚 Dictionary">
+                <div class="icon">📄</div>
+                <div class="name">Financial Jargon Dictionary</div>
+                <div class="desc">Decode the complex language of finance and investing.</div>
+                <span class="badge">📚 Dictionary</span>
+            </a>
+        
+            <a href="./how-to-read-a-bank-statement/" class="file-card" data-tags="#financialliteracy #money #education #personalfinance" data-type="🏦 Banking">
+                <div class="icon">📄</div>
+                <div class="name">How to Read a Bank Statement</div>
+                <div class="desc">Understand your bank statement and spot errors or fees.</div>
+                <span class="badge">🏦 Banking</span>
+            </a>
+        
+            <a href="./inflation-and-your-money/" class="file-card" data-tags="#financialliteracy #money #education #personalfinance" data-type="📈 Inflation">
+                <div class="icon">📄</div>
+                <div class="name">Inflation and Your Money</div>
+                <div class="desc">Learn how inflation erodes your purchasing power and how to protect your savings.</div>
+                <span class="badge">📈 Inflation</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 Financial literacy is a superpower — it empowers you to make better decisions with your money.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +421,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../../styles/file.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,73 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Branding</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Branding</div><a href="./how-to-build-a-personal-brand-on-linkedin/" class="">how-to-build-a-personal-brand-on-linkedin</a><a href="./how-to-get-noticed-by-recruiters/" class="active">How to Get Noticed by Recruiters</a><a href="./how-to-share-your-work-online/" class="">how-to-share-your-work-online</a><a href="./how-to-start-a-professional-blog/" class="">how-to-start-a-professional-blog</a><a href="./public-speaking-tips-for-beginners/" class="">public-speaking-tips-for-beginners</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="active">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Branding</div><div class="back-link" onclick="window.location.href='../'">← Back to Branding</div><ul><li class="file-item " onclick="window.location.href='./how-to-build-a-personal-brand-on-linkedin/'; return false;">how-to-build-a-personal-brand-on-linkedin</li><li class="file-item active" onclick="window.location.href='./how-to-get-noticed-by-recruiters/'; return false;">how-to-get-noticed-by-recruiters</li><li class="file-item " onclick="window.location.href='./how-to-share-your-work-online/'; return false;">how-to-share-your-work-online</li><li class="file-item " onclick="window.location.href='./how-to-start-a-professional-blog/'; return false;">how-to-start-a-professional-blog</li><li class="file-item " onclick="window.location.href='./public-speaking-tips-for-beginners/'; return false;">public-speaking-tips-for-beginners</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Career</a> <span class="sep">→</span> <a href="../">Branding</a> <span class="sep">→</span> <span class="current">How to Get Noticed by Recruiters</span></nav><h1 class="file-title">How to Get Noticed by Recruiters 📄</h1><p class="file-sub">Optimise your online presence and profile to attract recruiter attention.</p><div class="file-description"><p><strong>Your problem:</strong> You're not getting recruiter interest despite having a good background.</p><p><strong>This solution:</strong> A guide to building a strong LinkedIn profile, engaging with content, and using keywords to get noticed.</p></div><div class="download-section"><a href="https://frge.top/how-to-get-noticed-b-4ussiz" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Recruiters use LinkedIn extensively — make your profile complete and active.</div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Branding</div><div class="back-link" onclick="window.location.href='../'">← Back to Branding</div><ul><li class="file-item " onclick="window.location.href='./how-to-build-a-personal-brand-on-linkedin/'; return false;">how-to-build-a-personal-brand-on-linkedin</li><li class="file-item active" onclick="window.location.href='./how-to-get-noticed-by-recruiters/'; return false;">how-to-get-noticed-by-recruiters</li><li class="file-item " onclick="window.location.href='./how-to-share-your-work-online/'; return false;">how-to-share-your-work-online</li><li class="file-item " onclick="window.location.href='./how-to-start-a-professional-blog/'; return false;">how-to-start-a-professional-blog</li><li class="file-item " onclick="window.location.href='./public-speaking-tips-for-beginners/'; return false;">public-speaking-tips-for-beginners</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Career</a> <span class="sep">→</span> <a href="../">Branding</a> <span class="sep">→</span> <span class="current">How to Get Noticed by Recruiters</span></nav><h1 class="file-title">How to Get Noticed by Recruiters 📄</h1><p class="file-sub">Optimise your online presence and profile to attract recruiter attention.</p><div class="file-description"><p><strong>Your problem:</strong> You're not getting recruiter interest despite having a good background.</p><p><strong>This solution:</strong> A guide to building a strong LinkedIn profile, engaging with content, and using keywords to get noticed.</p></div><div class="download-section"><a href="https://frge.top/how-to-get-noticed-b-4ussiz" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Recruiters use LinkedIn extensively — make your profile complete and active.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
+                <a href="../../career/change/how-to-change-careers-at-30/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Change Careers at 30</span>
+                            <span class="related-meta">Career / Change</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">📅 30s</span>
+                </a>
+            
+                <a href="../../career/change/how-to-identify-your-transferable-skills/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Identify Your Transferable Skills</span>
+                            <span class="related-meta">Career / Change</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">📊 Skills</span>
+                </a>
+            
+                <a href="../../career/change/how-to-leave-your-job-gracefully/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Leave Your Job Gracefully</span>
+                            <span class="related-meta">Career / Change</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">🚪 Resignation</span>
+                </a>
+            
+                <a href="../../career/change/how-to-start-a-business-on-the-side/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Start a Business on the Side</span>
+                            <span class="related-meta">Career / Change</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">🚀 Business</span>
+                </a>
+            
+                <a href="../../career/change/how-to-transition-to-a-new-industry/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Transition to a New Industry</span>
+                            <span class="related-meta">Career / Change</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">🔄 Transition</span>
+                </a>
+            
+                <a href="../../career/growth/how-to-ask-for-a-promotion/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Ask for a Promotion</span>
+                            <span class="related-meta">Career / Growth</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">📈 Promotion</span>
+                </a>
+            </div></div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +447,22 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+
+        // Сохраняем в историю просмотров
+        (function() {
+            const fileData = {
+                title: "How to Get Noticed by Recruiters",
+                url: "./",
+                category: "career",
+                subcategory: "branding",
+                badge: "📢 Visibility"
+            };
+            let history = JSON.parse(localStorage.getItem('solvemap_history')) || [];
+            history = history.filter(item => item.url !== fileData.url);
+            history.unshift(fileData);
+            if (history.length > 10) history = history.slice(0, 10);
+            localStorage.setItem('solvemap_history', JSON.stringify(history));
+        })();
     </script>
     
     <script>

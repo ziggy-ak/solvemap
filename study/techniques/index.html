@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Study</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Study Techniques</div><a href="./active-recall-method/">The Active Recall Method</a><a href="./feynman-technique/">The Feynman Technique</a><a href="./mind-mapping-for-students/">Mind Mapping for Students</a><a href="./pomodoro-technique-guide/">The Pomodoro Technique Guide</a><a href="./spaced-repetition-system/">Spaced Repetition System</a><a href="./sq3r-reading-method/">SQ3R Reading Method</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="active">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Study Techniques</div><div class="back-link" onclick="window.location.href='../'">← Back to Study</div><ul><li class="file-item" onclick="window.location.href='./active-recall-method/'">active-recall-method</li><li class="file-item" onclick="window.location.href='./feynman-technique/'">feynman-technique</li><li class="file-item" onclick="window.location.href='./mind-mapping-for-students/'">mind-mapping-for-students</li><li class="file-item" onclick="window.location.href='./pomodoro-technique-guide/'">pomodoro-technique-guide</li><li class="file-item" onclick="window.location.href='./spaced-repetition-system/'">spaced-repetition-system</li><li class="file-item" onclick="window.location.href='./sq3r-reading-method/'">sq3r-reading-method</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Study</a> <span class="sep">→</span> <span class="current">Techniques</span></nav><h1>Study Techniques</h1><p class="subtitle">Learn powerful study methods that actually work.</p><div class="tags"><span>#studymethods</span><span>#learning</span><span>#memory</span><span>#productivity</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>📖 The SQ3R method improves reading comprehension</li><li>🧠 Mind mapping visualises connections between ideas</li><li>🎓 The Feynman technique deepens understanding</li><li>⏰ The Pomodoro technique boosts productivity</li><li>🔄 Spaced repetition enhances long‑term retention</li></ul></div><div class="why-section"><h3>💡 Why Study Techniques at SolveMap</h3><ul><li>📖 Survey, Question, Read, Recite, Review — apply to textbooks</li><li>🧠 Create mind maps to link concepts</li><li>🎓 Teach a concept to someone else to test your understanding</li><li>⏰ Work in 25‑minute focused intervals</li><li>🔄 Review material at increasing intervals</li></ul></div><div class="file-grid"><a href="./active-recall-method/" class="file-card"><div class="icon">📄</div><div class="name">The Active Recall Method</div><div class="desc">Boost your memory by actively retrieving information.</div><span class="badge">🧠 Active</span></a><a href="./feynman-technique/" class="file-card"><div class="icon">📄</div><div class="name">The Feynman Technique</div><div class="desc">Learn deeply by teaching a concept in simple terms.</div><span class="badge">🎓 Feynman</span></a><a href="./mind-mapping-for-students/" class="file-card"><div class="icon">📄</div><div class="name">Mind Mapping for Students</div><div class="desc">Visualise complex information with mind maps to enhance understanding and memory.</div><span class="badge">🧠 Mind Map</span></a><a href="./pomodoro-technique-guide/" class="file-card"><div class="icon">📄</div><div class="name">The Pomodoro Technique Guide</div><div class="desc">Use the Pomodoro technique to boost productivity and maintain focus.</div><span class="badge">⏰ Pomodoro</span></a><a href="./spaced-repetition-system/" class="file-card"><div class="icon">📄</div><div class="name">Spaced Repetition System</div><div class="desc">Retain information long‑term with a spaced repetition schedule.</div><span class="badge">🔄 Spaced</span></a><a href="./sq3r-reading-method/" class="file-card"><div class="icon">📄</div><div class="name">SQ3R Reading Method</div><div class="desc">Master the SQ3R technique for efficient and effective reading.</div><span class="badge">📖 SQ3R</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 The best study technique is the one that fits your learning style — experiment and adapt.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Study Techniques</div><div class="back-link" onclick="window.location.href='../'">← Back to Study</div><ul><li class="file-item" onclick="window.location.href='./active-recall-method/'">active-recall-method</li><li class="file-item" onclick="window.location.href='./feynman-technique/'">feynman-technique</li><li class="file-item" onclick="window.location.href='./mind-mapping-for-students/'">mind-mapping-for-students</li><li class="file-item" onclick="window.location.href='./pomodoro-technique-guide/'">pomodoro-technique-guide</li><li class="file-item" onclick="window.location.href='./spaced-repetition-system/'">spaced-repetition-system</li><li class="file-item" onclick="window.location.href='./sq3r-reading-method/'">sq3r-reading-method</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Study</a> <span class="sep">→</span> <span class="current">Techniques</span></nav><h1>Study Techniques</h1><p class="subtitle">Learn powerful study methods that actually work.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#studymethods" data-type="tag">#studymethods</button><button class="filter-btn" data-filter="#learning" data-type="tag">#learning</button><button class="filter-btn" data-filter="#memory" data-type="tag">#memory</button><button class="filter-btn" data-filter="#productivity" data-type="tag">#productivity</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="⏰ Pomodoro" data-type="type">⏰ Pomodoro</button><button class="filter-btn type" data-filter="🎓 Feynman" data-type="type">🎓 Feynman</button><button class="filter-btn type" data-filter="📖 SQ3R" data-type="type">📖 SQ3R</button><button class="filter-btn type" data-filter="🔄 Spaced" data-type="type">🔄 Spaced</button><button class="filter-btn type" data-filter="🧠 Active" data-type="type">🧠 Active</button><button class="filter-btn type" data-filter="🧠 Mind Map" data-type="type">🧠 Mind Map</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./active-recall-method/" class="file-card" data-tags="#studymethods #learning #memory #productivity" data-type="🧠 Active">
+                <div class="icon">📄</div>
+                <div class="name">The Active Recall Method</div>
+                <div class="desc">Boost your memory by actively retrieving information.</div>
+                <span class="badge">🧠 Active</span>
+            </a>
+        
+            <a href="./feynman-technique/" class="file-card" data-tags="#studymethods #learning #memory #productivity" data-type="🎓 Feynman">
+                <div class="icon">📄</div>
+                <div class="name">The Feynman Technique</div>
+                <div class="desc">Learn deeply by teaching a concept in simple terms.</div>
+                <span class="badge">🎓 Feynman</span>
+            </a>
+        
+            <a href="./mind-mapping-for-students/" class="file-card" data-tags="#studymethods #learning #memory #productivity" data-type="🧠 Mind Map">
+                <div class="icon">📄</div>
+                <div class="name">Mind Mapping for Students</div>
+                <div class="desc">Visualise complex information with mind maps to enhance understanding and memory.</div>
+                <span class="badge">🧠 Mind Map</span>
+            </a>
+        
+            <a href="./pomodoro-technique-guide/" class="file-card" data-tags="#studymethods #learning #memory #productivity" data-type="⏰ Pomodoro">
+                <div class="icon">📄</div>
+                <div class="name">The Pomodoro Technique Guide</div>
+                <div class="desc">Use the Pomodoro technique to boost productivity and maintain focus.</div>
+                <span class="badge">⏰ Pomodoro</span>
+            </a>
+        
+            <a href="./spaced-repetition-system/" class="file-card" data-tags="#studymethods #learning #memory #productivity" data-type="🔄 Spaced">
+                <div class="icon">📄</div>
+                <div class="name">Spaced Repetition System</div>
+                <div class="desc">Retain information long‑term with a spaced repetition schedule.</div>
+                <span class="badge">🔄 Spaced</span>
+            </a>
+        
+            <a href="./sq3r-reading-method/" class="file-card" data-tags="#studymethods #learning #memory #productivity" data-type="📖 SQ3R">
+                <div class="icon">📄</div>
+                <div class="name">SQ3R Reading Method</div>
+                <div class="desc">Master the SQ3R technique for efficient and effective reading.</div>
+                <span class="badge">📖 SQ3R</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 The best study technique is the one that fits your learning style — experiment and adapt.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>

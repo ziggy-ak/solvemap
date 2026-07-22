@@ -167,6 +167,194 @@
         }
     }
     
+        
+    /* ----- Блок "Недавно просмотренные" и "Вам также может понравиться" ----- */
+    .recently-viewed {
+        margin: 32px 0 20px;
+        padding: 20px 0;
+        border-top: 2px solid #eef2ff;
+    }
+    .recently-viewed h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .related-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .related-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .related-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .related-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .related-meta {
+        font-size: 11px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .related-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+        .related-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .related-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* Фильтры на странице подкатегорий */
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f4f9;
+    }
+    .filter-btn {
+        padding: 4px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 40px;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+    .filter-btn:hover {
+        background: #f1f4f9;
+        border-color: #94a3b8;
+    }
+    .filter-btn.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-btn.type {
+        border-color: #e2e8f0;
+    }
+    .filter-btn.type.active {
+        background: #1e3a8a;
+        color: #ffffff;
+        border-color: #1e3a8a;
+    }
+    .filter-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        margin-right: 4px;
+    }
+    .file-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .file-card {
+        background: #ffffff;
+        border: 1px solid #f1f4f9;
+        border-radius: 12px;
+        padding: 16px;
+        text-decoration: none;
+        color: #0f172a;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .file-card:hover {
+        border-color: #dbe2ed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
+    }
+    .file-card .icon {
+        font-size: 24px;
+    }
+    .file-card .name {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .file-card .desc {
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.4;
+    }
+    .file-card .badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1e3a8a;
+        background: #eef2ff;
+        padding: 2px 10px;
+        border-radius: 40px;
+        align-self: flex-start;
+    }
+    @media (max-width: 768px) {
+        .file-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .file-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
     </style>
     <link rel="stylesheet" href="../../styles/subcategory.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS6Q6N9PCJ"></script>
@@ -177,7 +365,54 @@
     <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Career</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Job Search</div><a href="./cover-letter-templates/">Cover Letter Templates</a><a href="./how-to-answer-tell-me-about-yourself/">How to Answer "Tell Me About Yourself"</a><a href="./how-to-follow-up-after-an-interview/">How to Follow Up After an Interview</a><a href="./how-to-write-a-cv-that-gets-noticed/">How to Write a CV That Gets Noticed</a><a href="./job-interview-preparation-guide/">Job Interview Preparation Guide</a><a href="./job-search-strategies-2026/">Job Search Strategies 2026</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
     <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="active">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
-    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Job Search</div><div class="back-link" onclick="window.location.href='../'">← Back to Career</div><ul><li class="file-item" onclick="window.location.href='./cover-letter-templates/'">cover-letter-templates</li><li class="file-item" onclick="window.location.href='./how-to-answer-tell-me-about-yourself/'">how-to-answer-tell-me-about-yourself</li><li class="file-item" onclick="window.location.href='./how-to-follow-up-after-an-interview/'">how-to-follow-up-after-an-interview</li><li class="file-item" onclick="window.location.href='./how-to-write-a-cv-that-gets-noticed/'">how-to-write-a-cv-that-gets-noticed</li><li class="file-item" onclick="window.location.href='./job-interview-preparation-guide/'">job-interview-preparation-guide</li><li class="file-item" onclick="window.location.href='./job-search-strategies-2026/'">job-search-strategies-2026</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Career</a> <span class="sep">→</span> <span class="current">Job-search</span></nav><h1>Job Search</h1><p class="subtitle">Master the job search process with modern strategies and preparation.</p><div class="tags"><span>#jobsearch</span><span>#career</span><span>#interviews</span><span>#resume</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>📊 2026 job search strategies emphasise networking and personal branding</li><li>📧 Following up after interviews can set you apart</li><li>🗣️ The "Tell me about yourself" question is your chance to shine</li><li>📝 Interview preparation is essential for success</li></ul></div><div class="why-section"><h3>💡 Why Job Search at SolveMap</h3><ul><li>📊 Leverage LinkedIn and industry events</li><li>📧 Send a thank‑you email within 24 hours</li><li>🗣️ Craft a compelling narrative about your career</li><li>📝 Research the company and practice common questions</li></ul></div><div class="file-grid"><a href="./cover-letter-templates/" class="file-card"><div class="icon">📄</div><div class="name">Cover Letter Templates</div><div class="desc">Use proven templates to write cover letters that get noticed.</div><span class="badge">📄 Cover Letter</span></a><a href="./how-to-answer-tell-me-about-yourself/" class="file-card"><div class="icon">📄</div><div class="name">How to Answer "Tell Me About Yourself"</div><div class="desc">Craft a compelling response to the most common interview question.</div><span class="badge">🗣️ Interview</span></a><a href="./how-to-follow-up-after-an-interview/" class="file-card"><div class="icon">📄</div><div class="name">How to Follow Up After an Interview</div><div class="desc">Master the art of the post‑interview follow‑up.</div><span class="badge">📧 Follow‑up</span></a><a href="./how-to-write-a-cv-that-gets-noticed/" class="file-card"><div class="icon">📄</div><div class="name">How to Write a CV That Gets Noticed</div><div class="desc">Create a CV that grabs recruiters' attention and lands you interviews.</div><span class="badge">📄 CV</span></a><a href="./job-interview-preparation-guide/" class="file-card"><div class="icon">📄</div><div class="name">Job Interview Preparation Guide</div><div class="desc">Prepare thoroughly for any job interview with this comprehensive guide.</div><span class="badge">📝 Preparation</span></a><a href="./job-search-strategies-2026/" class="file-card"><div class="icon">📄</div><div class="name">Job Search Strategies 2026</div><div class="desc">Modern job search tactics to stand out in today's market.</div><span class="badge">📊 Search</span></a></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 A job search is about finding the right fit, not just any job — be strategic and persistent.</div></div></div></main></div>
+    <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Job Search</div><div class="back-link" onclick="window.location.href='../'">← Back to Career</div><ul><li class="file-item" onclick="window.location.href='./cover-letter-templates/'">cover-letter-templates</li><li class="file-item" onclick="window.location.href='./how-to-answer-tell-me-about-yourself/'">how-to-answer-tell-me-about-yourself</li><li class="file-item" onclick="window.location.href='./how-to-follow-up-after-an-interview/'">how-to-follow-up-after-an-interview</li><li class="file-item" onclick="window.location.href='./how-to-write-a-cv-that-gets-noticed/'">how-to-write-a-cv-that-gets-noticed</li><li class="file-item" onclick="window.location.href='./job-interview-preparation-guide/'">job-interview-preparation-guide</li><li class="file-item" onclick="window.location.href='./job-search-strategies-2026/'">job-search-strategies-2026</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Career</a> <span class="sep">→</span> <span class="current">Job-search</span></nav><h1>Job Search</h1><p class="subtitle">Master the job search process with modern strategies and preparation.</p>
+    <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#jobsearch" data-type="tag">#jobsearch</button><button class="filter-btn" data-filter="#career" data-type="tag">#career</button><button class="filter-btn" data-filter="#interviews" data-type="tag">#interviews</button><button class="filter-btn" data-filter="#resume" data-type="tag">#resume</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="📄 CV" data-type="type">📄 CV</button><button class="filter-btn type" data-filter="📄 Cover Letter" data-type="type">📄 Cover Letter</button><button class="filter-btn type" data-filter="📊 Search" data-type="type">📊 Search</button><button class="filter-btn type" data-filter="📝 Preparation" data-type="type">📝 Preparation</button><button class="filter-btn type" data-filter="📧 Follow‑up" data-type="type">📧 Follow‑up</button><button class="filter-btn type" data-filter="🗣️ Interview" data-type="type">🗣️ Interview</button></div>
+    <div class="file-grid" id="file-grid">
+        
+            <a href="./cover-letter-templates/" class="file-card" data-tags="#jobsearch #career #interviews #resume" data-type="📄 Cover Letter">
+                <div class="icon">📄</div>
+                <div class="name">Cover Letter Templates</div>
+                <div class="desc">Use proven templates to write cover letters that get noticed.</div>
+                <span class="badge">📄 Cover Letter</span>
+            </a>
+        
+            <a href="./how-to-answer-tell-me-about-yourself/" class="file-card" data-tags="#jobsearch #career #interviews #resume" data-type="🗣️ Interview">
+                <div class="icon">📄</div>
+                <div class="name">How to Answer "Tell Me About Yourself"</div>
+                <div class="desc">Craft a compelling response to the most common interview question.</div>
+                <span class="badge">🗣️ Interview</span>
+            </a>
+        
+            <a href="./how-to-follow-up-after-an-interview/" class="file-card" data-tags="#jobsearch #career #interviews #resume" data-type="📧 Follow‑up">
+                <div class="icon">📄</div>
+                <div class="name">How to Follow Up After an Interview</div>
+                <div class="desc">Master the art of the post‑interview follow‑up.</div>
+                <span class="badge">📧 Follow‑up</span>
+            </a>
+        
+            <a href="./how-to-write-a-cv-that-gets-noticed/" class="file-card" data-tags="#jobsearch #career #interviews #resume" data-type="📄 CV">
+                <div class="icon">📄</div>
+                <div class="name">How to Write a CV That Gets Noticed</div>
+                <div class="desc">Create a CV that grabs recruiters' attention and lands you interviews.</div>
+                <span class="badge">📄 CV</span>
+            </a>
+        
+            <a href="./job-interview-preparation-guide/" class="file-card" data-tags="#jobsearch #career #interviews #resume" data-type="📝 Preparation">
+                <div class="icon">📄</div>
+                <div class="name">Job Interview Preparation Guide</div>
+                <div class="desc">Prepare thoroughly for any job interview with this comprehensive guide.</div>
+                <span class="badge">📝 Preparation</span>
+            </a>
+        
+            <a href="./job-search-strategies-2026/" class="file-card" data-tags="#jobsearch #career #interviews #resume" data-type="📊 Search">
+                <div class="icon">📄</div>
+                <div class="name">Job Search Strategies 2026</div>
+                <div class="desc">Modern job search tactics to stand out in today's market.</div>
+                <span class="badge">📊 Search</span>
+            </a>
+        
+    </div>
+    <div class="tip-box" style="margin-top:24px;">💡 <strong>Tip of the day:</strong> 💡 A job search is about finding the right fit, not just any job — be strategic and persistent.</div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">
         <span class="label">📬 Get free guides</span>
@@ -193,6 +428,49 @@
         function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active');document.getElementById('mobileOverlay').classList.remove('active');document.getElementById('hamburgerBtn').classList.remove('active');document.body.style.overflow='';}
         document.getElementById('mobileOverlay').addEventListener('click',closeMobileMenu);
         document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',closeMobileMenu);});
+        
+        // Фильтры
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const fileCards = document.querySelectorAll('.file-card');
+            
+            function filterFiles() {
+                let activeTagFilter = 'all';
+                let activeTypeFilter = 'all';
+                filterButtons.forEach(btn => {
+                    if (btn.classList.contains('active')) {
+                        const type = btn.dataset.type;
+                        const filter = btn.dataset.filter;
+                        if (type === 'tag') activeTagFilter = filter;
+                        else if (type === 'type') activeTypeFilter = filter;
+                    }
+                });
+                
+                fileCards.forEach(card => {
+                    const tags = card.dataset.tags ? card.dataset.tags.split(' ') : [];
+                    const type = card.dataset.type || '';
+                    let show = true;
+                    if (activeTagFilter !== 'all') {
+                        show = tags.includes(activeTagFilter);
+                    }
+                    if (activeTypeFilter !== 'all' && show) {
+                        show = (type === activeTypeFilter);
+                    }
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const type = this.dataset.type;
+                    document.querySelectorAll(`.filter-btn[data-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterFiles();
+                });
+            });
+            
+            filterFiles();
+        })();
     </script>
     
     <script>
