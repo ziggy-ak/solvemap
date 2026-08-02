@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Specific-goals</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Specific-goals</div><a href="../nutrition-for-men/" class="">nutrition-for-men</a><a href="../nutrition-for-mental-health/" class="">nutrition-for-mental-health</a><a href="../nutrition-for-muscle-gain/" class="active">Nutrition for Muscle Gain</a><a href="../nutrition-for-seniors/" class="">nutrition-for-seniors</a><a href="../nutrition-for-weight-loss/" class="">nutrition-for-weight-loss</a><a href="../nutrition-for-women/" class="">nutrition-for-women</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Specific-goals</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="active">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="active">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="active">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Specific-goals</div><div class="back-link" onclick="window.location.href='../'">← Back to Specific-goals</div><ul><li class="file-item " onclick="window.location.href='../nutrition-for-men/'; return false;">nutrition-for-men</li><li class="file-item " onclick="window.location.href='../nutrition-for-mental-health/'; return false;">nutrition-for-mental-health</li><li class="file-item active" onclick="window.location.href='../nutrition-for-muscle-gain/'; return false;">nutrition-for-muscle-gain</li><li class="file-item " onclick="window.location.href='../nutrition-for-seniors/'; return false;">nutrition-for-seniors</li><li class="file-item " onclick="window.location.href='../nutrition-for-weight-loss/'; return false;">nutrition-for-weight-loss</li><li class="file-item " onclick="window.location.href='../nutrition-for-women/'; return false;">nutrition-for-women</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Nutrition</a> <span class="sep">→</span> <a href="../">Specific-goals</a> <span class="sep">→</span> <span class="current">Nutrition for Muscle Gain</span></nav><h1 class="file-title">Nutrition for Muscle Gain 📄</h1><p class="file-sub">Eat to build muscle and support your fitness goals.</p><div class="file-description"><p><strong>Your problem:</strong> You want to build muscle but don't know how to eat for optimal growth.</p><p><strong>This solution:</strong> A guide to nutrition for muscle gain — protein, calories, timing, and key nutrients for building muscle.</p></div><div class="download-section"><a href="https://frge.top/nutrition-for-muscle-08tjmm" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 You can't build muscle without the right fuel — eat for growth and recovery.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../technology/wellbeing/how-to-manage-digital-distractions/" class="related-card">
+                <a href="../../../nutrition/supplements/omega-3-guide/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Manage Digital Distractions</span>
-                            <span class="related-meta">Technology / Wellbeing</span>
+                            <span class="related-name">Omega‑3 Guide</span>
+                            <span class="related-meta">Nutrition / Supplements</span>
                         </div>
                     </div>
-                    <span class="related-badge">📱 Focus</span>
+                    <span class="related-badge">🐟 Omega‑3</span>
                 </a>
             
-                <a href="../../../technology/skills/tech-skills-for-non-techies/" class="related-card">
+                <a href="../../../health/sleep/power-napping-for-energy/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Tech Skills for Non‑Techies</span>
-                            <span class="related-meta">Technology / Skills</span>
+                            <span class="related-name">Power Napping for Energy</span>
+                            <span class="related-meta">Health / Sleep</span>
                         </div>
                     </div>
-                    <span class="related-badge">💻 Skills</span>
+                    <span class="related-badge">💤 Napping</span>
                 </a>
             
-                <a href="../../../career/change/how-to-leave-your-job-gracefully/" class="related-card">
+                <a href="../../../fitness/supplements/vitamins-minerals-for-active-people/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Leave Your Job Gracefully</span>
-                            <span class="related-meta">Career / Change</span>
+                            <span class="related-name">Vitamins & Minerals for Active People</span>
+                            <span class="related-meta">Fitness / Supplements</span>
                         </div>
                     </div>
-                    <span class="related-badge">🚪 Resignation</span>
+                    <span class="related-badge">💊 Micronutrients</span>
                 </a>
             
-                <a href="../../../fitness/guides/nutrition-for-fitness/" class="related-card">
+                <a href="../../../premium/guides/healthy-eating-on-a-busy-schedule/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Nutrition for Fitness</span>
-                            <span class="related-meta">Fitness / Guides</span>
+                            <span class="related-name">Healthy Eating on a Busy Schedule</span>
+                            <span class="related-meta">Premium • Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">📚 Nutrition</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../study/exam-prep/how-to-stay-calm-during-exams/" class="related-card">
+                <a href="../../../premium/guides/plant-based-diet-for-beginners/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Stay Calm During Exams</span>
-                            <span class="related-meta">Study / Exam Prep</span>
+                            <span class="related-name">Plant-Based Diet for Beginners</span>
+                            <span class="related-meta">Premium • Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧘 Calm</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../study/ai/best-study-apps-2026/" class="related-card">
+                <a href="../../../premium/guides/how-to-improve-digestion-naturally/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Best Study Apps 2026</span>
-                            <span class="related-meta">Study / Ai</span>
+                            <span class="related-name">How to Improve Digestion Naturally</span>
+                            <span class="related-meta">Premium • Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">📱 Apps</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

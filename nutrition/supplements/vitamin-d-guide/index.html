@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Supplements</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Supplements</div><a href="../creatine-explained/" class="">creatine-explained</a><a href="../functional-foods-2026/" class="">functional-foods-2026</a><a href="../omega-3-guide/" class="">omega-3-guide</a><a href="../probiotic-supplements-guide/" class="">probiotic-supplements-guide</a><a href="../protein-powders-guide/" class="">protein-powders-guide</a><a href="../supplements-101/" class="">supplements-101</a><a href="../vitamin-d-guide/" class="active">Vitamin D Guide</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Supplements</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="active">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="active">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="active">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Supplements</div><div class="back-link" onclick="window.location.href='../'">← Back to Supplements</div><ul><li class="file-item " onclick="window.location.href='../creatine-explained/'; return false;">creatine-explained</li><li class="file-item " onclick="window.location.href='../functional-foods-2026/'; return false;">functional-foods-2026</li><li class="file-item " onclick="window.location.href='../omega-3-guide/'; return false;">omega-3-guide</li><li class="file-item " onclick="window.location.href='../probiotic-supplements-guide/'; return false;">probiotic-supplements-guide</li><li class="file-item " onclick="window.location.href='../protein-powders-guide/'; return false;">protein-powders-guide</li><li class="file-item " onclick="window.location.href='../supplements-101/'; return false;">supplements-101</li><li class="file-item active" onclick="window.location.href='../vitamin-d-guide/'; return false;">vitamin-d-guide</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Nutrition</a> <span class="sep">→</span> <a href="../">Supplements</a> <span class="sep">→</span> <span class="current">Vitamin D Guide</span></nav><h1 class="file-title">Vitamin D Guide 📄</h1><p class="file-sub">Understand the importance of vitamin D and how to get enough.</p><div class="file-description"><p><strong>Your problem:</strong> You've heard vitamin D is important but don't know how much you need or how to get it.</p><p><strong>This solution:</strong> A guide to vitamin D — why it matters, how much you need, and how to get enough through sun exposure, food, and supplements.</p></div><div class="download-section"><a href="https://frge.top/vitamin-d-guide-3p1zej" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Vitamin D is essential for bone health, immunity, and mood — make sure you're getting enough.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../career/growth/how-to-find-a-mentor/" class="related-card">
+                <a href="../../../nutrition/meal-planning/healthy-eating-on-a-busy-schedule/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Find a Mentor</span>
-                            <span class="related-meta">Career / Growth</span>
+                            <span class="related-name">Healthy Eating on a Busy Schedule</span>
+                            <span class="related-meta">Nutrition / Meal Planning</span>
                         </div>
                     </div>
-                    <span class="related-badge">🤝 Mentor</span>
+                    <span class="related-badge">⏰ Busy</span>
                 </a>
             
-                <a href="../../../productivity/habits/how-to-create-an-evening-shutdown-routine/" class="related-card">
+                <a href="../../../fitness/cardio/hiit-workouts-at-home/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Create an Evening Shutdown Routine</span>
-                            <span class="related-meta">Productivity / Habits</span>
+                            <span class="related-name">HIIT Workouts at Home</span>
+                            <span class="related-meta">Fitness / Cardio</span>
                         </div>
                     </div>
-                    <span class="related-badge">🌙 Evening</span>
+                    <span class="related-badge">🔥 HIIT</span>
                 </a>
             
-                <a href="../../../productivity/time-management/eat-that-frog-start-your-day-with-the-hardest-task/" class="related-card">
+                <a href="../../../technology/data/password-management-guide/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Eat That Frog — Start Your Day with the Hardest Task</span>
-                            <span class="related-meta">Productivity / Time Management</span>
+                            <span class="related-name">Password Management Guide</span>
+                            <span class="related-meta">Technology / Data</span>
                         </div>
                     </div>
-                    <span class="related-badge">🐸 Frog</span>
+                    <span class="related-badge">🔐 Security</span>
                 </a>
             
-                <a href="../../../study/techniques/sq3r-reading-method/" class="related-card">
+                <a href="../../../premium/guides/macronutrients-explained/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">SQ3R Reading Method</span>
-                            <span class="related-meta">Study / Techniques</span>
+                            <span class="related-name">Macronutrients Explained</span>
+                            <span class="related-meta">Premium • Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">📖 SQ3R</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../career/job-search/job-search-strategies-2026/" class="related-card">
+                <a href="../../../premium/guides/healthy-eating-on-a-busy-schedule/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Job Search Strategies 2026</span>
-                            <span class="related-meta">Career / Job Search</span>
+                            <span class="related-name">Healthy Eating on a Busy Schedule</span>
+                            <span class="related-meta">Premium • Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 Search</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../career/remote-work/how-to-transition-to-freelancing/" class="related-card">
+                <a href="../../../premium/guides/how-to-read-a-nutrition-label/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Transition to Freelancing</span>
-                            <span class="related-meta">Career / Remote Work</span>
+                            <span class="related-name">How to Read a Nutrition Label</span>
+                            <span class="related-meta">Premium • Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">💼 Freelance</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

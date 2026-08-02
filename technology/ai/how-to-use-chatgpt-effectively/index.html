@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,52 +374,19 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Ai</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Ai</div><a href="../ai-and-job-security/" class="">ai-and-job-security</a><a href="../ai-for-content-creation/" class="">ai-for-content-creation</a><a href="../ai-tools-for-everyday-life/" class="">ai-tools-for-everyday-life</a><a href="../ethical-ai-use/" class="">ethical-ai-use</a><a href="../how-to-automate-repetitive-tasks/" class="">how-to-automate-repetitive-tasks</a><a href="../how-to-use-chatgpt-effectively/" class="active">How to Use ChatGPT Effectively</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Ai</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="active">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="active">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="active">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Ai</div><div class="back-link" onclick="window.location.href='../'">← Back to Ai</div><ul><li class="file-item " onclick="window.location.href='../ai-and-job-security/'; return false;">ai-and-job-security</li><li class="file-item " onclick="window.location.href='../ai-for-content-creation/'; return false;">ai-for-content-creation</li><li class="file-item " onclick="window.location.href='../ai-tools-for-everyday-life/'; return false;">ai-tools-for-everyday-life</li><li class="file-item " onclick="window.location.href='../ethical-ai-use/'; return false;">ethical-ai-use</li><li class="file-item " onclick="window.location.href='../how-to-automate-repetitive-tasks/'; return false;">how-to-automate-repetitive-tasks</li><li class="file-item active" onclick="window.location.href='../how-to-use-chatgpt-effectively/'; return false;">how-to-use-chatgpt-effectively</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Technology</a> <span class="sep">→</span> <a href="../">Ai</a> <span class="sep">→</span> <span class="current">How to Use ChatGPT Effectively</span></nav><h1 class="file-title">How to Use ChatGPT Effectively 📄</h1><p class="file-sub">Master prompt engineering and get the most out of ChatGPT.</p><div class="file-description"><p><strong>Your problem:</strong> You use ChatGPT but don't feel like you're getting the best results from it.</p><p><strong>This solution:</strong> A guide to using ChatGPT effectively — prompt engineering, structuring your queries, and getting more accurate and useful responses.</p></div><div class="download-section"><a href="https://frge.top/how-to-use-chatgpt-e-g3fzfs" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 The quality of what you get from AI depends on the quality of what you ask — learn to prompt effectively.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../health/immunity/how-to-strengthen-your-immune-system/" class="related-card">
+                <a href="../../../travel/nomad/how-to-handle-time-zones-while-travelling/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Strengthen Your Immune System</span>
-                            <span class="related-meta">Health / Immunity</span>
+                            <span class="related-name">How to Handle Time Zones While Travelling</span>
+                            <span class="related-meta">Travel / Nomad</span>
                         </div>
                     </div>
-                    <span class="related-badge">🛡️ Immunity</span>
-                </a>
-            
-                <a href="../../../finance/side-hustles/how-to-start-freelancing/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">How to Start Freelancing</span>
-                            <span class="related-meta">Finance / Side Hustles</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">💼 Freelancing</span>
-                </a>
-            
-                <a href="../../../finance/side-hustles/affiliate-marketing-for-beginners/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">Affiliate Marketing for Beginners</span>
-                            <span class="related-meta">Finance / Side Hustles</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">🤝 Affiliate</span>
-                </a>
-            
-                <a href="../../../productivity/energy/how-to-manage-meeting-overload/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">How to Manage Meeting Overload</span>
-                            <span class="related-meta">Productivity / Energy</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">📅 Meetings</span>
+                    <span class="related-badge">🕐 Time Zones</span>
                 </a>
             
                 <a href="../../../finance/investing/warren-buffett-s-advice-for-beginners/" class="related-card">
@@ -421,15 +400,48 @@
                     <span class="related-badge">📈 Wisdom</span>
                 </a>
             
-                <a href="../../../productivity/systems/how-to-use-notion-for-productivity/" class="related-card">
+                <a href="../../../study/techniques/sq3r-reading-method/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Use Notion for Productivity</span>
-                            <span class="related-meta">Productivity / Systems</span>
+                            <span class="related-name">SQ3R Reading Method</span>
+                            <span class="related-meta">Study / Techniques</span>
                         </div>
                     </div>
-                    <span class="related-badge">📱 Notion</span>
+                    <span class="related-badge">📖 SQ3R</span>
+                </a>
+            
+                <a href="../../../premium/guides/ai-tools-for-everyday-life/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">AI Tools for Everyday Life</span>
+                            <span class="related-meta">Premium • Technology</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
+                </a>
+            
+                <a href="../../../premium/guides/digital-detox-plan-reconnect-with-the-world/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">Digital Detox Plan: Reconnect with the World</span>
+                            <span class="related-meta">Premium • Technology</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
+                </a>
+            
+                <a href="../../../premium/guides/best-platforms-to-learn-tech-skills/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">Best Platforms to Learn Tech Skills</span>
+                            <span class="related-meta">Premium • Technology</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

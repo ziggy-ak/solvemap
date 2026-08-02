@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Investing</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Investing</div><a href="../how-to-calculate-roi/" class="">how-to-calculate-roi</a><a href="../how-to-start-investing-with-100/" class="">how-to-start-investing-with-100</a><a href="../index-funds-vs-etfs-what-s-the-difference/" class="">index-funds-vs-etfs-what-s-the-difference</a><a href="../investing-for-beginners/" class="active">Investing for Beginners</a><a href="../warren-buffett-s-advice-for-beginners/" class="">warren-buffett-s-advice-for-beginners</a><a href="../what-is-passive-investing/" class="">what-is-passive-investing</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Investing</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Investing</div><div class="back-link" onclick="window.location.href='../'">← Back to Investing</div><ul><li class="file-item " onclick="window.location.href='../how-to-calculate-roi/'; return false;">how-to-calculate-roi</li><li class="file-item " onclick="window.location.href='../how-to-start-investing-with-100/'; return false;">how-to-start-investing-with-100</li><li class="file-item " onclick="window.location.href='../index-funds-vs-etfs-what-s-the-difference/'; return false;">index-funds-vs-etfs-what-s-the-difference</li><li class="file-item active" onclick="window.location.href='../investing-for-beginners/'; return false;">investing-for-beginners</li><li class="file-item " onclick="window.location.href='../warren-buffett-s-advice-for-beginners/'; return false;">warren-buffett-s-advice-for-beginners</li><li class="file-item " onclick="window.location.href='../what-is-passive-investing/'; return false;">what-is-passive-investing</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Finance</a> <span class="sep">→</span> <a href="../">Investing</a> <span class="sep">→</span> <span class="current">Investing for Beginners</span></nav><h1 class="file-title">Investing for Beginners 📄</h1><p class="file-sub">The ultimate beginner's guide to investing in the stock market.</p><div class="file-description"><p><strong>Your problem:</strong> You're a complete beginner and don't know where to start with investing.</p><p><strong>This solution:</strong> A comprehensive guide covering investment basics, types of assets, risk management, and how to build a diversified portfolio.</p></div><div class="download-section"><a href="https://frge.top/investing-for-beginn-fuhjv9" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Investing is simple but not easy — educate yourself and start with a solid plan.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../career/job-search/how-to-follow-up-after-an-interview/" class="related-card">
+                <a href="../../../health/immunity/gut-health-basics/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Follow Up After an Interview</span>
-                            <span class="related-meta">Career / Job Search</span>
+                            <span class="related-name">Gut Health Basics</span>
+                            <span class="related-meta">Health / Immunity</span>
                         </div>
                     </div>
-                    <span class="related-badge">📧 Follow‑up</span>
+                    <span class="related-badge">🦠 Gut Health</span>
                 </a>
             
-                <a href="../../../finance/side-hustles/digital-product-stacking/" class="related-card">
+                <a href="../../../study/ai/digital-note-taking-guide/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Digital Product Stacking</span>
-                            <span class="related-meta">Finance / Side Hustles</span>
+                            <span class="related-name">Digital Note‑Taking Guide</span>
+                            <span class="related-meta">Study / Ai</span>
                         </div>
                     </div>
-                    <span class="related-badge">📦 Digital</span>
+                    <span class="related-badge">📝 Digital</span>
                 </a>
             
-                <a href="../../../relationships/communication/how-to-stop-arguments-from-escalating/" class="related-card">
+                <a href="../../../technology/wellbeing/how-to-manage-digital-distractions/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Stop Arguments from Escalating</span>
-                            <span class="related-meta">Relationships / Communication</span>
+                            <span class="related-name">How to Manage Digital Distractions</span>
+                            <span class="related-meta">Technology / Wellbeing</span>
                         </div>
                     </div>
-                    <span class="related-badge">⚡ De‑escalation</span>
+                    <span class="related-badge">📱 Focus</span>
                 </a>
             
-                <a href="../../../fitness/nutrition/what-to-eat-before-and-after-a-workout/" class="related-card">
+                <a href="../../../premium/guides/micro-investing-apps-guide/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">What to Eat Before and After a Workout</span>
-                            <span class="related-meta">Fitness / Nutrition</span>
+                            <span class="related-name">Micro-Investing Apps Guide</span>
+                            <span class="related-meta">Premium • Finance</span>
                         </div>
                     </div>
-                    <span class="related-badge">⏰ Timing</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../study/techniques/mind-mapping-for-students/" class="related-card">
+                <a href="../../../premium/guides/how-to-start-freelancing-beginner-s-guide/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Mind Mapping for Students</span>
-                            <span class="related-meta">Study / Techniques</span>
+                            <span class="related-name">How to Start Freelancing: Beginner's Guide</span>
+                            <span class="related-meta">Premium • Finance</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧠 Mind Map</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../health/first-aid/how-to-recognize-stroke-symptoms/" class="related-card">
+                <a href="../../../premium/guides/passive-income-ideas-2026/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Recognize Stroke Symptoms</span>
-                            <span class="related-meta">Health / First Aid</span>
+                            <span class="related-name">Passive Income Ideas 2026</span>
+                            <span class="related-meta">Premium • Finance</span>
                         </div>
                     </div>
-                    <span class="related-badge">🚨 Emergency</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

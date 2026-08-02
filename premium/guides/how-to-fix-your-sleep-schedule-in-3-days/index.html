@@ -36,12 +36,43 @@
             padding: 4px 10px !important;
             flex-shrink: 0;
         }
+        .premium-logo-badge {
+            background: #f59e0b;
+            color: #0f172a;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 10px;
+            border-radius: 40px;
+            margin-left: 6px;
+        }
         @media (max-width: 768px) {
+            html, body {
+                overflow: auto !important;
+                height: auto !important;
+                min-height: 100vh;
+            }
+            .app {
+                display: block !important;
+                height: auto !important;
+                overflow: visible !important;
+            }
+            .sidebar {
+                display: none !important;
+            }
+            .main-content {
+                display: block !important;
+                height: auto !important;
+                overflow-y: visible !important;
+                padding-bottom: 60px !important;
+            }
+            .footer {
+                position: relative !important;
+                margin-top: 20px !important;
+            }
             .header-categories {
                 flex-wrap: wrap !important;
                 overflow-x: visible !important;
                 white-space: normal !important;
-                gap: 6px 10px !important;
             }
         }
         
@@ -150,15 +181,15 @@
     <div class="mobile-overlay" id="mobileOverlay"></div>
     <div class="mobile-menu" id="mobileMenu">
         <button class="close-btn" onclick="closeMobileMenu()">✕</button>
-        <div class="menu-back" onclick="window.location.href='../../../index.html'">← Home</div><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a>
+        <div class="menu-back" onclick="window.location.href='../../../index.html'">← Home</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../premium/fitness/" class="">Fitness</a><a href="../../../premium/finance/" class="">Finance</a><a href="../../../premium/health/" class="">Health</a><a href="../../../premium/nutrition/" class="">Nutrition</a><a href="../../../premium/career/" class="">Career</a><a href="../../../premium/study/" class="">Study</a><a href="../../../premium/technology/" class="">Technology</a><a href="../../../premium/travel/" class="">Travel</a><a href="../../../premium/relationships/" class="">Relationships</a><a href="../../../premium/productivity/" class="">Productivity</a>
     </div>
     <div class="mobile-header">
         <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
-        <a class="mobile-logo" href="../../../index.html">SolveMap <span>solutions</span></a>
+        <a class="mobile-logo" href="../../../index.html">SolveMap <span>solutions</span> <span style="background:#f59e0b;color:#0f172a;font-size:11px;font-weight:700;padding:2px 10px;border-radius:40px;margin-left:6px;">Premium</span></a>
     </div>
     <header class="header">
-        <div class="logo" onclick="window.location.href='../../../index.html'">SolveMap <span>solutions</span></div>
-        <nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a></nav>
+        <div class="logo" onclick="window.location.href='../../../index.html'">SolveMap <span>solutions</span> <span style="background:#f59e0b;color:#0f172a;font-size:11px;font-weight:700;padding:2px 10px;border-radius:40px;margin-left:6px;">Premium</span></div>
+        <nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../premium/fitness/" class="">Fitness</a><a href="../../../premium/finance/" class="">Finance</a><a href="../../../premium/health/" class="">Health</a><a href="../../../premium/nutrition/" class="">Nutrition</a><a href="../../../premium/career/" class="">Career</a><a href="../../../premium/study/" class="">Study</a><a href="../../../premium/technology/" class="">Technology</a><a href="../../../premium/travel/" class="">Travel</a><a href="../../../premium/relationships/" class="">Relationships</a><a href="../../../premium/productivity/" class="">Productivity</a></nav>
     </header>
     <div class="app">
         <div class="sidebar"><div class="sidebar-title">📁 Bundles</div><div class="back-link" onclick="window.location.href='../../../premium/'">← All Premium</div><ul><li class="" onclick="window.location.href='../../../premium/bundles/first-aid-collection/'">First Aid Collection</li><li class="active" onclick="window.location.href='../../../premium/bundles/sleep-recovery-bundle/'">Sleep & Recovery Bundle</li><ul style="list-style:none;padding-left:20px;"><li class="file-item " onclick="window.location.href='../../../premium/guides/how-to-fall-asleep-in-10-minutes/'">How to Fall Asleep in 10 Minutes</li><li class="file-item active" onclick="window.location.href='../../../premium/guides/how-to-fix-your-sleep-schedule-in-3-days/'">How to Fix Your Sleep Schedule in 3 Days</li><li class="file-item " onclick="window.location.href='../../../premium/guides/power-napping-for-energy-do-it-right/'">Power Napping for Energy: Do It Right</li><li class="file-item " onclick="window.location.href='../../../premium/guides/sleep-hygiene-checklist-printable/'">Sleep Hygiene Checklist (Printable)</li><li class="file-item " onclick="window.location.href='../../../premium/guides/healthy-sleep-in-30-days-full-protocol/'">Healthy Sleep in 30 Days: Full Protocol</li><li class="file-item " onclick="window.location.href='../../../premium/guides/how-to-optimize-your-sleep-environment/'">How to Optimize Your Sleep Environment</li></ul><li class="" onclick="window.location.href='../../../premium/bundles/stress-management-bundle/'">Stress Management Bundle</li><li class="" onclick="window.location.href='../../../premium/bundles/immunity-bundle/'">Immunity Bundle</li><li class="" onclick="window.location.href='../../../premium/bundles/posture-bundle/'">Posture Bundle</li></ul></div>
@@ -166,9 +197,9 @@
             <div class="file-detail fade-in">
                 
         <nav class="breadcrumbs" style="font-size:14px;color:#64748b;margin-bottom:20px;padding:8px 0;border-bottom:1px solid #f1f4f9;">
-            <a href="../../index.html" style="color:#1e3a8a;text-decoration:none;font-weight:500;">Home</a>
+            <a href="../../../index.html" style="color:#1e3a8a;text-decoration:none;font-weight:500;">Home</a>
             <span style="margin:0 6px;color:#94a3b8;">→</span>
-            <a href="../index.html" style="color:#1e3a8a;text-decoration:none;font-weight:500;">Premium</a>
+            <a href="../../index.html" style="color:#1e3a8a;text-decoration:none;font-weight:500;">Premium</a>
             <span style="margin:0 6px;color:#94a3b8;">→</span>
             <a href="../../health/" style="color:#1e3a8a;text-decoration:none;font-weight:500;">Health</a>
             <span style="margin:0 6px;color:#94a3b8;">→</span>
@@ -177,19 +208,18 @@
             <span style="color:#0f172a;font-weight:600;">How to Fix Your Sleep Schedule in 3 Days</span>
         </nav>
         
-                <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+                <h1 class="file-title" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
                     <span style="font-size:32px;">🩺</span>
                     <span style="background:#fef3c7;color:#92400e;font-size:12px;font-weight:700;padding:4px 16px;border-radius:40px;text-transform:uppercase;">Premium</span>
-                </div>
-                <h1 class="file-title">How to Fix Your Sleep Schedule in 3 Days</h1>
+                    <span>How to Fix Your Sleep Schedule in 3 Days</span>
+                </h1>
                 <p class="file-sub">Reset Your Circadian Rhythm and Wake Up Refreshed</p>
                 <div style="display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:#64748b;margin-bottom:20px;">
                     <span>📁 Health</span>
                     <span>📂 Sleep</span>
                     <span>💰 $5</span>
                 </div>
-                <div style="background:#f8fafc;border-radius:16px;padding:20px 24px;margin:20px 0;"><h3 style="font-size:18px;font-weight:700;margin-bottom:12px;">📦 What You'll Get</h3><ul style="list-style:none;padding:0;display:grid;gap:8px;"><li style="padding:6px 0;border-bottom:1px solid #eef2ff;display:flex;align-items:center;gap:8px;"><span style="color:#3b82f6;font-weight:600;">✓</span> 3-Day Sleep Reset Protocol — day-by-day instructions</li><li style="padding:6px 0;border-bottom:1px solid #eef2ff;display:flex;align-items:center;gap:8px;"><span style="color:#3b82f6;font-weight:600;">✓</span> Light Exposure Guide — how to use light to reset your internal clock</li><li style="padding:6px 0;border-bottom:1px solid #eef2ff;display:flex;align-items:center;gap:8px;"><span style="color:#3b82f6;font-weight:600;">✓</span> Printable Sleep Schedule Tracker</li><li style="padding:6px 0;border-bottom:1px solid #eef2ff;display:flex;align-items:center;gap:8px;"><span style="color:#3b82f6;font-weight:600;">✓</span> 7-Day Circadian Rhythm Log</li><li style="padding:6px 0;border-bottom:1px solid #eef2ff;display:flex;align-items:center;gap:8px;"><span style="color:#3b82f6;font-weight:600;">✓</span> Common Mistakes — what NOT to do when resetting your schedule</li></ul></div>
-                <div style="margin:20px 0;"><h3 style="font-size:18px;font-weight:700;margin-bottom:12px;">📖 What's Inside</h3><ul style="list-style:none;padding:0;"><li style="padding:6px 0;border-bottom:1px solid #f1f4f9;font-size:15px;color:#1e293b;">• How to Fix Your Sleep Schedule in 3 Days</li><li style="padding:6px 0;border-bottom:1px solid #f1f4f9;font-size:15px;color:#1e293b;">• What You'll Get in This Guide</li><li style="padding:6px 0;border-bottom:1px solid #f1f4f9;font-size:15px;color:#1e293b;">• Introduction</li><li style="padding:6px 0;font-size:15px;color:#94a3b8;">... and 12 more sections</li></ul></div>
+                <div style="display:flex; flex-wrap:wrap; gap:20px; margin:20px 0;"><div style="flex:1; background:#f8fafc; border-radius:16px; padding:20px 24px; margin:0;"><h3 style="font-size:18px;font-weight:700;margin-bottom:12px;">📦 What You'll Get</h3><ul style="list-style:none;padding:0;display:grid;gap:8px;"><li style="padding:6px 0;border-bottom:1px solid #eef2ff;display:flex;align-items:center;gap:8px;"><span style="color:#3b82f6;font-weight:600;">✓</span> 3-Day Sleep Reset Protocol — day-by-day instructions</li><li style="padding:6px 0;border-bottom:1px solid #eef2ff;display:flex;align-items:center;gap:8px;"><span style="color:#3b82f6;font-weight:600;">✓</span> Light Exposure Guide — how to use light to reset your internal clock</li><li style="padding:6px 0;border-bottom:1px solid #eef2ff;display:flex;align-items:center;gap:8px;"><span style="color:#3b82f6;font-weight:600;">✓</span> Printable Sleep Schedule Tracker</li><li style="padding:6px 0;border-bottom:1px solid #eef2ff;display:flex;align-items:center;gap:8px;"><span style="color:#3b82f6;font-weight:600;">✓</span> 7-Day Circadian Rhythm Log</li><li style="padding:6px 0;border-bottom:1px solid #eef2ff;display:flex;align-items:center;gap:8px;"><span style="color:#3b82f6;font-weight:600;">✓</span> Common Mistakes — what NOT to do when resetting your schedule</li></ul></div><div style="flex:1; background:#f8fafc; border-radius:16px; padding:20px 24px; margin:0;"><h3 style="font-size:18px;font-weight:700;margin-bottom:12px;">📖 What's Inside</h3><ul style="list-style:none;padding:0;"><li style="padding:6px 0;border-bottom:1px solid #f1f4f9;font-size:15px;color:#1e293b;">• How to Fix Your Sleep Schedule in 3 Days</li><li style="padding:6px 0;border-bottom:1px solid #f1f4f9;font-size:15px;color:#1e293b;">• What You'll Get in This Guide</li><li style="padding:6px 0;border-bottom:1px solid #f1f4f9;font-size:15px;color:#1e293b;">• Introduction</li><li style="padding:6px 0;border-bottom:1px solid #f1f4f9;font-size:15px;color:#1e293b;">• How Your Circadian Rhythm Works</li><li style="padding:6px 0;border-bottom:1px solid #f1f4f9;font-size:15px;color:#1e293b;">• The 3-Day Sleep Reset Protocol</li><li style="padding:6px 0;font-size:15px;color:#94a3b8;">... and 10 more sections</li></ul></div></div>
                 
     <div class="download-section" style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;padding-top:24px;border-top:2px solid #eef2ff;">
         <button class="download-btn" style="display:inline-flex;align-items:center;gap:12px;background:#1e40af;color:white;font-weight:700;font-size:18px;padding:16px 36px;border-radius:60px;border:none;cursor:pointer;opacity:0.7;" disabled>

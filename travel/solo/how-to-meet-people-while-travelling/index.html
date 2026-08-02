@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,21 +374,10 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Solo</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Solo</div><a href="../best-destinations-for-solo-travelers/" class="">best-destinations-for-solo-travelers</a><a href="../group-travel-planning-guide/" class="">group-travel-planning-guide</a><a href="../how-to-meet-people-while-travelling/" class="active">How to Meet People While Travelling</a><a href="../how-to-travel-with-friends-without-fighting/" class="">how-to-travel-with-friends-without-fighting</a><a href="../solo-travel-safety-tips/" class="">solo-travel-safety-tips</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Solo</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="active">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="active">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="active">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Solo</div><div class="back-link" onclick="window.location.href='../'">← Back to Solo</div><ul><li class="file-item " onclick="window.location.href='../best-destinations-for-solo-travelers/'; return false;">best-destinations-for-solo-travelers</li><li class="file-item " onclick="window.location.href='../group-travel-planning-guide/'; return false;">group-travel-planning-guide</li><li class="file-item active" onclick="window.location.href='../how-to-meet-people-while-travelling/'; return false;">how-to-meet-people-while-travelling</li><li class="file-item " onclick="window.location.href='../how-to-travel-with-friends-without-fighting/'; return false;">how-to-travel-with-friends-without-fighting</li><li class="file-item " onclick="window.location.href='../solo-travel-safety-tips/'; return false;">solo-travel-safety-tips</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Travel</a> <span class="sep">→</span> <a href="../">Solo</a> <span class="sep">→</span> <span class="current">How to Meet People While Travelling</span></nav><h1 class="file-title">How to Meet People While Travelling 📄</h1><p class="file-sub">Make friends and connections while travelling solo.</p><div class="file-description"><p><strong>Your problem:</strong> You're travelling solo and worry about feeling lonely or not meeting people.</p><p><strong>This solution:</strong> A guide to meeting people while travelling — staying in hostels, joining tours, and using apps to connect with fellow travellers.</p></div><div class="download-section"><a href="https://frge.top/how-to-meet-people-w-9uto2w" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Travelling solo doesn't mean being alone — open yourself up to new connections.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../finance/planning/how-to-recover-from-overspending/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">How to Recover from Overspending</span>
-                            <span class="related-meta">Finance / Planning</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">💸 Recovery</span>
-                </a>
-            
                 <a href="../../../health/stress/morning-routine-for-mental-clarity/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
@@ -388,48 +389,59 @@
                     <span class="related-badge">☀️ Morning</span>
                 </a>
             
-                <a href="../../../study/exam-prep/active-recall-for-exam-prep/" class="related-card">
+                <a href="../../../health/stress/breathwork-methods-4-7-8-box-breathing/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Active Recall for Exam Prep</span>
-                            <span class="related-meta">Study / Exam Prep</span>
+                            <span class="related-name">Breathwork Methods — 4‑7‑8 & Box Breathing</span>
+                            <span class="related-meta">Health / Stress</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧠 Active Recall</span>
+                    <span class="related-badge">🌬️ Breathwork</span>
                 </a>
             
-                <a href="../../../study/techniques/feynman-technique/" class="related-card">
+                <a href="../../../technology/cybersecurity/privacy-settings-on-social-media/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">The Feynman Technique</span>
-                            <span class="related-meta">Study / Techniques</span>
+                            <span class="related-name">Privacy Settings on Social Media</span>
+                            <span class="related-meta">Technology / Cybersecurity</span>
                         </div>
                     </div>
-                    <span class="related-badge">🎓 Feynman</span>
+                    <span class="related-badge">🔒 Privacy</span>
                 </a>
             
-                <a href="../../../finance/investing/how-to-calculate-roi/" class="related-card">
+                <a href="../../../premium/guides/packing-checklist-for-any-trip/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Calculate ROI</span>
-                            <span class="related-meta">Finance / Investing</span>
+                            <span class="related-name">Packing Checklist for Any Trip</span>
+                            <span class="related-meta">Premium • Travel</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 ROI</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../career/change/how-to-identify-your-transferable-skills/" class="related-card">
+                <a href="../../../premium/guides/how-to-become-a-digital-nomad/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Identify Your Transferable Skills</span>
-                            <span class="related-meta">Career / Change</span>
+                            <span class="related-name">How to Become a Digital Nomad</span>
+                            <span class="related-meta">Premium • Travel</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 Skills</span>
+                    <span class="related-badge premium-badge">Premium</span>
+                </a>
+            
+                <a href="../../../premium/guides/best-countries-for-digital-nomads-2026/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">Best Countries for Digital Nomads 2026</span>
+                            <span class="related-meta">Premium • Travel</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Gut-health</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Gut-health</div><a href="../fermented-foods-guide/" class="active">Fermented Foods Guide</a><a href="../foods-for-a-healthy-microbiome/" class="">foods-for-a-healthy-microbiome</a><a href="../gut-health-101/" class="">gut-health-101</a><a href="../how-to-improve-digestion-naturally/" class="">how-to-improve-digestion-naturally</a><a href="../intermittent-fasting-and-gut-health/" class="">intermittent-fasting-and-gut-health</a><a href="../prebiotics-vs-probiotics/" class="">prebiotics-vs-probiotics</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Gut-health</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="active">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="active">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="active">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Gut-health</div><div class="back-link" onclick="window.location.href='../'">← Back to Gut-health</div><ul><li class="file-item active" onclick="window.location.href='../fermented-foods-guide/'; return false;">fermented-foods-guide</li><li class="file-item " onclick="window.location.href='../foods-for-a-healthy-microbiome/'; return false;">foods-for-a-healthy-microbiome</li><li class="file-item " onclick="window.location.href='../gut-health-101/'; return false;">gut-health-101</li><li class="file-item " onclick="window.location.href='../how-to-improve-digestion-naturally/'; return false;">how-to-improve-digestion-naturally</li><li class="file-item " onclick="window.location.href='../intermittent-fasting-and-gut-health/'; return false;">intermittent-fasting-and-gut-health</li><li class="file-item " onclick="window.location.href='../prebiotics-vs-probiotics/'; return false;">prebiotics-vs-probiotics</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Nutrition</a> <span class="sep">→</span> <a href="../">Gut-health</a> <span class="sep">→</span> <span class="current">Fermented Foods Guide</span></nav><h1 class="file-title">Fermented Foods Guide 📄</h1><p class="file-sub">Discover the benefits of fermented foods and how to incorporate them into your diet.</p><div class="file-description"><p><strong>Your problem:</strong> You've heard about fermented foods but don't know which ones to try or how to incorporate them.</p><p><strong>This solution:</strong> A guide to fermented foods — benefits, types, and simple ways to add them to your daily diet.</p></div><div class="download-section"><a href="https://frge.top/fermented-foods-guid-bs7vk2" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Fermented foods are packed with probiotics — add them to your diet for better gut health.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../career/remote-work/freelance-pricing-guide/" class="related-card">
+                <a href="../../../career/growth/how-to-find-a-mentor/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Freelance Pricing Guide</span>
-                            <span class="related-meta">Career / Remote Work</span>
+                            <span class="related-name">How to Find a Mentor</span>
+                            <span class="related-meta">Career / Growth</span>
                         </div>
                     </div>
-                    <span class="related-badge">💰 Pricing</span>
+                    <span class="related-badge">🤝 Mentor</span>
                 </a>
             
-                <a href="../../../nutrition/basics/intermittent-fasting-protocols/" class="related-card">
+                <a href="../../../fitness/strength/form-and-technique-guide/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Intermittent Fasting Protocols</span>
-                            <span class="related-meta">Nutrition / Basics</span>
+                            <span class="related-name">Form and Technique Guide</span>
+                            <span class="related-meta">Fitness / Strength</span>
                         </div>
                     </div>
-                    <span class="related-badge">⏰ Fasting</span>
+                    <span class="related-badge">📐 Form</span>
                 </a>
             
-                <a href="../../../travel/planning/how-to-find-cheap-flights/" class="related-card">
+                <a href="../../../technology/ai/ai-tools-for-everyday-life/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Find Cheap Flights</span>
-                            <span class="related-meta">Travel / Planning</span>
+                            <span class="related-name">AI Tools for Everyday Life</span>
+                            <span class="related-meta">Technology / Ai</span>
                         </div>
                     </div>
-                    <span class="related-badge">✈️ Flights</span>
+                    <span class="related-badge">📱 AI Tools</span>
                 </a>
             
-                <a href="../../../health/sleep/how-to-fix-your-sleep-schedule/" class="related-card">
+                <a href="../../../premium/guides/fibermaxxing-the-2026-trend/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Fix Your Sleep Schedule</span>
-                            <span class="related-meta">Health / Sleep</span>
+                            <span class="related-name">Fibermaxxing: The 2026 Trend</span>
+                            <span class="related-meta">Premium • Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">⏰ Schedule</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../health/posture/daily-posture-check-routine/" class="related-card">
+                <a href="../../../premium/guides/prebiotics-vs-probiotics-what-s-the-difference/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Daily Posture Check Routine</span>
-                            <span class="related-meta">Health / Posture</span>
+                            <span class="related-name">Prebiotics vs Probiotics: What's the Difference</span>
+                            <span class="related-meta">Premium • Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧘 Posture</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../finance/debt/how-to-read-your-credit-report/" class="related-card">
+                <a href="../../../premium/guides/plant-based-diet-for-beginners/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Read Your Credit Report</span>
-                            <span class="related-meta">Finance / Debt</span>
+                            <span class="related-name">Plant-Based Diet for Beginners</span>
+                            <span class="related-meta">Premium • Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 Credit</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

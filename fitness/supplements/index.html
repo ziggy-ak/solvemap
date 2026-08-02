@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,9 +374,9 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Fitness</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Supplements</div><a href="./creatine-explained/">Creatine Explained</a><a href="./pre-workout-supplements/">Pre‑Workout Supplements</a><a href="./supplements-101/">Supplements 101</a><a href="./vitamins-minerals-for-active-people/">Vitamins & Minerals for Active People</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Fitness</div><a href="../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../services/">🛠️ Services</a><a href="../../fitness/" class="active">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="active">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../services/">Services</a><a href="../../fitness/" class="active">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Supplements</div><div class="back-link" onclick="window.location.href='../'">← Back to Fitness</div><ul><li class="file-item" onclick="window.location.href='./creatine-explained/'">creatine-explained</li><li class="file-item" onclick="window.location.href='./pre-workout-supplements/'">pre-workout-supplements</li><li class="file-item" onclick="window.location.href='./supplements-101/'">supplements-101</li><li class="file-item" onclick="window.location.href='./vitamins-minerals-for-active-people/'">vitamins-minerals-for-active-people</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Fitness</a> <span class="sep">→</span> <span class="current">Supplements</span></nav><h1>Supplements</h1><p class="subtitle">Navigate the world of fitness supplements with confidence.</p>
     <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#supplements" data-type="tag">#supplements</button><button class="filter-btn" data-filter="#fitness" data-type="tag">#fitness</button><button class="filter-btn" data-filter="#nutrition" data-type="tag">#nutrition</button><button class="filter-btn" data-filter="#performance" data-type="tag">#performance</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="⚡ Performance" data-type="type">⚡ Performance</button><button class="filter-btn type" data-filter="💊 Micronutrients" data-type="type">💊 Micronutrients</button><button class="filter-btn type" data-filter="📚 Basics" data-type="type">📚 Basics</button><button class="filter-btn type" data-filter="🧪 Creatine" data-type="type">🧪 Creatine</button></div>
     <div class="file-grid" id="file-grid">

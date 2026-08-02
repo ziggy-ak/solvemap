@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Time-management</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Time-management</div><a href="../digital-detox-for-students/" class="">digital-detox-for-students</a><a href="../how-to-organise-your-notes/" class="">how-to-organise-your-notes</a><a href="../how-to-stop-procrastinating/" class="">how-to-stop-procrastinating</a><a href="../time-blocking-for-exams/" class="">time-blocking-for-exams</a><a href="../weekly-study-schedule-template/" class="active">Weekly Study Schedule Template</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Time-management</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="active">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="active">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="active">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Time-management</div><div class="back-link" onclick="window.location.href='../'">← Back to Time-management</div><ul><li class="file-item " onclick="window.location.href='../digital-detox-for-students/'; return false;">digital-detox-for-students</li><li class="file-item " onclick="window.location.href='../how-to-organise-your-notes/'; return false;">how-to-organise-your-notes</li><li class="file-item " onclick="window.location.href='../how-to-stop-procrastinating/'; return false;">how-to-stop-procrastinating</li><li class="file-item " onclick="window.location.href='../time-blocking-for-exams/'; return false;">time-blocking-for-exams</li><li class="file-item active" onclick="window.location.href='../weekly-study-schedule-template/'; return false;">weekly-study-schedule-template</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Study</a> <span class="sep">→</span> <a href="../">Time-management</a> <span class="sep">→</span> <span class="current">Weekly Study Schedule Template</span></nav><h1 class="file-title">Weekly Study Schedule Template 📄</h1><p class="file-sub">Plan your study week effectively with a ready‑to‑use template.</p><div class="file-description"><p><strong>Your problem:</strong> You start each week without a clear plan and waste time deciding what to study.</p><p><strong>This solution:</strong> A printable and customisable weekly study schedule template, with tips for balancing subjects and rest.</p></div><div class="download-section"><a href="https://frge.top/weekly-study-schedul-r4bo97" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 A weekly plan keeps you on track — review and adjust it every Sunday.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../health/posture/desk-ergonomics-guide/" class="related-card">
+                <a href="../../../productivity/habits/how-to-build-a-morning-routine-for-peak-productivity/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Desk Ergonomics Guide</span>
-                            <span class="related-meta">Health / Posture</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">🖥️ Ergonomics</span>
-                </a>
-            
-                <a href="../../../productivity/habits/how-to-create-an-evening-shutdown-routine/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">How to Create an Evening Shutdown Routine</span>
+                            <span class="related-name">How to Build a Morning Routine for Peak Productivity</span>
                             <span class="related-meta">Productivity / Habits</span>
                         </div>
                     </div>
-                    <span class="related-badge">🌙 Evening</span>
+                    <span class="related-badge">🌅 Morning</span>
                 </a>
             
-                <a href="../../../career/money/how-to-ask-for-a-pay-rise/" class="related-card">
+                <a href="../../../nutrition/gut-health/foods-for-a-healthy-microbiome/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Ask for a Pay Rise</span>
-                            <span class="related-meta">Career / Money</span>
+                            <span class="related-name">Foods for a Healthy Microbiome</span>
+                            <span class="related-meta">Nutrition / Gut Health</span>
                         </div>
                     </div>
-                    <span class="related-badge">📈 Salary</span>
+                    <span class="related-badge">🥗 Microbiome</span>
                 </a>
             
-                <a href="../../../relationships/self-love/how-to-practice-self-compassion/" class="related-card">
+                <a href="../../../finance/debt/should-you-invest-or-pay-off-debt-first/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Practice Self‑Compassion</span>
-                            <span class="related-meta">Relationships / Self Love</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">💖 Self‑Compassion</span>
-                </a>
-            
-                <a href="../../../career/remote-work/how-to-stay-productive-at-home/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">How to Stay Productive at Home</span>
-                            <span class="related-meta">Career / Remote Work</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">🏠 Productivity</span>
-                </a>
-            
-                <a href="../../../finance/debt/how-to-read-your-credit-report/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">How to Read Your Credit Report</span>
+                            <span class="related-name">Should You Invest or Pay Off Debt First?</span>
                             <span class="related-meta">Finance / Debt</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 Credit</span>
+                    <span class="related-badge">⚖️ Decision</span>
+                </a>
+            
+                <a href="../../../premium/guides/active-recall-method/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">Active Recall Method</span>
+                            <span class="related-meta">Premium • Study</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
+                </a>
+            
+                <a href="../../../premium/guides/how-to-stop-procrastinating/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Stop Procrastinating</span>
+                            <span class="related-meta">Premium • Study</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
+                </a>
+            
+                <a href="../../../premium/guides/spaced-repetition-system/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">Spaced Repetition System</span>
+                            <span class="related-meta">Premium • Study</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

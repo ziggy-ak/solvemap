@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Supplements</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Supplements</div><a href="../creatine-explained/" class="">creatine-explained</a><a href="../pre-workout-supplements/" class="active">Pre‑Workout Supplements</a><a href="../supplements-101/" class="">supplements-101</a><a href="../vitamins-minerals-for-active-people/" class="">vitamins-minerals-for-active-people</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Supplements</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="active">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="active">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="active">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Supplements</div><div class="back-link" onclick="window.location.href='../'">← Back to Supplements</div><ul><li class="file-item " onclick="window.location.href='../creatine-explained/'; return false;">creatine-explained</li><li class="file-item active" onclick="window.location.href='../pre-workout-supplements/'; return false;">pre-workout-supplements</li><li class="file-item " onclick="window.location.href='../supplements-101/'; return false;">supplements-101</li><li class="file-item " onclick="window.location.href='../vitamins-minerals-for-active-people/'; return false;">vitamins-minerals-for-active-people</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Fitness</a> <span class="sep">→</span> <a href="../">Supplements</a> <span class="sep">→</span> <span class="current">Pre‑Workout Supplements</span></nav><h1 class="file-title">Pre‑Workout Supplements 📄</h1><p class="file-sub">Understand pre‑workout ingredients and choose the right product.</p><div class="file-description"><p><strong>Your problem:</strong> You want to boost your workout performance with a pre‑workout supplement.</p><p><strong>This solution:</strong> A breakdown of common pre‑workout ingredients (caffeine, beta‑alanine, creatine, etc.), their effects, and how to choose a safe and effective product.</p></div><div class="download-section"><a href="https://frge.top/pre-workout-suppleme-025qhd" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Not all pre‑workouts are equal — look for research‑backed doses and avoid proprietary blends.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../fitness/cardio/hiit-workouts-at-home/" class="related-card">
+                <a href="../../../fitness/nutrition/healthy-snacks-for-fitness-lovers/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">HIIT Workouts at Home</span>
-                            <span class="related-meta">Fitness / Cardio</span>
+                            <span class="related-name">Healthy Snacks for Fitness Lovers</span>
+                            <span class="related-meta">Fitness / Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">🔥 HIIT</span>
+                    <span class="related-badge">🍎 Snacks</span>
                 </a>
             
-                <a href="../../../travel/nomad/visa-legal-tips-for-digital-nomads/" class="related-card">
+                <a href="../../../travel/planning/packing-checklist-for-any-trip/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Visa & Legal Tips for Digital Nomads</span>
-                            <span class="related-meta">Travel / Nomad</span>
+                            <span class="related-name">Packing Checklist for Any Trip</span>
+                            <span class="related-meta">Travel / Planning</span>
                         </div>
                     </div>
-                    <span class="related-badge">📜 Visas</span>
+                    <span class="related-badge">🧳 Packing</span>
                 </a>
             
-                <a href="../../../finance/side-hustles/digital-product-stacking/" class="related-card">
+                <a href="../../../fitness/strength/beginner-strength-training-4-week-plan/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Digital Product Stacking</span>
-                            <span class="related-meta">Finance / Side Hustles</span>
+                            <span class="related-name">Beginner Strength Training — 4‑Week Plan</span>
+                            <span class="related-meta">Fitness / Strength</span>
                         </div>
                     </div>
-                    <span class="related-badge">📦 Digital</span>
+                    <span class="related-badge">📅 Plan</span>
                 </a>
             
-                <a href="../../../career/remote-work/how-to-get-your-first-freelance-client/" class="related-card">
+                <a href="../../../premium/guides/how-to-increase-your-pull-up-count/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Get Your First Freelance Client</span>
-                            <span class="related-meta">Career / Remote Work</span>
+                            <span class="related-name">How to Increase Your Pull-Up Count</span>
+                            <span class="related-meta">Premium • Fitness</span>
                         </div>
                     </div>
-                    <span class="related-badge">🤝 Client</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../nutrition/specific-goals/nutrition-for-seniors/" class="related-card">
+                <a href="../../../premium/guides/how-to-build-endurance-cardio-training-plan/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Nutrition for Seniors</span>
-                            <span class="related-meta">Nutrition / Specific Goals</span>
+                            <span class="related-name">How to Build Endurance: Cardio Training Plan</span>
+                            <span class="related-meta">Premium • Fitness</span>
                         </div>
                     </div>
-                    <span class="related-badge">👴 Seniors</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../health/sleep/circadian-rhythm-guide/" class="related-card">
+                <a href="../../../premium/guides/sleep-for-recovery-grow-while-you-sleep/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Circadian Rhythm Guide</span>
-                            <span class="related-meta">Health / Sleep</span>
+                            <span class="related-name">Sleep for Recovery: Grow While You Sleep</span>
+                            <span class="related-meta">Premium • Fitness</span>
                         </div>
                     </div>
-                    <span class="related-badge">🌙 Rhythm</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

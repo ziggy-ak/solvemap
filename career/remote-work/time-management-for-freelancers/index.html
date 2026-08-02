@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Remote-work</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Remote-work</div><a href="../freelance-pricing-guide/" class="">freelance-pricing-guide</a><a href="../how-to-get-your-first-freelance-client/" class="">how-to-get-your-first-freelance-client</a><a href="../how-to-stay-productive-at-home/" class="">how-to-stay-productive-at-home</a><a href="../how-to-transition-to-freelancing/" class="">how-to-transition-to-freelancing</a><a href="../remote-work-setup-guide/" class="">remote-work-setup-guide</a><a href="../time-management-for-freelancers/" class="active">Time Management for Freelancers</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Remote-work</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="active">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="active">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="active">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Remote-work</div><div class="back-link" onclick="window.location.href='../'">← Back to Remote-work</div><ul><li class="file-item " onclick="window.location.href='../freelance-pricing-guide/'; return false;">freelance-pricing-guide</li><li class="file-item " onclick="window.location.href='../how-to-get-your-first-freelance-client/'; return false;">how-to-get-your-first-freelance-client</li><li class="file-item " onclick="window.location.href='../how-to-stay-productive-at-home/'; return false;">how-to-stay-productive-at-home</li><li class="file-item " onclick="window.location.href='../how-to-transition-to-freelancing/'; return false;">how-to-transition-to-freelancing</li><li class="file-item " onclick="window.location.href='../remote-work-setup-guide/'; return false;">remote-work-setup-guide</li><li class="file-item active" onclick="window.location.href='../time-management-for-freelancers/'; return false;">time-management-for-freelancers</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Career</a> <span class="sep">→</span> <a href="../">Remote-work</a> <span class="sep">→</span> <span class="current">Time Management for Freelancers</span></nav><h1 class="file-title">Time Management for Freelancers 📄</h1><p class="file-sub">Stay productive and balanced as a freelancer with effective time management.</p><div class="file-description"><p><strong>Your problem:</strong> You struggle with managing your time as a freelancer.</p><p><strong>This solution:</strong> A guide to time‑blocking, prioritising tasks, and avoiding distractions to maximise productivity and income.</p></div><div class="download-section"><a href="https://frge.top/time-management-for-5bh9yn" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Time is your most valuable resource as a freelancer — protect it fiercely.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../finance/debt/should-you-invest-or-pay-off-debt-first/" class="related-card">
+                <a href="../../../productivity/energy/how-to-recharge-during-the-workday/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Should You Invest or Pay Off Debt First?</span>
-                            <span class="related-meta">Finance / Debt</span>
+                            <span class="related-name">How to Recharge During the Workday</span>
+                            <span class="related-meta">Productivity / Energy</span>
                         </div>
                     </div>
-                    <span class="related-badge">⚖️ Decision</span>
+                    <span class="related-badge">⚡ Recharge</span>
                 </a>
             
-                <a href="../../../productivity/habits/how-to-build-a-morning-routine-for-peak-productivity/" class="related-card">
+                <a href="../../../career/growth/networking-guide-for-introverts/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Build a Morning Routine for Peak Productivity</span>
-                            <span class="related-meta">Productivity / Habits</span>
+                            <span class="related-name">Networking Guide for Introverts</span>
+                            <span class="related-meta">Career / Growth</span>
                         </div>
                     </div>
-                    <span class="related-badge">🌅 Morning</span>
+                    <span class="related-badge">🌐 Networking</span>
                 </a>
             
-                <a href="../../../travel/nomad/visa-legal-tips-for-digital-nomads/" class="related-card">
+                <a href="../../../technology/skills/tech-skills-for-non-techies/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Visa & Legal Tips for Digital Nomads</span>
-                            <span class="related-meta">Travel / Nomad</span>
+                            <span class="related-name">Tech Skills for Non‑Techies</span>
+                            <span class="related-meta">Technology / Skills</span>
                         </div>
                     </div>
-                    <span class="related-badge">📜 Visas</span>
+                    <span class="related-badge">💻 Skills</span>
                 </a>
             
-                <a href="../../../travel/types/adventure-travel-ideas/" class="related-card">
+                <a href="../../../premium/guides/how-to-answer-tell-me-about-yourself/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Adventure Travel Ideas</span>
-                            <span class="related-meta">Travel / Types</span>
+                            <span class="related-name">How to Answer 'Tell Me About Yourself'</span>
+                            <span class="related-meta">Premium • Career</span>
                         </div>
                     </div>
-                    <span class="related-badge">🏔️ Adventure</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../technology/cybersecurity/how-to-protect-your-data-online/" class="related-card">
+                <a href="../../../premium/guides/how-to-develop-leadership-skills/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Protect Your Data Online</span>
-                            <span class="related-meta">Technology / Cybersecurity</span>
+                            <span class="related-name">How to Develop Leadership Skills</span>
+                            <span class="related-meta">Premium • Career</span>
                         </div>
                     </div>
-                    <span class="related-badge">🛡️ Protection</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../finance/side-hustles/passive-income-ideas-2026/" class="related-card">
+                <a href="../../../premium/guides/job-interview-preparation-complete-guide/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Passive Income Ideas 2026</span>
-                            <span class="related-meta">Finance / Side Hustles</span>
+                            <span class="related-name">Job Interview Preparation: Complete Guide</span>
+                            <span class="related-meta">Premium • Career</span>
                         </div>
                     </div>
-                    <span class="related-badge">🌐 Passive</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

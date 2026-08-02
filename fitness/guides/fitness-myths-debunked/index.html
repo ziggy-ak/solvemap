@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Guides</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Guides</div><a href="../fitness-myths-debunked/" class="active">Fitness Myths Debunked</a><a href="../home-workout-guide/" class="">home-workout-guide</a><a href="../how-to-build-a-fitness-routine/" class="">how-to-build-a-fitness-routine</a><a href="../no-equipment-workout-guide/" class="">no-equipment-workout-guide</a><a href="../nutrition-for-fitness/" class="">nutrition-for-fitness</a><a href="../tracking-progress-guide/" class="">tracking-progress-guide</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Guides</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="active">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="active">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="active">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Guides</div><div class="back-link" onclick="window.location.href='../'">← Back to Guides</div><ul><li class="file-item active" onclick="window.location.href='../fitness-myths-debunked/'; return false;">fitness-myths-debunked</li><li class="file-item " onclick="window.location.href='../home-workout-guide/'; return false;">home-workout-guide</li><li class="file-item " onclick="window.location.href='../how-to-build-a-fitness-routine/'; return false;">how-to-build-a-fitness-routine</li><li class="file-item " onclick="window.location.href='../no-equipment-workout-guide/'; return false;">no-equipment-workout-guide</li><li class="file-item " onclick="window.location.href='../nutrition-for-fitness/'; return false;">nutrition-for-fitness</li><li class="file-item " onclick="window.location.href='../tracking-progress-guide/'; return false;">tracking-progress-guide</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Fitness</a> <span class="sep">→</span> <a href="../">Guides</a> <span class="sep">→</span> <span class="current">Fitness Myths Debunked</span></nav><h1 class="file-title">Fitness Myths Debunked 📄</h1><p class="file-sub">Separate fact from fiction with this guide to common fitness misconceptions.</p><div class="file-description"><p><strong>Your problem:</strong> You've heard conflicting fitness advice and don't know what's true.</p><p><strong>This solution:</strong> A debunking of popular myths like "lifting makes women bulky," "spot reduction," and "cardio kills gains."</p></div><div class="download-section"><a href="https://frge.top/fitness-myths-debunk-v1rduf" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Don't believe everything you hear — always look for scientific evidence.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../fitness/supplements/vitamins-minerals-for-active-people/" class="related-card">
+                <a href="../../../technology/data/digital-declutter-guide/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Vitamins & Minerals for Active People</span>
-                            <span class="related-meta">Fitness / Supplements</span>
+                            <span class="related-name">Digital Declutter Guide</span>
+                            <span class="related-meta">Technology / Data</span>
                         </div>
                     </div>
-                    <span class="related-badge">💊 Micronutrients</span>
+                    <span class="related-badge">🗂️ Declutter</span>
                 </a>
             
-                <a href="../../../travel/solo/how-to-travel-with-friends-without-fighting/" class="related-card">
+                <a href="../../../fitness/nutrition/nutrition-for-longevity/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Travel with Friends Without Fighting</span>
-                            <span class="related-meta">Travel / Solo</span>
+                            <span class="related-name">Nutrition for Longevity</span>
+                            <span class="related-meta">Fitness / Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">🤝 Friendship</span>
+                    <span class="related-badge">🌿 Longevity</span>
                 </a>
             
-                <a href="../../../technology/ai/how-to-use-chatgpt-effectively/" class="related-card">
+                <a href="../../../career/money/how-to-manage-a-side-hustle-and-full-time-job/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Use ChatGPT Effectively</span>
-                            <span class="related-meta">Technology / Ai</span>
+                            <span class="related-name">How to Manage a Side Hustle and Full‑Time Job</span>
+                            <span class="related-meta">Career / Money</span>
                         </div>
                     </div>
-                    <span class="related-badge">🤖 ChatGPT</span>
+                    <span class="related-badge">⚖️ Balance</span>
                 </a>
             
-                <a href="../../../finance/budgeting/50-30-20-budget-rule/" class="related-card">
+                <a href="../../../premium/guides/how-to-do-a-proper-squat-without-knee-pain/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">50‑30‑20 Budget Rule</span>
-                            <span class="related-meta">Finance / Budgeting</span>
+                            <span class="related-name">How to Do a Proper Squat (Without Knee Pain)</span>
+                            <span class="related-meta">Premium • Fitness</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 Rule</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../finance/planning/how-to-recover-from-overspending/" class="related-card">
+                <a href="../../../premium/guides/how-to-start-running-8-week-plan/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Recover from Overspending</span>
-                            <span class="related-meta">Finance / Planning</span>
+                            <span class="related-name">How to Start Running: 8-Week Plan</span>
+                            <span class="related-meta">Premium • Fitness</span>
                         </div>
                     </div>
-                    <span class="related-badge">💸 Recovery</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../finance/side-hustles/micro-investing-apps-guide/" class="related-card">
+                <a href="../../../premium/guides/bodyweight-exercises-for-muscle-building/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Micro‑Investing Apps Guide</span>
-                            <span class="related-meta">Finance / Side Hustles</span>
+                            <span class="related-name">Bodyweight Exercises for Muscle Building</span>
+                            <span class="related-meta">Premium • Fitness</span>
                         </div>
                     </div>
-                    <span class="related-badge">📱 Apps</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

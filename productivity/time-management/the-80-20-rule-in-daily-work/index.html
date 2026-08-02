@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Time-management</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Time-management</div><a href="../eat-that-frog-start-your-day-with-the-hardest-task/" class="">eat-that-frog-start-your-day-with-the-hardest-task</a><a href="../eisenhower-matrix-how-to-prioritize-like-a-pro/" class="">eisenhower-matrix-how-to-prioritize-like-a-pro</a><a href="../getting-things-done-the-5-step-workflow/" class="">getting-things-done-the-5-step-workflow</a><a href="../the-80-20-rule-in-daily-work/" class="active">The 80/20 Rule in Daily Work</a><a href="../the-pomodoro-technique-guide/" class="">the-pomodoro-technique-guide</a><a href="../time-blocking-vs-time-boxing-explained/" class="">time-blocking-vs-time-boxing-explained</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Time-management</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="active">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="active">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="active">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Time-management</div><div class="back-link" onclick="window.location.href='../'">← Back to Time-management</div><ul><li class="file-item " onclick="window.location.href='../eat-that-frog-start-your-day-with-the-hardest-task/'; return false;">eat-that-frog-start-your-day-with-the-hardest-task</li><li class="file-item " onclick="window.location.href='../eisenhower-matrix-how-to-prioritize-like-a-pro/'; return false;">eisenhower-matrix-how-to-prioritize-like-a-pro</li><li class="file-item " onclick="window.location.href='../getting-things-done-the-5-step-workflow/'; return false;">getting-things-done-the-5-step-workflow</li><li class="file-item active" onclick="window.location.href='../the-80-20-rule-in-daily-work/'; return false;">the-80-20-rule-in-daily-work</li><li class="file-item " onclick="window.location.href='../the-pomodoro-technique-guide/'; return false;">the-pomodoro-technique-guide</li><li class="file-item " onclick="window.location.href='../time-blocking-vs-time-boxing-explained/'; return false;">time-blocking-vs-time-boxing-explained</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Productivity</a> <span class="sep">→</span> <a href="../">Time-management</a> <span class="sep">→</span> <span class="current">The 80/20 Rule in Daily Work</span></nav><h1 class="file-title">The 80/20 Rule in Daily Work 📄</h1><p class="file-sub">Focus on the 20% of efforts that produce 80% of your results.</p><div class="file-description"><p><strong>Your problem:</strong> You spend time on many tasks but feel like you're not making progress on what matters most.</p><p><strong>This solution:</strong> A guide to applying the 80/20 rule (Pareto Principle) to your daily work — identifying and focusing on the high‑impact activities that drive results.</p></div><div class="download-section"><a href="https://frge.top/the-80-20-rule-in-da-nhiyns" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 80% of your results come from 20% of your efforts — focus on what moves the needle.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../career/growth/networking-guide-for-introverts/" class="related-card">
+                <a href="../../../travel/planning/cheapest-travel-destinations-2026/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Networking Guide for Introverts</span>
-                            <span class="related-meta">Career / Growth</span>
+                            <span class="related-name">Cheapest Travel Destinations 2026</span>
+                            <span class="related-meta">Travel / Planning</span>
                         </div>
                     </div>
-                    <span class="related-badge">🌐 Networking</span>
+                    <span class="related-badge">💰 Budget</span>
                 </a>
             
-                <a href="../../../fitness/recovery/foam-rolling-guide/" class="related-card">
+                <a href="../../../health/first-aid/how-to-recognize-stroke-symptoms/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Foam Rolling Guide</span>
-                            <span class="related-meta">Fitness / Recovery</span>
+                            <span class="related-name">How to Recognize Stroke Symptoms</span>
+                            <span class="related-meta">Health / First Aid</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧘 Roll</span>
+                    <span class="related-badge">🚨 Emergency</span>
                 </a>
             
-                <a href="../../../relationships/building/the-5-a-s-of-mindful-loving/" class="related-card">
+                <a href="../../../finance/planning/how-to-set-financial-goals/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">The 5 A's of Mindful Loving</span>
-                            <span class="related-meta">Relationships / Building</span>
+                            <span class="related-name">How to Set Financial Goals</span>
+                            <span class="related-meta">Finance / Planning</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧘 Mindful Love</span>
+                    <span class="related-badge">🎯 Goals</span>
                 </a>
             
-                <a href="../../../productivity/energy/how-to-identify-your-energy-peaks-and-troughs/" class="related-card">
+                <a href="../../../premium/guides/time-blocking-vs-time-boxing-explained/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Identify Your Energy Peaks and Troughs</span>
-                            <span class="related-meta">Productivity / Energy</span>
+                            <span class="related-name">Time Blocking vs Time Boxing Explained</span>
+                            <span class="related-meta">Premium • Productivity</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 Energy</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../travel/nomad/visa-legal-tips-for-digital-nomads/" class="related-card">
+                <a href="../../../premium/guides/how-to-achieve-deep-work/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Visa & Legal Tips for Digital Nomads</span>
-                            <span class="related-meta">Travel / Nomad</span>
+                            <span class="related-name">How to Achieve Deep Work</span>
+                            <span class="related-meta">Premium • Productivity</span>
                         </div>
                     </div>
-                    <span class="related-badge">📜 Visas</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../career/money/how-to-start-investing-as-a-professional/" class="related-card">
+                <a href="../../../premium/guides/the-para-method-organise-your-digital-life/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Start Investing as a Professional</span>
-                            <span class="related-meta">Career / Money</span>
+                            <span class="related-name">The PARA Method: Organise Your Digital Life</span>
+                            <span class="related-meta">Premium • Productivity</span>
                         </div>
                     </div>
-                    <span class="related-badge">📈 Investing</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

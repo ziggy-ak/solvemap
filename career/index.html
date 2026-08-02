@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,9 +374,9 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← All Categories</div><a href="../services/">🛠️ Services</a><div class="menu-section-title">Career</div><a href="./branding/">Branding</a><a href="./change/">Change</a><a href="./growth/">Growth</a><a href="./job-search/">Job-search</a><a href="./money/">Money</a><a href="./remote-work/">Remote-work</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← All Categories</div><a href="../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../services/">🛠️ Services</a><a href="../fitness/" class="">Fitness</a><a href="../finance/" class="">Finance</a><a href="../health/" class="">Health</a><a href="../nutrition/" class="">Nutrition</a><a href="../career/" class="active">Career</a><a href="../study/" class="">Study</a><a href="../technology/" class="">Technology</a><a href="../travel/" class="">Travel</a><a href="../relationships/" class="">Relationships</a><a href="../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../services/">Services</a><a href="../fitness/" class="">Fitness</a><a href="../finance/" class="">Finance</a><a href="../health/" class="">Health</a><a href="../nutrition/" class="">Nutrition</a><a href="../career/" class="active">Career</a><a href="../study/" class="">Study</a><a href="../technology/" class="">Technology</a><a href="../travel/" class="">Travel</a><a href="../relationships/" class="">Relationships</a><a href="../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../services/">Services</a><a href="../fitness/" class="">Fitness</a><a href="../finance/" class="">Finance</a><a href="../health/" class="">Health</a><a href="../nutrition/" class="">Nutrition</a><a href="../career/" class="active">Career</a><a href="../study/" class="">Study</a><a href="../technology/" class="">Technology</a><a href="../travel/" class="">Travel</a><a href="../relationships/" class="">Relationships</a><a href="../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📂 Career</div><ul><li class="sub-link" onclick="window.location.href='./branding/'">Branding</li><li class="sub-link" onclick="window.location.href='./change/'">Change</li><li class="sub-link" onclick="window.location.href='./growth/'">Growth</li><li class="sub-link" onclick="window.location.href='./job-search/'">Job-search</li><li class="sub-link" onclick="window.location.href='./money/'">Money</li><li class="sub-link" onclick="window.location.href='./remote-work/'">Remote-work</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../index.html">Home</a> <span class="sep">→</span> <span class="current">Career</span></nav><h1>Career</h1><p class="subtitle">Job search, growth, freelancing &amp; branding</p><div class="tags"><span>#personalbranding</span><span>#career</span><span>#linkedin</span><span>#networking</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>📢 Getting noticed by recruiters requires a strong online presence</li><li>🖥️ Share your work and insights online</li><li>🎤 Public speaking builds authority</li><li>📝 A professional blog showcases your expertise</li></ul></div><div class="why-section"><h3>💡 Why Career</h3><ul><li>📢 Optimise your LinkedIn profile and engage with content</li><li>🖥️ Write articles or post about your projects</li><li>🎤 Start with small speaking engagements (webinars, panels)</li><li>📝 Write consistently about your niche</li></ul></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Your career is a marathon, not a sprint — invest in continuous growth and adaptability.</div></div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">

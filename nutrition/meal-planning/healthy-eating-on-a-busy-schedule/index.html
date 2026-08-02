@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Meal-planning</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Meal-planning</div><a href="../batch-cooking-basics/" class="">batch-cooking-basics</a><a href="../grocery-shopping-on-a-budget/" class="">grocery-shopping-on-a-budget</a><a href="../healthy-eating-on-a-busy-schedule/" class="active">Healthy Eating on a Busy Schedule</a><a href="../how-to-read-food-labels/" class="">how-to-read-food-labels</a><a href="../meal-prep-101/" class="">meal-prep-101</a><a href="../weekly-meal-planning-guide/" class="">weekly-meal-planning-guide</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Meal-planning</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="active">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="active">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="active">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Meal-planning</div><div class="back-link" onclick="window.location.href='../'">← Back to Meal-planning</div><ul><li class="file-item " onclick="window.location.href='../batch-cooking-basics/'; return false;">batch-cooking-basics</li><li class="file-item " onclick="window.location.href='../grocery-shopping-on-a-budget/'; return false;">grocery-shopping-on-a-budget</li><li class="file-item active" onclick="window.location.href='../healthy-eating-on-a-busy-schedule/'; return false;">healthy-eating-on-a-busy-schedule</li><li class="file-item " onclick="window.location.href='../how-to-read-food-labels/'; return false;">how-to-read-food-labels</li><li class="file-item " onclick="window.location.href='../meal-prep-101/'; return false;">meal-prep-101</li><li class="file-item " onclick="window.location.href='../weekly-meal-planning-guide/'; return false;">weekly-meal-planning-guide</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Nutrition</a> <span class="sep">→</span> <a href="../">Meal-planning</a> <span class="sep">→</span> <span class="current">Healthy Eating on a Busy Schedule</span></nav><h1 class="file-title">Healthy Eating on a Busy Schedule 📄</h1><p class="file-sub">Eat well even when you're short on time.</p><div class="file-description"><p><strong>Your problem:</strong> You're busy and struggle to eat healthy meals consistently.</p><p><strong>This solution:</strong> A guide to healthy eating on a busy schedule — quick meals, smart snacks, and strategies for staying on track.</p></div><div class="download-section"><a href="https://frge.top/healthy-eating-on-a-vs70z2" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Eating healthy doesn't have to be time‑consuming — plan ahead and make smart choices.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../travel/types/cruise-travel-for-beginners/" class="related-card">
+                <a href="../../../career/money/how-to-manage-a-side-hustle-and-full-time-job/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Cruise Travel for Beginners</span>
-                            <span class="related-meta">Travel / Types</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">🚢 Cruise</span>
-                </a>
-            
-                <a href="../../../career/money/how-to-build-wealth-on-a-salary/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">How to Build Wealth on a Salary</span>
+                            <span class="related-name">How to Manage a Side Hustle and Full‑Time Job</span>
                             <span class="related-meta">Career / Money</span>
                         </div>
                     </div>
-                    <span class="related-badge">💵 Wealth</span>
+                    <span class="related-badge">⚖️ Balance</span>
                 </a>
             
-                <a href="../../../finance/investing/how-to-calculate-roi/" class="related-card">
+                <a href="../../../health/posture/morning-mobility-flow/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Calculate ROI</span>
-                            <span class="related-meta">Finance / Investing</span>
+                            <span class="related-name">Morning Mobility Flow</span>
+                            <span class="related-meta">Health / Posture</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 ROI</span>
+                    <span class="related-badge">🧘 Mobility</span>
                 </a>
             
-                <a href="../../../fitness/strength/progressive-overload-guide/" class="related-card">
+                <a href="../../../relationships/emotional-health/how-to-cultivate-resilience/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Progressive Overload Guide</span>
-                            <span class="related-meta">Fitness / Strength</span>
+                            <span class="related-name">How to Cultivate Resilience</span>
+                            <span class="related-meta">Relationships / Emotional Health</span>
                         </div>
                     </div>
-                    <span class="related-badge">📈 Progress</span>
+                    <span class="related-badge">🛡️ Resilience</span>
                 </a>
             
-                <a href="../../../fitness/guides/nutrition-for-fitness/" class="related-card">
+                <a href="../../../premium/guides/fibermaxxing-the-2026-trend/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Nutrition for Fitness</span>
-                            <span class="related-meta">Fitness / Guides</span>
+                            <span class="related-name">Fibermaxxing: The 2026 Trend</span>
+                            <span class="related-meta">Premium • Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">📚 Nutrition</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../finance/literacy/inflation-and-your-money/" class="related-card">
+                <a href="../../../premium/guides/plant-based-diet-for-beginners/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Inflation and Your Money</span>
-                            <span class="related-meta">Finance / Literacy</span>
+                            <span class="related-name">Plant-Based Diet for Beginners</span>
+                            <span class="related-meta">Premium • Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">📈 Inflation</span>
+                    <span class="related-badge premium-badge">Premium</span>
+                </a>
+            
+                <a href="../../../premium/guides/healthy-eating-on-a-busy-schedule/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">Healthy Eating on a Busy Schedule</span>
+                            <span class="related-meta">Premium • Nutrition</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

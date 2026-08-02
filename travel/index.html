@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,9 +374,9 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← All Categories</div><a href="../services/">🛠️ Services</a><div class="menu-section-title">Travel</div><a href="./hacks/">Hacks</a><a href="./nomad/">Nomad</a><a href="./planning/">Planning</a><a href="./solo/">Solo</a><a href="./types/">Types</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← All Categories</div><a href="../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../services/">🛠️ Services</a><a href="../fitness/" class="">Fitness</a><a href="../finance/" class="">Finance</a><a href="../health/" class="">Health</a><a href="../nutrition/" class="">Nutrition</a><a href="../career/" class="">Career</a><a href="../study/" class="">Study</a><a href="../technology/" class="">Technology</a><a href="../travel/" class="active">Travel</a><a href="../relationships/" class="">Relationships</a><a href="../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../services/">Services</a><a href="../fitness/" class="">Fitness</a><a href="../finance/" class="">Finance</a><a href="../health/" class="">Health</a><a href="../nutrition/" class="">Nutrition</a><a href="../career/" class="">Career</a><a href="../study/" class="">Study</a><a href="../technology/" class="">Technology</a><a href="../travel/" class="active">Travel</a><a href="../relationships/" class="">Relationships</a><a href="../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../services/">Services</a><a href="../fitness/" class="">Fitness</a><a href="../finance/" class="">Finance</a><a href="../health/" class="">Health</a><a href="../nutrition/" class="">Nutrition</a><a href="../career/" class="">Career</a><a href="../study/" class="">Study</a><a href="../technology/" class="">Technology</a><a href="../travel/" class="active">Travel</a><a href="../relationships/" class="">Relationships</a><a href="../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📂 Travel</div><ul><li class="sub-link" onclick="window.location.href='./hacks/'">Hacks</li><li class="sub-link" onclick="window.location.href='./nomad/'">Nomad</li><li class="sub-link" onclick="window.location.href='./planning/'">Planning</li><li class="sub-link" onclick="window.location.href='./solo/'">Solo</li><li class="sub-link" onclick="window.location.href='./types/'">Types</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../index.html">Home</a> <span class="sep">→</span> <span class="current">Travel</span></nav><h1>Travel</h1><p class="subtitle">Planning, solo travel, nomad life &amp; hacks</p><div class="tags"><span>#travelhacks</span><span>#packing</span><span>#flights</span><span>#budgettravel</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>🧳 Packing light saves money and stress</li><li>✈️ Flight hacks can save you hundreds</li><li>🌍 Avoid overtourism by visiting lesser‑known destinations</li><li>📸 Travel photography captures memories</li></ul></div><div class="why-section"><h3>💡 Why Travel</h3><ul><li>🧳 Roll your clothes to save space</li><li>✈️ Use flight comparison tools and book in advance</li><li>🌍 Research destinations beyond the tourist hotspots</li><li>📸 Learn basic photography skills before you go</li></ul></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Travel is not about the destination — it's about the journey and who you become along the way.</div></div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">

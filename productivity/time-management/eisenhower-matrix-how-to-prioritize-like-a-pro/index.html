@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Time-management</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Time-management</div><a href="../eat-that-frog-start-your-day-with-the-hardest-task/" class="">eat-that-frog-start-your-day-with-the-hardest-task</a><a href="../eisenhower-matrix-how-to-prioritize-like-a-pro/" class="active">The Eisenhower Matrix — How to Prioritise Like a Pro</a><a href="../getting-things-done-the-5-step-workflow/" class="">getting-things-done-the-5-step-workflow</a><a href="../the-80-20-rule-in-daily-work/" class="">the-80-20-rule-in-daily-work</a><a href="../the-pomodoro-technique-guide/" class="">the-pomodoro-technique-guide</a><a href="../time-blocking-vs-time-boxing-explained/" class="">time-blocking-vs-time-boxing-explained</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Time-management</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="active">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="active">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="active">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Time-management</div><div class="back-link" onclick="window.location.href='../'">← Back to Time-management</div><ul><li class="file-item " onclick="window.location.href='../eat-that-frog-start-your-day-with-the-hardest-task/'; return false;">eat-that-frog-start-your-day-with-the-hardest-task</li><li class="file-item active" onclick="window.location.href='../eisenhower-matrix-how-to-prioritize-like-a-pro/'; return false;">eisenhower-matrix-how-to-prioritize-like-a-pro</li><li class="file-item " onclick="window.location.href='../getting-things-done-the-5-step-workflow/'; return false;">getting-things-done-the-5-step-workflow</li><li class="file-item " onclick="window.location.href='../the-80-20-rule-in-daily-work/'; return false;">the-80-20-rule-in-daily-work</li><li class="file-item " onclick="window.location.href='../the-pomodoro-technique-guide/'; return false;">the-pomodoro-technique-guide</li><li class="file-item " onclick="window.location.href='../time-blocking-vs-time-boxing-explained/'; return false;">time-blocking-vs-time-boxing-explained</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Productivity</a> <span class="sep">→</span> <a href="../">Time-management</a> <span class="sep">→</span> <span class="current">The Eisenhower Matrix — How to Prioritise Like a Pro</span></nav><h1 class="file-title">The Eisenhower Matrix — How to Prioritise Like a Pro 📄</h1><p class="file-sub">Prioritise tasks by urgency and importance using the Eisenhower Matrix.</p><div class="file-description"><p><strong>Your problem:</strong> You have too many tasks and don't know which ones to focus on first.</p><p><strong>This solution:</strong> A guide to the Eisenhower Matrix — a proven framework for prioritising tasks by urgency and importance, so you focus on what truly matters.</p></div><div class="download-section"><a href="https://frge.top/eisenhower-matrix-ho-3hyzf0" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Not all tasks are created equal — prioritise by importance, not just urgency.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../health/sleep/power-napping-for-energy/" class="related-card">
+                <a href="../../../finance/budgeting/zero-based-budgeting-guide/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Power Napping for Energy</span>
+                            <span class="related-name">Zero‑Based Budgeting Guide</span>
+                            <span class="related-meta">Finance / Budgeting</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">📋 Budgeting</span>
+                </a>
+            
+                <a href="../../../health/sleep/sleep-hygiene-checklist/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">Sleep Hygiene Checklist</span>
                             <span class="related-meta">Health / Sleep</span>
                         </div>
                     </div>
-                    <span class="related-badge">💤 Napping</span>
+                    <span class="related-badge">📋 Checklist</span>
                 </a>
             
-                <a href="../../../fitness/recovery/sleep-guide-for-better-recovery/" class="related-card">
+                <a href="../../../health/first-aid/how-to-treat-minor-wounds/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Sleep Guide for Better Recovery</span>
-                            <span class="related-meta">Fitness / Recovery</span>
+                            <span class="related-name">How to Treat Minor Wounds</span>
+                            <span class="related-meta">Health / First Aid</span>
                         </div>
                     </div>
-                    <span class="related-badge">😴 Sleep</span>
+                    <span class="related-badge">🩹 Wound Care</span>
                 </a>
             
-                <a href="../../../career/remote-work/time-management-for-freelancers/" class="related-card">
+                <a href="../../../premium/guides/the-30-day-habit-challenge/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Time Management for Freelancers</span>
-                            <span class="related-meta">Career / Remote Work</span>
+                            <span class="related-name">The 30-Day Habit Challenge</span>
+                            <span class="related-meta">Premium • Productivity</span>
                         </div>
                     </div>
-                    <span class="related-badge">⏰ Time</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../study/exam-prep/active-recall-for-exam-prep/" class="related-card">
+                <a href="../../../premium/guides/the-80-20-rule-in-daily-work/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Active Recall for Exam Prep</span>
-                            <span class="related-meta">Study / Exam Prep</span>
+                            <span class="related-name">The 80/20 Rule in Daily Work</span>
+                            <span class="related-meta">Premium • Productivity</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧠 Active Recall</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../study/techniques/mind-mapping-for-students/" class="related-card">
+                <a href="../../../premium/guides/how-to-achieve-deep-work/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Mind Mapping for Students</span>
-                            <span class="related-meta">Study / Techniques</span>
+                            <span class="related-name">How to Achieve Deep Work</span>
+                            <span class="related-meta">Premium • Productivity</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧠 Mind Map</span>
-                </a>
-            
-                <a href="../../../fitness/supplements/supplements-101/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">Supplements 101</span>
-                            <span class="related-meta">Fitness / Supplements</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">📚 Basics</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

@@ -6,6 +6,12 @@
     "category": "home"
   },
   {
+    "title": "Premium",
+    "description": "Premium guides, bundles & advanced tools",
+    "url": "./premium/",
+    "category": "premium"
+  },
+  {
     "title": "Services",
     "description": "Free tools – calculators, generators, checklists",
     "url": "./services/",
@@ -2571,5 +2577,1012 @@
     "url": "./productivity/time-management/time-blocking-vs-time-boxing-explained/",
     "category": "file",
     "badge": "📅 Planning"
+  },
+  {
+    "title": "How to Stop Overthinking in 2 Minutes",
+    "description": "Science-Backed Techniques for Instant Mental Relief",
+    "url": "./premium/guides/how-to-stop-overthinking-in-2-minutes/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "5-Minute Stress Relief Techniques",
+    "description": "Quick, Science-Backed Ways to Calm Your Nervous System",
+    "url": "./premium/guides/5-minute-stress-relief-techniques/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Breathwork Methods: 4-7-8 & Box Breathing",
+    "description": "The Science of Controlled Breathing for Stress and Anxiety Relief",
+    "url": "./premium/guides/breathwork-methods-4-7-8-box-breathing/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Morning Routine for Mental Clarity",
+    "description": "Start Your Day with Intention, Focus, and Calm",
+    "url": "./premium/guides/morning-routine-for-mental-clarity/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Reduce Anxiety Without Medication",
+    "description": "Natural, Science-Backed Strategies for Managing Anxiety",
+    "url": "./premium/guides/how-to-reduce-anxiety-without-medication/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Cognitive Reframing Guide",
+    "description": "Change Your Thoughts, Change Your Life — A CBT-Based Approach",
+    "url": "./premium/guides/cognitive-reframing-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Recognize a Stroke in 2 Minutes",
+    "description": "The BE FAST Test That Can Save a Life",
+    "url": "./premium/guides/how-to-recognize-a-stroke-in-2-minutes/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Help Someone Who Is Choking",
+    "description": "The Heimlich Maneuver and More",
+    "url": "./premium/guides/how-to-help-someone-who-is-choking/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Recognize a Seizure",
+    "description": "First Aid for Epileptic and Non-Epileptic Seizures",
+    "url": "./premium/guides/how-to-recognize-a-seizure/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Allergic Reaction: When to Call 911",
+    "description": "Recognizing and Responding to Anaphylaxis",
+    "url": "./premium/guides/allergic-reaction-when-to-call-911/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Heat Stroke vs. Heat Exhaustion",
+    "description": "Key Differences, Symptoms, and First Aid",
+    "url": "./premium/guides/heat-stroke-vs-heat-exhaustion/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Help a Person Having a Panic Attack",
+    "description": "First Aid for Anxiety and Panic",
+    "url": "./premium/guides/how-to-help-a-person-having-a-panic-attack/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "First Aid Kit: What You Actually Need",
+    "description": "Build a Kit That Can Save a Life",
+    "url": "./premium/guides/first-aid-kit-what-you-actually-need/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Treat a Nosebleed",
+    "description": "First Aid for Epistaxis",
+    "url": "./premium/guides/how-to-treat-a-nosebleed/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Recognize a Heart Attack",
+    "description": "Signs, Symptoms, and First Aid for a Cardiac Emergency",
+    "url": "./premium/guides/how-to-recognize-a-heart-attack/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Treat Burns (1st, 2nd, 3rd Degree)",
+    "description": "A Complete Guide to Burn First Aid and Recovery",
+    "url": "./premium/guides/how-to-treat-burns-1st-2nd-3rd-degree/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "CPR Basics for Beginners",
+    "description": "How to Perform Cardiopulmonary Resuscitation and Save a Life",
+    "url": "./premium/guides/cpr-basics-for-beginners/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Stop Severe Bleeding",
+    "description": "Tourniquets, Wound Packing, and Direct Pressure",
+    "url": "./premium/guides/how-to-stop-severe-bleeding/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Fall Asleep in 10 Minutes",
+    "description": "Proven Techniques for Rapid Sleep Onset",
+    "url": "./premium/guides/how-to-fall-asleep-in-10-minutes/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Fix Your Sleep Schedule in 3 Days",
+    "description": "Reset Your Circadian Rhythm and Wake Up Refreshed",
+    "url": "./premium/guides/how-to-fix-your-sleep-schedule-in-3-days/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Power Napping for Energy: Do It Right",
+    "description": "The Science of Short Sleep for Maximum Alertness",
+    "url": "./premium/guides/power-napping-for-energy-do-it-right/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Sleep Hygiene Checklist (Printable)",
+    "description": "Evidence-Based Habits for Better Rest Every Night",
+    "url": "./premium/guides/sleep-hygiene-checklist-printable/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Healthy Sleep in 30 Days: Full Protocol",
+    "description": "A Complete System for Transforming Your Sleep — Starting Tonight",
+    "url": "./premium/guides/healthy-sleep-in-30-days-full-protocol/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Optimize Your Sleep Environment",
+    "description": "The Science of the Perfect Bedroom for Deep Rest",
+    "url": "./premium/guides/how-to-optimize-your-sleep-environment/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "No-Equipment Workout: 15 Minutes",
+    "description": "A Full-Body Bodyweight Routine for Strength, Cardio, and Flexibility",
+    "url": "./premium/guides/no-equipment-workout-15-minutes/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Do a Proper Squat (Without Knee Pain)",
+    "description": "The Science of Pain-Free Squatting for Stronger Legs",
+    "url": "./premium/guides/how-to-do-a-proper-squat-without-knee-pain/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Do a Perfect Push-Up: Form Guide",
+    "description": "Master the Upper-Body Exercise That Builds Chest, Shoulders, Triceps, and Core",
+    "url": "./premium/guides/how-to-do-a-perfect-push-up-form-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Home Workout: No Gym, No Excuses",
+    "description": "A Complete Bodyweight Training System for Any Fitness Level",
+    "url": "./premium/guides/home-workout-no-gym-no-excuses/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Body Transformation in 30 Days (No Gym)",
+    "description": "A Complete 30-Day Home Fitness Program for Real People with Real Lives",
+    "url": "./premium/guides/body-transformation-in-30-days-no-gym/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Build a Fitness Routine That Sticks",
+    "description": "The Science of Habit Formation for Lasting Fitness",
+    "url": "./premium/guides/how-to-build-a-fitness-routine-that-sticks/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Increase Your Pull-Up Count",
+    "description": "Science-Backed Strategies to Master the Pull-Up",
+    "url": "./premium/guides/how-to-increase-your-pull-up-count/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Do a Deadlift: Form Guide",
+    "description": "Master the King of Lifts — Safely and Effectively",
+    "url": "./premium/guides/how-to-do-a-deadlift-form-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Progressive Overload Guide: Grow Stronger",
+    "description": "The Science of Getting Stronger — Safely and Sustainably",
+    "url": "./premium/guides/progressive-overload-guide-grow-stronger/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Beginner Strength Training: 4-Week Plan",
+    "description": "Build a Solid Foundation of Strength in Just 4 Weeks",
+    "url": "./premium/guides/beginner-strength-training-4-week-plan/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Bodyweight Exercises for Muscle Building",
+    "description": "Build Real Muscle with Just Your Bodyweight — Science and Strategy",
+    "url": "./premium/guides/bodyweight-exercises-for-muscle-building/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Start Running: 8-Week Plan",
+    "description": "From Couch to 5K — A Beginner's Guide to Running",
+    "url": "./premium/guides/how-to-start-running-8-week-plan/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "HIIT Workouts at Home: Burn Fat Fast",
+    "description": "The Science of High-Intensity Interval Training for Fat Loss",
+    "url": "./premium/guides/hiit-workouts-at-home-burn-fat-fast/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Build Endurance: Cardio Training Plan",
+    "description": "A Complete System for Cardiovascular Endurance",
+    "url": "./premium/guides/how-to-build-endurance-cardio-training-plan/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Sleep for Recovery: Grow While You Sleep",
+    "description": "The Science of Sleep for Muscle Growth and Repair",
+    "url": "./premium/guides/sleep-for-recovery-grow-while-you-sleep/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "What to Eat Before and After a Workout",
+    "description": "The Science of Nutrient Timing for Performance and Recovery",
+    "url": "./premium/guides/what-to-eat-before-and-after-a-workout/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "The Science of Recovery: 7 Strategies",
+    "description": "Evidence-Based Techniques for Faster Recovery and Better Results",
+    "url": "./premium/guides/the-science-of-recovery-7-strategies/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "High-Protein Meal Plan: 7 Days",
+    "description": "Fuel Your Muscles with 80+ Grams of Protein Every Day",
+    "url": "./premium/guides/high-protein-meal-plan-7-days/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Start Investing with $100",
+    "description": "Your First Step Toward Financial Freedom — Even with a Small Budget",
+    "url": "./premium/guides/how-to-start-investing-with-100/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Index Funds vs ETFs: What's the Difference",
+    "description": "A Clear Comparison of Two Popular Investment Options",
+    "url": "./premium/guides/index-funds-vs-etfs-what-s-the-difference/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Calculate ROI: Simple Formula",
+    "description": "The One Number Every Investor Needs to Know",
+    "url": "./premium/guides/how-to-calculate-roi-simple-formula/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Passive Income Ideas 2026",
+    "description": "Build Multiple Income Streams That Work While You Sleep",
+    "url": "./premium/guides/passive-income-ideas-2026/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "50/30/20 Budget Rule: Simple. Effective.",
+    "description": "The Easiest Way to Take Control of Your Money",
+    "url": "./premium/guides/50-30-20-budget-rule-simple-effective/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Build an Emergency Fund",
+    "description": "Your Financial Safety Net for Life's Unexpected Moments",
+    "url": "./premium/guides/how-to-build-an-emergency-fund/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "7-Day No-Spend Challenge",
+    "description": "Reset Your Spending Habits and Save Money in Just One Week",
+    "url": "./premium/guides/7-day-no-spend-challenge/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Zero-Based Budgeting Guide",
+    "description": "Give Every Dollar a Job — The Most Powerful Budgeting Method",
+    "url": "./premium/guides/zero-based-budgeting-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Save for a House: Down Payment Plan",
+    "description": "A Step-by-Step Plan to Save for Your First Home",
+    "url": "./premium/guides/how-to-save-for-a-house-down-payment-plan/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Pay Off Debt Fast: 2 Proven Strategies",
+    "description": "The Snowball and Avalanche Methods — Which One Is Right for You?",
+    "url": "./premium/guides/how-to-pay-off-debt-fast-2-proven-strategies/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Build a Good Credit Score",
+    "description": "A Beginner's Guide to Establishing and Improving Your Credit",
+    "url": "./premium/guides/how-to-build-a-good-credit-score/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Credit Score Factors Explained",
+    "description": "A Deep Dive Into What Actually Determines Your Credit Score",
+    "url": "./premium/guides/credit-score-factors-explained/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Start Freelancing: Beginner's Guide",
+    "description": "Turn Your Skills Into Income — A Step-by-Step Guide to Freelancing",
+    "url": "./premium/guides/how-to-start-freelancing-beginner-s-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Micro-Investing Apps Guide",
+    "description": "Start Investing with as Little as $1 — A Complete Guide to Micro-Investing",
+    "url": "./premium/guides/micro-investing-apps-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Digital Product Stacking",
+    "description": "Build Scalable Passive Income by Stacking Digital Products",
+    "url": "./premium/guides/digital-product-stacking/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Create a Strong Password",
+    "description": "NIST-Approved Strategies for 2025 and Beyond",
+    "url": "./premium/guides/how-to-create-a-strong-password/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Spot Phishing Emails",
+    "description": "Protect Yourself from the #1 Cyber Threat in 2025",
+    "url": "./premium/guides/how-to-spot-phishing-emails/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Two-Factor Authentication Guide",
+    "description": "The Simple Step That Doubles Your Account Security",
+    "url": "./premium/guides/two-factor-authentication-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Protect Your Data Online",
+    "description": "A Comprehensive Guide to Privacy and Security in the Digital Age",
+    "url": "./premium/guides/how-to-protect-your-data-online/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "VPN Guide for Beginners",
+    "description": "What a VPN Is, Why You Need One, and How to Choose",
+    "url": "./premium/guides/vpn-guide-for-beginners/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "You're Using ChatGPT Wrong: Fix It",
+    "description": "7 Common Mistakes That Are Killing Your Results — and How to Fix Them",
+    "url": "./premium/guides/you-re-using-chatgpt-wrong-fix-it/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Automate Repetitive Tasks",
+    "description": "Save Hours Every Week with AI-Powered Automation",
+    "url": "./premium/guides/how-to-automate-repetitive-tasks/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "AI Tools for Everyday Life",
+    "description": "The Best AI Tools to Simplify Your Daily Routine in 2026",
+    "url": "./premium/guides/ai-tools-for-everyday-life/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Use ChatGPT Effectively",
+    "description": "A Complete Guide to Getting the Most Out of the World's Best AI Assistant",
+    "url": "./premium/guides/how-to-use-chatgpt-effectively/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How AI Is Changing Personal Productivity in 2026",
+    "description": "The Future of Work Is Here — Are You Ready?",
+    "url": "./premium/guides/how-ai-is-changing-personal-productivity-in-2026/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Digital Detox Plan: Reconnect with the World",
+    "description": "A Science-Backed Guide to Reducing Screen Time and Reclaiming Your Life",
+    "url": "./premium/guides/digital-detox-plan-reconnect-with-the-world/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Set Boundaries with Technology",
+    "description": "A Practical Guide to Regaining Control of Your Digital Life",
+    "url": "./premium/guides/how-to-set-boundaries-with-technology/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Mindful Tech Use",
+    "description": "A Complete Guide to Building a Healthy Relationship with Technology",
+    "url": "./premium/guides/mindful-tech-use/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Tech Skills for Non-Techies",
+    "description": "Essential Digital Skills Everyone Needs in 2026",
+    "url": "./premium/guides/tech-skills-for-non-techies/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Build a Personal Website",
+    "description": "A Step-by-Step Guide to Creating Your Online Presence",
+    "url": "./premium/guides/how-to-build-a-personal-website/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Best Platforms to Learn Tech Skills",
+    "description": "A Curated Guide to the Best Online Learning Platforms in 2026",
+    "url": "./premium/guides/best-platforms-to-learn-tech-skills/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Macronutrients Explained",
+    "description": "The Complete Guide to Carbs, Protein, and Fat",
+    "url": "./premium/guides/macronutrients-explained/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Read a Nutrition Label",
+    "description": "A Complete Guide to Decoding Food Labels",
+    "url": "./premium/guides/how-to-read-a-nutrition-label/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Fibermaxxing: The 2026 Trend",
+    "description": "Why Fiber Is the Most Important Nutrient Right Now",
+    "url": "./premium/guides/fibermaxxing-the-2026-trend/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Mediterranean Diet Guide",
+    "description": "The Science-Backed Way of Eating for Longevity and Health",
+    "url": "./premium/guides/mediterranean-diet-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Plant-Based Diet for Beginners",
+    "description": "A Complete Guide to Starting a Plant-Based Diet",
+    "url": "./premium/guides/plant-based-diet-for-beginners/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Prebiotics vs Probiotics: What's the Difference",
+    "description": "A Clear Guide to the Two Most Important Gut Health Terms",
+    "url": "./premium/guides/prebiotics-vs-probiotics-what-s-the-difference/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Improve Digestion Naturally",
+    "description": "A Comprehensive Guide to Better Digestive Health — Without Medication",
+    "url": "./premium/guides/how-to-improve-digestion-naturally/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Meal Prep for the Week",
+    "description": "The Ultimate Guide to Saving Time and Eating Healthy",
+    "url": "./premium/guides/how-to-meal-prep-for-the-week/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Healthy Eating on a Busy Schedule",
+    "description": "Simple Strategies to Eat Well — Even When You're Short on Time",
+    "url": "./premium/guides/healthy-eating-on-a-busy-schedule/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Weekly Meal Planning Guide",
+    "description": "A Complete System for Effortless Weekly Meal Planning",
+    "url": "./premium/guides/weekly-meal-planning-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Gut Health 101: Fix Your Digestion",
+    "description": "The Complete Beginner's Guide to a Happy, Healthy Gut",
+    "url": "./premium/guides/gut-health-101-fix-your-digestion/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Investing for Beginners: Complete Guide",
+    "description": "Everything You Need to Know to Start Investing with Confidence",
+    "url": "./premium/guides/investing-for-beginners-complete-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Write a CV That Gets Noticed",
+    "description": "A Recruiter-Approved Guide to Stand Out in 2026",
+    "url": "./premium/guides/how-to-write-a-cv-that-gets-noticed/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Answer 'Tell Me About Yourself'",
+    "description": "The Most Important Question in Any Interview — Master It",
+    "url": "./premium/guides/how-to-answer-tell-me-about-yourself/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Follow Up After an Interview",
+    "description": "A Strategic Guide to Thank-You Emails That Get You Noticed",
+    "url": "./premium/guides/how-to-follow-up-after-an-interview/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Job Interview Preparation: Complete Guide",
+    "description": "A Comprehensive System for Acing Any Job Interview",
+    "url": "./premium/guides/job-interview-preparation-complete-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Job Search Strategies 2026",
+    "description": "A Complete Guide to Finding a Job in Today's Market",
+    "url": "./premium/guides/job-search-strategies-2026/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Find a Mentor",
+    "description": "A Strategic Guide to Finding the Right Mentor at Every Career Stage",
+    "url": "./premium/guides/how-to-find-a-mentor/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Personal Branding Guide: Stand Out",
+    "description": "A Complete Guide to Building a Personal Brand That Opens Doors",
+    "url": "./premium/guides/personal-branding-guide-stand-out/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Develop Leadership Skills",
+    "description": "A Complete Guide to Becoming a Leader People Want to Follow",
+    "url": "./premium/guides/how-to-develop-leadership-skills/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Ask for a Promotion",
+    "description": "A Strategic Guide to Getting the Recognition and Compensation You Deserve",
+    "url": "./premium/guides/how-to-ask-for-a-promotion/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Stay Productive at Home",
+    "description": "Science-Backed Strategies for Maximum Focus and Output",
+    "url": "./premium/guides/how-to-stay-productive-at-home/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Remote Work Setup Guide",
+    "description": "The Ultimate Checklist for a Productive, Ergonomic Home Office",
+    "url": "./premium/guides/remote-work-setup-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Transition to Freelancing",
+    "description": "A Complete Guide to Leaving the 9-to-5 and Building a Sustainable Freelance Career",
+    "url": "./premium/guides/how-to-transition-to-freelancing/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Take Notes: Cornell Method",
+    "description": "The Note-Taking System That Helps You Learn as You Write",
+    "url": "./premium/guides/how-to-take-notes-cornell-method/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Active Recall Method",
+    "description": "The Science-Backed Study Technique That Doubles Your Retention",
+    "url": "./premium/guides/active-recall-method/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Spaced Repetition System",
+    "description": "The Ultimate Guide to Long-Term Retention and Effortless Learning",
+    "url": "./premium/guides/spaced-repetition-system/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Feynman Technique: Learn Anything Fast",
+    "description": "The 4-Step Method That Unlocks Deep Understanding",
+    "url": "./premium/guides/feynman-technique-learn-anything-fast/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Improve Concentration",
+    "description": "Science-Backed Strategies to Reclaim Your Attention Span",
+    "url": "./premium/guides/how-to-improve-concentration/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Stop Procrastinating",
+    "description": "Evidence-Based Strategies to Overcome Delay and Take Action",
+    "url": "./premium/guides/how-to-stop-procrastinating/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Study Break Ideas: Recharge Effectively",
+    "description": "A Complete Guide to Strategic Breaks That Boost Productivity",
+    "url": "./premium/guides/study-break-ideas-recharge-effectively/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Time Blocking vs Time Boxing Explained",
+    "description": "Two Powerful Productivity Methods — and When to Use Each",
+    "url": "./premium/guides/time-blocking-vs-time-boxing-explained/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Eat That Frog: Start with the Hardest Task",
+    "description": "The Proven Method for Beating Procrastination and Building Momentum",
+    "url": "./premium/guides/eat-that-frog-start-with-the-hardest-task/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "The Pomodoro Technique Guide",
+    "description": "Master Deep Focus and Beat Procrastination in 25-Minute Bursts",
+    "url": "./premium/guides/the-pomodoro-technique-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Eisenhower Matrix: How to Prioritize",
+    "description": "The Simple Framework That Helps You Focus on What Actually Matters",
+    "url": "./premium/guides/eisenhower-matrix-how-to-prioritize/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "The 80/20 Rule in Daily Work",
+    "description": "How to Apply the Pareto Principle for Maximum Results",
+    "url": "./premium/guides/the-80-20-rule-in-daily-work/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Build a Morning Routine",
+    "description": "Science-Backed Strategies for a Better Start to Every Day",
+    "url": "./premium/guides/how-to-build-a-morning-routine/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Build Habits That Stick",
+    "description": "The Science of Lasting Behavioral Change",
+    "url": "./premium/guides/how-to-build-habits-that-stick/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "The 30-Day Habit Challenge",
+    "description": "Proven Framework for Transforming Your Life in One Month",
+    "url": "./premium/guides/the-30-day-habit-challenge/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Stop Procrastinating: Science-Backed",
+    "description": "A Comprehensive Guide to Overcoming Delay and Taking Action",
+    "url": "./premium/guides/how-to-stop-procrastinating-science-backed/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Achieve Deep Work",
+    "description": "The Science of Distraction-Free Concentration for Elite Performance",
+    "url": "./premium/guides/how-to-achieve-deep-work/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Stop Multitasking",
+    "description": "The Science of Single-Tasking for Better Focus and Results",
+    "url": "./premium/guides/how-to-stop-multitasking/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "The PARA Method: Organise Your Digital Life",
+    "description": "A Simple System for Managing Information Overload",
+    "url": "./premium/guides/the-para-method-organise-your-digital-life/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Manage Digital Distractions",
+    "description": "A Comprehensive Guide to Reclaiming Your Focus in a Hyper-Connected World",
+    "url": "./premium/guides/how-to-manage-digital-distractions/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Communicate Effectively in Relationships",
+    "description": "Science-Backed Strategies for Deeper Connection and Understanding",
+    "url": "./premium/guides/how-to-communicate-effectively-in-relationships/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Have Difficult Conversations",
+    "description": "A Science-Backed Guide to Speaking Up Without Blowing Up",
+    "url": "./premium/guides/how-to-have-difficult-conversations/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "The Art of Active Listening",
+    "description": "How to Listen So Others Feel Heard — The Science of Connection",
+    "url": "./premium/guides/the-art-of-active-listening/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Stop Arguments from Escalating",
+    "description": "A Comprehensive Guide to Breaking the Conflict Cycle",
+    "url": "./premium/guides/how-to-stop-arguments-from-escalating/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Build Trust in a Relationship",
+    "description": "The Science of Reliability, Vulnerability, and Lasting Connection",
+    "url": "./premium/guides/how-to-build-trust-in-a-relationship/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Keep the Spark Alive",
+    "description": "Science-Backed Strategies for Long-Term Passion and Connection",
+    "url": "./premium/guides/how-to-keep-the-spark-alive/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Setting Boundaries in Relationships",
+    "description": "A Complete Guide to Healthy Limits That Strengthen Love",
+    "url": "./premium/guides/setting-boundaries-in-relationships/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Support Your Partner Without Losing Yourself",
+    "description": "A Comprehensive Guide to Healthy Interdependence",
+    "url": "./premium/guides/how-to-support-your-partner-without-losing-yourself/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Heal from a Breakup",
+    "description": "Science-Backed Strategies for Emotional Recovery and Growth",
+    "url": "./premium/guides/how-to-heal-from-a-breakup/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Build Self-Esteem",
+    "description": "Evidence-Based Strategies for Developing Unshakable Self-Worth",
+    "url": "./premium/guides/how-to-build-self-esteem/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Practice Self-Compassion",
+    "description": "A Comprehensive Guide to Treating Yourself with Kindness",
+    "url": "./premium/guides/how-to-practice-self-compassion/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Plan a Trip on a Budget",
+    "description": "A Step-by-Step Guide to Affordable Travel in 2026",
+    "url": "./premium/guides/how-to-plan-a-trip-on-a-budget/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Find Cheap Flights",
+    "description": "Expert Strategies for Booking the Best Airfare in 2026",
+    "url": "./premium/guides/how-to-find-cheap-flights/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Packing Checklist for Any Trip",
+    "description": "A Complete Guide to Packing Light and Right in 2026",
+    "url": "./premium/guides/packing-checklist-for-any-trip/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Travel Insurance Guide",
+    "description": "Everything You Need to Know About Travel Insurance in 2026",
+    "url": "./premium/guides/travel-insurance-guide/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Solo Travel Safety Tips",
+    "description": "Science-Backed Strategies for Staying Safe and Confident on the Road",
+    "url": "./premium/guides/solo-travel-safety-tips/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Meet People While Travelling",
+    "description": "Proven Strategies for Making Friends on the Road in 2026",
+    "url": "./premium/guides/how-to-meet-people-while-travelling/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Best Destinations for Solo Travelers",
+    "description": "Top Picks for Independent Travel in 2026",
+    "url": "./premium/guides/best-destinations-for-solo-travelers/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "How to Become a Digital Nomad",
+    "description": "A Beginner's Guide to the Location-Independent Lifestyle in 2026",
+    "url": "./premium/guides/how-to-become-a-digital-nomad/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Remote Work Travel Setup",
+    "description": "The Tech and Systems You Need to Work From Anywhere",
+    "url": "./premium/guides/remote-work-travel-setup/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Best Countries for Digital Nomads 2026",
+    "description": "The Top Destinations for Remote Work and Location-Independent Living",
+    "url": "./premium/guides/best-countries-for-digital-nomads-2026/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Services — SolveMap",
+    "description": "Free and premium tools to solve your problems",
+    "url": "/services/",
+    "category": "services"
+  },
+  {
+    "title": "Calorie Calculator",
+    "description": "Calculate BMR, TDEE, macros and ideal weight",
+    "url": "/services/calorie-calculator/",
+    "category": "service",
+    "badge": "Free"
+  },
+  {
+    "title": "BMI Calculator",
+    "description": "Check your body mass index and get recommendations",
+    "url": "/services/bmi-calculator/",
+    "category": "service",
+    "badge": "Free"
+  },
+  {
+    "title": "Checklist Generator",
+    "description": "Create a checklist for any task in 1 minute",
+    "url": "/services/checklist-generator/",
+    "category": "service",
+    "badge": "Free"
+  },
+  {
+    "title": "Loan Calculator",
+    "description": "Calculate overpayment and monthly payments",
+    "url": "/services/loan-calculator/",
+    "category": "service",
+    "badge": "Free"
+  },
+  {
+    "title": "Workout Generator",
+    "description": "Get a personalized training program",
+    "url": "/services/workout-generator/",
+    "category": "service",
+    "badge": "Premium"
   }
 ]

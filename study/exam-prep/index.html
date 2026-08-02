@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,9 +374,9 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Study</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Exam Preparation</div><a href="./active-recall-for-exam-prep/">Active Recall for Exam Prep</a><a href="./how-to-avoid-cramming/">How to Avoid Cramming</a><a href="./how-to-create-an-exam-revision-plan/">How to Create an Exam Revision Plan</a><a href="./how-to-stay-calm-during-exams/">How to Stay Calm During Exams</a><a href="./post-exam-reflection-guide/">Post-Exam Reflection Guide</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Study</div><a href="../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../services/">🛠️ Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="active">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="active">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="active">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Exam Preparation</div><div class="back-link" onclick="window.location.href='../'">← Back to Study</div><ul><li class="file-item" onclick="window.location.href='./active-recall-for-exam-prep/'">active-recall-for-exam-prep</li><li class="file-item" onclick="window.location.href='./how-to-avoid-cramming/'">how-to-avoid-cramming</li><li class="file-item" onclick="window.location.href='./how-to-create-an-exam-revision-plan/'">how-to-create-an-exam-revision-plan</li><li class="file-item" onclick="window.location.href='./how-to-stay-calm-during-exams/'">how-to-stay-calm-during-exams</li><li class="file-item" onclick="window.location.href='./post-exam-reflection-guide/'">post-exam-reflection-guide</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Study</a> <span class="sep">→</span> <span class="current">Exam-prep</span></nav><h1>Exam Preparation</h1><p class="subtitle">Prepare for exams strategically with proven revision methods and stress‑management techniques.</p>
     <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#exams" data-type="tag">#exams</button><button class="filter-btn" data-filter="#study" data-type="tag">#study</button><button class="filter-btn" data-filter="#revision" data-type="tag">#revision</button><button class="filter-btn" data-filter="#testprep" data-type="tag">#testprep</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="📅 Plan" data-type="type">📅 Plan</button><button class="filter-btn type" data-filter="📝 Reflection" data-type="type">📝 Reflection</button><button class="filter-btn type" data-filter="🚫 No Cram" data-type="type">🚫 No Cram</button><button class="filter-btn type" data-filter="🧘 Calm" data-type="type">🧘 Calm</button><button class="filter-btn type" data-filter="🧠 Active Recall" data-type="type">🧠 Active Recall</button></div>
     <div class="file-grid" id="file-grid">

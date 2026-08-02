@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Guides</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Guides</div><a href="../fitness-myths-debunked/" class="">fitness-myths-debunked</a><a href="../home-workout-guide/" class="active">Home Workout Guide</a><a href="../how-to-build-a-fitness-routine/" class="">how-to-build-a-fitness-routine</a><a href="../no-equipment-workout-guide/" class="">no-equipment-workout-guide</a><a href="../nutrition-for-fitness/" class="">nutrition-for-fitness</a><a href="../tracking-progress-guide/" class="">tracking-progress-guide</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Guides</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="active">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="active">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="active">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Guides</div><div class="back-link" onclick="window.location.href='../'">← Back to Guides</div><ul><li class="file-item " onclick="window.location.href='../fitness-myths-debunked/'; return false;">fitness-myths-debunked</li><li class="file-item active" onclick="window.location.href='../home-workout-guide/'; return false;">home-workout-guide</li><li class="file-item " onclick="window.location.href='../how-to-build-a-fitness-routine/'; return false;">how-to-build-a-fitness-routine</li><li class="file-item " onclick="window.location.href='../no-equipment-workout-guide/'; return false;">no-equipment-workout-guide</li><li class="file-item " onclick="window.location.href='../nutrition-for-fitness/'; return false;">nutrition-for-fitness</li><li class="file-item " onclick="window.location.href='../tracking-progress-guide/'; return false;">tracking-progress-guide</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Fitness</a> <span class="sep">→</span> <a href="../">Guides</a> <span class="sep">→</span> <span class="current">Home Workout Guide</span></nav><h1 class="file-title">Home Workout Guide 📄</h1><p class="file-sub">Create an effective home workout routine with minimal equipment.</p><div class="file-description"><p><strong>Your problem:</strong> You want to work out at home but don't know how to structure a routine.</p><p><strong>This solution:</strong> A guide to designing home workouts using bodyweight, resistance bands, and dumbbells, with sample plans.</p></div><div class="download-section"><a href="https://frge.top/home-workout-guide-ekou3n" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 A home workout can be as effective as a gym workout — it's about consistency and effort.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../study/exam-prep/active-recall-for-exam-prep/" class="related-card">
+                <a href="../../../fitness/recovery/injury-prevention/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Active Recall for Exam Prep</span>
-                            <span class="related-meta">Study / Exam Prep</span>
+                            <span class="related-name">Injury Prevention</span>
+                            <span class="related-meta">Fitness / Recovery</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧠 Active Recall</span>
+                    <span class="related-badge">🛡️ Prevention</span>
                 </a>
             
-                <a href="../../../health/stress/mindfulness-for-beginners/" class="related-card">
+                <a href="../../../technology/cybersecurity/two-factor-authentication-guide/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Mindfulness for Beginners</span>
-                            <span class="related-meta">Health / Stress</span>
+                            <span class="related-name">Two‑Factor Authentication Guide</span>
+                            <span class="related-meta">Technology / Cybersecurity</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧘 Mindfulness</span>
+                    <span class="related-badge">🔐 2FA</span>
                 </a>
             
-                <a href="../../../relationships/dating/how-to-know-when-to-leave-a-relationship/" class="related-card">
+                <a href="../../../travel/hacks/how-to-avoid-overtourism/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Know When to Leave a Relationship</span>
-                            <span class="related-meta">Relationships / Dating</span>
+                            <span class="related-name">How to Avoid Overtourism</span>
+                            <span class="related-meta">Travel / Hacks</span>
                         </div>
                     </div>
-                    <span class="related-badge">🚪 Leaving</span>
+                    <span class="related-badge">🌍 Responsible Travel</span>
                 </a>
             
-                <a href="../../../technology/data/digital-declutter-guide/" class="related-card">
+                <a href="../../../premium/guides/how-to-do-a-deadlift-form-guide/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Digital Declutter Guide</span>
-                            <span class="related-meta">Technology / Data</span>
+                            <span class="related-name">How to Do a Deadlift: Form Guide</span>
+                            <span class="related-meta">Premium • Fitness</span>
                         </div>
                     </div>
-                    <span class="related-badge">🗂️ Declutter</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../finance/debt/credit-score-factors-explained/" class="related-card">
+                <a href="../../../premium/guides/bodyweight-exercises-for-muscle-building/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Credit Score Factors Explained</span>
-                            <span class="related-meta">Finance / Debt</span>
+                            <span class="related-name">Bodyweight Exercises for Muscle Building</span>
+                            <span class="related-meta">Premium • Fitness</span>
                         </div>
                     </div>
-                    <span class="related-badge">📈 Score</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../finance/investing/how-to-start-investing-with-100/" class="related-card">
+                <a href="../../../premium/guides/how-to-build-endurance-cardio-training-plan/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Start Investing with $100</span>
-                            <span class="related-meta">Finance / Investing</span>
+                            <span class="related-name">How to Build Endurance: Cardio Training Plan</span>
+                            <span class="related-meta">Premium • Fitness</span>
                         </div>
                     </div>
-                    <span class="related-badge">💵 Start Small</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

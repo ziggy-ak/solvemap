@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Budgeting</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Budgeting</div><a href="../50-30-20-budget-rule/" class="">50-30-20-budget-rule</a><a href="../7-day-no-spend-challenge/" class="active">7‑Day No‑Spend Challenge</a><a href="../how-to-build-an-emergency-fund/" class="">how-to-build-an-emergency-fund</a><a href="../how-to-track-your-spending/" class="">how-to-track-your-spending</a><a href="../zero-based-budgeting-guide/" class="">zero-based-budgeting-guide</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Budgeting</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Budgeting</div><div class="back-link" onclick="window.location.href='../'">← Back to Budgeting</div><ul><li class="file-item " onclick="window.location.href='../50-30-20-budget-rule/'; return false;">50-30-20-budget-rule</li><li class="file-item active" onclick="window.location.href='../7-day-no-spend-challenge/'; return false;">7-day-no-spend-challenge</li><li class="file-item " onclick="window.location.href='../how-to-build-an-emergency-fund/'; return false;">how-to-build-an-emergency-fund</li><li class="file-item " onclick="window.location.href='../how-to-track-your-spending/'; return false;">how-to-track-your-spending</li><li class="file-item " onclick="window.location.href='../zero-based-budgeting-guide/'; return false;">zero-based-budgeting-guide</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Finance</a> <span class="sep">→</span> <a href="../">Budgeting</a> <span class="sep">→</span> <span class="current">7‑Day No‑Spend Challenge</span></nav><h1 class="file-title">7‑Day No‑Spend Challenge 📄</h1><p class="file-sub">Reset your spending habits with a week of no unnecessary purchases.</p><div class="file-description"><p><strong>Your problem:</strong> You want to curb impulse spending and save money quickly.</p><p><strong>This solution:</strong> A 7‑day challenge with daily rules, tips for success, and reflections to change your spending mindset.</p></div><div class="download-section"><a href="https://frge.top/7-day-no-spend-chall-lfvkvf" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 A no‑spend week can be eye‑opening — you'll discover how much you can save by cutting the extras.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../relationships/self-love/how-to-develop-emotional-intelligence/" class="related-card">
+                <a href="../../../fitness/nutrition/nutrition-for-longevity/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Develop Emotional Intelligence</span>
-                            <span class="related-meta">Relationships / Self Love</span>
+                            <span class="related-name">Nutrition for Longevity</span>
+                            <span class="related-meta">Fitness / Nutrition</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧠 EQ</span>
+                    <span class="related-badge">🌿 Longevity</span>
                 </a>
             
-                <a href="../../../fitness/recovery/post-workout-stretching-routine/" class="related-card">
+                <a href="../../../career/remote-work/time-management-for-freelancers/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Post‑Workout Stretching Routine</span>
-                            <span class="related-meta">Fitness / Recovery</span>
+                            <span class="related-name">Time Management for Freelancers</span>
+                            <span class="related-meta">Career / Remote Work</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧘 Stretch</span>
+                    <span class="related-badge">⏰ Time</span>
                 </a>
             
-                <a href="../../../technology/data/digital-declutter-guide/" class="related-card">
+                <a href="../../../travel/types/adventure-travel-ideas/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Digital Declutter Guide</span>
-                            <span class="related-meta">Technology / Data</span>
+                            <span class="related-name">Adventure Travel Ideas</span>
+                            <span class="related-meta">Travel / Types</span>
                         </div>
                     </div>
-                    <span class="related-badge">🗂️ Declutter</span>
+                    <span class="related-badge">🏔️ Adventure</span>
                 </a>
             
-                <a href="../../../fitness/guides/home-workout-guide/" class="related-card">
+                <a href="../../../premium/guides/how-to-build-an-emergency-fund/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Home Workout Guide</span>
-                            <span class="related-meta">Fitness / Guides</span>
+                            <span class="related-name">How to Build an Emergency Fund</span>
+                            <span class="related-meta">Premium • Finance</span>
                         </div>
                     </div>
-                    <span class="related-badge">🏠 Home</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../relationships/dating/how-to-spot-a-healthy-relationship/" class="related-card">
+                <a href="../../../premium/guides/how-to-pay-off-debt-fast-2-proven-strategies/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Spot a Healthy Relationship</span>
-                            <span class="related-meta">Relationships / Dating</span>
+                            <span class="related-name">How to Pay Off Debt Fast: 2 Proven Strategies</span>
+                            <span class="related-meta">Premium • Finance</span>
                         </div>
                     </div>
-                    <span class="related-badge">✅ Healthy</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../health/first-aid/cpr-choking-first-aid/" class="related-card">
+                <a href="../../../premium/guides/index-funds-vs-etfs-what-s-the-difference/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">CPR & Choking First Aid</span>
-                            <span class="related-meta">Health / First Aid</span>
+                            <span class="related-name">Index Funds vs ETFs: What's the Difference</span>
+                            <span class="related-meta">Premium • Finance</span>
                         </div>
                     </div>
-                    <span class="related-badge">🫀 CPR</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

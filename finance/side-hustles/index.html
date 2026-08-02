@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,9 +374,9 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Finance</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">Side Hustles</div><a href="./affiliate-marketing-for-beginners/">Affiliate Marketing for Beginners</a><a href="./digital-product-stacking/">Digital Product Stacking</a><a href="./how-to-start-freelancing/">How to Start Freelancing</a><a href="./micro-investing-apps-guide/">Micro‑Investing Apps Guide</a><a href="./passive-income-ideas-2026/">Passive Income Ideas 2026</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Finance</div><a href="../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../services/">🛠️ Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="active">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="active">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="active">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Side Hustles</div><div class="back-link" onclick="window.location.href='../'">← Back to Finance</div><ul><li class="file-item" onclick="window.location.href='./affiliate-marketing-for-beginners/'">affiliate-marketing-for-beginners</li><li class="file-item" onclick="window.location.href='./digital-product-stacking/'">digital-product-stacking</li><li class="file-item" onclick="window.location.href='./how-to-start-freelancing/'">how-to-start-freelancing</li><li class="file-item" onclick="window.location.href='./micro-investing-apps-guide/'">micro-investing-apps-guide</li><li class="file-item" onclick="window.location.href='./passive-income-ideas-2026/'">passive-income-ideas-2026</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Finance</a> <span class="sep">→</span> <span class="current">Side-hustles</span></nav><h1>Side Hustles</h1><p class="subtitle">Earn extra income and build multiple revenue streams.</p>
     <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#sidehustle" data-type="tag">#sidehustle</button><button class="filter-btn" data-filter="#freelancing" data-type="tag">#freelancing</button><button class="filter-btn" data-filter="#passiveincome" data-type="tag">#passiveincome</button><button class="filter-btn" data-filter="#entrepreneurship" data-type="tag">#entrepreneurship</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="🌐 Passive" data-type="type">🌐 Passive</button><button class="filter-btn type" data-filter="💼 Freelancing" data-type="type">💼 Freelancing</button><button class="filter-btn type" data-filter="📦 Digital" data-type="type">📦 Digital</button><button class="filter-btn type" data-filter="📱 Apps" data-type="type">📱 Apps</button><button class="filter-btn type" data-filter="🤝 Affiliate" data-type="type">🤝 Affiliate</button></div>
     <div class="file-grid" id="file-grid">

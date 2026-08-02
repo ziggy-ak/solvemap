@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Techniques</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Techniques</div><a href="../active-recall-method/" class="">active-recall-method</a><a href="../feynman-technique/" class="">feynman-technique</a><a href="../mind-mapping-for-students/" class="">mind-mapping-for-students</a><a href="../pomodoro-technique-guide/" class="active">The Pomodoro Technique Guide</a><a href="../spaced-repetition-system/" class="">spaced-repetition-system</a><a href="../sq3r-reading-method/" class="">sq3r-reading-method</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Techniques</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="active">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="active">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="active">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Techniques</div><div class="back-link" onclick="window.location.href='../'">← Back to Techniques</div><ul><li class="file-item " onclick="window.location.href='../active-recall-method/'; return false;">active-recall-method</li><li class="file-item " onclick="window.location.href='../feynman-technique/'; return false;">feynman-technique</li><li class="file-item " onclick="window.location.href='../mind-mapping-for-students/'; return false;">mind-mapping-for-students</li><li class="file-item active" onclick="window.location.href='../pomodoro-technique-guide/'; return false;">pomodoro-technique-guide</li><li class="file-item " onclick="window.location.href='../spaced-repetition-system/'; return false;">spaced-repetition-system</li><li class="file-item " onclick="window.location.href='../sq3r-reading-method/'; return false;">sq3r-reading-method</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Study</a> <span class="sep">→</span> <a href="../">Techniques</a> <span class="sep">→</span> <span class="current">The Pomodoro Technique Guide</span></nav><h1 class="file-title">The Pomodoro Technique Guide 📄</h1><p class="file-sub">Use the Pomodoro technique to boost productivity and maintain focus.</p><div class="file-description"><p><strong>Your problem:</strong> You find it hard to study for long periods without losing concentration.</p><p><strong>This solution:</strong> A guide to the Pomodoro technique — 25 minutes of work, 5 minutes of break, with customisation tips.</p></div><div class="download-section"><a href="https://frge.top/pomodoro-technique-g-qadvd7" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 The Pomodoro technique trains your brain to focus in short bursts — perfect for studying.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../health/first-aid/how-to-recognize-stroke-symptoms/" class="related-card">
+                <a href="../../../travel/hacks/airport-flight-hacks/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Recognize Stroke Symptoms</span>
-                            <span class="related-meta">Health / First Aid</span>
+                            <span class="related-name">Airport & Flight Hacks</span>
+                            <span class="related-meta">Travel / Hacks</span>
                         </div>
                     </div>
-                    <span class="related-badge">🚨 Emergency</span>
+                    <span class="related-badge">✈️ Hacks</span>
                 </a>
             
-                <a href="../../../fitness/supplements/creatine-explained/" class="related-card">
+                <a href="../../../finance/debt/how-to-build-good-credit-score/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Creatine Explained</span>
-                            <span class="related-meta">Fitness / Supplements</span>
+                            <span class="related-name">How to Build a Good Credit Score</span>
+                            <span class="related-meta">Finance / Debt</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧪 Creatine</span>
+                    <span class="related-badge">📈 Build</span>
                 </a>
             
-                <a href="../../../relationships/emotional-health/how-to-cultivate-resilience/" class="related-card">
+                <a href="../../../travel/nomad/best-countries-for-digital-nomads-2026/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Cultivate Resilience</span>
-                            <span class="related-meta">Relationships / Emotional Health</span>
+                            <span class="related-name">Best Countries for Digital Nomads 2026</span>
+                            <span class="related-meta">Travel / Nomad</span>
                         </div>
                     </div>
-                    <span class="related-badge">🛡️ Resilience</span>
+                    <span class="related-badge">🌍 Nomad</span>
                 </a>
             
-                <a href="../../../health/sleep/sleep-hygiene-checklist/" class="related-card">
+                <a href="../../../premium/guides/how-to-improve-concentration/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Sleep Hygiene Checklist</span>
-                            <span class="related-meta">Health / Sleep</span>
+                            <span class="related-name">How to Improve Concentration</span>
+                            <span class="related-meta">Premium • Study</span>
                         </div>
                     </div>
-                    <span class="related-badge">📋 Checklist</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../nutrition/specific-goals/nutrition-for-seniors/" class="related-card">
+                <a href="../../../premium/guides/active-recall-method/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Nutrition for Seniors</span>
-                            <span class="related-meta">Nutrition / Specific Goals</span>
+                            <span class="related-name">Active Recall Method</span>
+                            <span class="related-meta">Premium • Study</span>
                         </div>
                     </div>
-                    <span class="related-badge">👴 Seniors</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../nutrition/specific-goals/nutrition-for-muscle-gain/" class="related-card">
+                <a href="../../../premium/guides/study-break-ideas-recharge-effectively/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Nutrition for Muscle Gain</span>
-                            <span class="related-meta">Nutrition / Specific Goals</span>
+                            <span class="related-name">Study Break Ideas: Recharge Effectively</span>
+                            <span class="related-meta">Premium • Study</span>
                         </div>
                     </div>
-                    <span class="related-badge">💪 Muscle</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Techniques</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Techniques</div><a href="../active-recall-method/" class="">active-recall-method</a><a href="../feynman-technique/" class="">feynman-technique</a><a href="../mind-mapping-for-students/" class="active">Mind Mapping for Students</a><a href="../pomodoro-technique-guide/" class="">pomodoro-technique-guide</a><a href="../spaced-repetition-system/" class="">spaced-repetition-system</a><a href="../sq3r-reading-method/" class="">sq3r-reading-method</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Techniques</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="active">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="active">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="active">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Techniques</div><div class="back-link" onclick="window.location.href='../'">← Back to Techniques</div><ul><li class="file-item " onclick="window.location.href='../active-recall-method/'; return false;">active-recall-method</li><li class="file-item " onclick="window.location.href='../feynman-technique/'; return false;">feynman-technique</li><li class="file-item active" onclick="window.location.href='../mind-mapping-for-students/'; return false;">mind-mapping-for-students</li><li class="file-item " onclick="window.location.href='../pomodoro-technique-guide/'; return false;">pomodoro-technique-guide</li><li class="file-item " onclick="window.location.href='../spaced-repetition-system/'; return false;">spaced-repetition-system</li><li class="file-item " onclick="window.location.href='../sq3r-reading-method/'; return false;">sq3r-reading-method</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Study</a> <span class="sep">→</span> <a href="../">Techniques</a> <span class="sep">→</span> <span class="current">Mind Mapping for Students</span></nav><h1 class="file-title">Mind Mapping for Students 📄</h1><p class="file-sub">Visualise complex information with mind maps to enhance understanding and memory.</p><div class="file-description"><p><strong>Your problem:</strong> You struggle to connect ideas and see the big picture.</p><p><strong>This solution:</strong> A guide to creating effective mind maps, with examples and tips for using colours, images, and branches.</p></div><div class="download-section"><a href="https://frge.top/mind-mapping-for-stu-mqck50" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Mind maps mirror how your brain works — use them to brainstorm, plan essays, and revise.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../nutrition/basics/micronutrients-guide/" class="related-card">
+                <a href="../../../fitness/cardio/cardio-vs-strength-training/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Micronutrients Guide</span>
-                            <span class="related-meta">Nutrition / Basics</span>
+                            <span class="related-name">Cardio vs Strength Training</span>
+                            <span class="related-meta">Fitness / Cardio</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧪 Micronutrients</span>
+                    <span class="related-badge">⚖️ Balance</span>
                 </a>
             
-                <a href="../../../career/growth/how-to-develop-leadership-skills/" class="related-card">
+                <a href="../../../nutrition/specific-goals/nutrition-for-mental-health/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Develop Leadership Skills</span>
-                            <span class="related-meta">Career / Growth</span>
+                            <span class="related-name">Nutrition for Mental Health</span>
+                            <span class="related-meta">Nutrition / Specific Goals</span>
                         </div>
                     </div>
-                    <span class="related-badge">🗣️ Leadership</span>
+                    <span class="related-badge">🧠 Mental Health</span>
                 </a>
             
-                <a href="../../../technology/wellbeing/how-to-manage-digital-distractions/" class="related-card">
+                <a href="../../../finance/side-hustles/how-to-start-freelancing/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Manage Digital Distractions</span>
-                            <span class="related-meta">Technology / Wellbeing</span>
+                            <span class="related-name">How to Start Freelancing</span>
+                            <span class="related-meta">Finance / Side Hustles</span>
                         </div>
                     </div>
-                    <span class="related-badge">📱 Focus</span>
+                    <span class="related-badge">💼 Freelancing</span>
                 </a>
             
-                <a href="../../../relationships/self-love/how-to-overcome-fear-of-vulnerability/" class="related-card">
+                <a href="../../../premium/guides/feynman-technique-learn-anything-fast/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Overcome Fear of Vulnerability</span>
-                            <span class="related-meta">Relationships / Self Love</span>
+                            <span class="related-name">Feynman Technique: Learn Anything Fast</span>
+                            <span class="related-meta">Premium • Study</span>
                         </div>
                     </div>
-                    <span class="related-badge">🛡️ Vulnerability</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../technology/cybersecurity/how-to-protect-your-data-online/" class="related-card">
+                <a href="../../../premium/guides/how-to-stop-procrastinating/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Protect Your Data Online</span>
-                            <span class="related-meta">Technology / Cybersecurity</span>
+                            <span class="related-name">How to Stop Procrastinating</span>
+                            <span class="related-meta">Premium • Study</span>
                         </div>
                     </div>
-                    <span class="related-badge">🛡️ Protection</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../finance/budgeting/how-to-build-an-emergency-fund/" class="related-card">
+                <a href="../../../premium/guides/active-recall-method/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Build an Emergency Fund</span>
-                            <span class="related-meta">Finance / Budgeting</span>
+                            <span class="related-name">Active Recall Method</span>
+                            <span class="related-meta">Premium • Study</span>
                         </div>
                     </div>
-                    <span class="related-badge">🛡️ Safety Net</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

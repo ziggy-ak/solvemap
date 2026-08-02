@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Cybersecurity</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Cybersecurity</div><a href="../how-to-create-a-strong-password/" class="">how-to-create-a-strong-password</a><a href="../how-to-protect-your-data-online/" class="">how-to-protect-your-data-online</a><a href="../how-to-spot-phishing-emails/" class="">how-to-spot-phishing-emails</a><a href="../privacy-settings-on-social-media/" class="">privacy-settings-on-social-media</a><a href="../two-factor-authentication-guide/" class="">two-factor-authentication-guide</a><a href="../vpn-guide-for-beginners/" class="active">VPN Guide for Beginners</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Cybersecurity</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="active">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="active">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="active">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Cybersecurity</div><div class="back-link" onclick="window.location.href='../'">← Back to Cybersecurity</div><ul><li class="file-item " onclick="window.location.href='../how-to-create-a-strong-password/'; return false;">how-to-create-a-strong-password</li><li class="file-item " onclick="window.location.href='../how-to-protect-your-data-online/'; return false;">how-to-protect-your-data-online</li><li class="file-item " onclick="window.location.href='../how-to-spot-phishing-emails/'; return false;">how-to-spot-phishing-emails</li><li class="file-item " onclick="window.location.href='../privacy-settings-on-social-media/'; return false;">privacy-settings-on-social-media</li><li class="file-item " onclick="window.location.href='../two-factor-authentication-guide/'; return false;">two-factor-authentication-guide</li><li class="file-item active" onclick="window.location.href='../vpn-guide-for-beginners/'; return false;">vpn-guide-for-beginners</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Technology</a> <span class="sep">→</span> <a href="../">Cybersecurity</a> <span class="sep">→</span> <span class="current">VPN Guide for Beginners</span></nav><h1 class="file-title">VPN Guide for Beginners 📄</h1><p class="file-sub">Protect your privacy online with a VPN — a beginner's guide.</p><div class="file-description"><p><strong>Your problem:</strong> You've heard about VPNs but don't understand what they do or why you need one.</p><p><strong>This solution:</strong> A beginner's guide to VPNs — what they are, how they work, and how to choose the right one for your needs.</p></div><div class="download-section"><a href="https://frge.top/vpn-guide-for-beginn-2pzrz8" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 A VPN is essential for protecting your privacy on public Wi‑Fi and beyond.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../relationships/building/how-to-support-your-partner-without-losing-yourself/" class="related-card">
+                <a href="../../../travel/nomad/remote-work-travel-setup/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Support Your Partner Without Losing Yourself</span>
-                            <span class="related-meta">Relationships / Building</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">⚖️ Balance</span>
-                </a>
-            
-                <a href="../../../study/techniques/spaced-repetition-system/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">Spaced Repetition System</span>
-                            <span class="related-meta">Study / Techniques</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">🔄 Spaced</span>
-                </a>
-            
-                <a href="../../../fitness/supplements/vitamins-minerals-for-active-people/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">Vitamins & Minerals for Active People</span>
-                            <span class="related-meta">Fitness / Supplements</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">💊 Micronutrients</span>
-                </a>
-            
-                <a href="../../../productivity/time-management/time-blocking-vs-time-boxing-explained/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">Time Blocking vs Time Boxing Explained</span>
-                            <span class="related-meta">Productivity / Time Management</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">📅 Planning</span>
-                </a>
-            
-                <a href="../../../travel/nomad/visa-legal-tips-for-digital-nomads/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">Visa & Legal Tips for Digital Nomads</span>
+                            <span class="related-name">Remote Work Travel Setup</span>
                             <span class="related-meta">Travel / Nomad</span>
                         </div>
                     </div>
-                    <span class="related-badge">📜 Visas</span>
+                    <span class="related-badge">💻 Setup</span>
                 </a>
             
-                <a href="../../../productivity/systems/best-productivity-apps-2026/" class="related-card">
+                <a href="../../../travel/planning/travel-insurance-guide/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Best Productivity Apps 2026</span>
-                            <span class="related-meta">Productivity / Systems</span>
+                            <span class="related-name">Travel Insurance Guide</span>
+                            <span class="related-meta">Travel / Planning</span>
                         </div>
                     </div>
-                    <span class="related-badge">📱 Apps</span>
+                    <span class="related-badge">🛡️ Insurance</span>
+                </a>
+            
+                <a href="../../../travel/solo/group-travel-planning-guide/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">Group Travel Planning Guide</span>
+                            <span class="related-meta">Travel / Solo</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">👥 Group</span>
+                </a>
+            
+                <a href="../../../premium/guides/best-platforms-to-learn-tech-skills/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">Best Platforms to Learn Tech Skills</span>
+                            <span class="related-meta">Premium • Technology</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
+                </a>
+            
+                <a href="../../../premium/guides/how-to-automate-repetitive-tasks/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Automate Repetitive Tasks</span>
+                            <span class="related-meta">Premium • Technology</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
+                </a>
+            
+                <a href="../../../premium/guides/how-to-use-chatgpt-effectively/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Use ChatGPT Effectively</span>
+                            <span class="related-meta">Premium • Technology</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

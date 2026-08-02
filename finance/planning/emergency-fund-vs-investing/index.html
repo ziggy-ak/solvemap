@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Planning</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Planning</div><a href="../emergency-fund-vs-investing/" class="active">Emergency Fund vs Investing</a><a href="../financial-planning-for-gen-z/" class="">financial-planning-for-gen-z</a><a href="../how-to-build-wealth-in-your-20s/" class="">how-to-build-wealth-in-your-20s</a><a href="../how-to-recover-from-overspending/" class="">how-to-recover-from-overspending</a><a href="../how-to-set-financial-goals/" class="">how-to-set-financial-goals</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Planning</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Planning</div><div class="back-link" onclick="window.location.href='../'">← Back to Planning</div><ul><li class="file-item active" onclick="window.location.href='../emergency-fund-vs-investing/'; return false;">emergency-fund-vs-investing</li><li class="file-item " onclick="window.location.href='../financial-planning-for-gen-z/'; return false;">financial-planning-for-gen-z</li><li class="file-item " onclick="window.location.href='../how-to-build-wealth-in-your-20s/'; return false;">how-to-build-wealth-in-your-20s</li><li class="file-item " onclick="window.location.href='../how-to-recover-from-overspending/'; return false;">how-to-recover-from-overspending</li><li class="file-item " onclick="window.location.href='../how-to-set-financial-goals/'; return false;">how-to-set-financial-goals</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Finance</a> <span class="sep">→</span> <a href="../">Planning</a> <span class="sep">→</span> <span class="current">Emergency Fund vs Investing</span></nav><h1 class="file-title">Emergency Fund vs Investing 📄</h1><p class="file-sub">Decide how to balance saving for emergencies and investing for growth.</p><div class="file-description"><p><strong>Your problem:</strong> You don't know whether to build an emergency fund first or start investing.</p><p><strong>This solution:</strong> A guide to prioritising your financial goals, with a recommended order: emergency fund, high‑interest debt, then investing.</p></div><div class="download-section"><a href="https://frge.top/emergency-fund-vs-in-kvtyr8" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Build a small emergency fund, then start investing while continuing to grow your savings.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../career/branding/how-to-build-a-personal-brand-on-linkedin/" class="related-card">
+                <a href="../../../career/remote-work/freelance-pricing-guide/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Build a Personal Brand on LinkedIn</span>
+                            <span class="related-name">Freelance Pricing Guide</span>
+                            <span class="related-meta">Career / Remote Work</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">💰 Pricing</span>
+                </a>
+            
+                <a href="../../../career/branding/how-to-get-noticed-by-recruiters/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Get Noticed by Recruiters</span>
                             <span class="related-meta">Career / Branding</span>
                         </div>
                     </div>
-                    <span class="related-badge">📱 LinkedIn</span>
+                    <span class="related-badge">📢 Visibility</span>
                 </a>
             
-                <a href="../../../career/change/how-to-identify-your-transferable-skills/" class="related-card">
+                <a href="../../../technology/ai/ai-for-content-creation/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Identify Your Transferable Skills</span>
-                            <span class="related-meta">Career / Change</span>
+                            <span class="related-name">AI for Content Creation</span>
+                            <span class="related-meta">Technology / Ai</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 Skills</span>
+                    <span class="related-badge">✍️ Content</span>
                 </a>
             
-                <a href="../../../career/branding/how-to-start-a-professional-blog/" class="related-card">
+                <a href="../../../premium/guides/micro-investing-apps-guide/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Start a Professional Blog</span>
-                            <span class="related-meta">Career / Branding</span>
+                            <span class="related-name">Micro-Investing Apps Guide</span>
+                            <span class="related-meta">Premium • Finance</span>
                         </div>
                     </div>
-                    <span class="related-badge">✍️ Blogging</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../study/focus/mindfulness-for-students/" class="related-card">
+                <a href="../../../premium/guides/how-to-save-for-a-house-down-payment-plan/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Mindfulness for Students</span>
-                            <span class="related-meta">Study / Focus</span>
+                            <span class="related-name">How to Save for a House: Down Payment Plan</span>
+                            <span class="related-meta">Premium • Finance</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧘 Mindfulness</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../finance/investing/index-funds-vs-etfs-what-s-the-difference/" class="related-card">
+                <a href="../../../premium/guides/how-to-build-an-emergency-fund/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Index Funds vs ETFs — What's the Difference?</span>
-                            <span class="related-meta">Finance / Investing</span>
+                            <span class="related-name">How to Build an Emergency Fund</span>
+                            <span class="related-meta">Premium • Finance</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 Investing</span>
-                </a>
-            
-                <a href="../../../travel/solo/how-to-travel-with-friends-without-fighting/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">How to Travel with Friends Without Fighting</span>
-                            <span class="related-meta">Travel / Solo</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">🤝 Friendship</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

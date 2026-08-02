@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,9 +374,9 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← All Categories</div><a href="../services/">🛠️ Services</a><div class="menu-section-title">Nutrition</div><a href="./basics/">Basics</a><a href="./gut-health/">Gut-health</a><a href="./meal-planning/">Meal-planning</a><a href="./specific-goals/">Specific-goals</a><a href="./supplements/">Supplements</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← All Categories</div><a href="../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../services/">🛠️ Services</a><a href="../fitness/" class="">Fitness</a><a href="../finance/" class="">Finance</a><a href="../health/" class="">Health</a><a href="../nutrition/" class="active">Nutrition</a><a href="../career/" class="">Career</a><a href="../study/" class="">Study</a><a href="../technology/" class="">Technology</a><a href="../travel/" class="">Travel</a><a href="../relationships/" class="">Relationships</a><a href="../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../services/">Services</a><a href="../fitness/" class="">Fitness</a><a href="../finance/" class="">Finance</a><a href="../health/" class="">Health</a><a href="../nutrition/" class="active">Nutrition</a><a href="../career/" class="">Career</a><a href="../study/" class="">Study</a><a href="../technology/" class="">Technology</a><a href="../travel/" class="">Travel</a><a href="../relationships/" class="">Relationships</a><a href="../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../services/">Services</a><a href="../fitness/" class="">Fitness</a><a href="../finance/" class="">Finance</a><a href="../health/" class="">Health</a><a href="../nutrition/" class="active">Nutrition</a><a href="../career/" class="">Career</a><a href="../study/" class="">Study</a><a href="../technology/" class="">Technology</a><a href="../travel/" class="">Travel</a><a href="../relationships/" class="">Relationships</a><a href="../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📂 Nutrition</div><ul><li class="sub-link" onclick="window.location.href='./basics/'">Basics</li><li class="sub-link" onclick="window.location.href='./gut-health/'">Gut-health</li><li class="sub-link" onclick="window.location.href='./meal-planning/'">Meal-planning</li><li class="sub-link" onclick="window.location.href='./specific-goals/'">Specific-goals</li><li class="sub-link" onclick="window.location.href='./supplements/'">Supplements</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../index.html">Home</a> <span class="sep">→</span> <span class="current">Nutrition</span></nav><h1>Nutrition</h1><p class="subtitle">Diets, meal prep, gut health &amp; supplements</p><div class="tags"><span>#healthyeating</span><span>#nutrition</span><span>#wellness</span><span>#diet</span></div><div class="content-grid"><div class="trends"><h3>🔥 What's trending</h3><ul><li>🥗 A healthy diet is based on whole, minimally processed foods</li><li>🌿 The Mediterranean diet is consistently validated for health</li><li>🍎 Fibermaxxing is the 2026 trend</li><li>💧 Hydration is essential for overall health</li></ul></div><div class="why-section"><h3>💡 Why Nutrition</h3><ul><li>🥗 Eat a variety of fruits, vegetables, and whole grains</li><li>🌿 Follow a Mediterranean‑style eating pattern</li><li>🍎 Increase your fibre intake gradually</li><li>💧 Drink plenty of water throughout the day</li></ul></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Food is not just fuel — it's information that tells your body how to function.</div></div></div></main></div>
     <footer class="footer">
     <div class="footer-subscribe">

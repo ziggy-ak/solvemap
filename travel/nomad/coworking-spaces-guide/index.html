@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Nomad</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Nomad</div><a href="../best-countries-for-digital-nomads-2026/" class="">best-countries-for-digital-nomads-2026</a><a href="../coworking-spaces-guide/" class="active">Coworking Spaces Guide</a><a href="../how-to-become-a-digital-nomad/" class="">how-to-become-a-digital-nomad</a><a href="../how-to-handle-time-zones-while-travelling/" class="">how-to-handle-time-zones-while-travelling</a><a href="../remote-work-travel-setup/" class="">remote-work-travel-setup</a><a href="../visa-legal-tips-for-digital-nomads/" class="">visa-legal-tips-for-digital-nomads</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Nomad</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="active">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="active">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="active">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Nomad</div><div class="back-link" onclick="window.location.href='../'">← Back to Nomad</div><ul><li class="file-item " onclick="window.location.href='../best-countries-for-digital-nomads-2026/'; return false;">best-countries-for-digital-nomads-2026</li><li class="file-item active" onclick="window.location.href='../coworking-spaces-guide/'; return false;">coworking-spaces-guide</li><li class="file-item " onclick="window.location.href='../how-to-become-a-digital-nomad/'; return false;">how-to-become-a-digital-nomad</li><li class="file-item " onclick="window.location.href='../how-to-handle-time-zones-while-travelling/'; return false;">how-to-handle-time-zones-while-travelling</li><li class="file-item " onclick="window.location.href='../remote-work-travel-setup/'; return false;">remote-work-travel-setup</li><li class="file-item " onclick="window.location.href='../visa-legal-tips-for-digital-nomads/'; return false;">visa-legal-tips-for-digital-nomads</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Travel</a> <span class="sep">→</span> <a href="../">Nomad</a> <span class="sep">→</span> <span class="current">Coworking Spaces Guide</span></nav><h1 class="file-title">Coworking Spaces Guide 📄</h1><p class="file-sub">Find and use coworking spaces for productivity and community.</p><div class="file-description"><p><strong>Your problem:</strong> You're a digital nomad and need productive workspaces with reliable internet.</p><p><strong>This solution:</strong> A guide to coworking spaces — finding the right space, what to look for, and building community while working remotely.</p></div><div class="download-section"><a href="https://frge.top/coworking-spaces-gui-lp2rh0" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Coworking spaces are more than just desks — they're communities of like‑minded professionals.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../relationships/communication/how-to-apologize-and-repair-after-a-fight/" class="related-card">
+                <a href="../../../fitness/workouts/walking-workouts/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Apologize and Repair After a Fight</span>
-                            <span class="related-meta">Relationships / Communication</span>
+                            <span class="related-name">Walking Workouts</span>
+                            <span class="related-meta">Fitness / Workouts</span>
                         </div>
                     </div>
-                    <span class="related-badge">🤝 Repair</span>
+                    <span class="related-badge">🚶 Workout</span>
                 </a>
             
-                <a href="../../../technology/data/digital-declutter-guide/" class="related-card">
+                <a href="../../../finance/planning/how-to-set-financial-goals/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Digital Declutter Guide</span>
-                            <span class="related-meta">Technology / Data</span>
+                            <span class="related-name">How to Set Financial Goals</span>
+                            <span class="related-meta">Finance / Planning</span>
                         </div>
                     </div>
-                    <span class="related-badge">🗂️ Declutter</span>
+                    <span class="related-badge">🎯 Goals</span>
                 </a>
             
-                <a href="../../../career/change/how-to-start-a-business-on-the-side/" class="related-card">
+                <a href="../../../finance/budgeting/how-to-track-your-spending/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Start a Business on the Side</span>
-                            <span class="related-meta">Career / Change</span>
+                            <span class="related-name">How to Track Your Spending</span>
+                            <span class="related-meta">Finance / Budgeting</span>
                         </div>
                     </div>
-                    <span class="related-badge">🚀 Business</span>
+                    <span class="related-badge">📊 Tracking</span>
                 </a>
             
-                <a href="../../../travel/planning/how-to-find-cheap-flights/" class="related-card">
+                <a href="../../../premium/guides/remote-work-travel-setup/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">Remote Work Travel Setup</span>
+                            <span class="related-meta">Premium • Travel</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
+                </a>
+            
+                <a href="../../../premium/guides/how-to-find-cheap-flights/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
                             <span class="related-name">How to Find Cheap Flights</span>
-                            <span class="related-meta">Travel / Planning</span>
+                            <span class="related-meta">Premium • Travel</span>
                         </div>
                     </div>
-                    <span class="related-badge">✈️ Flights</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../productivity/time-management/time-blocking-vs-time-boxing-explained/" class="related-card">
+                <a href="../../../premium/guides/solo-travel-safety-tips/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Time Blocking vs Time Boxing Explained</span>
-                            <span class="related-meta">Productivity / Time Management</span>
+                            <span class="related-name">Solo Travel Safety Tips</span>
+                            <span class="related-meta">Premium • Travel</span>
                         </div>
                     </div>
-                    <span class="related-badge">📅 Planning</span>
-                </a>
-            
-                <a href="../../../technology/ai/ai-tools-for-everyday-life/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">AI Tools for Everyday Life</span>
-                            <span class="related-meta">Technology / Ai</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">📱 AI Tools</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

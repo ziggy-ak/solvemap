@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Budgeting</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Budgeting</div><a href="../50-30-20-budget-rule/" class="">50-30-20-budget-rule</a><a href="../7-day-no-spend-challenge/" class="">7-day-no-spend-challenge</a><a href="../how-to-build-an-emergency-fund/" class="">how-to-build-an-emergency-fund</a><a href="../how-to-track-your-spending/" class="">how-to-track-your-spending</a><a href="../zero-based-budgeting-guide/" class="active">Zero‑Based Budgeting Guide</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Budgeting</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Budgeting</div><div class="back-link" onclick="window.location.href='../'">← Back to Budgeting</div><ul><li class="file-item " onclick="window.location.href='../50-30-20-budget-rule/'; return false;">50-30-20-budget-rule</li><li class="file-item " onclick="window.location.href='../7-day-no-spend-challenge/'; return false;">7-day-no-spend-challenge</li><li class="file-item " onclick="window.location.href='../how-to-build-an-emergency-fund/'; return false;">how-to-build-an-emergency-fund</li><li class="file-item " onclick="window.location.href='../how-to-track-your-spending/'; return false;">how-to-track-your-spending</li><li class="file-item active" onclick="window.location.href='../zero-based-budgeting-guide/'; return false;">zero-based-budgeting-guide</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Finance</a> <span class="sep">→</span> <a href="../">Budgeting</a> <span class="sep">→</span> <span class="current">Zero‑Based Budgeting Guide</span></nav><h1 class="file-title">Zero‑Based Budgeting Guide 📄</h1><p class="file-sub">Give every dollar a job with zero‑based budgeting.</p><div class="file-description"><p><strong>Your problem:</strong> You want a budgeting system that ensures your money is fully allocated.</p><p><strong>This solution:</strong> A step‑by‑step guide to zero‑based budgeting, where your income minus expenses equals zero, with practical examples.</p></div><div class="download-section"><a href="https://frge.top/zero-based-budgeting-2v2ch6" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Zero‑based budgeting gives you complete control — you decide where every dollar goes.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../technology/cybersecurity/privacy-settings-on-social-media/" class="related-card">
+                <a href="../../../relationships/communication/how-to-communicate-effectively-in-relationships/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Privacy Settings on Social Media</span>
-                            <span class="related-meta">Technology / Cybersecurity</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">🔒 Privacy</span>
-                </a>
-            
-                <a href="../../../productivity/time-management/getting-things-done-the-5-step-workflow/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">Getting Things Done — The 5‑Step Workflow</span>
-                            <span class="related-meta">Productivity / Time Management</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">📊 GTD</span>
-                </a>
-            
-                <a href="../../../productivity/systems/digital-minimalism-guide/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">Digital Minimalism Guide</span>
-                            <span class="related-meta">Productivity / Systems</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">📱 Minimalism</span>
-                </a>
-            
-                <a href="../../../relationships/communication/how-to-apologize-and-repair-after-a-fight/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">How to Apologize and Repair After a Fight</span>
+                            <span class="related-name">How to Communicate Effectively in Relationships</span>
                             <span class="related-meta">Relationships / Communication</span>
                         </div>
                     </div>
-                    <span class="related-badge">🤝 Repair</span>
+                    <span class="related-badge">🗣️ Communication</span>
                 </a>
             
-                <a href="../../../productivity/systems/the-para-method-organise-your-digital-life/" class="related-card">
+                <a href="../../../finance/literacy/how-to-read-a-bank-statement/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">The PARA Method — Organise Your Digital Life</span>
-                            <span class="related-meta">Productivity / Systems</span>
+                            <span class="related-name">How to Read a Bank Statement</span>
+                            <span class="related-meta">Finance / Literacy</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 Organisation</span>
+                    <span class="related-badge">🏦 Banking</span>
                 </a>
             
-                <a href="../../../study/focus/how-to-improve-concentration/" class="related-card">
+                <a href="../../../health/immunity/immunity-boosting-foods/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Improve Concentration</span>
-                            <span class="related-meta">Study / Focus</span>
+                            <span class="related-name">Immunity‑Boosting Foods</span>
+                            <span class="related-meta">Health / Immunity</span>
                         </div>
                     </div>
-                    <span class="related-badge">🎯 Concentration</span>
+                    <span class="related-badge">🥗 Nutrition</span>
+                </a>
+            
+                <a href="../../../premium/guides/credit-score-factors-explained/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">Credit Score Factors Explained</span>
+                            <span class="related-meta">Premium • Finance</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
+                </a>
+            
+                <a href="../../../premium/guides/50-30-20-budget-rule-simple-effective/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">50/30/20 Budget Rule: Simple. Effective.</span>
+                            <span class="related-meta">Premium • Finance</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
+                </a>
+            
+                <a href="../../../premium/guides/7-day-no-spend-challenge/" class="related-card premium-card">
+                    <div class="related-left">
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
+                        <div class="related-info">
+                            <span class="related-name">7-Day No-Spend Challenge</span>
+                            <span class="related-meta">Premium • Finance</span>
+                        </div>
+                    </div>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

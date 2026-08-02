@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,9 +374,9 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Health</div><a href="../../services/">🛠️ Services</a><div class="menu-section-title">First Aid & Emergency</div><a href="./cpr-choking-first-aid/">CPR & Choking First Aid</a><a href="./home-first-aid-kit-checklist/">Home First‑Aid Kit Checklist</a><a href="./how-to-recognize-stroke-symptoms/">How to Recognize Stroke Symptoms</a><a href="./how-to-treat-minor-wounds/">How to Treat Minor Wounds</a><a href="./natural-remedies-for-common-ailments/">Natural Remedies for Common Ailments</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Health</div><a href="../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../services/">🛠️ Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="active">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="active">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="active">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 First Aid & Emergency</div><div class="back-link" onclick="window.location.href='../'">← Back to Health</div><ul><li class="file-item" onclick="window.location.href='./cpr-choking-first-aid/'">cpr-choking-first-aid</li><li class="file-item" onclick="window.location.href='./home-first-aid-kit-checklist/'">home-first-aid-kit-checklist</li><li class="file-item" onclick="window.location.href='./how-to-recognize-stroke-symptoms/'">how-to-recognize-stroke-symptoms</li><li class="file-item" onclick="window.location.href='./how-to-treat-minor-wounds/'">how-to-treat-minor-wounds</li><li class="file-item" onclick="window.location.href='./natural-remedies-for-common-ailments/'">natural-remedies-for-common-ailments</li></ul></nav><main class="main-content" id="main-content"><div id="content-inner" class="fade-in"><nav class="breadcrumbs"><a href="../../index.html">Home</a> <span class="sep">→</span> <a href="../">Health</a> <span class="sep">→</span> <span class="current">First-aid</span></nav><h1>First Aid & Emergency</h1><p class="subtitle">Be prepared for common injuries and emergencies with practical first‑aid knowledge.</p>
     <div class="filter-bar"><span class="filter-label">Tags:</span><button class="filter-btn active" data-filter="all" data-type="tag">All</button><button class="filter-btn" data-filter="#firstaid" data-type="tag">#firstaid</button><button class="filter-btn" data-filter="#emergency" data-type="tag">#emergency</button><button class="filter-btn" data-filter="#safety" data-type="tag">#safety</button><button class="filter-btn" data-filter="#health" data-type="tag">#health</button><span class="filter-label" style="margin-left:16px;">Type:</span><button class="filter-btn type active" data-filter="all" data-type="type">All</button><button class="filter-btn type" data-filter="🌿 Natural" data-type="type">🌿 Natural</button><button class="filter-btn type" data-filter="📋 Checklist" data-type="type">📋 Checklist</button><button class="filter-btn type" data-filter="🚨 Emergency" data-type="type">🚨 Emergency</button><button class="filter-btn type" data-filter="🩹 Wound Care" data-type="type">🩹 Wound Care</button><button class="filter-btn type" data-filter="🫀 CPR" data-type="type">🫀 CPR</button></div>
     <div class="file-grid" id="file-grid">

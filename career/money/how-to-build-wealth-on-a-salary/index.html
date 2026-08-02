@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Money</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Money</div><a href="../how-to-ask-for-a-pay-rise/" class="">how-to-ask-for-a-pay-rise</a><a href="../how-to-build-wealth-on-a-salary/" class="active">How to Build Wealth on a Salary</a><a href="../how-to-manage-a-side-hustle-and-full-time-job/" class="">how-to-manage-a-side-hustle-and-full-time-job</a><a href="../how-to-start-investing-as-a-professional/" class="">how-to-start-investing-as-a-professional</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Money</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="active">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="active">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="active">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Money</div><div class="back-link" onclick="window.location.href='../'">← Back to Money</div><ul><li class="file-item " onclick="window.location.href='../how-to-ask-for-a-pay-rise/'; return false;">how-to-ask-for-a-pay-rise</li><li class="file-item active" onclick="window.location.href='../how-to-build-wealth-on-a-salary/'; return false;">how-to-build-wealth-on-a-salary</li><li class="file-item " onclick="window.location.href='../how-to-manage-a-side-hustle-and-full-time-job/'; return false;">how-to-manage-a-side-hustle-and-full-time-job</li><li class="file-item " onclick="window.location.href='../how-to-start-investing-as-a-professional/'; return false;">how-to-start-investing-as-a-professional</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Career</a> <span class="sep">→</span> <a href="../">Money</a> <span class="sep">→</span> <span class="current">How to Build Wealth on a Salary</span></nav><h1 class="file-title">How to Build Wealth on a Salary 📄</h1><p class="file-sub">Build wealth through disciplined saving and investing, even on a fixed income.</p><div class="file-description"><p><strong>Your problem:</strong> You think you can't build wealth on a salary.</p><p><strong>This solution:</strong> A guide to saving aggressively, investing consistently, and growing your income through side hustles and career advancement.</p></div><div class="download-section"><a href="https://frge.top/how-to-build-wealth-m5hnno" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Wealth is built not by what you earn, but by what you keep and grow.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../travel/types/backpacking-guide-for-beginners/" class="related-card">
+                <a href="../../../travel/types/adventure-travel-ideas/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Backpacking Guide for Beginners</span>
+                            <span class="related-name">Adventure Travel Ideas</span>
                             <span class="related-meta">Travel / Types</span>
                         </div>
                     </div>
-                    <span class="related-badge">🎒 Backpacking</span>
+                    <span class="related-badge">🏔️ Adventure</span>
                 </a>
             
-                <a href="../../../technology/cybersecurity/vpn-guide-for-beginners/" class="related-card">
+                <a href="../../../career/growth/how-to-ask-for-a-promotion/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">VPN Guide for Beginners</span>
-                            <span class="related-meta">Technology / Cybersecurity</span>
+                            <span class="related-name">How to Ask for a Promotion</span>
+                            <span class="related-meta">Career / Growth</span>
                         </div>
                     </div>
-                    <span class="related-badge">🔒 Privacy</span>
+                    <span class="related-badge">📈 Promotion</span>
                 </a>
             
-                <a href="../../../fitness/guides/tracking-progress-guide/" class="related-card">
+                <a href="../../../health/sleep/sleep-hygiene-checklist/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Tracking Progress Guide</span>
-                            <span class="related-meta">Fitness / Guides</span>
+                            <span class="related-name">Sleep Hygiene Checklist</span>
+                            <span class="related-meta">Health / Sleep</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 Progress</span>
+                    <span class="related-badge">📋 Checklist</span>
                 </a>
             
-                <a href="../../../fitness/strength/compound-vs-isolation-exercises/" class="related-card">
+                <a href="../../../premium/guides/how-to-follow-up-after-an-interview/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Compound vs Isolation Exercises</span>
-                            <span class="related-meta">Fitness / Strength</span>
+                            <span class="related-name">How to Follow Up After an Interview</span>
+                            <span class="related-meta">Premium • Career</span>
                         </div>
                     </div>
-                    <span class="related-badge">🏋️ Exercises</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../career/remote-work/how-to-transition-to-freelancing/" class="related-card">
+                <a href="../../../premium/guides/how-to-answer-tell-me-about-yourself/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Transition to Freelancing</span>
-                            <span class="related-meta">Career / Remote Work</span>
+                            <span class="related-name">How to Answer 'Tell Me About Yourself'</span>
+                            <span class="related-meta">Premium • Career</span>
                         </div>
                     </div>
-                    <span class="related-badge">💼 Freelance</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../fitness/recovery/sleep-guide-for-better-recovery/" class="related-card">
+                <a href="../../../premium/guides/how-to-find-a-mentor/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Sleep Guide for Better Recovery</span>
-                            <span class="related-meta">Fitness / Recovery</span>
+                            <span class="related-name">How to Find a Mentor</span>
+                            <span class="related-meta">Premium • Career</span>
                         </div>
                     </div>
-                    <span class="related-badge">😴 Sleep</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

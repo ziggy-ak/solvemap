@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Posture</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Posture</div><a href="../daily-posture-check-routine/" class="">daily-posture-check-routine</a><a href="../desk-ergonomics-guide/" class="">desk-ergonomics-guide</a><a href="../exercises-for-lower-back-pain/" class="active">Exercises for Lower Back Pain</a><a href="../how-to-sit-properly/" class="">how-to-sit-properly</a><a href="../morning-mobility-flow/" class="">morning-mobility-flow</a><a href="../neck-shoulder-tension-relief/" class="">neck-shoulder-tension-relief</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Posture</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="active">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="active">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="active">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Posture</div><div class="back-link" onclick="window.location.href='../'">← Back to Posture</div><ul><li class="file-item " onclick="window.location.href='../daily-posture-check-routine/'; return false;">daily-posture-check-routine</li><li class="file-item " onclick="window.location.href='../desk-ergonomics-guide/'; return false;">desk-ergonomics-guide</li><li class="file-item active" onclick="window.location.href='../exercises-for-lower-back-pain/'; return false;">exercises-for-lower-back-pain</li><li class="file-item " onclick="window.location.href='../how-to-sit-properly/'; return false;">how-to-sit-properly</li><li class="file-item " onclick="window.location.href='../morning-mobility-flow/'; return false;">morning-mobility-flow</li><li class="file-item " onclick="window.location.href='../neck-shoulder-tension-relief/'; return false;">neck-shoulder-tension-relief</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Health</a> <span class="sep">→</span> <a href="../">Posture</a> <span class="sep">→</span> <span class="current">Exercises for Lower Back Pain</span></nav><h1 class="file-title">Exercises for Lower Back Pain 📄</h1><p class="file-sub">Strengthen and stretch your lower back to reduce pain and prevent injury.</p><div class="file-description"><p><strong>Your problem:</strong> You suffer from lower back pain and want exercises to relieve it.</p><p><strong>This solution:</strong> A safe and effective exercise routine for lower back pain, including core strengthening, stretching, and mobility work.</p></div><div class="download-section"><a href="https://frge.top/exercises-for-lower-cmk180" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Strong core muscles support your lower back — incorporate planks and bridges into your routine.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../nutrition/supplements/vitamin-d-guide/" class="related-card">
+                <a href="../../../travel/hacks/travel-photography-tips/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Vitamin D Guide</span>
+                            <span class="related-name">Travel Photography Tips</span>
+                            <span class="related-meta">Travel / Hacks</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">📸 Photography</span>
+                </a>
+            
+                <a href="../../../career/change/how-to-transition-to-a-new-industry/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">How to Transition to a New Industry</span>
+                            <span class="related-meta">Career / Change</span>
+                        </div>
+                    </div>
+                    <span class="related-badge">🔄 Transition</span>
+                </a>
+            
+                <a href="../../../nutrition/supplements/creatine-explained/" class="related-card">
+                    <div class="related-left">
+                        <span class="related-icon">📄</span>
+                        <div class="related-info">
+                            <span class="related-name">Creatine Explained</span>
                             <span class="related-meta">Nutrition / Supplements</span>
                         </div>
                     </div>
-                    <span class="related-badge">☀️ Vitamin D</span>
+                    <span class="related-badge">💪 Creatine</span>
                 </a>
             
-                <a href="../../../relationships/self-love/how-to-build-self-esteem/" class="related-card">
+                <a href="../../../premium/guides/heat-stroke-vs-heat-exhaustion/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Build Self‑Esteem</span>
-                            <span class="related-meta">Relationships / Self Love</span>
+                            <span class="related-name">Heat Stroke vs. Heat Exhaustion</span>
+                            <span class="related-meta">Premium • Health</span>
                         </div>
                     </div>
-                    <span class="related-badge">💪 Self‑Esteem</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../relationships/dating/how-to-know-when-to-leave-a-relationship/" class="related-card">
+                <a href="../../../premium/guides/how-to-recognize-a-heart-attack/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Know When to Leave a Relationship</span>
-                            <span class="related-meta">Relationships / Dating</span>
+                            <span class="related-name">How to Recognize a Heart Attack</span>
+                            <span class="related-meta">Premium • Health</span>
                         </div>
                     </div>
-                    <span class="related-badge">🚪 Leaving</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../health/immunity/essential-vitamins-for-immunity/" class="related-card">
+                <a href="../../../premium/guides/how-to-stop-overthinking-in-2-minutes/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Essential Vitamins for Immunity</span>
-                            <span class="related-meta">Health / Immunity</span>
+                            <span class="related-name">How to Stop Overthinking in 2 Minutes</span>
+                            <span class="related-meta">Premium • Health</span>
                         </div>
                     </div>
-                    <span class="related-badge">💊 Immunity</span>
-                </a>
-            
-                <a href="../../../nutrition/basics/high-protein-diet-guide/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">High‑Protein Diet Guide</span>
-                            <span class="related-meta">Nutrition / Basics</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">💪 Protein</span>
-                </a>
-            
-                <a href="../../../productivity/deep-work/the-90-minute-deep-work-block/" class="related-card">
-                    <div class="related-left">
-                        <span class="related-icon">📄</span>
-                        <div class="related-info">
-                            <span class="related-name">The 90‑Minute Deep Work Block</span>
-                            <span class="related-meta">Productivity / Deep Work</span>
-                        </div>
-                    </div>
-                    <span class="related-badge">⏰ Focus</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

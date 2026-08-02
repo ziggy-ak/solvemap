@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Nutrition</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Nutrition</div><a href="../fueling-your-hybrid-workouts/" class="">fueling-your-hybrid-workouts</a><a href="../healthy-snacks-for-fitness-lovers/" class="">healthy-snacks-for-fitness-lovers</a><a href="../high-protein-meal-plan/" class="">high-protein-meal-plan</a><a href="../nutrition-for-longevity/" class="active">Nutrition for Longevity</a><a href="../what-to-eat-before-and-after-a-workout/" class="">what-to-eat-before-and-after-a-workout</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Nutrition</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="active">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="active">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="active">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Nutrition</div><div class="back-link" onclick="window.location.href='../'">← Back to Nutrition</div><ul><li class="file-item " onclick="window.location.href='../fueling-your-hybrid-workouts/'; return false;">fueling-your-hybrid-workouts</li><li class="file-item " onclick="window.location.href='../healthy-snacks-for-fitness-lovers/'; return false;">healthy-snacks-for-fitness-lovers</li><li class="file-item " onclick="window.location.href='../high-protein-meal-plan/'; return false;">high-protein-meal-plan</li><li class="file-item active" onclick="window.location.href='../nutrition-for-longevity/'; return false;">nutrition-for-longevity</li><li class="file-item " onclick="window.location.href='../what-to-eat-before-and-after-a-workout/'; return false;">what-to-eat-before-and-after-a-workout</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Fitness</a> <span class="sep">→</span> <a href="../">Nutrition</a> <span class="sep">→</span> <span class="current">Nutrition for Longevity</span></nav><h1 class="file-title">Nutrition for Longevity 📄</h1><p class="file-sub">Eat for a long, healthy life with evidence‑based nutritional strategies.</p><div class="file-description"><p><strong>Your problem:</strong> You want to eat in a way that promotes longevity and prevents disease.</p><p><strong>This solution:</strong> A guide to longevity‑promoting diets (Mediterranean, plant‑based), key nutrients, and lifestyle factors that extend healthspan.</p></div><div class="download-section"><a href="https://frge.top/nutrition-for-longev-co1u6x" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Longevity is not just about living longer — it's about living healthier for longer.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../productivity/systems/best-productivity-apps-2026/" class="related-card">
+                <a href="../../../technology/data/how-to-organise-your-digital-files/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Best Productivity Apps 2026</span>
-                            <span class="related-meta">Productivity / Systems</span>
+                            <span class="related-name">How to Organise Your Digital Files</span>
+                            <span class="related-meta">Technology / Data</span>
                         </div>
                     </div>
-                    <span class="related-badge">📱 Apps</span>
+                    <span class="related-badge">📁 Organisation</span>
                 </a>
             
-                <a href="../../../relationships/dating/how-to-deal-with-dating-burnout/" class="related-card">
+                <a href="../../../fitness/workouts/home-gym-essentials/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Deal with Dating Burnout</span>
-                            <span class="related-meta">Relationships / Dating</span>
+                            <span class="related-name">Home Gym Essentials</span>
+                            <span class="related-meta">Fitness / Workouts</span>
                         </div>
                     </div>
-                    <span class="related-badge">🔥 Burnout</span>
+                    <span class="related-badge">🏠 Setup</span>
                 </a>
             
-                <a href="../../../relationships/self-love/how-to-build-self-esteem/" class="related-card">
+                <a href="../../../fitness/guides/fitness-myths-debunked/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Build Self‑Esteem</span>
-                            <span class="related-meta">Relationships / Self Love</span>
+                            <span class="related-name">Fitness Myths Debunked</span>
+                            <span class="related-meta">Fitness / Guides</span>
                         </div>
                     </div>
-                    <span class="related-badge">💪 Self‑Esteem</span>
+                    <span class="related-badge">🚫 Myths</span>
                 </a>
             
-                <a href="../../../career/growth/networking-guide-for-introverts/" class="related-card">
+                <a href="../../../premium/guides/how-to-do-a-perfect-push-up-form-guide/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Networking Guide for Introverts</span>
-                            <span class="related-meta">Career / Growth</span>
+                            <span class="related-name">How to Do a Perfect Push-Up: Form Guide</span>
+                            <span class="related-meta">Premium • Fitness</span>
                         </div>
                     </div>
-                    <span class="related-badge">🌐 Networking</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../nutrition/specific-goals/nutrition-for-weight-loss/" class="related-card">
+                <a href="../../../premium/guides/body-transformation-in-30-days-no-gym/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Nutrition for Weight Loss</span>
-                            <span class="related-meta">Nutrition / Specific Goals</span>
+                            <span class="related-name">Body Transformation in 30 Days (No Gym)</span>
+                            <span class="related-meta">Premium • Fitness</span>
                         </div>
                     </div>
-                    <span class="related-badge">🥗 Weight Loss</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../travel/types/family-travel-guide/" class="related-card">
+                <a href="../../../premium/guides/hiit-workouts-at-home-burn-fat-fast/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Family Travel Guide</span>
-                            <span class="related-meta">Travel / Types</span>
+                            <span class="related-name">HIIT Workouts at Home: Burn Fat Fast</span>
+                            <span class="related-meta">Premium • Fitness</span>
                         </div>
                     </div>
-                    <span class="related-badge">👨‍👩‍👧‍👦 Family</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

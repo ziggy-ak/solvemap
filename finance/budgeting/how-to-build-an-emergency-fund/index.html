@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Budgeting</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Budgeting</div><a href="../50-30-20-budget-rule/" class="">50-30-20-budget-rule</a><a href="../7-day-no-spend-challenge/" class="">7-day-no-spend-challenge</a><a href="../how-to-build-an-emergency-fund/" class="active">How to Build an Emergency Fund</a><a href="../how-to-track-your-spending/" class="">how-to-track-your-spending</a><a href="../zero-based-budgeting-guide/" class="">zero-based-budgeting-guide</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Budgeting</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="active">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Budgeting</div><div class="back-link" onclick="window.location.href='../'">← Back to Budgeting</div><ul><li class="file-item " onclick="window.location.href='../50-30-20-budget-rule/'; return false;">50-30-20-budget-rule</li><li class="file-item " onclick="window.location.href='../7-day-no-spend-challenge/'; return false;">7-day-no-spend-challenge</li><li class="file-item active" onclick="window.location.href='../how-to-build-an-emergency-fund/'; return false;">how-to-build-an-emergency-fund</li><li class="file-item " onclick="window.location.href='../how-to-track-your-spending/'; return false;">how-to-track-your-spending</li><li class="file-item " onclick="window.location.href='../zero-based-budgeting-guide/'; return false;">zero-based-budgeting-guide</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Finance</a> <span class="sep">→</span> <a href="../">Budgeting</a> <span class="sep">→</span> <span class="current">How to Build an Emergency Fund</span></nav><h1 class="file-title">How to Build an Emergency Fund 📄</h1><p class="file-sub">Create a financial safety net for unexpected expenses.</p><div class="file-description"><p><strong>Your problem:</strong> You don't have savings for emergencies and worry about financial shocks.</p><p><strong>This solution:</strong> A guide to setting a savings goal, automating contributions, and building a 3‑6 month emergency fund.</p></div><div class="download-section"><a href="https://frge.top/how-to-build-an-emer-ebf38e" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 An emergency fund is your best defence against debt — start with a small goal and build gradually.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../fitness/supplements/creatine-explained/" class="related-card">
+                <a href="../../../career/remote-work/how-to-stay-productive-at-home/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Creatine Explained</span>
-                            <span class="related-meta">Fitness / Supplements</span>
+                            <span class="related-name">How to Stay Productive at Home</span>
+                            <span class="related-meta">Career / Remote Work</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧪 Creatine</span>
+                    <span class="related-badge">🏠 Productivity</span>
                 </a>
             
-                <a href="../../../technology/wellbeing/how-to-manage-digital-distractions/" class="related-card">
+                <a href="../../../study/ai/digital-note-taking-guide/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Manage Digital Distractions</span>
-                            <span class="related-meta">Technology / Wellbeing</span>
+                            <span class="related-name">Digital Note‑Taking Guide</span>
+                            <span class="related-meta">Study / Ai</span>
                         </div>
                     </div>
-                    <span class="related-badge">📱 Focus</span>
+                    <span class="related-badge">📝 Digital</span>
                 </a>
             
-                <a href="../../../travel/solo/solo-travel-safety-tips/" class="related-card">
+                <a href="../../../study/ai/best-study-apps-2026/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Solo Travel Safety Tips</span>
-                            <span class="related-meta">Travel / Solo</span>
+                            <span class="related-name">Best Study Apps 2026</span>
+                            <span class="related-meta">Study / Ai</span>
                         </div>
                     </div>
-                    <span class="related-badge">🛡️ Safety</span>
+                    <span class="related-badge">📱 Apps</span>
                 </a>
             
-                <a href="../../../health/immunity/immunity-boosting-foods/" class="related-card">
+                <a href="../../../premium/guides/index-funds-vs-etfs-what-s-the-difference/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Immunity‑Boosting Foods</span>
-                            <span class="related-meta">Health / Immunity</span>
+                            <span class="related-name">Index Funds vs ETFs: What's the Difference</span>
+                            <span class="related-meta">Premium • Finance</span>
                         </div>
                     </div>
-                    <span class="related-badge">🥗 Nutrition</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../finance/planning/financial-planning-for-gen-z/" class="related-card">
+                <a href="../../../premium/guides/how-to-start-investing-with-100/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Financial Planning for Gen Z</span>
-                            <span class="related-meta">Finance / Planning</span>
+                            <span class="related-name">How to Start Investing with $100</span>
+                            <span class="related-meta">Premium • Finance</span>
                         </div>
                     </div>
-                    <span class="related-badge">📊 Gen Z</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../productivity/energy/how-to-recharge-during-the-workday/" class="related-card">
+                <a href="../../../premium/guides/7-day-no-spend-challenge/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">How to Recharge During the Workday</span>
-                            <span class="related-meta">Productivity / Energy</span>
+                            <span class="related-name">7-Day No-Spend Challenge</span>
+                            <span class="related-meta">Premium • Finance</span>
                         </div>
                     </div>
-                    <span class="related-badge">⚡ Recharge</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

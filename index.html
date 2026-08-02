@@ -14,10 +14,9 @@
             --primary: #1e3a8a;
             --accent: #f59e0b;
         }
+        .hero-premium-card,
         .hero-services-card {
             background: #ffffff;
-            border: 1px solid #f1f4f9;
-            border-left: 4px solid var(--primary);
             border-radius: 16px;
             padding: 24px 28px 28px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.02);
@@ -27,8 +26,55 @@
             flex-direction: column;
             justify-content: center;
             min-width: 260px;
-            flex-shrink: 0;
+            flex: 1;
             transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .hero-premium-card {
+            border: 1px solid #f59e0b;
+            border-left: 4px solid #f59e0b;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.08);
+        }
+        .hero-premium-card:hover {
+            box-shadow: 0 8px 20px rgba(245, 158, 11, 0.15);
+            transform: translateY(-2px);
+        }
+        .hero-premium-card .premium-icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        .hero-premium-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #0f172a;
+        }
+        .hero-premium-card p {
+            font-size: 14px;
+            color: #475569;
+            line-height: 1.4;
+            margin-bottom: 16px;
+        }
+        .hero-premium-card .premium-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: #64748b;
+            border-top: 1px solid #f1f4f9;
+            padding-top: 12px;
+        }
+        .hero-premium-card .arrow {
+            color: #f59e0b;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .hero-premium-card:hover .arrow {
+            transform: translateX(4px);
+        }
+
+        .hero-services-card {
+            border: 1px solid #f1f4f9;
+            border-left: 4px solid var(--primary);
         }
         .hero-services-card:hover {
             box-shadow: 0 8px 20px rgba(30,58,138,0.08);
@@ -68,11 +114,13 @@
             transform: translateX(4px);
         }
         @media (max-width: 768px) {
+            .hero-premium-card,
             .hero-services-card {
                 min-width: auto;
                 width: 100%;
                 padding: 20px 20px 24px;
             }
+            .hero-premium-card h3,
             .hero-services-card h3 {
                 font-size: 18px;
             }
@@ -284,6 +332,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -417,7 +477,7 @@
     <div class="mobile-menu" id="mobileMenu">
         <button class="close-btn" onclick="closeMobileMenu()">✕</button>
         <div class="menu-title">📂 Navigation</div>
-        <a href="./services/">🛠️ Services</a><a href="./fitness/"><span class="icon">🏋️</span>Fitness</a><a href="./finance/"><span class="icon">💰</span>Finance</a><a href="./health/"><span class="icon">🩺</span>Health</a><a href="./nutrition/"><span class="icon">🥗</span>Nutrition</a><a href="./career/"><span class="icon">💼</span>Career</a><a href="./study/"><span class="icon">📚</span>Study</a><a href="./technology/"><span class="icon">💻</span>Technology</a><a href="./travel/"><span class="icon">✈️</span>Travel</a><a href="./relationships/"><span class="icon">💕</span>Relationships</a><a href="./productivity/"><span class="icon">⏰</span>Productivity</a>
+        <a href="./premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="./services/">🛠️ Services</a><a href="./fitness/"><span class="icon">🏋️</span>Fitness</a><a href="./finance/"><span class="icon">💰</span>Finance</a><a href="./health/"><span class="icon">🩺</span>Health</a><a href="./nutrition/"><span class="icon">🥗</span>Nutrition</a><a href="./career/"><span class="icon">💼</span>Career</a><a href="./study/"><span class="icon">📚</span>Study</a><a href="./technology/"><span class="icon">💻</span>Technology</a><a href="./travel/"><span class="icon">✈️</span>Travel</a><a href="./relationships/"><span class="icon">💕</span>Relationships</a><a href="./productivity/"><span class="icon">⏰</span>Productivity</a>
     </div>
     
     <div class="container">
@@ -441,10 +501,21 @@
                 <h1>Find the answer<br />to <span class="highlight">any problem</span></h1>
                 <p>A curated library of practical guides, templates, and checklists — categorized so you can find what you need in seconds.</p>
             </div>
+            <!-- Premium карточка -->
+            <a href="./premium/" class="hero-premium-card">
+                <span class="premium-icon">⭐</span>
+                <h3>Premium</h3>
+                <p>In‑depth guides, bundles &amp; advanced tools</p>
+                <div class="premium-meta">
+                    <span>Premium content</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+            <!-- Services карточка -->
             <a href="./services/" class="hero-services-card">
                 <span class="services-icon">🛠️</span>
                 <h3>Services</h3>
-                <p>Free calculators, generators &amp; checklists to get things done</p>
+                <p>Free calculators, generators &amp; checklists</p>
                 <div class="services-meta">
                     <span>5 tools</span>
                     <span class="arrow">→</span>

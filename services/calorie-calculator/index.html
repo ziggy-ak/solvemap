@@ -25,8 +25,27 @@ body {
 .header { display: flex; justify-content: space-between; align-items: center; padding: 18px 32px 14px 32px; border-bottom: 2px solid #e2e8f0; background: #ffffff; flex-shrink: 0; flex-wrap: wrap; gap: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.03); }
 .logo { font-size: 26px; font-weight: 800; display: flex; align-items: center; gap: 8px; cursor: pointer; }
 .logo span { color: #1e3a8a; background: #eef2ff; padding: 2px 12px; border-radius: 40px; font-size: 16px; }
-.header-categories { display: flex; flex-wrap: wrap; gap: 8px 16px; }
-.header-categories a { color: #475569; text-decoration: none; font-weight: 600; font-size: 14px; padding: 6px 14px; border-radius: 40px; transition: background 0.15s, color 0.15s; background: transparent; }
+.header-categories {
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 4px 12px !important;
+}
+.header-categories::-webkit-scrollbar { display: none; }
+.header-categories a {
+    color: #475569;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px !important;
+    padding: 4px 10px !important;
+    border-radius: 40px;
+    transition: background 0.15s, color 0.15s;
+    background: transparent;
+    flex-shrink: 0;
+}
 .header-categories a:hover { background: #f1f4f9; color: #0f172a; }
 .app { display: flex; flex: 1; overflow: hidden; }
 .sidebar { width: 320px; background: #ffffff; border-right: 2px solid #e2e8f0; padding: 28px 20px; overflow-y: auto; flex-shrink: 0; height: 100%; }
@@ -165,6 +184,14 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
     .result-card .result-value { font-size: 26px; }
     .related-grid { grid-template-columns: 1fr 1fr; }
     .related-name { font-size: 13px; }
+
+    /* На мобильных хедер в одну строку не нужен, переключаем на wrap */
+    .header-categories {
+        flex-wrap: wrap !important;
+        overflow-x: visible !important;
+        white-space: normal !important;
+        gap: 6px 10px !important;
+    }
     
     .footer { flex-direction: column; align-items: center; text-align: center; padding: 16px; gap: 10px; }
     .footer .socials { justify-content: center; gap: 16px; }
@@ -288,7 +315,7 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
         <button class="close-btn" onclick="closeMobileMenu()">✕</button>
         
     <div class="menu-section">
-        <a href="../../" class="menu-section-link">🏠 Home</a>
+        <a href="../../index.html" class="menu-section-link">🏠 Home</a>
     </div>
     <div class="menu-section">
         <div class="menu-section-header" onclick="toggleSection(this)">
@@ -305,7 +332,7 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
             <span class="arrow">›</span>
         </div>
         <div class="menu-section-body">
-    <a href="../calorie-calculator/">🔥 Calorie Calculator</a><a href="../bmi-calculator/">📊 BMI Calculator</a><a href="../checklist-generator/">📋 Checklist Generator</a><a href="../loan-calculator/">💰 Loan Calculator</a>
+    <a href="../../services/calorie-calculator/">🔥 Calorie Calculator</a><a href="../../services/bmi-calculator/">📊 BMI Calculator</a><a href="../../services/checklist-generator/">📋 Checklist Generator</a><a href="../../services/loan-calculator/">💰 Loan Calculator</a>
         </div>
     </div>
     <div class="menu-section">
@@ -314,7 +341,7 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
             <span class="arrow">›</span>
         </div>
         <div class="menu-section-body">
-    <a href="../workout-generator/">🏋️ Workout Generator</a>
+    <a href="../../services/workout-generator/">🏋️ Workout Generator</a>
         </div>
     </div>
     
@@ -327,7 +354,7 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
     </div>
     <header class="header">
         <div class="logo" onclick="window.location.href='../../'">SolveMap <span>solutions</span></div>
-        <nav class="header-categories"><a href="../../fitness/">Fitness</a><a href="../../finance/">Finance</a><a href="../../health/">Health</a><a href="../../nutrition/">Nutrition</a><a href="../../career/">Career</a><a href="../../study/">Study</a><a href="../../technology/">Technology</a><a href="../../travel/">Travel</a><a href="../../relationships/">Relationships</a><a href="../../productivity/">Productivity</a></nav>
+        <nav class="header-categories"><a href="../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../services/">Services</a><a href="../../fitness/" class="">Fitness</a><a href="../../finance/" class="">Finance</a><a href="../../health/" class="">Health</a><a href="../../nutrition/" class="">Nutrition</a><a href="../../career/" class="">Career</a><a href="../../study/" class="">Study</a><a href="../../technology/" class="">Technology</a><a href="../../travel/" class="">Travel</a><a href="../../relationships/" class="">Relationships</a><a href="../../productivity/" class="">Productivity</a></nav>
     </header>
     <div class="app">
         

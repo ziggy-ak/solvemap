@@ -246,6 +246,18 @@
         border-radius: 40px;
         flex-shrink: 0;
     }
+    .related-badge.premium-badge {
+        background: #f59e0b;
+        color: #0f172a;
+    }
+    .related-card.premium-card {
+        border: 2px solid #f59e0b;
+        box-shadow: 0 4px 12px rgba(245,158,11,0.15);
+    }
+    .related-card.premium-card:hover {
+        border-color: #d97706;
+        box-shadow: 0 8px 24px rgba(245,158,11,0.2);
+    }
     @media (max-width: 768px) {
         .related-grid {
             grid-template-columns: 1fr 1fr;
@@ -362,74 +374,74 @@
 </head>
 <body>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Skills</div><a href="../../../services/">🛠️ Services</a><div class="menu-section-title">Skills</div><a href="../best-platforms-to-learn-tech-skills/" class="">best-platforms-to-learn-tech-skills</a><a href="../how-to-build-a-personal-website/" class="">how-to-build-a-personal-website</a><a href="../how-to-start-learning-to-code/" class="active">How to Start Learning to Code</a><a href="../how-to-stay-updated-with-tech-trends/" class="">how-to-stay-updated-with-tech-trends</a><a href="../how-to-use-ai-for-learning/" class="">how-to-use-ai-for-learning</a><a href="../tech-skills-for-non-techies/" class="">tech-skills-for-non-techies</a></div>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMobileMenu()">✕</button><div class="menu-back" onclick="window.location.href='../'">← Back to Skills</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="active">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></div>
     <div class="mobile-header"><button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button><a class="mobile-logo" href="../../../">SolveMap <span>solutions</span></a></div>
-    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="active">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
+    <header class="header"><div class="logo" onclick="window.location.href='../../../'">SolveMap <span>solutions</span></div><nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="active">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a></nav></header>
     <div class="app"><nav class="sidebar"><div class="sidebar-title">📁 Skills</div><div class="back-link" onclick="window.location.href='../'">← Back to Skills</div><ul><li class="file-item " onclick="window.location.href='../best-platforms-to-learn-tech-skills/'; return false;">best-platforms-to-learn-tech-skills</li><li class="file-item " onclick="window.location.href='../how-to-build-a-personal-website/'; return false;">how-to-build-a-personal-website</li><li class="file-item active" onclick="window.location.href='../how-to-start-learning-to-code/'; return false;">how-to-start-learning-to-code</li><li class="file-item " onclick="window.location.href='../how-to-stay-updated-with-tech-trends/'; return false;">how-to-stay-updated-with-tech-trends</li><li class="file-item " onclick="window.location.href='../how-to-use-ai-for-learning/'; return false;">how-to-use-ai-for-learning</li><li class="file-item " onclick="window.location.href='../tech-skills-for-non-techies/'; return false;">tech-skills-for-non-techies</li></ul></nav><main class="main-content"><div class="file-detail fade-in"><nav class="breadcrumbs"><a href="../../../index.html">Home</a> <span class="sep">→</span> <a href="../../">Technology</a> <span class="sep">→</span> <a href="../">Skills</a> <span class="sep">→</span> <span class="current">How to Start Learning to Code</span></nav><h1 class="file-title">How to Start Learning to Code 📄</h1><p class="file-sub">Begin your coding journey — no prior experience required.</p><div class="file-description"><p><strong>Your problem:</strong> You want to learn to code but don't know where to start or which language to choose.</p><p><strong>This solution:</strong> A guide to starting your coding journey — choosing a language, finding resources, and building your first projects.</p></div><div class="download-section"><a href="https://frge.top/how-to-start-learnin-p2hu7k" class="download-btn" target="_blank"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>Download PDF (Free)</a><span class="download-note">🔒 No email required · Instant download</span></div><div class="tip-box">💡 <strong>Tip of the day:</strong> 💡 Everyone starts somewhere — the best time to start learning to code is now.</div><div class="related-section"><h3 class="related-title">📚 You may also like</h3><div class="related-grid">
-                <a href="../../../nutrition/gut-health/how-to-improve-digestion-naturally/" class="related-card">
+                <a href="../../../finance/literacy/common-financial-mistakes-to-avoid/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Improve Digestion Naturally</span>
-                            <span class="related-meta">Nutrition / Gut Health</span>
+                            <span class="related-name">Common Financial Mistakes to Avoid</span>
+                            <span class="related-meta">Finance / Literacy</span>
                         </div>
                     </div>
-                    <span class="related-badge">🌿 Digestion</span>
+                    <span class="related-badge">🚫 Mistakes</span>
                 </a>
             
-                <a href="../../../productivity/habits/how-to-stop-procrastinating-science-backed-strategies/" class="related-card">
+                <a href="../../../finance/planning/emergency-fund-vs-investing/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">How to Stop Procrastinating — Science‑Backed Strategies</span>
-                            <span class="related-meta">Productivity / Habits</span>
+                            <span class="related-name">Emergency Fund vs Investing</span>
+                            <span class="related-meta">Finance / Planning</span>
                         </div>
                     </div>
-                    <span class="related-badge">🧠 Science</span>
+                    <span class="related-badge">⚖️ Balance</span>
                 </a>
             
-                <a href="../../../technology/cybersecurity/two-factor-authentication-guide/" class="related-card">
+                <a href="../../../travel/types/road-trip-planning-guide/" class="related-card">
                     <div class="related-left">
                         <span class="related-icon">📄</span>
                         <div class="related-info">
-                            <span class="related-name">Two‑Factor Authentication Guide</span>
-                            <span class="related-meta">Technology / Cybersecurity</span>
+                            <span class="related-name">Road Trip Planning Guide</span>
+                            <span class="related-meta">Travel / Types</span>
                         </div>
                     </div>
-                    <span class="related-badge">🔐 2FA</span>
+                    <span class="related-badge">🚗 Road Trip</span>
                 </a>
             
-                <a href="../../../health/immunity/immunity-boosting-foods/" class="related-card">
+                <a href="../../../premium/guides/mindful-tech-use/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Immunity‑Boosting Foods</span>
-                            <span class="related-meta">Health / Immunity</span>
+                            <span class="related-name">Mindful Tech Use</span>
+                            <span class="related-meta">Premium • Technology</span>
                         </div>
                     </div>
-                    <span class="related-badge">🥗 Nutrition</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../fitness/strength/motivation-and-consistency/" class="related-card">
+                <a href="../../../premium/guides/how-to-build-a-personal-website/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Motivation and Consistency</span>
-                            <span class="related-meta">Fitness / Strength</span>
+                            <span class="related-name">How to Build a Personal Website</span>
+                            <span class="related-meta">Premium • Technology</span>
                         </div>
                     </div>
-                    <span class="related-badge">🔥 Motivation</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             
-                <a href="../../../health/immunity/essential-vitamins-for-immunity/" class="related-card">
+                <a href="../../../premium/guides/how-to-automate-repetitive-tasks/" class="related-card premium-card">
                     <div class="related-left">
-                        <span class="related-icon">📄</span>
+                        <span class="related-icon" style="color:#f59e0b;">⭐</span>
                         <div class="related-info">
-                            <span class="related-name">Essential Vitamins for Immunity</span>
-                            <span class="related-meta">Health / Immunity</span>
+                            <span class="related-name">How to Automate Repetitive Tasks</span>
+                            <span class="related-meta">Premium • Technology</span>
                         </div>
                     </div>
-                    <span class="related-badge">💊 Immunity</span>
+                    <span class="related-badge premium-badge">Premium</span>
                 </a>
             </div></div></div></main></div>
     <footer class="footer">

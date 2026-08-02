@@ -36,12 +36,43 @@
             padding: 4px 10px !important;
             flex-shrink: 0;
         }
+        .premium-logo-badge {
+            background: #f59e0b;
+            color: #0f172a;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 10px;
+            border-radius: 40px;
+            margin-left: 6px;
+        }
         @media (max-width: 768px) {
+            html, body {
+                overflow: auto !important;
+                height: auto !important;
+                min-height: 100vh;
+            }
+            .app {
+                display: block !important;
+                height: auto !important;
+                overflow: visible !important;
+            }
+            .sidebar {
+                display: none !important;
+            }
+            .main-content {
+                display: block !important;
+                height: auto !important;
+                overflow-y: visible !important;
+                padding-bottom: 60px !important;
+            }
+            .footer {
+                position: relative !important;
+                margin-top: 20px !important;
+            }
             .header-categories {
                 flex-wrap: wrap !important;
                 overflow-x: visible !important;
                 white-space: normal !important;
-                gap: 6px 10px !important;
             }
         }
         
@@ -150,15 +181,15 @@
     <div class="mobile-overlay" id="mobileOverlay"></div>
     <div class="mobile-menu" id="mobileMenu">
         <button class="close-btn" onclick="closeMobileMenu()">✕</button>
-        <div class="menu-back" onclick="window.location.href='../../../index.html'">← Home</div><a href="../../../services/">🛠️ Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a>
+        <div class="menu-back" onclick="window.location.href='../../../index.html'">← Home</div><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">🛠️ Services</a><a href="../../../premium/fitness/" class="">Fitness</a><a href="../../../premium/finance/" class="">Finance</a><a href="../../../premium/health/" class="">Health</a><a href="../../../premium/nutrition/" class="">Nutrition</a><a href="../../../premium/career/" class="">Career</a><a href="../../../premium/study/" class="">Study</a><a href="../../../premium/technology/" class="">Technology</a><a href="../../../premium/travel/" class="">Travel</a><a href="../../../premium/relationships/" class="">Relationships</a><a href="../../../premium/productivity/" class="">Productivity</a>
     </div>
     <div class="mobile-header">
         <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
-        <a class="mobile-logo" href="../../../index.html">SolveMap <span>solutions</span></a>
+        <a class="mobile-logo" href="../../../index.html">SolveMap <span>solutions</span> <span style="background:#f59e0b;color:#0f172a;font-size:11px;font-weight:700;padding:2px 10px;border-radius:40px;margin-left:6px;">Premium</span></a>
     </div>
     <header class="header">
-        <div class="logo" onclick="window.location.href='../../../index.html'">SolveMap <span>solutions</span></div>
-        <nav class="header-categories"><a href="../../../services/">Services</a><a href="../../../fitness/" class="">Fitness</a><a href="../../../finance/" class="">Finance</a><a href="../../../health/" class="">Health</a><a href="../../../nutrition/" class="">Nutrition</a><a href="../../../career/" class="">Career</a><a href="../../../study/" class="">Study</a><a href="../../../technology/" class="">Technology</a><a href="../../../travel/" class="">Travel</a><a href="../../../relationships/" class="">Relationships</a><a href="../../../productivity/" class="">Productivity</a><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a></nav>
+        <div class="logo" onclick="window.location.href='../../../index.html'">SolveMap <span>solutions</span> <span style="background:#f59e0b;color:#0f172a;font-size:11px;font-weight:700;padding:2px 10px;border-radius:40px;margin-left:6px;">Premium</span></div>
+        <nav class="header-categories"><a href="../../../premium/" style="color:#f59e0b;font-weight:700;">⭐ Premium</a><a href="../../../services/">Services</a><a href="../../../premium/fitness/" class="">Fitness</a><a href="../../../premium/finance/" class="">Finance</a><a href="../../../premium/health/" class="">Health</a><a href="../../../premium/nutrition/" class="">Nutrition</a><a href="../../../premium/career/" class="">Career</a><a href="../../../premium/study/" class="">Study</a><a href="../../../premium/technology/" class="">Technology</a><a href="../../../premium/travel/" class="">Travel</a><a href="../../../premium/relationships/" class="">Relationships</a><a href="../../../premium/productivity/" class="">Productivity</a></nav>
     </header>
     <div class="app">
         <div class="sidebar"><div class="sidebar-title">📁 Bundles</div><div class="back-link" onclick="window.location.href='../../../premium/'">← All Premium</div><ul><li class="" onclick="window.location.href='../../../premium/bundles/time-management-bundle/'">Time Management Bundle</li><li class="" onclick="window.location.href='../../../premium/bundles/habits-bundle/'">Habits Bundle</li><li class="active" onclick="window.location.href='../../../premium/bundles/deep-work-bundle/'">Deep Work Bundle</li><ul style="list-style:none;padding-left:20px;"><li class="file-item " onclick="window.location.href='../../../premium/guides/how-to-achieve-deep-work/'">How to Achieve Deep Work</li><li class="file-item " onclick="window.location.href='../../../premium/guides/how-to-stop-multitasking/'">How to Stop Multitasking</li><li class="file-item " onclick="window.location.href='../../../premium/guides/the-para-method-organise-your-digital-life/'">The PARA Method: Organise Your Digital Life</li><li class="file-item " onclick="window.location.href='../../../premium/guides/how-to-manage-digital-distractions/'">How to Manage Digital Distractions</li></ul></ul></div>
@@ -166,20 +197,20 @@
             <div class="fade-in">
                 
     <nav class="breadcrumbs" style="font-size:14px;color:#64748b;margin-bottom:20px;padding:8px 0;border-bottom:1px solid #f1f4f9;">
-        <a href="../../index.html" style="color:#1e3a8a;text-decoration:none;font-weight:500;">Home</a>
+        <a href="../../../index.html" style="color:#1e3a8a;text-decoration:none;font-weight:500;">Home</a>
         <span style="margin:0 6px;color:#94a3b8;">→</span>
-        <a href="../index.html" style="color:#1e3a8a;text-decoration:none;font-weight:500;">Premium</a>
+        <a href="../../index.html" style="color:#1e3a8a;text-decoration:none;font-weight:500;">Premium</a>
         <span style="margin:0 6px;color:#94a3b8;">→</span>
-        <a href="../productivity/" style="color:#1e3a8a;text-decoration:none;font-weight:500;">Productivity</a>
+        <a href="../../productivity/" style="color:#1e3a8a;text-decoration:none;font-weight:500;">Productivity</a>
         <span style="margin:0 6px;color:#94a3b8;">→</span>
         <span style="color:#0f172a;font-weight:600;">Deep Work Bundle</span>
     </nav>
     
-                <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+                <h1 style="font-size:48px;font-weight:800;letter-spacing:-0.02em;line-height:1.1;margin-bottom:8px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
                     <span style="font-size:32px;">⏰</span>
                     <span style="background:#fef3c7;color:#92400e;font-size:12px;font-weight:700;padding:4px 16px;border-radius:40px;text-transform:uppercase;">Bundle</span>
-                </div>
-                <h1 style="font-size:48px;font-weight:800;letter-spacing:-0.02em;line-height:1.1;margin-bottom:8px;">Deep Work Bundle</h1>
+                    <span>Deep Work Bundle</span>
+                </h1>
                 <p class="subtitle" style="font-size:20px;color:#475569;margin-bottom:20px;">4 guides to protect your attention and achieve deep focus.</p>
                 <div style="display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:#64748b;margin-bottom:20px;">
                     <span>📁 Productivity</span>
