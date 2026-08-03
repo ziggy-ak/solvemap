@@ -229,8 +229,12 @@
             <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:currentColor;"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h3.66V9h3.84L12 2z"/></svg>
             Buy Bundle — $29
         </button>
+        <button id="checkPaymentBtn" style="display:inline-flex;align-items:center;gap:8px;background:#f1f5f9;color:#1e293b;font-weight:600;font-size:16px;padding:14px 28px;border-radius:60px;border:1px solid #e2e8f0;cursor:pointer;">
+            🔄 Проверить оплату
+        </button>
         <span class="download-note" style="font-size:14px;color:#64748b;">🔒 Secure checkout via Card2Crypto</span>
     </div>
+    <div id="paymentStatus" style="margin-top:12px;font-size:15px;"></div>
     
                 <div class="tip-box">💡 <strong>Tip of the day:</strong> Bundles give you the best value — save up to 50% compared to buying guides individually.</div>
             </div>
@@ -255,7 +259,7 @@
     
     <script>
     (function() {
-        const APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwfqj5baN3EJCiV6a-CgANOJtG1cClOhcjTatOGQJ9WfUlgCklRXYq8UHeS5eNY5Igc/exec";
+        const APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwbFX8QXHyLiudF6e0KC3kl-GOCr-3uPDg3Agmc5hPWOckvB-IrMDo4dEp_92zpyBND/exec";
         const WALLET_ADDRESS = "0xB66A7655f83Ed60Fc85973c2df7F5e447d52B3bd";
         const PRODUCT_SLUG = "study-techniques-bundle";
         const PRICE = 29;
@@ -267,6 +271,7 @@
                 if (!createRes.ok) throw new Error("Ошибка создания заказа");
                 const { orderId } = await createRes.json();
                 if (!orderId) throw new Error("Не удалось получить orderId");
+                console.log("Заказ создан:", orderId);
                 localStorage.setItem('solvemap_order', orderId);
 
                 const callback = encodeURIComponent(`${APP_SCRIPT_URL}?action=webhook&order=${orderId}`);
@@ -287,43 +292,74 @@
 
         async function checkOrder() {
             const orderId = localStorage.getItem('solvemap_order');
-            if (!orderId) return;
+            if (!orderId) {
+                document.getElementById('paymentStatus').innerHTML = '<span style="color:#64748b;">Нет активного заказа</span>';
+                return;
+            }
+            document.getElementById('paymentStatus').innerHTML = '<span style="color:#64748b;">⏳ Проверка...</span>';
             try {
                 const res = await fetch(`${APP_SCRIPT_URL}?action=get&order=${orderId}`);
-                if (!res.ok) { console.warn("Запрос статуса не удался"); return; }
+                if (!res.ok) { throw new Error("Ошибка запроса статуса"); }
                 const data = await res.json();
-                if (data.links && data.links.length > 0) {
-                    console.log("Получены ссылки:", data.links);
-                    showDownloadLinks(data.links);
+                console.log("Ответ от Apps Script:", data);
+                if (data.files && data.files.length > 0) {
+                    showDownloadLinks(data);
+                    document.getElementById('paymentStatus').innerHTML = '';
                     localStorage.removeItem('solvemap_order');
                 } else if (data.error) {
-                    console.warn("Статус заказа:", data.error);
+                    document.getElementById('paymentStatus').innerHTML = `<span style="color:#f59e0b;">⏳ ${data.error}</span>`;
+                } else {
+                    document.getElementById('paymentStatus').innerHTML = '<span style="color:#64748b;">❌ Нет данных о заказе</span>';
                 }
             } catch (err) {
                 console.error("Ошибка проверки заказа:", err);
+                document.getElementById('paymentStatus').innerHTML = '<span style="color:#ef4444;">❌ Ошибка проверки</span>';
             }
         }
 
-        function showDownloadLinks(links) {
+        function showDownloadLinks(data) {
             const container = document.querySelector('.download-section');
             if (!container) return;
-            let html = '<div style="margin-top:20px;padding:20px;background:#f0fdf4;border-radius:12px;border:2px solid #22c55e;"><h3 style="font-size:20px;font-weight:700;color:#166534;">✅ Thank you for your purchase!</h3><p style="color:#166534;">Your bundle files are ready for download:</p><ul style="list-style:none;padding:0;margin-top:10px;">';
-            links.forEach(link => {
-                html += `<li style="margin:8px 0;"><a href="${link}" target="_blank" style="display:inline-block;background:#1e3a8a;color:white;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600;">📥 Download PDF</a></li>`;
-            });
-            html += '</ul></div>';
+            let html = '<div style="margin-top:20px;padding:20px;background:#f0fdf4;border-radius:12px;border:2px solid #22c55e;">';
+            html += '<h3 style="font-size:20px;font-weight:700;color:#166534;">✅ Thank you for your purchase!</h3>';
+            html += '<p style="color:#166534;">Your bundle files are ready for download:</p>';
+
+            if (data.files && Array.isArray(data.files)) {
+                data.files.forEach(function(guide) {
+                    html += '<div style="margin-top:16px;padding:12px;background:#f8fafc;border-radius:8px;border-left:4px solid #1e3a8a;">';
+                    html += '<h4 style="font-size:16px;font-weight:700;color:#0f172a;">📄 ' + guide.guideTitle + '</h4>';
+                    html += '<ul style="list-style:none;padding:0;margin-top:8px;">';
+                    guide.files.forEach(function(file) {
+                        var label = file.type === 'main' ? '📖 Main Guide' :
+                                    file.type === 'tracker' ? '📊 Tracker' :
+                                    file.type === 'checklist' ? '✅ Checklist' : '📎 Bonus';
+                        html += '<li style="margin:6px 0;"><a href="' + file.link + '" target="_blank" style="display:inline-block;background:#1e3a8a;color:white;padding:8px 16px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px;">' + label + '</a></li>';
+                    });
+                    html += '</ul></div>';
+                });
+            } else if (data.links && data.links.length > 0) {
+                data.links.forEach(function(link) {
+                    html += '<li style="margin:8px 0;"><a href="' + link + '" target="_blank" style="display:inline-block;background:#1e3a8a;color:white;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600;">📥 Download PDF</a></li>';
+                });
+            }
+            html += '</div>';
             container.insertAdjacentHTML('afterend', html);
         }
 
-        document.addEventListener('DOMContentLoaded', checkOrder);
-
-        const buyBtn = document.querySelector('.download-btn');
-        if (buyBtn) {
-            buyBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                handlePurchase();
-            });
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            checkOrder();
+            const buyBtn = document.querySelector('.download-btn');
+            if (buyBtn) {
+                buyBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    handlePurchase();
+                });
+            }
+            const checkBtn = document.getElementById('checkPaymentBtn');
+            if (checkBtn) {
+                checkBtn.addEventListener('click', checkOrder);
+            }
+        });
     })();
     </script>
     
