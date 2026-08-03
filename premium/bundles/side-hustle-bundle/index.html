@@ -75,6 +75,26 @@
                 white-space: normal !important;
             }
         }
+        /* Spinner for buy button */
+        .spinner {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #ffffff;
+            border-top: 2px solid transparent;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .download-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
         
     .footer-subscribe {
         display: flex;
@@ -266,6 +286,12 @@
         const PRICE = 19;
 
         async function handlePurchase() {
+            const buyBtn = document.querySelector('.download-btn');
+            // Disable button and show spinner
+            const originalText = buyBtn.innerHTML;
+            buyBtn.disabled = true;
+            buyBtn.innerHTML = '<span class="spinner"></span> Creating payment...';
+
             try {
                 console.log("Creating order for bundle", PRODUCT_SLUG);
                 const createRes = await fetch(`${APP_SCRIPT_URL}?action=create&slug=${PRODUCT_SLUG}`);
@@ -288,6 +314,9 @@
             } catch (err) {
                 console.error("Error:", err);
                 alert("An error occurred while creating the order. Please try again later.");
+                // Restore button
+                buyBtn.disabled = false;
+                buyBtn.innerHTML = originalText;
             }
         }
 
