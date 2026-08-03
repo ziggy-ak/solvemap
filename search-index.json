@@ -3545,44 +3545,80 @@
     "badge": "Premium"
   },
   {
-    "title": "Services — SolveMap",
-    "description": "Free and premium tools to solve your problems",
-    "url": "/services/",
-    "category": "services"
+    "title": "Essential Vitamins for Immunity",
+    "description": "The Science of Vitamin C, D, Zinc, and More",
+    "url": "./premium/guides/essential-vitamins-for-immunity/",
+    "category": "premium",
+    "badge": "Premium"
   },
   {
-    "title": "Calorie Calculator",
-    "description": "Calculate BMR, TDEE, macros and ideal weight",
-    "url": "/services/calorie-calculator/",
-    "category": "service",
-    "badge": "Free"
+    "title": "Immunity-Boosting Foods: Top 10",
+    "description": "Eat Your Way to a Stronger Immune System",
+    "url": "./premium/guides/immunity-boosting-foods-top-10/",
+    "category": "premium",
+    "badge": "Premium"
   },
   {
-    "title": "BMI Calculator",
-    "description": "Check your body mass index and get recommendations",
-    "url": "/services/bmi-calculator/",
-    "category": "service",
-    "badge": "Free"
+    "title": "How to Strengthen Your Immune System in 7 Steps",
+    "description": "A Science-Based Protocol for Optimal Immune Health",
+    "url": "./premium/guides/how-to-strengthen-your-immune-system-in-7-steps/",
+    "category": "premium",
+    "badge": "Premium"
   },
   {
-    "title": "Checklist Generator",
-    "description": "Create a checklist for any task in 1 minute",
-    "url": "/services/checklist-generator/",
-    "category": "service",
-    "badge": "Free"
+    "title": "Anti-Inflammatory Lifestyle Guide: 30-Day Plan",
+    "description": "Reduce Chronic Inflammation and Reclaim Your Energy in 30 Days",
+    "url": "./premium/guides/anti-inflammatory-lifestyle-guide-30-day-plan/",
+    "category": "premium",
+    "badge": "Premium"
   },
   {
-    "title": "Loan Calculator",
-    "description": "Calculate overpayment and monthly payments",
-    "url": "/services/loan-calculator/",
-    "category": "service",
-    "badge": "Free"
+    "title": "Gut Health Basics: How to Improve Your Microbiome",
+    "description": "The Science of Probiotics, Prebiotics, and a Healthy Gut",
+    "url": "./premium/guides/gut-health-basics-how-to-improve-your-microbiome/",
+    "category": "premium",
+    "badge": "Premium"
   },
   {
-    "title": "Workout Generator",
-    "description": "Get a personalized training program",
-    "url": "/services/workout-generator/",
-    "category": "service",
+    "title": "How to Sit Properly (Desk Ergonomics)",
+    "description": "The Science of Pain-Free Sitting for Office Workers",
+    "url": "./premium/guides/how-to-sit-properly-desk-ergonomics/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Neck & Shoulder Tension Relief: 5 Exercises",
+    "description": "Release Tightness and Prevent Pain in Minutes",
+    "url": "./premium/guides/neck-shoulder-tension-relief-5-exercises/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Daily Posture Check Routine",
+    "description": "Build Body Awareness and Correct Your Posture Throughout the Day",
+    "url": "./premium/guides/daily-posture-check-routine/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Morning Mobility Flow: 10-Minute Routine",
+    "description": "Start Your Day with Flexibility, Strength, and Ease",
+    "url": "./premium/guides/morning-mobility-flow-10-minute-routine/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Eisenhower Matrix: How to Prioritize",
+    "description": "The Simple Framework That Helps You Focus on What Actually Matters",
+    "url": "./premium/guides/eisenhower-matrix-how-to-prioritize/",
+    "category": "premium",
+    "badge": "Premium"
+  },
+  {
+    "title": "Getting Things Done: The 5-Step Workflow",
+    "description": "A Complete Guide to David Allen's System for Stress-Free Productivity",
+    "url": "./premium/guides/getting-things-done-the-5-step-workflow/",
+    "category": "premium",
     "badge": "Premium"
   }
 ]
